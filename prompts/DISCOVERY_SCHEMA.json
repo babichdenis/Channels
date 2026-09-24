@@ -1,0 +1,36 @@
+{
+  "candidates": {
+    "problem": "",
+    "ai_use_case": "",
+    "action": "",
+    "source_type": "",
+    "source_url": "",
+    "evidence_type": "",
+    "trust_level": 0,
+    "score": {
+      "interest": 0,
+      "usefulness": 0,
+      "novelty": 0,
+      "evidence": 0,
+      "audience_fit": 0,
+      "visual_potential": 0,
+      "prompt_potential": 0,
+      "shareability": 0,
+      "evergreen": 0
+    },
+    "status": "candidate"
+  },
+  "verified": {
+    "candidate_id": "",
+    "verified": "true|partial|false",
+    "checked_against": [],
+    "limits": [],
+    "seed_ready": true,
+    "seed": {
+      "core_idea": "",
+      "audience_problem": "",
+      "desired_result": "",
+      "category": ""
+    }
+  }
+}

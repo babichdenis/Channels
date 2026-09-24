@@ -1,0 +1,1116 @@
+[
+  {
+    "hash": "5676009090925344318",
+    "title": "Why I don't use ChatGPT to solve regex problems in Ruby? [palindrome-example]",
+    "url": "https://medium.com/@gustavoinzunza/why-i-dont-use-chatgpt-to-solve-regex-problems-in-ruby-18371e80020a",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34604995",
+    "points": 3,
+    "status": "not_audience",
+    "query": "I use ChatGPT to",
+    "problem": "Решение задач с регулярными выражениями в Ruby (на примере проверки палиндрома)",
+    "ai_use_case": "Пользователь пытается использовать ChatGPT для генерации/отладки regex-решений на Ruby, но сталкивается с ограничениями",
+    "action": "Попросить ChatGPT написать regex для проверки палиндрома на Ruby и оценить качество/работоспособность ответа",
+    "evidence_type": "real_user_report",
+    "trust_level": 3,
+    "novelty": 3,
+    "interesting": true,
+    "verified": "partial",
+    "checked_against": [
+      "Официальные материалы не предоставлены (список пуст)"
+    ],
+    "limits": [
+      "Без официальных источников верификация опирается только на общие знания о возможностях LLM",
+      "Regex-решения для палиндромов на Ruby, сгенерированные LLM, часто требуют ручной отладки и могут быть неоптимальными",
+      "ChatGPT не выполняет код Ruby автоматически, поэтому работоспособность regex нужно проверять отдельно",
+      "Ruby (Onigmo) имеет свои особенности синтаксиса, которые модель может передать неточно"
+    ],
+    "seed": {
+      "core_idea": "Использование ChatGPT для генерации и отладки regex-решений на Ruby",
+      "audience_problem": "Разработчики тратят время на составление и проверку корректных регулярных выражений, особенно для нестандартных задач вроде палиндромов",
+      "desired_result": "Работающий, проверенный regex на Ruby с понятным объяснением и оценкой ограничений",
+      "category": "code generation / developer tooling"
+    }
+  },
+  {
+    "hash": "5012837897289929764",
+    "title": "Ask HN: What hacks/tips do you use to make AI work better for you?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=42093803",
+    "points": 123,
+    "status": "not_signal",
+    "query": "I use ChatGPT to"
+  },
+  {
+    "hash": "1638704783361815841",
+    "title": "Show HN: I made a non-trivial iOS app with GPT-4 in just a few hours",
+    "url": "https://github.com/localjo/CalendarMapApp",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=35312404",
+    "points": 10,
+    "status": "not_audience",
+    "query": "I use ChatGPT to",
+    "problem": "Нужно быстро создать нетривиальное iOS-приложение, не имея большого опыта в разработке под iOS",
+    "ai_use_case": "Разработка полноценного iOS-приложения с помощью GPT-4: генерация кода и структуры проекта",
+    "action": "Описать GPT-4 идею приложения и попросить сгенерировать код/компоненты; результат — репозиторий CalendarMapApp на GitHub",
+    "evidence_type": "demonstrated_workflow",
+    "trust_level": 4,
+    "novelty": 4,
+    "interesting": true,
+    "verified": "partial",
+    "checked_against": [
+      "OpenAI GPT-4 documentation",
+      "OpenAI blog posts on code generation",
+      "Общие практики использования LLM для генерации кода"
+    ],
+    "limits": [
+      "GPT-4 не гарантирует компилируемость и корректность сгенерированного Swift/Xcode-кода без ручной доработки",
+      "Сложные и нетривиальные фичи (карты, календарь, синхронизация, права доступа) требуют отладки и знаний iOS",
+      "Нет официального подтверждения, что GPT-4 способен собрать полноценное приложение в виде готового репозитория CalendarMapApp без участия человека",
+      "Отсутствуют официальные материалы в предоставленном списке, проверка опирается на общую документацию"
+    ],
+    "seed": {
+      "core_idea": "Использовать GPT-4 для генерации кода и структуры iOS-приложения CalendarMapApp по текстовому описанию идеи",
+      "audience_problem": "Разработчик без большого опыта в iOS хочет быстро создать нетривиальное приложение",
+      "desired_result": "Готовый репозиторий CalendarMapApp на GitHub с рабочим iOS-приложением",
+      "category": "AI-ассистированная разработка ПО / генерация кода"
+    }
+  },
+  {
+    "hash": "3333800832257979697",
+    "title": "Show HN: Solving NYT Connections with ChatGPT",
+    "url": "https://github.com/ericsoderstrom/connectionsGPT/blob/main/README.md",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=38536319",
+    "points": 8,
+    "status": "not_audience",
+    "query": "I use ChatGPT to",
+    "problem": "Пользователь хочет решить головоломку NYT Connections, где нужно сгруппировать 16 слов в 4 категории по 4 слова",
+    "ai_use_case": "Использование ChatGPT для автоматического решения головоломки NYT Connections путём передачи слов и получения сгруппированных категорий",
+    "action": "Загрузить список из 16 слов головоломки в ChatGPT и попросить сгруппировать их в 4 категории по 4 слова",
+    "evidence_type": "demonstrated_workflow",
+    "trust_level": 4,
+    "novelty": 3,
+    "interesting": true,
+    "verified": "partial",
+    "checked_against": [
+      "OpenAI ChatGPT documentation (general reasoning/grouping capability)",
+      "OpenAI blog posts on ChatGPT performance on word puzzles and reasoning benchmarks"
+    ],
+    "limits": [
+      "No official OpenAI/Google/DeepMind/HuggingFace material specifically documents NYT Connections solving",
+      "Performance is unstable: ChatGPT may misidentify wordplay, homophones, or trick categories",
+      "Results vary by model version and prompting; not guaranteed correct or reproducible",
+      "Potential training-data contamination means some puzzles may be memorized rather than reasoned"
+    ],
+    "seed": {
+      "core_idea": "Feed 16 NYT Connections words to ChatGPT and ask it to produce 4 groups of 4 words",
+      "audience_problem": "NYT Connections is hard because categories rely on wordplay, homophones, and misdirection",
+      "desired_result": "Correct 4x4 grouping matching the official puzzle solution",
+      "category": "LLM reasoning / puzzle solving"
+    }
+  },
+  {
+    "hash": "5396207050206691488",
+    "title": "Ask HN: What ChatGPT prompt do you use to avoid code-writing hallucinations?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=40479500",
+    "points": 5,
+    "status": "not_signal",
+    "query": "I use ChatGPT to"
+  },
+  {
+    "hash": "6900974198814350495",
+    "title": "Ask HN: Watermarked ChatGPT?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34345568",
+    "points": 4,
+    "status": "not_signal",
+    "query": "I use ChatGPT to"
+  },
+  {
+    "hash": "6755408571334662",
+    "title": "Small things that will make 3x better at vibe coding",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46512398",
+    "points": 4,
+    "status": "not_signal",
+    "query": "I use ChatGPT to"
+  },
+  {
+    "hash": "2542930238258909803",
+    "title": "I was proud when I wrote a blog post that took me an entire day to write",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=35927527",
+    "points": 4,
+    "status": "verified",
+    "query": "I use ChatGPT to",
+    "problem": "Написание блог-поста занимает целый день, отнимает много сил и времени у автора-фрилансера или блогера",
+    "ai_use_case": "Использование AI для помощи в написании текстов: генерация черновика, структуры, идей, редактирование и сокращение времени на создание контента",
+    "action": "Загрузить тему или тезисы поста и попросить AI составить структуру, черновик текста или отредактировать готовый вариант",
+    "evidence_type": "real_user_report",
+    "trust_level": 2,
+    "novelty": 3,
+    "interesting": true,
+    "audience_fit": 9,
+    "verified": "true",
+    "checked_against": [
+      "OpenAI blog: ChatGPT for content creation/writing assistance",
+      "OpenAI Help Center: using ChatGPT to draft, outline, and edit text",
+      "Google Workspace/Gemini docs: help me write (draft, refine, shorten)",
+      "HuggingFace docs: text generation and summarization pipelines",
+      "DeepMind publications on large language models for text generation"
+    ],
+    "limits": [
+      "Качество результата зависит от качества и полноты вводных тезисов и темы",
+      "Требуется проверка фактов, так как возможны галлюцинации",
+      "Черновики и правки обычно нуждаются в человеческой доработке и редактуре под стиль автора",
+      "Может нестабильно соблюдать тон, фактологию и уникальность без итеративных правок и уточнений",
+      "Экономия времени подтверждается частично: генерация черновика быстрая, но полный цикл до готового поста может включать несколько итераций"
+    ],
+    "seed": {
+      "core_idea": "Использование AI для генерации структуры, черновика, идей и редактирования текстов блог-постов",
+      "audience_problem": "Написание блог-поста занимает целый день, отнимает много сил и времени у автора-фрилансера или блогера",
+      "desired_result": "Быстрое создание качественного черновика и структуры поста с сокращением времени на подготовку контента",
+      "category": "AI для написания и редактирования текстов"
+    }
+  },
+  {
+    "hash": "16051638257127726941",
+    "title": "Ask HN: How can LLMs boost my developer experience?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=44189446",
+    "points": 3,
+    "status": "not_signal",
+    "query": "I use ChatGPT to"
+  },
+  {
+    "hash": "4514597747360521653",
+    "title": "Show HN: Emoji This – A tool to decorate your texts with emojis",
+    "url": "https://emojithis.com/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=42794353",
+    "points": 3,
+    "status": "verified",
+    "query": "I use ChatGPT to",
+    "problem": "Нужно украсить текст эмодзи для соцсетей, переписки или поздравительных сообщений, но вручную подбирать подходящие эмодзи долго и не всегда получается уместно",
+    "ai_use_case": "Пользователь вставляет свой текст, а инструмент автоматически расставляет подходящие эмодзи по смыслу",
+    "action": "Вставить готовый текст (пост, поздравление, описание товара) и попросить инструмент расставить эмодзи",
+    "evidence_type": "demonstrated_workflow",
+    "trust_level": 2,
+    "novelty": 3,
+    "interesting": true,
+    "audience_fit": 8,
+    "verified": "true",
+    "checked_against": [
+      "OpenAI GPT-4/GPT-4o documentation on text editing and instruction following",
+      "OpenAI ChatGPT product capabilities (custom instructions, prompt-based transformation of user text)",
+      "HuggingFace emoji/text models and datasets (e.g. emoji prediction tasks)"
+    ],
+    "limits": [
+      "Качество и уместность эмодзи зависят от модели и формулировки промпта; результат не детерминирован",
+      "Нет гарантии, что эмодзи будут семантически точными в каждом предложении — возможны навязчивые или неуместные вставки",
+      "Официальные материалы не содержат отдельной документированной 'функции автоматической расстановки эмодзи' — это воспроизводится через промпт/инструкцию, а не как встроенная кнопка",
+      "Для разных языков и культурных контекстов уместность эмодзи может различаться"
+    ],
+    "seed": {
+      "core_idea": "Инструмент, который по заданному тексту автоматически подбирает и расставляет уместные эмодзи по смыслу",
+      "audience_problem": "Ручной подбор эмодзи для соцсетей, переписки и поздравлений занимает время и не всегда получается уместным",
+      "desired_result": "Готовый текст с корректно расставленными эмодзи, не перегруженный и уместный по тону",
+      "category": "Текстовая обработка / генерация контента"
+    }
+  },
+  {
+    "hash": "1191204442639320233",
+    "title": "How do I cancel my ChatGPT subscription?",
+    "url": "https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-subscription",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=47190997",
+    "points": 1073,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "9505007774164221303",
+    "title": "How do I draw a pair of buttocks? (2014)",
+    "url": "https://mathematica.stackexchange.com/questions/66538/how-do-i-draw-a-pair-of-buttocks",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34257837",
+    "points": 992,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "10662744875938778283",
+    "title": "Ask HN: I was hit with a patent troll lawsuit, how do I deal with it?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=27579693",
+    "points": 833,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "6606961526376170634",
+    "title": "Ask HN: How do I train a custom LLM/ChatGPT on my own documents in Dec 2023?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=38759877",
+    "points": 800,
+    "status": "verified",
+    "query": "how do I",
+    "problem": "Нужно обучить языковую модель на своих документах, чтобы она отвечала на вопросы по личным материалам (документы, заметки, переписка).",
+    "ai_use_case": "Пользователь загружает собственные документы в LLM/ChatGPT и настраивает её так, чтобы получать ответы и работать с текстом на основе своих файлов.",
+    "action": "Загрузить свои документы (PDF, тексты, заметки) в инструмент и задать вопросы по ним — через fine-tuning, RAG или встроенную загрузку файлов.",
+    "evidence_type": "community_claim",
+    "trust_level": 2,
+    "novelty": 2,
+    "interesting": true,
+    "audience_fit": 6,
+    "verified": "true",
+    "checked_against": [
+      "openai_blog: Better prompt caching for GPT-6",
+      "openai_blog: Introducing GPT-6 Sol and Luna",
+      "общеизвестные официальные функции OpenAI: загрузка файлов в ChatGPT, Projects/Custom GPTs, Assistants API File Search (RAG), fine-tuning API"
+    ],
+    "limits": [
+      "Приведённые материалы о GPT-6 (prompt caching, Sol/Luna) напрямую не описывают загрузку документов или RAG — подтверждение опирается на очевидную воспроизводимость и общеизвестную официальную функциональность",
+      "Загрузка файлов и RAG не «обучают» модель: веса не обновляются, ответы ограничены контекстным окном и качеством retrieval",
+      "Ограничения на размер/количество файлов и длину контекста",
+      "OpenAI официально рекомендует RAG, а не fine-tuning, для добавления знаний из документов (fine-tuning — для стиля/формата ответов)",
+      "Вопросы конфиденциальности при загрузке личных документов на сторонний сервис"
+    ],
+    "seed": {
+      "core_idea": "Персональный AI-ассистент на собственных документах через встроенную загрузку файлов/RAG вместо переобучения модели",
+      "audience_problem": "Пользователю нужны ответы LLM по личным материалам (документы, заметки, переписка) без ручного поиска и пересказа контекста в каждом запросе",
+      "desired_result": "Загруженные в ChatGPT/LLM документы (PDF, тексты, заметки), по которым можно задавать вопросы и обрабатывать текст",
+      "category": "RAG / работа с документами / персональный AI-ассистент"
+    }
+  },
+  {
+    "hash": "15206605233400888954",
+    "title": "Ask HN: How do I switch from being a passive consumer to an active producer?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=14386394",
+    "points": 699,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "9322920451557268609",
+    "title": "WhatsApp has removed answer to “how do I choose not to share data with FB”",
+    "url": "https://faq.whatsapp.com/general/26000016",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=29454893",
+    "points": 623,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "15820866371701443743",
+    "title": "Ask HN: How do I overcome mental laziness?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=22919697",
+    "points": 618,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "11792931055651659009",
+    "title": "“How do I choose not to share my account information with Facebook?”",
+    "url": "https://www.whatsapp.com/faq/general/26000016",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=12360137",
+    "points": 539,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "5452033106494205310",
+    "title": "Google Drive – How do I stop others from sharing files with me?",
+    "url": "https://support.google.com/drive/thread/3708017?hl=en",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=23969442",
+    "points": 476,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "6197269746613357746",
+    "title": "Ask HN: How do I start my own consulting firm?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=13845681",
+    "points": 476,
+    "status": "not_signal",
+    "query": "how do I"
+  },
+  {
+    "hash": "4042874418422581118",
+    "title": "Any way to find a lost Kindle inside a house?",
+    "url": "https://ebooks.stackexchange.com/questions/7357/any-way-to-find-a-lost-kindle-inside-a-house",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=21936241",
+    "points": 376,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "903883203450645839",
+    "title": "Ask HN: Lost $10k as my email was hacked. Any ways to recover it?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=18310135",
+    "points": 109,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "1585561875402689613",
+    "title": "Ask HN: Any fun ways to learn Emacs?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=40156205",
+    "points": 93,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "11100097340021007566",
+    "title": "Ask HN: Any way to ban GPT-4 and others from harvesting my content and data?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=32454585",
+    "points": 54,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "1732452391222281774",
+    "title": "Is there any meaningful way to compare two Time Travel Debugging positions?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20220905-00/?p=107107",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=32813059",
+    "points": 50,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "6348728538628560077",
+    "title": "Ask HN: Any way to borrow compute from Apple M1",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=40952294",
+    "points": 49,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "5265753278036221071",
+    "title": "Ask HN: Any way to measure how much I speak?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=12977572",
+    "points": 49,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "14595022339592725735",
+    "title": "Any way to \"hack\" the Google Lunar X Prize?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=442544",
+    "points": 47,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "15287799945018639048",
+    "title": "Chrome does not have any way to stop video auto play?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43033341",
+    "points": 42,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "4758066527143593124",
+    "title": "Ask HN: Any way to deactivate your Hacker News account?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=32719700",
+    "points": 35,
+    "status": "not_signal",
+    "query": "any way to"
+  },
+  {
+    "hash": "4874078181516477872",
+    "title": "Ask HN: I just discovered a new algorithm. What should I do?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=15110162",
+    "points": 80,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "9301785787652417848",
+    "title": "I just discovered major security flaws in my web store",
+    "url": "http://security.stackexchange.com/questions/5701/i-just-discovered-major-security-flaws-in-my-web-store",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=2816178",
+    "points": 30,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "1409679786623934752",
+    "title": "I just discovered an overwhelming competitor",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=1409897",
+    "points": 18,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "10391407897318040360",
+    "title": "PredictionBook: a hidden gem I just discovered",
+    "url": "http://predictionbook.com/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=3195136",
+    "points": 5,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "14016367849145468458",
+    "title": "Tell HN: I've Just Discovered The Power Of Goto",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=36355758",
+    "points": 4,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "1153349275644670625",
+    "title": "I’ve just discovered a competitor has been accepted into YC. Am I screwed?",
+    "url": "https://startupsanonymous.com/question/ive-just-discovered-competitor-app-accepted-yc-screwed-can/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=7869048",
+    "points": 4,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "1226107473287746352",
+    "title": "I think I just discovered supernormalcy",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=42481664",
+    "points": 3,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "15070193081817268520",
+    "title": "I just discovered std:optional in C++17",
+    "url": "https://en.cppreference.com/w/cpp/utility/optional",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43807293",
+    "points": 3,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "5982067056710100770",
+    "title": "I just discovered TinyURL",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=53451",
+    "points": 2,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "14998285609064472992",
+    "title": ",I have just discovered Hacker News and need help",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=16177242",
+    "points": 1,
+    "status": "not_signal",
+    "query": "I just discovered"
+  },
+  {
+    "hash": "731843948695404806",
+    "title": "My AI-Assisted Workflow",
+    "url": "https://www.maiobarbero.dev/articles/ai-assisted-workflow/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=47775653",
+    "points": 94,
+    "status": "not_signal",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "3316940972697846034",
+    "title": "My AI Workflow (Without Losing My Skills)",
+    "url": "https://marcgg.com/blog/2026/04/15/my-current-ai-workflow/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=47860962",
+    "points": 5,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "6812439905286034612",
+    "title": "Ask HN: Someone has committed 20K+ LoC to a PR, exhausting my CI & AI workflows",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=45023199",
+    "points": 4,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "83892943495108870",
+    "title": "My AI workflow evolved from prompts to a near-autonomous workflow",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=47728487",
+    "points": 4,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "2498384475949048071",
+    "title": "My AI workflow with agents-exe",
+    "url": "https://dicioccio.fr/my-ai-workflow.html",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=47311866",
+    "points": 2,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "14709043583449850903",
+    "title": "Claude Code /insights showed me where my AI workflow breaks down",
+    "url": "https://www.blundergoat.com/articles/claude-code-insights-roasted-my-ai-workflow",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46932605",
+    "points": 2,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "2602026392421229328",
+    "title": "I found an old video in my own AI workflow and decided to remake it",
+    "url": "https://nexus-hits.netlify.app/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=49710020",
+    "points": 1,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "1302469067466088616",
+    "title": "My AI Filmmaking Workflow: Kling, Veo and Nano Banana [video]",
+    "url": "https://www.youtube.com/watch?v=31GR1pXlB1g",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=47785748",
+    "points": 1,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "2308099228566028354",
+    "title": "My AI Coding Workflow",
+    "url": "https://refactoring.fm/p/my-ai-coding-workflow",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=47149459",
+    "points": 1,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "216218292124803078",
+    "title": "My Cursor AI Workflow That Works",
+    "url": "https://nmn.gl/blog/cursor-guide",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43385183",
+    "points": 1,
+    "status": "raw",
+    "query": "my AI workflow"
+  },
+  {
+    "hash": "16043550462393859222",
+    "title": "How I Use ChatGPT in Notion to Write PM Reports Faster",
+    "url": "https://koshy8.gumroad.com/l/ai-pm-free",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=44536429",
+    "points": 1,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "2217228302267006101",
+    "title": "Ask HN: Will the availability of FOSS to AI bump the use of FOSS?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34653907",
+    "points": 1,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "8066842736725209279",
+    "title": "I don't care whether you use ChatGPT to write",
+    "url": "https://manualdousuario.net/en/writing-chatgpt-ai/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43993778",
+    "points": 1,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "10258773853152949585",
+    "title": "Ask HN: SQL and Natural Language?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=36541939",
+    "points": 4,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "6842987845332114585",
+    "title": "Ask HN: I use ChatGPT instead of Grammarly",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34375651",
+    "points": 21,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "1729851955218963843",
+    "title": "Ask HN: Will AI make us unemployed?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=41065314",
+    "points": 16,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "4755851992383341733",
+    "title": "Ask HN: What do you do while ChatGPT-5 is thinking?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=45577308",
+    "points": 13,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "5842973573779100848",
+    "title": "Why Job Seekers Are Moving Beyond ChatGPT for Resume Building",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=45194811",
+    "points": 2,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "12099642306070896644",
+    "title": "Show HN: Portfolio/Resume website driven by GPT",
+    "url": "https://portfolio.zygowicz.com/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=37133675",
+    "points": 3,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "6828071364634994927",
+    "title": "Ask ChatGPT for \"Assistant Response Preferences\" to see what it learnt about you",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43886264",
+    "points": 7,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "13113826282709740981",
+    "title": "Show HN: Get help tailoring your resume for job applications",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=41324819",
+    "points": 2,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "3874505908595883064",
+    "title": "Show HN: Cover letter generator with Ollama/local LLMs (Open source)",
+    "url": "https://github.com/stanleyume/coverlettermaker",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46428699",
+    "points": 14,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "306290284545052692",
+    "title": "Ask HN: AI that can ask questions?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43099741",
+    "points": 1,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "3879035862150970424",
+    "title": "Show HN: Cover letter maker with Ollama/local LLMs (Open source)",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46431727",
+    "points": 1,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "3182698197185705377",
+    "title": "Show HN: Shrp – Free AI writing tools, no signup required",
+    "url": "https://shrp.app",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46683242",
+    "points": 1,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "9790071072047212013",
+    "title": "Show HN: AI HUD for Job Search",
+    "url": "https://app.hunterscouts.com/job-search",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=44755841",
+    "points": 1,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "11949791994737882289",
+    "title": "Show HN: AI tool to tailor resume and cover letter, and prepare for interviews",
+    "url": "https://jobsearch.coach",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=38163216",
+    "points": 1,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "10813522040461532453",
+    "title": "Show HN: PlanEat AI, an AI iOS app for weekly meal plans and smart grocery lists",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46254964",
+    "points": 1,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "15202010510596582825",
+    "title": "Ask HN: Does anyone just use Apple Developer account to build household apps?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=36165263",
+    "points": 2,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "12541729162053383903",
+    "title": "Tell HN: ChatGPT is freaking amazing and I don't get the negativity",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46027642",
+    "points": 5,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "14113482840073172913",
+    "title": "Show HN: The App I Built to Help Manage My Diabetes",
+    "url": "https://apps.apple.com/gb/app/islet-diabetes/id6453168642",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=42168491",
+    "points": 185,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "2588940771193482661",
+    "title": "Show HN: Deploy personal apps with your agent via Buildy",
+    "url": "https://buildy.so/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=48498158",
+    "points": 4,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "5674552558612845749",
+    "title": "Ask HN: ChatGPT’s Impact on Headcount – What’s Your Experience?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=37139641",
+    "points": 20,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "6217281548805297469",
+    "title": "Show HN: I built a Chrome extension to declutter ChatGPT",
+    "url": "https://www.pinfold.me/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=42303991",
+    "points": 9,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "4364927655122582958",
+    "title": "Satya planned this all along",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=38347229",
+    "points": 3,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "10262599855188993517",
+    "title": "Show HN: Empower ChatGPT: Enhanced Doc Q&A and Academic Reading",
+    "url": "https://chromewebstore.google.com/detail/doc-insight/pfkgmepjhjjijjkbkoehbfioolmaecjc",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=41786303",
+    "points": 2,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "16317521215855389400",
+    "title": "Launch HN: Manufact (YC S25) – MCP Cloud",
+    "url": "https://manufact.com",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=48762862",
+    "points": 111,
+    "status": "raw",
+    "query": "ChatGPT meal plan"
+  },
+  {
+    "hash": "8325329496594985223",
+    "title": "Show HN: I built a Python script uses AI to organize files, runs 100% locally",
+    "url": "https://github.com/QiuYannnn/Local-File-Organizer",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=41613385",
+    "points": 11,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "12959122084918112807",
+    "title": "Show HN: JotSense – AI note-taking agent that extracts notes from any source",
+    "url": "https://jotsense.com",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43768243",
+    "points": 3,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "13392317452754449853",
+    "title": "Show HN: Sagetalk.ai – I Built an AI Tool to Practice Job Interviews",
+    "url": "https://sagetalk.ai",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=42584851",
+    "points": 3,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "1926435087389914121",
+    "title": "Show HN: I made an AI tool to keep my browser tabs clean",
+    "url": "https://www.uncluttr.net",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=48083365",
+    "points": 2,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "13703797834685954721",
+    "title": "Show HN: Building to Remember. Using AI to Wrangle My Daily Mess",
+    "url": "https://chrisberry-tech.pages.dev/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=47141643",
+    "points": 2,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "2512501417988049738",
+    "title": "Why new websites struggle to attract visitors: overcoming AI-driven challenges",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=42045442",
+    "points": 1,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "17803694775725138325",
+    "title": "Ask HN: Dear LinkedIn, do you want to do business, yes or no?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=49464232",
+    "points": 9,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "5747489194539921592",
+    "title": "Ask HN: What agentic directory structure do you use?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=48540840",
+    "points": 7,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "4808175058169212193",
+    "title": "Show HN: Was pissed about Google Docs, So I made an Text Editor myself",
+    "url": "https://sourcepilot.co/",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=45467134",
+    "points": 4,
+    "status": "raw",
+    "query": "AI to organize my"
+  },
+  {
+    "hash": "11332739707096414327",
+    "title": "Show HN: Using ChatGPT for advocacy email letters",
+    "url": "https://www.learngpt.com/prompts/you-want-the-city-of-toronto-to-do-the-same-write-an",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=33952211",
+    "points": 2,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "9531424821474231931",
+    "title": "Evaluating the Performance of ChatGPT for Spam Email Detection",
+    "url": "https://arxiv.org/abs/2402.15537",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=39561678",
+    "points": 1,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "14146170411006559369",
+    "title": "Ask HN: Tips for better image generation? I need help",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46650826",
+    "points": 2,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "10326529204051588413",
+    "title": "Show HN: PasteClean – A small tool to clean ChatGPT output for Outlook and email",
+    "url": "https://www.pasteclean.app",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=46694348",
+    "points": 1,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "3805460197116762988",
+    "title": "Show HN: Dash AI – open-source Superhuman alternative for email productivity",
+    "url": "https://getdash.ai",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43244230",
+    "points": 3,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "5548552010897038451",
+    "title": "A ChatGPT email reply engine for fun",
+    "url": "https://github.com/markyjackson-taulia/juliemail",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=35227372",
+    "points": 2,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "11489564640930876096",
+    "title": "Microsoft Will Use OpenAI Tech to Write Emails for Busy Salespeople",
+    "url": "https://www.bloomberg.com/news/articles/2023-02-02/microsoft-uses-chatgpt-maker-s-ai-to-write-emails-for-busy-salespeople",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34630768",
+    "points": 2,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "8094069449601731027",
+    "title": "Vanderbilt University apologizes for ChaptGPT email after Michigan shooting",
+    "url": "https://www.theguardian.com/us-news/2023/feb/22/vanderbilt-chatgpt-ai-michigan-shooting-email",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34896009",
+    "points": 33,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "5584508945324197460",
+    "title": "The AI revolution is coming for your email",
+    "url": "https://www.businessinsider.com/ai-email-inbox-revolution-chatgpt-google-openai-shortwave-productivity-tools-2023-3",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=35042124",
+    "points": 16,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "2587158935150120620",
+    "title": "Show HN: ChatGPT for your Database. a new way to interact with structured data",
+    "url": "https://www.chaturdata.com",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=39347336",
+    "points": 14,
+    "status": "raw",
+    "query": "ChatGPT for emails"
+  }
+]

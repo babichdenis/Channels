@@ -1,0 +1,383 @@
+{
+  "network_id": "ai_women_network",
+  "global_mode": "evergreen",
+  "cross_channel": true,
+  "seed_architecture": true,
+  "content_memory": true,
+  "semantic_anti_repeat": true,
+  "channels": [
+    {
+      "id": "neuro_secrets",
+      "name": "Нейро-секреты",
+      "role": "flagship",
+      "status": "active",
+      "positioning": "Нейросети для обычной жизни женщины: показываем, что можно сделать с ИИ прямо сейчас — без технических знаний",
+      "emotion": "«Ого, а я могла делать так всё это время»",
+      "audience": "женщины 25–45, обычные пользователи, ценят удобство и красоту",
+      "promise": "Нейросети — это просто: маленькие секреты, которые экономят время и делают жизнь проще",
+      "tone": "тёплый, как подруга, без техножаргона",
+      "pillars": [
+        "быт",
+        "организация",
+        "тексты",
+        "фото",
+        "покупки",
+        "семья",
+        "планирование",
+        "творчество",
+        "соцсети",
+        "работа",
+        "развлечения",
+        "неочевидные применения"
+      ],
+      "rubrics": [
+        "Секрет дня",
+        "Промпт дня",
+        "До/после",
+        "Нейро-лайфхак",
+        "Прикол",
+        "Интерактив",
+        "Разбор"
+      ],
+      "content_mix": {
+        "practical": 0.3,
+        "prompts": 0.2,
+        "before_after": 0.15,
+        "visual": 0.1,
+        "interactive": 0.1,
+        "humor": 0.1,
+        "explainers": 0.05
+      },
+      "hooks_preferred": [
+        "Вот что можно попросить у нейросети вместо...",
+        "Мало кто использует AI вот так...",
+        "Есть маленький трюк...",
+        "Вот где AI неожиданно полезен..."
+      ],
+      "hooks_forbidden": [
+        "Вы не поверите!!!",
+        "ШОК!!!",
+        "Срочно всем!",
+        "Невероятный заработок!"
+      ],
+      "boundaries": {
+        "visual_style_ideas": "neuro_image",
+        "prompt_collections": "magic_prompts",
+        "work_processes": "neuro_work",
+        "pure_humor": "neuro_fun"
+      },
+      "visual_dna": "soft lifestyle + AI magic + clean composition + pastel atmosphere",
+      "cta": "actionable",
+      "forbidden_topics": [
+        "политика",
+        "религия",
+        "медицина",
+        "финансовые обещания",
+        "гарантии результата"
+      ],
+      "monetization": [
+        "рекламные интеграции",
+        "подборки",
+        "партнёрские инструменты",
+        "premium content"
+      ],
+      "kpi": [
+        "saves",
+        "shares",
+        "retention"
+      ],
+      "schedule": [
+        "09:00",
+        "14:00",
+        "19:00"
+      ]
+    },
+    {
+      "id": "wizard_prompts",
+      "name": "Волшебные промпты",
+      "role": "library",
+      "status": "active",
+      "positioning": "Библиотека готовых решений: скопируй промпт, вставь свои данные, получи результат",
+      "audience": "пользователи нейросетей, ищут готовые промпты под задачу",
+      "promise": "Промпт, который делает красиво — забирай и вставляй",
+      "tone": "практичный, структура и пример",
+      "pillars": [
+        "тексты",
+        "работа",
+        "быт",
+        "фото",
+        "контент",
+        "семья"
+      ],
+      "rubrics": [
+        "Промпт дня",
+        "До/после",
+        "Разбор",
+        "Подборка",
+        "Конструктор"
+      ],
+      "formula": "задача → контекст → промпт → пример использования → ожидаемый результат",
+      "prompt_quality": [
+        "роль",
+        "задача",
+        "контекст",
+        "ограничения",
+        "формат результата",
+        "критерии качества"
+      ],
+      "prompt_metadata": [
+        "prompt_id",
+        "category",
+        "subcategory",
+        "difficulty",
+        "use_case",
+        "expected_result",
+        "reusability",
+        "novelty"
+      ],
+      "content_mix": {
+        "prompts": 0.5,
+        "before_after": 0.2,
+        "collections": 0.2,
+        "breakdowns": 0.1
+      },
+      "visual_dna": "минимализм, мягкий свет, пример результата",
+      "cta": "copy_and_try",
+      "forbidden_topics": [
+        "политика",
+        "религия",
+        "медицина",
+        "высокорисковые сценарии"
+      ],
+      "monetization": [
+        "prompt packs",
+        "PDF/Notion библиотека",
+        "коллекции",
+        "боты",
+        "premium library"
+      ],
+      "kpi": [
+        "saves",
+        "shares"
+      ],
+      "schedule": [
+        "10:00",
+        "15:00",
+        "20:00"
+      ],
+      "publish": false,
+      "library_target": 120
+    },
+    {
+      "id": "neuro_image",
+      "name": "Нейро-образ",
+      "role": "visual",
+      "status": "planned",
+      "positioning": "Визуальное применение AI: аватарки, портреты, образы, стиль, moodboards",
+      "audience": "женщины, интересующиеся стилем, фото, визуалом для соцсетей",
+      "promise": "Твоя нейро-студия: образы, портреты и аватарки без фотографа",
+      "tone": "эстетичный, визуальный, лёгкий",
+      "pillars": [
+        "аватарки",
+        "портреты",
+        "фотосессии",
+        "образы",
+        "гардероб",
+        "стилизация",
+        "moodboards",
+        "lifestyle",
+        "соцсети",
+        "личный бренд"
+      ],
+      "formula": "idea → visual concept → prompt → image → variations",
+      "visual_dna_fields": [
+        "subject",
+        "environment",
+        "composition",
+        "lighting",
+        "mood",
+        "style",
+        "camera_language",
+        "color_direction",
+        "detail_level"
+      ],
+      "anti_repeat_visual": [
+        "одна поза",
+        "один фон",
+        "одна композиция",
+        "одинаковое освещение",
+        "один стиль одежды",
+        "один ракурс"
+      ],
+      "character_rule": "не задавать этничность/внешность без необходимости; если важно — нейтрально и конкретно",
+      "content_mix": {
+        "prompt_showcase": 0.4,
+        "before_after": 0.2,
+        "concepts": 0.2,
+        "experiments": 0.2
+      },
+      "cta": "try_it",
+      "monetization": [
+        "наборы визуальных промптов",
+        "photo packs",
+        "style packs",
+        "шаблоны"
+      ],
+      "kpi": [
+        "saves",
+        "shares"
+      ],
+      "schedule": [
+        "11:00",
+        "17:00"
+      ]
+    },
+    {
+      "id": "neuro_work",
+      "name": "Нейро-работа",
+      "role": "utility",
+      "status": "planned",
+      "positioning": "AI помогает разгрузить голову и быстрее подготовить результат: письма, документы, встречи, планы, анализ",
+      "audience": "работающие женщины 25–45: офис, фриланс, самозанятость, предпринимательство",
+      "promise": "ИИ помогает работать быстрее и меньше делать рутину вручную",
+      "tone": "конкретный, спокойный, практичный («вместо 20 минут на черновик — начни с заготовки»)",
+      "pillars": [
+        "коммуникация",
+        "документы",
+        "встречи",
+        "планирование",
+        "контент",
+        "анализ"
+      ],
+      "formula": "рабочая проблема → AI workflow → шаблон/prompt → пример → результат",
+      "content_priority": [
+        "workflows",
+        "templates",
+        "prompts",
+        "checklists",
+        "before_after",
+        "automation",
+        "mistakes",
+        "mini_guides"
+      ],
+      "forbidden": [
+        "гарантированный заработок",
+        "карьерный успех",
+        "финансовый результат",
+        "замена профессии"
+      ],
+      "content_mix": {
+        "workflows": 0.35,
+        "templates": 0.25,
+        "prompts": 0.2,
+        "before_after": 0.1,
+        "guides": 0.1
+      },
+      "cta": "use_template",
+      "monetization": [
+        "рабочие шаблоны",
+        "prompt packs",
+        "workflow packs",
+        "инструменты",
+        "мини-продукты"
+      ],
+      "kpi": [
+        "saves",
+        "commercial_intent"
+      ],
+      "schedule": [
+        "09:00",
+        "13:00",
+        "18:00"
+      ]
+    },
+    {
+      "id": "neuro_fun",
+      "name": "Нейро-приколы",
+      "role": "reach",
+      "status": "planned",
+      "positioning": "Лёгкий пересылаемый контент, который показывает возможности AI",
+      "audience": "широкая, любители юмора",
+      "promise": "Смешно — и сразу видно, что умеет нейросеть",
+      "tone": "лёгкий, мемный, короткий",
+      "formula": "юмор + узнаваемая ситуация + AI twist = shareable",
+      "content_types": [
+        "AI memes",
+        "absurd scenarios",
+        "funny prompts",
+        "unexpected transformations",
+        "«а что если...»",
+        "relatable situations",
+        "experiments"
+      ],
+      "forbidden": [
+        "обычный мемник без AI",
+        "политический юмор",
+        "токсичный юмор",
+        "картинки без идеи"
+      ],
+      "viral_hooks": [
+        "Попросила нейросеть...",
+        "Когда решила делегировать это AI...",
+        "Нейросеть поняла задачу слишком буквально"
+      ],
+      "funnel_role": "attention → share → discovery → interest → useful channel",
+      "cta": "share",
+      "monetization": [
+        "только охват и перелив"
+      ],
+      "kpi": [
+        "shares",
+        "reach"
+      ],
+      "schedule": [
+        "12:00",
+        "18:00",
+        "21:00"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "ai_mama",
+      "reason": "сначала рубрика внутри флагмана",
+      "decision": "rubric"
+    },
+    {
+      "id": "ai_housewife",
+      "reason": "слишком широкая и не-AI ниша",
+      "decision": "drop"
+    },
+    {
+      "id": "neuro_gifts",
+      "reason": "ситуативная ниша",
+      "decision": "rubric_in_magic_prompts"
+    }
+  ],
+  "monetization_matrix": {
+    "neuro_secrets": [
+      "реклама",
+      "подборки",
+      "партнёрки",
+      "premium"
+    ],
+    "magic_prompts": [
+      "prompt packs",
+      "PDF/Notion",
+      "боты",
+      "подписка"
+    ],
+    "neuro_image": [
+      "наборы промптов",
+      "photo/style packs"
+    ],
+    "neuro_work": [
+      "шаблоны",
+      "workflow packs",
+      "мини-продукты"
+    ],
+    "neuro_fun": [
+      "охват/перелив"
+    ]
+  }
+}

@@ -1,0 +1,1147 @@
+[
+  {
+    "id": "ns-2026-09-22-0900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T09:00:00+03:00",
+    "rubric": "Секрет дня",
+    "text": "🔮 Секрет дня: скажи нейросети, КТО она\n\nХочешь, чтобы ответ был умнее? Начни запрос с роли.\n\n❌ «Напиши советы по уходу за кожей»\n✅ «Ты косметолог с 10-летним опытом. Напиши 5 коротких советов по уходу за кожей зимой»\n\nРаботает в любой нейросети — попробуй сегодня ✨",
+    "hashtags": [
+      "#секретдня",
+      "#нейросети"
+    ],
+    "image": "posts/ns-2026-09-22-0900.jpg",
+    "image_prompt": "мягкий градиент розово-фиолетовый, лёгкие искры, минимализм, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "soft pink and purple gradient background, gentle sparkles, minimalist, no text",
+    "published_at": "2026-09-21T19:19:01+03:00",
+    "message_id": 3
+  },
+  {
+    "id": "ns-2026-09-22-1400",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T14:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: интерьер мечты\n\nЗабирай и вставляй 👇\n\n«Опиши интерьер уютной гостиной в скандинавском стиле: мягкий свет, натуральное дерево, плед, книги, растение. Тёплые тона, атмосфера спокойствия.»\n\nЗамени «гостиную» на кухню, спальню или детскую — получишь целую серию ✨\n\nСохрани, чтобы не потерять 📌",
+    "hashtags": [
+      "#промптдня",
+      "#нейросети"
+    ],
+    "image": "posts/ns-2026-09-22-1400.jpg",
+    "image_prompt": "уютная гостиная, скандинавский стиль, мягкий свет, дерево, плед, растение, тёплые тона",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "cozy living room in scandinavian style, soft daylight, wooden furniture, blanket, books, plant, warm tones, no text",
+    "published_at": "2026-09-21T19:19:04+03:00",
+    "message_id": 4
+  },
+  {
+    "id": "ns-2026-09-22-1900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T19:00:00+03:00",
+    "rubric": "Интерактив",
+    "text": "🗳 Угадай промпт!\n\nСлева — обычный запрос, справа — с секретом. Как думаешь, что добавили, чтобы получилось ТАК красиво?\n\n1️⃣ Роль\n2️⃣ Стиль и свет\n3️⃣ Просьбу «сделай красиво»\n\nПиши номер в комментариях — завтра покажу секрет 😉",
+    "hashtags": [
+      "#интерактив",
+      "#нейросети"
+    ],
+    "image": "posts/ns-2026-09-22-1900.jpg",
+    "image_prompt": "две картинки рядом: слева простой набросок, справа красивая иллюстрация, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "two side by side images, left simple pencil sketch, right beautiful colorful illustration, pastel, no text",
+    "published_at": "2026-09-21T19:19:07+03:00",
+    "message_id": 5
+  },
+  {
+    "id": "ns-2026-09-23-0900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-23T09:00:00+03:00",
+    "rubric": "Секрет дня",
+    "text": "🔮 Секрет дня: проси сразу 3 варианта\n\nНейросеть даёт один ответ — и кажется, что он единственный. А ты попроси выбор:\n\n❌ «Придумай название для канала»\n✅ «Придумай 3 разных названия: тёплое, дерзкое и загадочное»\n\nВыбирать всегда легче, чем придумывать с нуля ✨",
+    "hashtags": [
+      "#секретдня",
+      "#нейросети"
+    ],
+    "image": "posts/ns-2026-09-23-0900.jpg",
+    "image_prompt": "три карточки-варианта, пастельные тона, минимализм, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "three pastel cards with soft abstract shapes, minimal, no text",
+    "published_at": "2026-09-21T19:19:12+03:00",
+    "message_id": 6
+  },
+  {
+    "id": "ns-2026-09-23-1400",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-23T14:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: портрет в стиле акварели\n\nЗабирай 👇\n\n«Нарисуй портрет девушки в стиле акварели: мягкие переходы цвета, лёгкие брызги, тёплый свет, светлый фон. Взгляд спокойный, естественный.»\n\nСовет: замени «девушки» на любой сюжет — получится серия картинок ✨\n\nСохрани 📌",
+    "hashtags": [
+      "#промптдня",
+      "#фото"
+    ],
+    "image": "posts/ns-2026-09-23-1400.jpg",
+    "image_prompt": "портрет русой девушки славянской внешности в стиле акварели, мягкие переходы цвета, тёплый свет, светлый фон",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "watercolor portrait of a young russian woman with light brown hair, slavic features, soft color transitions, warm light, light background",
+    "published_at": "2026-09-21T19:19:15+03:00",
+    "message_id": 7
+  },
+  {
+    "id": "ns-2026-09-23-1900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Нейро-лайфхак",
+    "text": "🏡 Нейро-лайфхак: меню на неделю за минуту\n\nБольше не думай «что приготовить». Попроси нейросеть:\n\n«Составь меню на неделю для семьи из 3 человек: простые блюда, недорогие продукты, чередуй курицу, рыбу и овощи. К каждому дню — короткий рецепт.»\n\nБонус: попроси сразу список покупок по меню 🛒\n\nПопробуешь? ❤️",
+    "hashtags": [
+      "#лайфхак",
+      "#нейросети"
+    ],
+    "image": "posts/ns-2026-09-23-1900.jpg",
+    "image_prompt": "уютная кухня, блокнот с меню, свежие овощи, тёплый свет, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "cozy kitchen, notebook with weekly menu, fresh vegetables, warm light, no text",
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 19
+  },
+  {
+    "id": "ns-2026-09-24-0900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Секрет дня",
+    "text": "🔮 Секрет дня: пусть нейросеть задаст вопросы\n\nНе спеши с ответом — попроси уточнить:\n\n«Прежде чем отвечать, задай мне 3 вопроса, чтобы понять мою задачу лучше.»\n\nТы получишь ответ, который подходит именно тебе, а не «среднему человеку» ✨",
+    "hashtags": [
+      "#секретдня",
+      "#нейросети"
+    ],
+    "image": "posts/ns-2026-09-24-0900.jpg",
+    "image_prompt": "вопросительные знаки из мягких линий, пастельный фон, минимализм, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "soft question marks made of gentle curved lines, pastel background, minimal, no text",
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 20
+  },
+  {
+    "id": "ns-2026-09-24-1400",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: тёплое поздравление\n\nЗабирай 👇\n\n«Напиши короткое тёплое поздравление близкому человеку: искренне, без штампов, 3–4 предложения. Можно добавить личное пожелание.»\n\nЗамени «близкому человеку» на маму, подругу или коллегу — и готово ✨\n\nСохрани 📌",
+    "hashtags": [
+      "#промптдня",
+      "#текст"
+    ],
+    "image": "posts/ns-2026-09-24-1400.jpg",
+    "image_prompt": "открытка с мягкими цветами, пастельные тона, акварель, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "greeting card with soft watercolor flowers, pastel tones, warm light, no text",
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 21
+  },
+  {
+    "id": "ns-2026-09-24-1900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Прикол",
+    "text": "😂 Прикол дня: кот-начальник\n\nПопросили нейросеть: «кот в деловом костюме проводит совещание».\n\nПолучился настоящий босс — смотрит так, будто сейчас спросит отчёт 😅\n\nЧто сгенерировать завтра? Пиши в комментариях 👇",
+    "hashtags": [
+      "#прикол",
+      "#нейросети"
+    ],
+    "image": "posts/ns-2026-09-24-1900.jpg",
+    "image_prompt": "смешной кот в деловом костюме, офис, совещание, гиперреализм, забавный взгляд",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "funny cat in a business suit at a meeting, office, hyperrealistic, comical expression",
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 22
+  },
+  {
+    "id": "wp-2026-09-22-1000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: обложка для поста\n\nЗабирай 👇\n\n«Создай обложку для поста: мягкий градиент от лавандового к персиковому, лёгкие искры, минимализм, без текста.»\n\nОдна формула — сотни обложек: меняй цвета и получай новый стиль ✨\n\nСохрани 📌",
+    "hashtags": [
+      "#промптдня",
+      "#фото"
+    ],
+    "image": "posts/wp-2026-09-22-1000.jpg",
+    "image_prompt": "градиент от лавандового к персиковому, лёгкие искры, минимализм, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "gradient from lavender to peach, light sparkles, minimalist, no text",
+    "published_at": "2026-09-21T19:19:28+03:00",
+    "message_id": 4
+  },
+  {
+    "id": "wp-2026-09-22-1500",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T15:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: тёплое сообщение\n\nЗабирай 👇\n\n«Напиши тёплое короткое сообщение близкому человеку: поддержка и забота, без пафоса, 2–3 предложения.»\n\nЗамени «поддержка» на «благодарность» или «соскучилась» — и готово ✨\n\nСохрани 📌",
+    "hashtags": [
+      "#промптдня",
+      "#текст"
+    ],
+    "image": "posts/wp-2026-09-22-1500.jpg",
+    "image_prompt": "мягкий фон с тёплым светом, силуэт сердца из линий, минимализм, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "soft warm background, heart shape made of thin lines, gentle light, minimal, no text",
+    "published_at": "2026-09-21T19:19:31+03:00",
+    "message_id": 5
+  },
+  {
+    "id": "wp-2026-09-22-2000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T20:00:00+03:00",
+    "rubric": "Разбор",
+    "text": "🔍 Разбор: формула волшебного промпта\n\nРаботает почти всегда:\n\n1️⃣ РОЛЬ — «Ты фотограф/дизайнер/редактор»\n2️⃣ ЗАДАЧА — что сделать\n3️⃣ ДЕТАЛИ — свет, стиль, настроение\n4️⃣ ФОРМАТ — «списком», «одним абзацем», «5 вариантов»\n\n❌ «Сделай красиво»\n✅ «Ты дизайнер. Опиши интерьер: скандинавский стиль, мягкий свет, дерево и плед»\n\nСохрани формулу 📌",
+    "hashtags": [
+      "#разбор",
+      "#нейросети"
+    ],
+    "image": "posts/wp-2026-09-22-2000.jpg",
+    "image_prompt": "четыре блока-конструктора, пастельные цвета, схема без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "four pastel blocks like a constructor scheme, minimal flat design, no text",
+    "published_at": "2026-09-21T19:19:35+03:00",
+    "message_id": 6
+  },
+  {
+    "id": "wp-2026-09-23-1000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-23T10:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: аватарка по описанию\n\nЗабирай 👇\n\n«Создай аватар: девушка с мягкими чертами, пастельные тона, стиль аниме, светлый фон, спокойный взгляд.»\n\nХочешь иначе? Замени «пастельные тона» на «акварель» или «минимализм» ✨\n\nСохрани 📌",
+    "hashtags": [
+      "#промптдня",
+      "#фото"
+    ],
+    "image": "posts/wp-2026-09-23-1000.jpg",
+    "image_prompt": "аватар: девушка славянской внешности, мягкие черты, светлые волосы, пастельные тона, светлый фон, спокойный взгляд",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "avatar portrait of a young russian woman with light brown hair, soft features, pastel colors, light background, calm gaze, realistic",
+    "published_at": "2026-09-21T19:19:37+03:00",
+    "message_id": 7
+  },
+  {
+    "id": "wp-2026-09-23-1500",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-23T15:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: список покупок без головной боли\n\nЗабирай 👇\n\n«Составь список покупок на неделю для семьи из 3 человек: овощи, фрукты, белок, крупы, молочное. Сгруппируй по отделам магазина.»\n\nИдеально вместе с меню на неделю 🛒\n\nСохрани 📌",
+    "hashtags": [
+      "#промптдня",
+      "#дом"
+    ],
+    "image": "posts/wp-2026-09-23-1500.jpg",
+    "image_prompt": "список покупок в блокноте, свежие продукты, тёплый свет, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "shopping list in a notebook, fresh groceries, warm light, no text",
+    "published_at": "2026-09-21T19:19:40+03:00",
+    "message_id": 8
+  },
+  {
+    "id": "wp-2026-09-23-2000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "До/после",
+    "text": "🔁 До/после: один промпт — два результата\n\nБыло: «нарисуй кофе» ☕\nСтало: «нарисуй чашку кофе на деревянном столе у окна: утренний свет, пар, тёплые тона, уютная атмосфера»\n\nРазница — в деталях. Добавь в запрос свет и настроение ✨\n\nЧто заметили? Пиши 👇",
+    "hashtags": [
+      "#доипосле",
+      "#нейросети"
+    ],
+    "image": "posts/wp-2026-09-23-2000.jpg",
+    "image_prompt": "чашка кофе на деревянном столе у окна, утренний свет, пар, уютная атмосфера",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "cup of coffee on a wooden table by the window, morning light, steam, cozy atmosphere",
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 24
+  },
+  {
+    "id": "wp-2026-09-24-1000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: детская комната мечты\n\nЗабирай 👇\n\n«Опиши детскую комнату: светлые стены, деревянная мебель, мягкий ковёр, игрушки на полках, тёплый свет, уютно и безопасно.»\n\nЗамени «детскую» на «кабинет» или «спальню» — получишь новую идею ✨\n\nСохрани 📌",
+    "hashtags": [
+      "#промптдня",
+      "#дом"
+    ],
+    "image": "posts/wp-2026-09-24-1000.jpg",
+    "image_prompt": "детская комната, светлые стены, деревянная мебель, мягкий ковёр, игрушки, тёплый свет",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "kids room, light walls, wooden furniture, soft rug, toys on shelves, warm light, no text",
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 25
+  },
+  {
+    "id": "wp-2026-09-24-1500",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🪄 Промпт дня: план дня без хаоса\n\nЗабирай 👇\n\n«Составь план дня: 3 главных дела, 2 коротких задачи и 1 пауза для отдыха. Учитывай, что утром больше энергии.»\n\nВечером попроси подвести итоги дня ✨\n\nСохрани 📌",
+    "hashtags": [
+      "#промптдня",
+      "#работа"
+    ],
+    "image": "posts/wp-2026-09-24-1500.jpg",
+    "image_prompt": "планер и ручка на столе, мягкий утренний свет, минимализм, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "planner and pen on a desk, soft morning light, minimal, no text",
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 26
+  },
+  {
+    "id": "wp-2026-09-24-2000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт-конструктор",
+    "text": "🧩 Промпт-конструктор: собери свой запрос\n\nВозьми 4 блока и заполни под себя:\n\nРОЛЬ: «Ты ___» (дизайнер, редактор, повар)\nЗАДАЧА: «Сделай ___»\nДЕТАЛИ: «в стиле ___, с ___»\nФОРМАТ: «5 вариантов / списком / коротко»\n\nПример: «Ты дизайнер. Опиши обложку в стиле минимализма, с мягким светом. Дай 3 варианта.»\n\nСобери свой и поделись в комментариях 👇",
+    "hashtags": [
+      "#конструктор",
+      "#нейросети"
+    ],
+    "image": "posts/wp-2026-09-24-2000.jpg",
+    "image_prompt": "четыре блока-пазла, пастельные цвета, минимализм, без текста",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "ok"
+    },
+    "image_prompt_en": "four pastel puzzle blocks, minimal flat design, no text",
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 27
+  },
+  {
+    "id": "ns-2026-09-25-0900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-25T09:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Хочешь из обычного фото сделать арт-портрет? 🖤\n\nЗагрузи фото в нейросеть и отправь промпт:\n\n«Создай сюрреалистичный абстрактный портрет на основе загруженного фото. Чёрный фон, тонкие линии, реалистичные детали, струящиеся волосы. Линейные узоры, высокий контраст, глубина и эмоции. Монохромная палитра с лёгким свечением, мягкий фокус — минималистично и концептуально»\n\nПолучишь стильный портрет — хоть на аватарку 🎨\n\nПопробуй прямо сейчас! ✨",
+    "hashtags": [
+      "#промптдня",
+      "#нейроарт",
+      "#аватарка"
+    ],
+    "image": "media/chatgpt_ai_photo_prompts-ChatGPT_AI_Photo_Prompts_1567.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/MvuYHPUWb6FpK8iSiqHmsjfux63OCU9xHEfeEQYPzbcorMjVfKpOtt6j4J9T9U4Y6y1l4ong2zE-ftFhnYeyiRvEYkZPt39ZkKf7pVUdGT8eHa1fvLEYXyqHhhkDfqy5G3zb-pJD5RTBRju4m_IP3qZTG3rSh-66HCD5TlgDoAGSmThvGTtyB7vVZ2sQ4rBs8sv4St8yEoAmqxmsxkvy0JO6wr8p2bizMHjKWsang1o8kl2avJKYxvMqz4k91hqLM0mj2Mi60uceJxuHO-P7D92bFN5OyzkyAA7y0c9Kv9StDzT8dn3dhAIJIRsfYMwUCn3A6M-KCbfIC69svtiapQ.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "chatgpt_ai_photo_prompts",
+    "published_at": "2026-09-22T07:41:20+03:00",
+    "message_id": 8
+  },
+  {
+    "id": "ns-2026-09-25-1400",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-25T14:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Хочешь шикарный осенний портрет без фотосессии? 🍂 Загрузите своё фото в нейросеть и вставьте промпт:\n\n«Создай портрет, не меняя черты лица. Ультрареалистичный лайфстайл-снимок. Длинные волосы развеваются на ветру, прядь через лицо. Золотые минималистичные серьги. Макияж безупречный, губы оттенка пыльная роза. Чёрная майка и свободная стильная куртка из тёмно-коричневой кожи с высоким воротником-стойкой. Нюдовый маникюр, квадратная форма. Девушка поправляет воротник руками. Стоит возле чёрного автомобиля, по нему стекают капли дождя, прилипшие осенние листья. Осень, ракурс чуть сбоку сверху вниз. Высокая детализация кожи.»\n\nПолучите атмосферный портрет с осенней романтикой 🍁\n\nЗагрузите фото → вставьте промпт → готово! 📸",
+    "hashtags": [
+      "#осеннийпортрет",
+      "#промптдня",
+      "#лайфхак"
+    ],
+    "image": "media/aigenschool-AIgenschool_596.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/N2TDcsXd-Z0O_yCvPAVK-dxMidm1hYVqsMrLgBcbeGE1D1jY45c4QMzZg66BM2JZgYKsWsoHjq1zj3q0gH7pFRGb5y5tZHT9CwDaSpvudr8738m044SeYVz1Gq3kXFkb47_xcpB6IivjWr594NXXpyqenXy4oaRzjzk5NEcVssWOtAeRYZXgmMJyAEPrnO0y_SpVAScmd4emsXJyc2eN6vPvV0t_ukibAHsTxrmZCIA3I9kmNKCW5w5IBMH7Zw_yYbirjCeGVEUanTXgGJ1MxdY-PwbM6jBzLgPXok62TPOmLAY7w1YNBPrQiScIPqOgV0rFoLZBSt2uEQY_dcowYA.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "aigenschool",
+    "published_at": "2026-09-22T07:41:23+03:00",
+    "message_id": 9
+  },
+  {
+    "id": "ns-2026-09-25-1900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-25T19:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Девочки, осень — самое время для уютной аватарки 🍂 Попросите нейросеть нарисовать милую картинку — и вот у вас готовая иллюстрация для сторис или поста.\n\n«Нарисуй девушку в уютном свитере в объёмном кресле у панорамного окна, на ногах тёплый плед, в руках кружка и плитка шоколада, рядом свернулся рыжий кот, на столике зажжённая свеча и тыквы, за окном золотая осень, стиль мультяшной анимации, тёплые осенние цвета, мягкое освещение»\n\nПолучите очаровательную иллюстрацию — будто кадр из доброго мультфильма 🧡\n\nСкопируйте промпт и отправьте в любую нейросеть для генерации картинок!",
+    "hashtags": [
+      "#нейроарт",
+      "#уютнаяосень",
+      "#промптдня"
+    ],
+    "image": "media/promtyi-promtyi_2498.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/GbGAkDpBbRSkqI5WQ-edHf28Ht9F2HCaeRcITzf9QuwkAIYw-h5M-cISi42CiCwdDfp6k3RF2r64YZhMJ1NuU_2IaKMkunz6Mid_Ps773hPzE8h3NxOQx1dCa7Xf5lNtiv-rJWIJpgg6_owaUv5i68aP_OzZKsZ9vtuDIu1Z_JK2y8wTGtEvSTR1bdR5XlIcwrnh7T1z-zUNtb6WrB7xUOCA49dSGAiX9r3VMT011Q4ra_mo-I_ayTjSlZZDWollap5zi_LkKaLsXK2ScyCZ0RVg58W8AsN8WMNw6Kc3Y5ztvudfmwHyu_myog-T5TnE2ff5ptsop6P5s_cYWxuKjw.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "promtyi",
+    "published_at": "2026-09-22T07:41:26+03:00",
+    "message_id": 10
+  },
+  {
+    "id": "wp-2026-09-25-1000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-25T10:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Не можете выбрать из десятка вариантов? 🤯\n\nНейросеть последовательно отсеет лишнее — и оставит лучшее.\n\n«Мне нужно выбрать [что выбираете]. Варианты: [перечислите]. Отсеивай их по очереди по моим условиям: [условия]. На каждом шаге объясняй, почему вариант отпал. В конце оставь 2–3 лучших и сравни их по моим главным критериям»\n\nПолучите прозрачный разбор: почему одни варианты отпали, а другие прошли фильтр 🔍\n\nПодставьте свой выбор и условия — и решение найдётся само! ✨",
+    "hashtags": [
+      "#выбор",
+      "#промптдня",
+      "#нейросеть"
+    ],
+    "image": "",
+    "source_image": "//telegram.org/img/emoji/40/F09F93A4.png",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "ai2smm",
+    "published_at": "2026-09-22T07:41:29+03:00",
+    "message_id": 9
+  },
+  {
+    "id": "wp-2026-09-25-1500",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-25T15:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Студийный деловой портрет из селфи 📸\n\nНужен стильный деловой портрет, а фотосессии нет? Нейросеть превратит ваше фото в журнальную съёмку.\n\n«Строго сохранить внешность 1:1 — лицо, кожу, форму глаз, пропорции, цвет волос и возраст без изменений. Без ретуши. Фотореалистичный студийный портрет в эстетике минималистичной роскоши. Светло-бежевый оверсайз-костюм, белая основа, тонкие золотые украшения. Чистый фон в тёплых бежевых тонах. Стоит прямо, рука в кармане, уверенный взгляд в камеру. Мягкие волосы с объёмом. Мягкое студийное освещение, реалистичные тени. Кремовые тона, эстетика тихой роскоши, детализированное лицо»\n\nПолучите портрет как из глянца — деловой и при этом живой 👔✨\n\nЗагрузите своё фото в нейросеть с режимом сохранения лица, вставьте промпт — готово!",
+    "hashtags": [
+      "#деловойпортрет",
+      "#нейросеть",
+      "#промпт"
+    ],
+    "image": "",
+    "source_image": "https://cdn4.telesco.pe/file/SR8jcgS1Kb2wlLAWnqEVqRH2e-1MSgo-19gJMkS-JwpGmwltlXM1UxHb7790itD4PPHtDjv0KWbSv7NqHwOt0lCU4oQv384em9Z4LgZMGs2C4ziPs5WtIf4L8FY_zo1IaWl8C5UdQax4KcwlY35X22oHWTau_uPDowCjHUtPGtHVbvw4rk0eJSEDoYt5NRNGr75VcGvcOGCvgtBeIJKtvjj4dv_TNfiaJmczCMFZ4ISOJGsOKbgHRGANSXuZGi5l-b78VqLA-puWAGrKxjo46ZHmz1jf2NhmA9sWnGodsmdt6OcMAVHreol1lwPUwJR0RnlZeqDKQgoQnjmvlIlB-A.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "aigenschool",
+    "published_at": "2026-09-22T07:41:32+03:00",
+    "message_id": 10
+  },
+  {
+    "id": "wp-2026-09-25-2000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-25T20:00:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "📸 Преврати обычное фото в атмосферный чёрно-белый портрет — один промпт и готово.\n\nЗагрузи фото в нейросеть и вставь:\n\n«Преврати фото в чёрно-белый арт-портрет: тот же человек в винтажном кресле-качалке, полулежа, одна рука с открытой книгой, взгляд в камеру — задумчивый и чуть дерзкий. Свободная белая рубашка, светлые брюки, на поясе бант в черно-белую клетку. Боковой мягкий свет, глубокие тени, высокий контраст. Минималистичный фон. Сохрани лицо, пропорции и возраст как в оригинале. Без цвета и эффектов рисунка.»\n\nПолучишь кинематографичный портрет с объёмным светом — как обложка арт-журнала 🖤\n\nПопробуй со своим фото прямо сейчас 👇",
+    "hashtags": [
+      "#промптдня",
+      "#артпортрет",
+      "#нейросеть"
+    ],
+    "image": "media/chatgpt_ai_photo_prompts-ChatGPT_AI_Photo_Prompts_1566.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/IMfOtZKpoZgCQZE_oyUwMAVQPiaM_C-dW8W_A67Qi8WiTceFAz8sj5VScGIpN12NSQ4bbAFS-5tZ7Mx4nN6nKINa7ip7eFKUO6gn13Jo9s7k8NFyOKZV4VSNd_mOzMFOk9PBoMH9vj240aqIyqO0uZIzGVBk3FQULXa2GYjAJ4K9CD6vfTRnX80WBdsDkosuD_yyflZV81p35bgC8zLhp9eE9GuDpjhCKkqDqewzkHu3Aa2Z4ySGPBLD08ClJh2F0l902AE0thlymA2njXfWAhQN7s7oeunY3QlB2BrWTU2H8YJ0c7qgeyeKBB4Hu1Cm4PnTGxO2JfXnKULg8D7NRg.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "chatgpt_ai_photo_prompts",
+    "published_at": "2026-09-22T07:41:35+03:00",
+    "message_id": 11
+  },
+  {
+    "id": "ns-2026-09-26-0900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Просите нейросеть о чём-то — получаете простыню на три экрана? 😩\n\nВсё решается одной фразой! В конец промпта добавьте: «Дай ответ в формате…» — и укажите нужный 🎯\n\n📋 «Дай ответ в формате \"ответ в одном предложении\"» — самая суть, коротко и ясно\n📄 «Дай ответ в формате \"обзор на одну страницу\"» — всё главное компактно\n💡 «Дай ответ в формате \"тезис — объяснение — пример\"» — каждая мысль с примером\n📑 «Дай ответ в формате \"заголовки с готовыми выводами\"» — пробежали глазами и поняли-суть\n\nМожно комбинировать: «Добавь в ответ формат \"десять фрагментов по тридцать слов\"» — разобьёт текст для карточек и сторис ✨\n\nВозьмите свой обычный запрос к ИИ и добавьте формат ответа — увидите разницу!",
+    "hashtags": [
+      "#нейросети",
+      "#промпт",
+      "#лайфхак"
+    ],
+    "image": "",
+    "source_image": "//telegram.org/img/emoji/40/F09F93A5.png",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "ai2smm",
+    "_sent": true,
+    "_approval_message_id": 2864,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 23
+  },
+  {
+    "id": "wp-2026-09-26-1000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Хочешь роскошное фото в ресторане, не выходя из дома? 🍷 Нейросеть превратит ваше селфи в атмосферный вечерний портрет!\n\n«Создай портрет, не меняя черты лица. Женщина в вечернем образе: макияж с красными матовыми губами, загорелая кожа, нежная улыбка. Гладкие длинные волосы. Тёмно-коричневое обтягивающее платье с горлом. Молочный маникюр, чёрные серьги-клеверы. Придерживает бокал на столе. Интерьер ресторана: стены из светлого песчаника, белоснежная скатерть, приборы. Тёплый свет сверху, мягкие тени, полумрак. Спонтанное фото, эстетика Instagram»\n\nПолучите портрет за столиком с бокалом — как с настоящей фотосессии ✨\n\nЗагрузите своё фото в нейросеть для картинок, вставьте промпт и нажмите «Создать» 📸",
+    "hashtags": [
+      "#промптдня",
+      "#ресторанфото",
+      "#нейросеть"
+    ],
+    "image": "",
+    "source_image": "https://cdn4.telesco.pe/file/lFtlImQeR35CafOdPcISHeqJtRcp8B4C5JLSkBqqxqhx1O0UTN3nLn3S-NsPqZlS8hjZOl0XP7dObY-ekAScay1A-pZJWpbU5bfv4aLAICkz-f9dR6RXTK8Ci7usGk0pC33yS4CzZIH8ij2H7Oz1h15OXOsuY8Cyl3leM07S-_PD1YNfOLB76lU60o2c2-XyihatKzHLPlW7MwnrxOCAtpXosvmnE41Cp5wMhxeLe9YSAhLGz9mXrX4UZkPN01e8d9o-IL51U04KX6tgelkI64FRl8T1Hn2kBukieIo9ga4ZJ5hxxAAXerL_ayZTgiTJsJ-CxdafANw5SYcqzOilig.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "aigenschool",
+    "_sent": true,
+    "_approval_message_id": 2865,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 28
+  },
+  {
+    "id": "wp-2026-09-26-2000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Хотите иллюстрацию про зависимость от телефона — и с юмором? 📱 Сгенерируйте такую:\n\n«Сюрреалистичная цифровая иллюстрация: женщина спит на гигантском смартфоне-кровати. Экран — матрас с крупными яркими иконками приложений. Она под белым одеялом, в руках меньший телефон. Рядом тумбочки с тёплыми лампами, книги, растения, гаджеты, вещи на полу. Уютно, но символично — слияние технологий и человеческой близости. Кинематографичный свет, гиперреалистичный 3D, высокая детализация, яркие цвета»\n\nПолучится атмосферная картинка для поста или обложки про нашу любовь к смартфонам 😴✨\n\nСкопируйте промпт и отправьте в нейросеть для картинок!",
+    "hashtags": [
+      "#промптДляКартинки",
+      "#нейроарт",
+      "#зависимостьОтТелефона"
+    ],
+    "image": "media/chatgpt_ai_photo_prompts-ChatGPT_AI_Photo_Prompts_1565.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/lva_UwQf4SoC32lz1Td0ZLicYTWNEq5jcPXUFAIJJkirBEm7qmiU2EUf02331zk6X_gMR_fxrQN3gu-MRgENukznJl0Z5PqAeiCQWXccv-53jlvXcHOsZatikMJkhMDrwR0fPGuUicJ40LMKog9OxxNpH49XKsTA7z29pw1bJzS70PMEOCB0lzti196WThNCtr7Xc297-rPfEqKAPTp9y6HiQHOzABxvLB6fHiw35PWwxcl3hzvB8ecOudb2s_STNGEL0a_ABwfdxwY4mPiBMwirMjSnWRnrFQpfGzj2rbtoSkFPrnVZH6d6J-sAFSRSchP2hlZtpkWqmOSs8t3XZw.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "chatgpt_ai_photo_prompts",
+    "_sent": true,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 29
+  },
+  {
+    "id": "wp-2026-09-27-1000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Хочешь деловое фото как из модной студии — не выходя из дома? 📸\n\nЗагружаешь своё фото в нейросеть и вставляешь промпт:\n\n«Строго сохранить внешний вид 1:1 — лицо, текстуру кожи, форму глаз, пропорции, цвет волос и возраст без изменений. Без ретуши. Фотореалистичный студийный портрет женщины в эстетике минималистичной роскоши. На ней элегантный светло-бежевый оверсайз-костюм, белая майка снизу, лёгкие золотые украшения. Чистый фон в тёплых бежевых тонах. Стоит прямо, одна рука в кармане, спокойное уверенное выражение, смотрит в камеру. Мягкие распущенные волосы с естественным объёмом. Мягкое рассеянное студийное освещение, реалистичные тени, малая глубина резкости. Атмосфера тихой роскоши, кремовые тона, ультра-детализированное лицо, формат 4:5»\n\nПолучишь — роскошный портрет как с обложки ✨\n\n📌 Скопируй промпт, загрузи своё фото — и наслаждайся!",
+    "hashtags": [
+      "#деловоефото",
+      "#студийныйпортрет",
+      "#промптдня"
+    ],
+    "image": "media/aigenschool-AIgenschool_595.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/Cn2Z3tFRrijIMTExJDM10FDRH5f7PHL7wp5RRsXPXaLcwAl6IGhgDNusSrLUVmPtjTr-0UP04SnZY7Rgk01PktyyGp-jRa2HAnKwuNrhRm8dhccn3eJWbt1BIzs_pUp3DOQIGFP-p2gwEORbKNNw-Tk2QMN75RKNqrAU56eEC2RgFgaIw3Z8_ImNiGutI3rrpgwz_7r6CXy6jtr1xRFQGgHwFS9qY-rUcmi1fiKSKCFByQFAK9ORQEA4BjFmGW4qsTyPE40aCJnX5NHkM8KAaK-Di8nTTNPBMHHujI51wscZTyTACiEx2Bxsj0r_Yv-rm3d1vJ8ECzH_vsIbyYtnaw.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "aigenschool",
+    "_sent": true,
+    "_approval_message_id": 2866,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 30
+  },
+  {
+    "id": "ns-2026-09-26-1400",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Мечтаете успеть за год то, на что обычно уходят годы? 🚀\n\nСпросите нейросеть — она составит конкретный план без воды и мотивации.\n\nВот промпт:\n\n«Ты — стратег эффективного использования времени. Я хочу за 1 год добиться того, на что у людей обычно уходит 10 лет. Опираясь на мою цель: [ваша цель], составь практичный план, используя: быстрые пути, инструменты, делегирование, автоматизацию и ИИ. Будь реалистичен. Без мотивации и теории. Только действия, реально экономящие время.»\n\nПолучите пошаговый план — что делегировать, что автоматизировать, где сэкономить время 🎯\n\nВпишите свою цель и отправьте нейросети прямо сейчас! 👇",
+    "hashtags": [
+      "#нейросекреты",
+      "#промптдня",
+      "#таймменеджмент"
+    ],
+    "image": "media/gpt_chatgpt_ai_tools-GPT_ChatGPT_AI_Tools_998.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/rpwhbPNBPBxix7Ga5pPx8f4yhSLHouINpecaeBgS7mTViSLx5yj3feHq8M51mLph_fCHmUYqlB9Z6u_EpP0PD6v7pl8l0mANQunp9wtCRqJFeArqVh4h1x5BwFyMXN7fQ5gOkf7fy3PwMGd7HzRfEfE17uWtYQZ-okKzIIucaxjZXUlDlQ2XmiSy8FvSR_JE944_wzj8b2auJHMBU5bD8P4LQ-MlK519JmW2CFjH_ochSAw7eCKXs-ikRoXb0NwyGFF7jD55ssQmgoKClka6nsmQQCjdcBVRSyfWMQLUQz9KZXkcXTq4vQyETlUKDoPoZiG91nyg8iPFrUr-aOrprQ.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "gpt_chatgpt_ai_tools",
+    "_sent": true,
+    "_approval_message_id": 2867,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 24
+  },
+  {
+    "id": "wp-2026-09-27-2000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Хотите роскошное фото на день рождения без фотосессии? 🖤 Загрузите своё фото и отправьте нейросети этот промпт:\n\n«Используй моё фото как референс внешности, сохрани лицо, черты, пропорции, волосы по плечи. Вертикальное фото 9:16: я внутри чёрного глянцевого авто, вид через боковое стекло. Чёрный элегантный образ, тёмные очки. Камера снаружи. Через окно на переднем плане — две чёрные туфли на каблуке подошвами к камере, на подошвах белые \"3\" и \"1\". На стекле надпись: \"С днём рождения меня\". Чёрно-белая коррекция, глубокий контраст, ночной город, боке, люксовая эстетика, киносвет»\n\nПолучите кадр как с обложки журнала 📸 Без студии и фотографа!\n\nСкопируйте промпт и подставьте своё фото ✨",
+    "hashtags": [
+      "#промптдня",
+      "#luxuryфото",
+      "#нейрообраз"
+    ],
+    "image": "media/promtyi-promtyi_2499.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/oqowmieeJITGzljj2qgoXNZJxyN6c3IVZXgEijpRPN8tXF5U2Wym0BZA2tp-Ees_w8tgHhnMel0A9EV5tY8npVSjjrWZKDrN8Nyu7Q5X74Lho37rmKE9FRpceAzwZgWMbO05M1PL786ZJrcKptzHdDGmngFRuCCzdAdJ-U35Pnd_c4I1shB15TqzV_c8wFzC6-igTV-UPcJ-JyWJBwjCEftMDzhzv8IEe4w23u4deErcNq-SdTd4iFZKUUli3g2Onuq6cCD-ukyh5rVKalhsDMEBl_B3ppIEAJHvKhPIdLn-t_bdE2wnh7lmNI1Pve_5EJJ3VxHnkZib0nCKsClSIw.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "promtyi",
+    "_sent": true,
+    "_approval_message_id": 2868,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 31
+  },
+  {
+    "id": "wp-2026-09-28-2000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Мечтаете о роскошном портрете, но без эффекта «куклы»? 🐍\n\nЗагрузите своё фото в нейросеть и вставьте промпт:\n\n«Строго сохрани внешность и реальный возраст женщины с фото. Не меняй черты лица, цвет кожи и волос. Не омолаживай, не делай кукольное лицо. Крупный портрет статусной женщины в восточном стиле, лицо по центру, взгляд уверенный. Белый шёлковый палантин обрамляет лицо. Золотые серьги, тонкое украшение на шее. Длинная белая перчатка, рука у подбородка. Светло-бежевая змея спокойно обвивает кисть, проходит диагонально перед лицом. Фон — размытые дюны, тёплый свет золотого часа. Фотореализм, fashion-съёмка»\n\nПолучите портрет — ваше лицо, но в дорогом образе ✨\n\nЗагрузите фото → вставьте промпт → наслаждайтесь! 📸",
+    "hashtags": [
+      "#портретСнейросетью",
+      "#восточныйСтиль",
+      "#промптДня"
+    ],
+    "image": "media/fotoredaktor-fotoredaktor_6441.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/PPvTtj0FWwHi7-eAJMveJtDdhvRHAg-MAJ2PKL_5QcGkkjCSyqlFkiXuqjuriLYNIH8PrW4jLQgiwiZ23xGYGtqSt3dzMU-ufVrGzcLYnOWlIuvFKw9V3erLPD5EgTee62YG2GLp5RDASBmqxd4msidvpFPrvAY4FCsPXZYLn2Xf6NFDqee_hVQiep7K4l8fSu63rHXSdkJxSRZuzcT-5KZdr9evSBIlLBviQ2p3gR1KrAnevMD2GIi1I2faHqBqxWmsPjh97Tk4M2V-pzix5vlBxkYy9pmWhfRiBrpbsTcZySXA62Q4U78PFSIC3ZOkSrviP4IHM-vkzYLcibpB7A.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "fotoredaktor",
+    "_sent": true,
+    "_approval_message_id": 2869,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 32
+  },
+  {
+    "id": "wp-2026-09-30-1000",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Хотите превратить обычное фото в кадр из фэнтези-фильма? 🧙‍♀️ Загружайте своё фото в нейросеть и вставляйте этот промпт:\n\n«Используй загруженное изображение как основу. Преврати его в сцену из фэнтези-фильма. Герой стоит перед древними каменными вратами в мистическом лесу, на потёртых стенах вырезаны светящиеся руны. Добавь мягкий туман, магическое освещение и широкую кинематографическую композицию, передающую величие и тайну фэнтезийного мира»\n\nПолучите атмосферный кадр — туман, руны, мистический лес ✨ Как из настоящего кино!\n\nЗагрузите своё фото и отправьте промпт прямо сейчас 🌲",
+    "hashtags": [
+      "#фэнтези",
+      "#промптдня"
+    ],
+    "image": "media/chatgpt_ai_photo_prompts-ChatGPT_AI_Photo_Prompts_1564.jpg",
+    "source_image": "https://cdn4.telesco.pe/file/o1Hw8bJX2KVF7oF6t3l7y_DEwA2IC4XB0xbS21JHl4JFUXurKu9gJi1rw3on6A1C8etnS6pmtTPH9oirRnKevXjVWejZ1p58C5xLqajm1xDKaFDpGHCwgYi1B3sIBOiQdBighJIkuEEHAHYWnEG9LvOCFkzJH1-s5r20tt1wYiU0lLUINSJTQC-QYu1ZQ_sg7bhB2M6joOA3-zkhM3TJH-vxGmQB8SrF9Dpbuck1JB4KEHFQ0FIASFD_d2YHzbGRaJdXztN79lF1_fOt03UM5iaN7Pz7xgv-0sTlIxY7HXJCCCIHWmXwMcMGG1hjeBXZD1H-M9qSxmYJKncOcJha7w.jpg",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "chatgpt_ai_photo_prompts",
+    "_sent": true,
+    "_approval_message_id": 2870,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 33
+  },
+  {
+    "id": "ns-2026-09-27-0900",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-22T10:47:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "Запутались в карьере? 🤔 Нейросеть — отличный карьерный советчик, если спросить правильно.\n\nПланируете смену сферы? Скопируйте:\n\n«Я хочу перейти из [текущая роль] в [целевая роль]. Составь план перехода: переносимые навыки, что изучить, какие проекты сделать, реалистичные сроки»\n\nПолучите пошаговый план с учётом вашего опыта — без коучей и долгих раздумий 💡\n\nХотите понять, чего не хватает для должности мечты?\n\n«Сравни мои навыки с требованиями роли [должность]. Найди пробелы и составь персональный план обучения. Мои навыки: [вставьте]»\n\nПодставьте свои данные и отправьте нейросети — план готов! 🚀\n\n#карьера #нейросети #лайфхак",
+    "hashtags": [
+      "#карьера",
+      "#нейросети",
+      "#лайфхак"
+    ],
+    "image": "",
+    "source_image": "//telegram.org/img/emoji/40/F09F9A80.png",
+    "status": "published",
+    "check": {
+      "evergreen": true,
+      "editor": "conveyor"
+    },
+    "origin": "aiindi",
+    "_sent": true,
+    "_approval_message_id": 2871,
+    "published_at": "2026-09-22T10:47:25+03:00",
+    "message_id": 25
+  },
+  {
+    "id": "an-2026-09-22-0828",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T08:28:00+03:00",
+    "rubric": "Новость",
+    "text": "⚖️ Британская Колумбия подала иск на OpenAI\n\nПровинция Британская Колумбия (Канада) подала в суд на OpenAI. Причина — компания не предупредила власти перед стрельбой в городе Тумблер-Ридж. Истцы считают, что ИИ должен был заранее подать сигнал о готовящемся преступлении.\n\n🚨 Дело может создать прецедент: обязаны ли ИИ-компании сообщать властям об угрозах, которые «видит» алгоритм?\n\n📌 Что это значит: AI-сервисы могут заставить следить за диалогами пользователей и докладывать об опасности.\n\n#новости_ии #openai",
+    "hashtags": [
+      "#новости_ии",
+      "#openai"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 2
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T08:28:09+03:00",
+    "message_id": 2
+  },
+  {
+    "id": "an-2026-09-22-0829",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T08:29:00+03:00",
+    "rubric": "Новость",
+    "text": "🌍 OpenAI предложил мировые стандарты для ИИ\n\nOpenAI выступил за создание глобальных стандартов разработки frontier-ИИ — самых мощных моделей нового поколения.\n\nКомпания считает, что без единых международный правил страны будут регулировать ИИ по-разному, что замедлит безопасное развитие.\n\nЦель — общие требования к тестированию и безопасности перед выпуском мощных моделей.\n\n💡 Что это значит: в перспективе может появиться международный «техпаспорт» для сильного ИИ — как для авиации или атомной энергетики.",
+    "hashtags": [
+      "#новости_ии",
+      "#регулирование_ии"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 2
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T08:29:15+03:00",
+    "message_id": 3
+  },
+  {
+    "id": "an-2026-09-22-0847",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T08:47:00+03:00",
+    "rubric": "Новость",
+    "text": "🏛️ Британская Колумбия подала в суд на OpenAI\n\n• Провинция Британская Колумбия (Канада) подала иск против OpenAI и лично Сэма Альтмана\n• Дело связано с массовой стрельбой в школе города Тумблер-Ридж\n• Истцы считают, что технологии ИИ сыграли роль в трагедии\n\n💡 Что это значит: ИИ-компании всё чаще отвечают перед судом за последствия своих продуктов — прецеденты могут изменить правила для всей индустрии.",
+    "hashtags": [
+      "#новости_ии",
+      "#OpenAI"
+    ],
+    "image": "posts/an-2026-09-22-0847.jpg",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T08:47:52+03:00",
+    "message_id": 4
+  },
+  {
+    "id": "an-2026-09-22-0852",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T08:52:00+03:00",
+    "rubric": "Новость",
+    "text": "⚖️ Британская Колумбия обвинила OpenAI в школьной стрельбе\n\nПровинция Британская Колумбия присоединилась к правовым действиям против OpenAI, обвиняя компанию в связи со случаем школьной стрельбы.\n\nПретензии строятся на том, что ИИ-продукты OpenAI могли быть использованы при подготовке или совершении трагедии.\n\nЭто не первый подобный иск — количество сторон в деле растёт, и правовое давление на компанию усиливается.\n\nЧто это значит: ИИ-компании всё чаще пытаются сделать юридически ответственными за то, как люди используют их технологии — прецеденты могут изменить правила для всей отрасли.",
+    "hashtags": [
+      "#новости_ии",
+      "#openai"
+    ],
+    "image": "posts/an-2026-09-22-0852.jpg",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T08:52:12+03:00",
+    "message_id": 5
+  },
+  {
+    "id": "an-2026-09-22-0907",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:07:00+03:00",
+    "rubric": "Новость",
+    "text": "👩‍💻 Женщины опережают мужчин в использовании ИИ на работе\n\nИсследование показало: женщины чаще применяют искусственный интеллект в рабочие будни, чем мужчины.\n\nПрослеживается тренд — ИИ-инструменты помогают экономить время и автоматизировать рутину, и женщины активнее включают их в свой рабочий процесс.\n\n📌 Что это значит: стереотип «ИИ — для технарей-мужчин» устарел. Если вы до сих пор не пробовали ИИ-помощников — самое время начать, коллеги уже в деле.",
+    "hashtags": [
+      "#новости_ии",
+      "#ИИ_на_работе"
+    ],
+    "image": "posts/an-2026-09-22-0907.jpg",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_ru_neuro",
+    "published_at": "2026-09-22T09:07:22+03:00",
+    "message_id": 8
+  },
+  {
+    "id": "an-2026-09-22-0908",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:08:00+03:00",
+    "rubric": "Новость",
+    "text": "🤝 Hg и Anthropic заключили стратегическое партнёрство\n\nЕвропейский инвестфонд Hg объявил о стратегической сделке с Anthropic — разработчиком ИИ-модели Claude. Подробности суммы и условий не раскрываются.\n\nHg — крупный фонд, специализирующийся на инвестициях в софтверные и технологические компании. Это очередной шаг Anthropic по расширению круга стратегических партнёров.\n\nЧто это значит: Anthropic укрепляет ресурсы и позиции на рынке ИИ — конкуренция между разработчиками моделей растёт, что в итоге ведёт к лучшим продуктам для пользователей.",
+    "hashtags": [
+      "#новости_ии",
+      "#Anthropic"
+    ],
+    "image": "posts/an-2026-09-22-0908.jpg",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_en_anthropic",
+    "published_at": "2026-09-22T09:08:24+03:00",
+    "message_id": 9
+  },
+  {
+    "id": "an-2026-09-22-0926",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:26:00+03:00",
+    "rubric": "Новость",
+    "text": "🧮 OpenAI собрала совет математиков — 100+ открытий за месяц\n\nOpenAI создала независимый совет из профессиональных математиков для проверки результатов своих ИИ-моделей.\n\nЗа месяц система совершила более 100 фундаментальных математических открытий, подтверждённых экспертами.\n\nКаждое доказательство проходит человеческую верификацию — без неё результат не засчитывается.\n\n💡 Что это значит: ИИ уже не просто генерирует текст, а реально двигает науку — математика первой получила надёжного «коллегу-исследователя».",
+    "hashtags": [
+      "#новости_ии",
+      "#математика"
+    ],
+    "image": "posts/an-2026-09-22-0926.jpg",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_ru_openai",
+    "published_at": "2026-09-22T09:26:13+03:00",
+    "message_id": 10
+  },
+  {
+    "id": "an-2026-09-22-0927",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:27:00+03:00",
+    "rubric": "Новость",
+    "text": "🏛️ Канада подала в суд на OpenAI из-за стрельбы в школе\n\n⚡ Канадская провинция подала иск против OpenAI в связи со стрельбой в школе.\n\n⚡ Продукты компании фигурируют в деле — истцы видят связь между ИИ и инцидентом.\n\n⚡ Дело может стать важным прецедентом ответственности ИИ-компаний за последствия использования их продуктов.\n\n🔍 Что это значит: Исход дела может повлиять на то, насколько строго будут контролировать контент, который генерируют ИИ-сервисы — а значит, и на то, что обычные пользователи смогут спрашивать у ИИ.",
+    "hashtags": [
+      "#новости_ии",
+      "#OpenAI"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_ru_openai",
+    "published_at": "2026-09-22T09:29:45+03:00",
+    "message_id": 11
+  },
+  {
+    "id": "an-2026-09-22-0939",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:39:00+03:00",
+    "rubric": "Новость",
+    "text": "⚡️ Цитаты руководителей OpenAI и Microsoft бьют по их защите авторских прав\n\nНовостные издания утверждают: высказывания топ-менеджеров ИИ-компаний подрывают их позицию в спорах об авторском праве.\n\nOpenAI и Microsoft защищаются от исков за обучение моделей на чужом контенте. Но собственные руководители говорили вещи, которые теперь играют против них.\n\nИздания используют эти цитаты, чтобы доказать: правовая защита ИИ-гигантов шаткая.\n\nЧто это значит: если суд встанет на сторону СМИ, ИИ-компаниям будет сложнее бесплатно использовать чужой контент — а ваши данные станут лучше защищены.",
+    "hashtags": [
+      "#новости_ии",
+      "#авторское_право",
+      "#нейросети"
+    ],
+    "image": "posts/an-2026-09-22-0939.jpg",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T09:39:26+03:00",
+    "message_id": 12
+  },
+  {
+    "id": "an-2026-09-22-0940",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:40:00+03:00",
+    "rubric": "Новость",
+    "text": "🤖 ИИ-модели заставляют казаться слишком человечными?\n\n• The Seattle Times поднимает вопрос: не误导 ли разработчики ИИ, настраивая модели на слишком «человеческое» поведение?\n\n• Модели всё чаще имитируют эмоции, раздумья и уверенность — но это не отражает их реальную природу\n\n• Пользователи автоматически приписывают ИИ качества, которых нет: намерения, сознание, эмпатию\n\nЧто это значит: чем правдоподобнее ИИ «строит из себя человека», тем легче мы ему доверяем — и тем больнее разочарование, когда выясняется, что это иллюзия.\n\n#новости_ии #нейросети",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "deleted_bad",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_en_anthropic",
+    "published_at": "2026-09-22T09:40:28+03:00",
+    "message_id": 13
+  },
+  {
+    "id": "an-2026-09-22-0940",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:40:00+03:00",
+    "rubric": "Новость",
+    "text": "🌍 OpenAI предложил мировые стандарты для frontier-ИИ\n\n• OpenAI призывает к созданию глобальных стандартов разработки передового ИИ.\n• Без единых международных правил развитие ИИ в разных странах идёт хаотично — это риск для всех.\n• Инициатива уже широко обсуждается в индустрии — новость подтверждена из нескольких источников.\n\nЧто это значит: если стандарты появятся, мощные нейросети будут разрабатывать по общим правилам — как в авиации или медицине. Для обычных людей это больше прозрачности и защиты от опасных применений ИИ.\n\n#новости_ии #нейросети",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T09:40:28+03:00",
+    "message_id": 14
+  },
+  {
+    "id": "an-2026-09-22-0945",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:45:00+03:00",
+    "rubric": "Новость",
+    "text": "🧮 OpenAI решил 100+ математических задач и создал консультативную группу\n\n• OpenAI решил более 100 сложных математических задач — серьёзный рубеж для ИИ в точных науках.\n\n• Компания сформировала математический консультативный совет — группу экспертов для развития математических способностей моделей.\n\n• Языковые модели всё лучше справляются с логикой и доказательствами, а не только с генерацией текста.\n\nЧто это значит: ИИ всё ближе к реальной помощи учёным и инженерам — скоро нейросети смогут проверять расчёты и помогать в исследованиях.\n\n#новости_ии #нейросети",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T09:45:55+03:00",
+    "message_id": 17
+  },
+  {
+    "id": "an-2026-09-22-0945",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:45:00+03:00",
+    "rubric": "Новость",
+    "text": "🧮 Нейросеть OpenAI решила 100 математических задач меньше чем за месяц\n\n• OpenAI заявила, что её невыпущенная модель ИИ решила 100 сложных математических задач менее чем за месяц.\n• Модель пока не выпущена публично — название и детали держат в секрете.\n• Информацию подтвердили несколько независимых источников.\n\n💡 Что это значит: нейросети, способные решать сложную математику, могут ускорить научные открытия и инженерные расчёты, а также стать мощным помощником в образовании.",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "posts/an-2026-09-22-0945.jpg",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T09:45:55+03:00",
+    "message_id": 18
+  },
+  {
+    "id": "an-2026-09-22-0953",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:53:00+03:00",
+    "rubric": "Новость",
+    "text": "⚡ Британская Колумбия подала иск на OpenAI из-за стрельбы в школе\n\nПровинция Британская Колумбия (Канада) подала судебный иск против OpenAI.\n\nДело связано с инцидентом стрельбы в школе в городе Tumbler Ridge.\n\nВласти возлагают ответственность на создателя ChatGPT за причастность ИИ к происшествию.\n\n📌 Что это значит: нейросетные компании всё чаще становятся ответчиками в судах за реальный вред — это может привести к жёстким правилам и ограничениям для ИИ-продуктов.",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 5
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T09:53:00+03:00",
+    "message_id": 19
+  },
+  {
+    "id": "an-2026-09-22-0958",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:58:00+03:00",
+    "rubric": "Новость",
+    "text": "🔢 OpenAI: 100+ математических открытий за месяц\n\n• OpenAI создала независимый совет математиков для верификации результатов ИИ в математике.\n• За месяц нейросеть совершила более 100 фундаментальных открытий, подтверждённых экспертами.\n• Независимый совет будет оценивать и удостоверять достоверность каждого найденного решения.\n\nЧто это значит: ИИ превращается в полноценного научного исследователя — нейросети открывают новые математические факты, а люди их проверяют и подтверждают.\n\n#новости_ии #нейросети",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_ru_openai",
+    "published_at": "2026-09-22T09:58:10+03:00",
+    "message_id": 20
+  },
+  {
+    "id": "an-2026-09-22-0959",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T09:59:00+03:00",
+    "rubric": "Новость",
+    "text": "🤝 OpenAI и Anthropic проверяли ИИ друг друга на скрытые опасности\n\nДва главных конкурента на рынке ИИ провели перекрёстную оценку: OpenAI тестировала модели Anthropic, а Anthropic — модели OpenAI.\n\nКомпании искали скрытые риски — опасное поведение, которое ИИ может проявить только при определённых условиях или запросах.\n\nЭто редкий случай, когда соперники добровольно дают доступ к своим моделям друг другу ради общей безопасности.\n\nЧто это значит: крупные игроки признают, что безопасность ИИ важнее конкуренции — технологии будут проверяться строже, и нам всем спокойнее.",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "posts/an-2026-09-22-0959.jpg",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_ru_openai",
+    "published_at": "2026-09-22T09:59:26+03:00",
+    "message_id": 21
+  },
+  {
+    "id": "an-2026-09-22-1003",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T10:03:00+03:00",
+    "rubric": "Новость",
+    "text": "🧮 OpenAI решил 100+ математических задач и создал консультативный совет по математике\n\n• OpenAI решил более 100 математических задач — серьёзный рубеж для ИИ в точных науках.\n• Для развития этого направления компания сформировала математический консультативный совет из профильных экспертов.\n• Совет будет помогать совершенствовать способности моделей к строгим многошаговым рассуждениям.\n\nЧто это значит: ИИ-помощники становятся надёжнее в точных науках — скоро смогут помогать учёным и студентам с реальными исследованиями, а не только с простыми уравнениями.\n\n#новости_ии #нейросети",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "posts/an-2026-09-22-1003.jpg",
+    "source_image": "",
+    "status": "deleted_lowvalue",
+    "check": {
+      "news": true,
+      "confirmed_sources": 5
+    },
+    "origin": "gnews_en_openai",
+    "published_at": "2026-09-22T10:04:14+03:00",
+    "message_id": 22
+  },
+  {
+    "id": "an-2026-09-22-1005",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T10:05:00+03:00",
+    "rubric": "Новость",
+    "text": "⚖️ Подписчики чат-ботов подали иск к OpenAI, Anthropic, Google и SpaceXAI\n\nПользователи ChatGPT и других ИИ-ассистентов подали коллективный иск против четырёх крупнейших компаний.\n\nИстцы утверждают, что корпорации вступили в сговор, чтобы намеренно замедлить развитие ИИ.\n\nСуть претензии: компании якобы координировали действия, сдерживая прогресс и ущемляя подписчиков, которые платят за доступ к сервисам.\n\nЧто это значит: если суд примет дело, ИИ-гигантам придётся доказывать, что они не договаривались тормозить технологии — а это может пролить свет на закулисье индустрии.",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "news": true,
+      "confirmed_sources": 4
+    },
+    "origin": "gnews_ru_openai",
+    "published_at": "2026-09-22T10:05:21+03:00",
+    "message_id": 23
+  },
+  {
+    "id": "an-2026-09-22-1024",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T10:24:00+03:00",
+    "rubric": "Новость",
+    "text": "⚖️ Канада подала иск против OpenAI из-за массовой стрельбы\n\nПровинция Канады подала судебный иск против компании OpenAI. Повод — массовая стрельба в городе Тумблер-Ридж.\n\nИстцы связывают действия стрелка с технологиями, которые предоставляет OpenAI. Иск подан на уровне провинции.\n\nДело уже освещают крупные международные СМИ, включая BBC.\n\nЧто это значит: Юридическое давление на создателей ИИ нарастает. Если суды начнут вставать на сторону истцов в подобных делах, разработчикам нейросетей придётся строить более жёсткие механизмы контроля и ограничения своих моделей.\n\n#новости_ии #для_бизнеса",
+    "hashtags": [
+      "#новости_ии",
+      "#для_бизнеса"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "news": true,
+      "confirmed_sources": 5
+    },
+    "origin": "gnews_en_openai",
+    "_sent": true,
+    "_approval_message_id": 2872
+  },
+  {
+    "id": "an-2026-09-22-1026",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-22T10:26:00+03:00",
+    "rubric": "Новость",
+    "text": "🇨🇦 Канадская провинция подала иск против OpenAI\n\n- Канадская провинция подала в суд на OpenAI в связи со стрельбой в школе города Тумблер-Ридж.\n- Иск связывает продукцию компании с произошедшим инцидентом.\n- Дело может стать важным прецедентом ответственности ИИ-разработчиков.\n\nЧто это значит: Если суд поддержит иск, это создаст прецедент — нейросети будут нести ответственность за контент, который может привести к реальному вреду.",
+    "hashtags": [
+      "#новости_ии",
+      "#нейросети"
+    ],
+    "image": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "news": true,
+      "confirmed_sources": 5
+    },
+    "origin": "gnews_en_openai",
+    "_sent": true,
+    "_approval_message_id": 2873
+  }
+]

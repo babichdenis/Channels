@@ -1,0 +1,138 @@
+{
+  "proxy": "http://127.0.0.1:13128",
+  "bridge": "http://127.0.0.1:3001/v1/chat/completions",
+  "bridge_token": "glm-local",
+  "model": "glm-4.7",
+  "max_age_hours": 6,
+  "rss": [
+    {
+      "name": "openai_blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "lang": "en"
+    },
+    {
+      "name": "anthropic_blog",
+      "url": "https://www.anthropic.com/news/rss.xml",
+      "lang": "en"
+    },
+    {
+      "name": "google_ai",
+      "url": "https://blog.google/technology/ai/rss/",
+      "lang": "en"
+    },
+    {
+      "name": "deepmind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "lang": "en"
+    },
+    {
+      "name": "huggingface",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "lang": "en"
+    },
+    {
+      "name": "the_decoder",
+      "url": "https://the-decoder.com/feed/",
+      "lang": "en"
+    },
+    {
+      "name": "techcrunch_ai",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "lang": "en"
+    },
+    {
+      "name": "ars_ai",
+      "url": "https://arstechnica.com/ai/feed/",
+      "lang": "en"
+    },
+    {
+      "name": "wired_ai",
+      "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+      "lang": "en"
+    },
+    {
+      "name": "mit_tech_review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "lang": "en"
+    },
+    {
+      "name": "ai_news_com",
+      "url": "https://www.artificialintelligence-news.com/feed/",
+      "lang": "en"
+    },
+    {
+      "name": "verge_ai",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "lang": "en"
+    },
+    {
+      "name": "gnews_en_openai",
+      "url": "https://news.google.com/rss/search?q=OpenAI%20when:1d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "name": "gnews_en_anthropic",
+      "url": "https://news.google.com/rss/search?q=Anthropic%20when:1d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "name": "gnews_en_deepmind",
+      "url": "https://news.google.com/rss/search?q=%22Google%20DeepMind%22%20when:1d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "name": "gnews_ru_neuro",
+      "url": "https://news.google.com/rss/search?q=%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D1%81%D0%B5%D1%82%D0%B8%20when:1d&hl=ru&gl=RU&ceid=RU:ru",
+      "lang": "ru"
+    },
+    {
+      "name": "gnews_ru_openai",
+      "url": "https://news.google.com/rss/search?q=OpenAI%20when:1d&hl=ru&gl=RU&ceid=RU:ru",
+      "lang": "ru"
+    }
+  ],
+  "tg": [
+    {
+      "name": "data_secrets",
+      "lang": "ru",
+      "weight": 3
+    },
+    {
+      "name": "ai_newz",
+      "lang": "ru",
+      "weight": 3
+    },
+    {
+      "name": "seeallochnaya",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "neurohive",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "gptmainnews",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "technomedia",
+      "lang": "ru",
+      "weight": 1
+    }
+  ],
+  "providers": [
+    {
+      "url": "http://127.0.0.1:3000/v1/chat/completions",
+      "token": "deeprouter-local",
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "url": "http://127.0.0.1:3001/v1/chat/completions",
+      "token": "glm-local",
+      "model": "glm-5.3"
+    }
+  ]
+}

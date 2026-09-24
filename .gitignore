@@ -1,0 +1,20 @@
+# секреты
+.env
+*.env
+code.json
+
+# рантайм-данные и кэш
+*.db
+*.db-journal
+approval_state.json
+queue.json.tmp
+queue.json.lock
+scan_bad.log
+*.log
+reports/
+media/
+posts/
+__pycache__/
+*.pyc
+.DS_Store
+nul

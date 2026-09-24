@@ -1,0 +1,208 @@
+{
+  "proxy": "http://127.0.0.1:13128",
+  "bridge": "http://127.0.0.1:3001/v1/chat/completions",
+  "bridge_token": "glm-local",
+  "model": "glm-4.7",
+  "sources": [
+    {
+      "name": "github_typescript",
+      "kind": "github",
+      "url": "https://github.com/trending/typescript?since=daily",
+      "lang": "en",
+      "topic": "tools",
+      "weight": 2
+    },
+    {
+      "name": "github_python",
+      "kind": "github",
+      "url": "https://github.com/trending/python?since=daily",
+      "lang": "en",
+      "topic": "tools",
+      "weight": 2
+    },
+    {
+      "name": "github_week",
+      "kind": "github",
+      "url": "https://github.com/trending?since=weekly",
+      "lang": "en",
+      "topic": "tools",
+      "weight": 2
+    },
+    {
+      "name": "hacker_news",
+      "kind": "hn",
+      "lang": "en",
+      "topic": "tools",
+      "weight": 2
+    },
+    {
+      "name": "github_trending",
+      "kind": "github",
+      "lang": "en",
+      "topic": "tools",
+      "weight": 3
+    },
+    {
+      "name": "iintelligentsia",
+      "lang": "ru",
+      "topic": "tools",
+      "weight": 3
+    },
+    {
+      "name": "ai2smm",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 3
+    },
+    {
+      "name": "dailyprompts",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 3
+    },
+    {
+      "name": "prompter_ru",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 3
+    },
+    {
+      "name": "promptsul",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "n2d2ai",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "belyakai",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "unisetai",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "promtyi",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "aigenschool",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 1
+    },
+    {
+      "name": "misssvikkitut",
+      "lang": "ru",
+      "topic": "lifestyle",
+      "weight": 3
+    },
+    {
+      "name": "estetica_home",
+      "lang": "ru",
+      "topic": "home",
+      "weight": 2
+    },
+    {
+      "name": "merryhomestory",
+      "lang": "ru",
+      "topic": "home",
+      "weight": 2
+    },
+    {
+      "name": "stories_png_7",
+      "lang": "ru",
+      "topic": "smm",
+      "weight": 1
+    },
+    {
+      "name": "fotoredaktor",
+      "lang": "ru",
+      "topic": "photo",
+      "weight": 1
+    },
+    {
+      "name": "planetaneiroseti23",
+      "lang": "ru",
+      "topic": "ai",
+      "weight": 1
+    },
+    {
+      "name": "reels_meiker",
+      "lang": "ru",
+      "topic": "ai",
+      "weight": 1
+    },
+    {
+      "name": "aiindi",
+      "lang": "en",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "gpt_chatgpt_ai_tools",
+      "lang": "en",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "photifyai",
+      "lang": "en",
+      "topic": "photo",
+      "weight": 2
+    },
+    {
+      "name": "chatgpt_ai_photo_prompts",
+      "lang": "en",
+      "topic": "photo",
+      "weight": 2
+    },
+    {
+      "name": "Shutter",
+      "lang": "en",
+      "topic": "photo",
+      "weight": 1
+    },
+    {
+      "name": "Curiousprogrammer",
+      "lang": "en",
+      "topic": "ai",
+      "weight": 1
+    }
+  ],
+  "channels": {
+    "neuro_secrets": {
+      "title": "Нейро-секретики",
+      "tone": "тёплый, как подруга, без техножаргона",
+      "audience": "женщины 25–45, хотят простые лайфхаки с нейросетями"
+    },
+    "wizard_prompts": {
+      "title": "Волшебные промпты",
+      "tone": "практичный, бери и делай, структура и пример",
+      "audience": "те, кто уже пробует ИИ и ищет готовые промпты"
+    }
+  },
+  "providers": [
+    {
+      "url": "http://127.0.0.1:3000/v1/chat/completions",
+      "token": "deeprouter-local",
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "url": "http://127.0.0.1:3001/v1/chat/completions",
+      "token": "glm-local",
+      "model": "glm-5.3"
+    }
+  ]
+}
