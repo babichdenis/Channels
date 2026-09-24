@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.denis.approval-bot</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/Denis/channels/approval_bot.py</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict><key>HTTPS_PROXY</key><string>http://127.0.0.1:3128</string></dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>/tmp/approval-bot.log</string>
+  <key>StandardErrorPath</key><string>/tmp/approval-bot.err</string>
+</dict>
+</plist>

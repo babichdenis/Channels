@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.denis.analytics-weekly</string>
+  <key>ProgramArguments</key><array><string>/bin/bash</string><string>-lc</string><string>cd /Users/Denis/channels &amp;&amp; /usr/bin/python3 analytics.py --report &amp;&amp; /usr/bin/python3 analytics.py --rules &amp;&amp; /usr/bin/python3 competitors.py --report</string></array>
+  <key>StartCalendarInterval</key><dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>10</integer><key>Minute</key><integer>0</integer></dict>
+  <key>StandardOutPath</key><string>/tmp/analytics_weekly.out</string>
+  <key>StandardErrorPath</key><string>/tmp/analytics_weekly.err</string>
+</dict></plist>
