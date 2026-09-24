@@ -121,6 +121,21 @@
       "name": "technomedia",
       "lang": "ru",
       "weight": 1
+    },
+    {
+      "name": "promtyi",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "vistehno",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "neural",
+      "lang": "ru",
+      "weight": 2
     }
   ],
   "providers": [

@@ -179,6 +179,18 @@
       "lang": "en",
       "topic": "ai",
       "weight": 1
+    },
+    {
+      "name": "vistehno",
+      "lang": "ru",
+      "topic": "mixed",
+      "weight": 2
+    },
+    {
+      "name": "neural",
+      "lang": "ru",
+      "topic": "mixed",
+      "weight": 2
     }
   ],
   "channels": {

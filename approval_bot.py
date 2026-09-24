@@ -21,6 +21,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 import time
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
@@ -687,12 +688,10 @@ def main():
                 elif text.startswith("/monitoring"):
                     send_monitoring(chat_id)
                 elif text.startswith("/competitors"):
-                    import subprocess
                     out = subprocess.run([sys.executable, os.path.join(HERE, "competitors.py"), "--stats"],
                                          capture_output=True, text=True, timeout=120).stdout
                     api("sendMessage", {"chat_id": chat_id, "text": "🕵️ Конкуренты (просмотры):\n" + (out[:3800] or "нет данных")})
                 elif text.startswith("/stats") or text.startswith("/report"):
-                    import subprocess
                     if text.startswith("/report"):
                         reports = sorted(f for f in os.listdir(os.path.join(HERE, "reports"))
                                          if f.startswith("report_")) if os.path.isdir(os.path.join(HERE, "reports")) else []

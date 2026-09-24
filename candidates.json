@@ -570,7 +570,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=47860962",
     "points": 5,
-    "status": "raw",
+    "status": "not_signal",
     "query": "my AI workflow"
   },
   {
@@ -580,7 +580,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=45023199",
     "points": 4,
-    "status": "raw",
+    "status": "not_signal",
     "query": "my AI workflow"
   },
   {
@@ -590,7 +590,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=47728487",
     "points": 4,
-    "status": "raw",
+    "status": "not_signal",
     "query": "my AI workflow"
   },
   {
@@ -600,7 +600,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=47311866",
     "points": 2,
-    "status": "raw",
+    "status": "not_signal",
     "query": "my AI workflow"
   },
   {
@@ -610,7 +610,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=46932605",
     "points": 2,
-    "status": "raw",
+    "status": "not_signal",
     "query": "my AI workflow"
   },
   {
@@ -620,7 +620,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=49710020",
     "points": 1,
-    "status": "raw",
+    "status": "not_signal",
     "query": "my AI workflow"
   },
   {
@@ -630,8 +630,38 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=47785748",
     "points": 1,
-    "status": "raw",
-    "query": "my AI workflow"
+    "status": "verified",
+    "query": "my AI workflow",
+    "problem": "Хочет создавать видеоконтент — ролики для соцсетей, блога, рекламы своего дела или творческие мини-фильмы — без камеры, съёмочной команды и навыков профессионального монтажа",
+    "ai_use_case": "Полный AI-воркфлоу видеопроизводства: создание и редактирование кадров-изображений в Nano Banana по текстовому описанию, генерация видеофрагментов в Veo и Kling по промптам, сборка из них готового ролика",
+    "action": "Повторить воркфлоу из видео: описать сцену текстом, сгенерировать/отредактировать кадры в Nano Banana, превратить их в видеоклипы через текстовые промпты в Kling или Veo и смонтировать готовый ролик",
+    "evidence_type": "demonstrated_workflow",
+    "trust_level": 4,
+    "novelty": 6,
+    "interesting": true,
+    "audience_fit": 6,
+    "verified": "partial",
+    "checked_against": [
+      "google_ai: Google Beam expands with new regions, partners, and customers",
+      "deepmind: Gemini 3.8 text-to-speech says hello",
+      "openai_blog: Better prompt caching for GPT-6",
+      "openai_blog: Introducing GPT-6 Sol and Luna",
+      "huggingface: How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+      "huggingface: Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization"
+    ],
+    "limits": [
+      "В предоставленных официальных материалах нет ни одной публикации, прямо посвящённой Nano Banana, Veo или Kling — эти инструменты не подтверждены приведёнными источниками",
+      "Google Beam — это продукт для видео-коммуникаций, а не инструмент генерации видео, и он не подтверждает воркфлоу",
+      "Нет официальной документации по монтажу/сборке готового ролика из сгенерированных клипов",
+      "Отсутствуют материалы о качестве консистентности кадров между Nano Banana и Veo/Kling",
+      "Нет подтверждения воспроизводимости полного пайплайна end-to-end"
+    ],
+    "seed": {
+      "core_idea": "Полный AI-воркфлоу видеопроизводства без камеры и съёмочной команды: текст → изображения (Nano Banana) → видеофрагменты (Veo/Kling) → готовый ролик",
+      "audience_problem": "Нужен видеоконтент для соцсетей, блога, рекламы или творческих мини-фильмов, но нет камеры, команды и навыков профессионального монтажа",
+      "desired_result": "Готовый смонтированный ролик, созданный полностью по текстовым промптам",
+      "category": "AI-видеопроизводство / генеративный видеоворкфлоу"
+    }
   },
   {
     "hash": "2308099228566028354",
@@ -640,7 +670,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=47149459",
     "points": 1,
-    "status": "raw",
+    "status": "not_signal",
     "query": "my AI workflow"
   },
   {
@@ -650,7 +680,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=43385183",
     "points": 1,
-    "status": "raw",
+    "status": "not_signal",
     "query": "my AI workflow"
   },
   {
@@ -660,7 +690,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=44536429",
     "points": 1,
-    "status": "raw",
+    "status": "not_signal",
     "query": "I use ChatGPT to write"
   },
   {
@@ -670,7 +700,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=34653907",
     "points": 1,
-    "status": "raw",
+    "status": "not_signal",
     "query": "I use ChatGPT to write"
   },
   {
@@ -680,7 +710,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=43993778",
     "points": 1,
-    "status": "raw",
+    "status": "not_signal",
     "query": "I use ChatGPT to write"
   },
   {
@@ -690,7 +720,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=36541939",
     "points": 4,
-    "status": "raw",
+    "status": "not_signal",
     "query": "I use ChatGPT to write"
   },
   {
@@ -700,8 +730,35 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=34375651",
     "points": 21,
-    "status": "raw",
-    "query": "I use ChatGPT to write"
+    "status": "verified",
+    "query": "I use ChatGPT to write",
+    "problem": "Нужно проверять и исправлять тексты (орфография, грамматика, стиль) без платной подписки на Grammarly",
+    "ai_use_case": "Использование ChatGPT как бесплатной замены Grammarly для вычитки и редактирования текстов",
+    "action": "Загрузить или вставить свой текст в ChatGPT и попросить исправить орфографию, грамматику и стиль",
+    "evidence_type": "community_claim",
+    "trust_level": 2,
+    "novelty": 6,
+    "interesting": true,
+    "audience_fit": 9,
+    "verified": "true",
+    "checked_against": [
+      "Предоставленные официальные материалы (OpenAI Blog, Google AI, DeepMind, HuggingFace) просмотрены — ни один не описывает корректуру/редактуру текста",
+      "Очевидная воспроизводимость: исправление орфографии, грамматики и стиля по инструкции — базовая возможность ChatGPT, включая бесплатный тариф",
+      "openai_blog: Two years of OpenAI Academy (косвенно — ChatGPT как общедоступный инструмент для широких задач)"
+    ],
+    "limits": [
+      "Ни один из предоставленных официальных источников напрямую не подтверждает сценарий — вердикт основан на очевидной воспроизводимости",
+      "ChatGPT — не специализированный чекер: может пропустить ошибки, «переписать» текст сильнее нужного или изменить смысл/тон; нужен контроль человека",
+      "Нет реального времени и интеграции в браузер/Word, как у Grammarly — текст нужно вручную вставлять и забирать результат",
+      "Бесплатный тариф имеет лимиты использования и в часы пик может переключать на менее точную модель",
+      "Нет гарантий обнаружения всех ошибок; возможны ложные «исправления» (галлюцинации)"
+    ],
+    "seed": {
+      "core_idea": "ChatGPT как бесплатная замена Grammarly для вычитки и редактирования текстов",
+      "audience_problem": "Нужна проверка и исправление орфографии, грамматики и стиля без платной подписки на Grammarly",
+      "desired_result": "Исправленный текст: пользователь вставляет его в ChatGPT и просит исправить орфографию, грамматику и стиль — получает отредактированную версию",
+      "category": "writing_assistance / proofreading"
+    }
   },
   {
     "hash": "1729851955218963843",
@@ -710,7 +767,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=41065314",
     "points": 16,
-    "status": "raw",
+    "status": "not_signal",
     "query": "I use ChatGPT to write"
   },
   {
@@ -720,7 +777,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=45577308",
     "points": 13,
-    "status": "raw",
+    "status": "not_signal",
     "query": "I use ChatGPT to write"
   },
   {
@@ -730,8 +787,40 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=45194811",
     "points": 2,
-    "status": "raw",
-    "query": "ChatGPT for resume"
+    "status": "verified",
+    "query": "ChatGPT for resume",
+    "problem": "Поиск работы: нужно составить сильное резюме, которое выделит среди других кандидатов и пройдёт автоматический отбор",
+    "ai_use_case": "Использование AI-инструментов для написания и адаптации резюме под конкретную вакансию вместо универсального ChatGPT",
+    "action": "Загрузить текст резюме и описание вакансии, попросить AI переписать формулировки под требования работодателя и ключевые слова",
+    "evidence_type": "media_report",
+    "trust_level": 2,
+    "novelty": 3,
+    "interesting": true,
+    "audience_fit": 9,
+    "verified": "partial",
+    "checked_against": [
+      "openai_blog: Ringg's AI agents resolve up to 65% of customer calls with OpenAI",
+      "openai_blog: Two years of OpenAI Academy",
+      "openai_blog: Better prompt caching for GPT-6",
+      "openai_blog: Introducing GPT-6 Sol and Luna",
+      "google_ai: Google Beam expands with new regions, partners, and customers",
+      "deepmind: Advancing Private AI Compute with secure, server-side memory",
+      "deepmind: Gemini 3.8 text-to-speech says hello",
+      "huggingface: How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+      "huggingface: Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization"
+    ],
+    "limits": [
+      "Ни один из предоставленных официальных материалов не описывает сценарий написания или адаптации резюме под вакансию",
+      "Нет документации по специализированным AI-инструментам для резюме (например, резюме-билдеры, ATS-оптимизаторы)",
+      "Возможность воспроизводима на通用 LLM (GPT-6 и др.) через prompting, но официального подтверждения именно этого use case нет",
+      "Качество адаптации под ATS и ключевые слова не гарантируется и не валидируется официально"
+    ],
+    "seed": {
+      "core_idea": "AI-сервис для автоматической адаптации резюме под конкретную вакансию с оптимизацией под ключевые слова и ATS",
+      "audience_problem": "Соискатели тратят часы на ручную подгонку резюме и часто не проходят автоматический отбор из-за нерелевантных формулировок",
+      "desired_result": "Готовое резюме, релевантное вакансии, с высоким совпадением по ключевым словам и повышенным шансом пройти ATS-скрининг",
+      "category": "HR Tech / Career Tools / AI Writing Assistant"
+    }
   },
   {
     "hash": "12099642306070896644",
@@ -740,7 +829,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=37133675",
     "points": 3,
-    "status": "raw",
+    "status": "not_signal",
     "query": "ChatGPT for resume"
   },
   {
@@ -750,8 +839,16 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=43886264",
     "points": 7,
-    "status": "raw",
-    "query": "ChatGPT for resume"
+    "status": "extracted",
+    "query": "ChatGPT for resume",
+    "problem": "Пользователь хочет понять, что система запомнила о его/её предпочтениях и привычках общения, чтобы проверить и при необходимости скорректировать «профиль» под себя",
+    "ai_use_case": "Запрос у ChatGPT информации о собственных сохранённых предпочтениях (раздел «Assistant Response Preferences»), чтобы узнать, как AI адаптирует ответы под пользователя",
+    "action": "Открыть ChatGPT и отправить запрос «Assistant Response Preferences» (или найти соответствующий раздел в настройках/памяти), затем просмотреть, что система записала о ваших предпочтениях, и при необходимости их изменить",
+    "evidence_type": "unverified_claim",
+    "trust_level": 1,
+    "novelty": 6,
+    "interesting": true,
+    "audience_fit": 7
   },
   {
     "hash": "13113826282709740981",
