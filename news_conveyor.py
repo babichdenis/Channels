@@ -50,13 +50,17 @@ GENERATOR_CONTRACT = ("\n\n---\n\nТВОЯ ЗАДАЧА СЕЙЧАС: тольк
                       '{"status": "READY", "news_type": "product_release", "headline": "...", '
                       '"lead": "...", "availability": "...", "price": "...", "limitations": "...", '
                       '"event_date": "...", "source_count": N, "news_score": N}\n'
-                      "READY — только если есть минимум 2 конкретных факта (цифры, даты, цены, лимиты, "
-                      "результаты тестов, условия). Переговоры, планы, слухи, «обсуждают», «может быть» "
-                      "без официального подтверждения — REJECT. Соглашения/меморандумы/назначения без "
-                      "раскрытых условий, сумм или сроков — REJECT (NOT_NEWS).\n"
-                      "если события нет вовсе:\n"
+                      "READY — если есть конкретное СОБЫТИЕ: релиз, обновление, новая функция, изменение "
+                      "цены или лимитов, сделка с условиями, результат теста или исследования, решение "
+                      "регулятора, сбой/восстановление, открытие доступа. Достаточно одного подтверждённого "
+                      "факта об изменении (что именно вышло/изменилось и для кого); цифры и детали — плюс, "
+                      "но их отсутствие не повод для отказа. Единственный источник — нормально, если это не слух.\n"
+                      "REJECT — мнения и интервью, обзоры «о чём говорят», прогнозы и «как далеко зайдёт», "
+                      "слухи и переговоры без подтверждения, кликбейт и сенсации без конкретики, дайджесты, "
+                      "пересказ старых событий, материал не про ИИ:\n"
                       '{"status": "REJECT", "reason": "NOT_NEWS"}\n'
-                      "или, если событие есть, но данных мало:\n"
+                      "NEEDS_VERIFICATION — событие похоже на реальное, но подтверждено только одним "
+                      "сообщением без деталей:\n"
                       '{"status": "NEEDS_VERIFICATION", "reason": "INSUFFICIENT_EVIDENCE"}')
 NO_FILLER = ("\n\nСТРОГО ЗАПРЕЩЕНО писать о том, чего нет в источнике: «детали не раскрыты», "
              "«подробности не раскрываются», «пока не известно», «неизвестно», «не уточняется», "
@@ -310,6 +314,14 @@ def cmd_clusters(cfg):
     # (старый баг переиспользовал id кластеров → в одном кластере разные сюжеты)
     conn.execute("UPDATE news SET cluster = 0 WHERE cluster != 0 AND used = 0 AND ts > ?", (cutoff,))
     conn.commit()
+    # кластеры, по которым уже есть пост (не отклонённый): их сюжеты считаем «живыми» и поглощаем повторы
+    posted_clusters = set()
+    for p in (load_json(QUEUE, []) or []):
+        if p.get("channel") != "ai_news" or p.get("status") == "rejected":
+            continue
+        m = re.search(r"-c(\d+)$", p.get("id") or "")
+        if m:
+            posted_clusters.add(int(m.group(1)))
     old_rows = conn.execute(
         "SELECT cluster, title, text, used FROM news WHERE cluster != 0 AND ts > ?",
         (cutoff,)).fetchall()
@@ -329,6 +341,8 @@ def cmd_clusters(cfg):
         target = None
         absorb = False
         for cid, cl in old_clusters.items():
+            if cl["all_used"] and cid not in posted_clusters:
+                continue  # сюжет отклонён/не дошёл до поста — даём шанс свежему покрытию
             if any(same_story(keys, k) for k in cl["keys"]):
                 target = cid
                 absorb = cl["all_used"]
@@ -463,6 +477,17 @@ def cmd_adapt(cfg, count):
             conn.commit()
             continue
         merged = "\n\n".join("Источник %s: %s" % (it[1], (it[3] or "")[:1800]) for it in items)
+        # обогащение: если сниппеты короткие — тянем полный текст статьи (фактов будет больше)
+        extra = []
+        for it in items[:2]:
+            u = it[4] or ""
+            if u and "news.google.com" not in u and len(it[3] or "") < 900:
+                art = fetch_article_text(u, cfg.get("proxy"), 2500)
+                if art and len(art) > 500:
+                    extra.append("Полный текст (%s): %s" % (it[1], art))
+        if extra:
+            merged += "\n\n" + "\n\n".join(extra)
+            print("· подтянут полный текст статей: %d" % len(extra))
         sh = simhash(merged)
         if any(hamming(sh, qh) <= 10 for qh in news_hashes):
             for it in items:
@@ -475,7 +500,7 @@ def cmd_adapt(cfg, count):
             stage1 = bridge_chat(cfg, gen_prompt + AI_SCOPE + GENERATOR_CONTRACT,
                                  "Проверь источник. Ответ — только JSON (READY или REJECT или "
                                  "NEEDS_VERIFICATION), текст новости НЕ пиши.\n\n"
-                                 "Источник(и) (сообщений: %d):\n\n%s" % (len(items), merged[:9000]))
+                                 "Источник(и) (сообщений: %d):\n\n%s" % (len(items), merged[:12000]))
         except Exception as exc:
             print("✗ фильтр: %s: %s" % (type(exc).__name__, str(exc)[:70]))
             continue
@@ -492,7 +517,7 @@ def cmd_adapt(cfg, count):
         try:
             stage2 = bridge_chat(cfg, writer_prompt + WRITER_CONTRACT,
                                  "EVENT (проверенное событие):\n%s\n\nИСХОДНЫЕ ФАКТЫ:\n%s"
-                                 % (json.dumps(event, ensure_ascii=False)[:4000], merged[:6000]))
+                                 % (json.dumps(event, ensure_ascii=False)[:4000], merged[:9000]))
         except Exception as exc:
             print("✗ писатель: %s: %s" % (type(exc).__name__, str(exc)[:70]))
             continue

@@ -6,10 +6,10 @@ Level-1 — общие правила · Level-2 — модуль канала �
 | Файл | Что внутри |
 |---|---|
 | `00_GLOBAL_RULES.md` | постоянные правила (Level-1) |
-| `CHANNEL_NEURO_SECRET.md` | модуль флагмана «Нейро-секреты» |
-| `CHANNEL_MAGIC_PROMPTS.md` | модуль библиотеки «Волшебные промпты» |
+| `CHANNEL_NEURO_SECRET.md` | модуль флагмана «НейроХитрости» |
+| `CHANNEL_MAGIC_PROMPTS.md` | модуль библиотеки «ПромптКлад» |
 | `CHANNEL_NEURO_IMAGE.md` | модуль «Нейро-образ» (visual) |
-| `CHANNEL_NEURO_WORK.md` | модуль «Нейро-работа» (utility) |
+| `CHANNEL_NEURO_WORK.md` | модуль «Нейропомощник» (utility) |
 | `CHANNEL_NEURO_FUN.md` | модуль «Нейро-приколы» (reach) |
 | `CONTENT_SEED.md` | Content Seed: одна идея → разные продукты |
 | `NETWORK_ORCHESTRATOR.md` | оркестратор сети: матчинг seed → каналы |

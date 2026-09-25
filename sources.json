@@ -191,6 +191,66 @@
       "lang": "ru",
       "topic": "mixed",
       "weight": 2
+    },
+    {
+      "name": "ai_agentura",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "study24ai",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
+    },
+    {
+      "name": "forward_neural",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "clockworkschool",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "AI_Experimentarium",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "aiefn",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "usefultools1c",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
+    },
+    {
+      "name": "aitoolscollection",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
+    },
+    {
+      "name": "ai_instrumenty",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "instrumenty_ai",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
     }
   ],
   "channels": {
@@ -200,7 +260,7 @@
       "audience": "женщины 25–45, хотят простые лайфхаки с нейросетями"
     },
     "wizard_prompts": {
-      "title": "Волшебные промпты",
+      "title": "ПромптКлад",
       "tone": "практичный, бери и делай, структура и пример",
       "audience": "те, кто уже пробует ИИ и ищет готовые промпты"
     }

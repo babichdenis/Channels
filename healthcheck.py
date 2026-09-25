@@ -7,9 +7,11 @@
 """
 import json
 import os
+import re
 import subprocess
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -140,6 +142,44 @@ def main():
             problems.append("SOCKS-туннель до Telegram не работает")
     except Exception:
         problems.append("SOCKS-туннель: проверка не удалась")
+
+    # 6) конвейер новостей не молчит: если после 14:00 за сегодня не было ни одного поста
+    try:
+        import datetime as _dt
+        q = load(os.path.join(HERE, "queue.json"), []) or []
+        days = []
+        for p in q:
+            if p.get("channel") == "ai_news":
+                m2 = re.match(r"an-(\d{4}-\d{2}-\d{2})", p.get("id") or "")
+                if m2:
+                    days.append(m2.group(1))
+        if days:
+            now = _dt.datetime.now()
+            last_day = max(days)
+            if now.hour >= 14 and last_day != now.strftime("%Y-%m-%d"):
+                problems.append("новости: сегодня ещё ни одного поста (последний %s)" % last_day)
+    except Exception:
+        pass
+
+    # 7) VK-токен жив?
+    try:
+        vk_path = os.path.expanduser("~/secrets/vk_user_token")
+        if os.path.exists(vk_path):
+            vk_tok = open(vk_path, encoding="utf-8").read().strip()
+            if vk_tok:
+                opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+                url_vk = ("https://api.vk.com/method/users.get?access_token=%s&v=5.199"
+                          % urllib.parse.quote(vk_tok))
+                with opener.open(url_vk, timeout=15) as resp_vk:
+                    vk_data = json.loads(resp_vk.read().decode("utf-8", "ignore"))
+                if vk_data.get("error"):
+                    vk_link = ("https://oauth.vk.com/authorize?client_id=52149278&display=mobile"
+                               "&redirect_uri=https://oauth.vk.com/blank.html&scope=wall,groups,video"
+                               "&response_type=token&v=5.199")
+                    problems.append("VK-токен истёк. Обновление: открой %s , скопируй адрес из браузера "
+                                    "и пришли боту." % vk_link)
+    except Exception:
+        pass
 
     ts = time.strftime("%Y-%m-%d %H:%M:%S")
     print("%s | проблем: %d%s" % (ts, len(problems), (" | " + "; ".join(problems)) if problems else ""),

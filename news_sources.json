@@ -89,6 +89,16 @@
       "name": "gnews_ru_openai",
       "url": "https://news.google.com/rss/search?q=OpenAI%20when:1d&hl=ru&gl=RU&ceid=RU:ru",
       "lang": "ru"
+    },
+    {
+      "name": "marktechpost",
+      "url": "https://www.marktechpost.com/feed/",
+      "lang": "en"
+    },
+    {
+      "name": "nvidia_blog",
+      "url": "https://blogs.nvidia.com/feed/",
+      "lang": "en"
     }
   ],
   "tg": [
@@ -123,17 +133,7 @@
       "weight": 1
     },
     {
-      "name": "promtyi",
-      "lang": "ru",
-      "weight": 2
-    },
-    {
-      "name": "vistehno",
-      "lang": "ru",
-      "weight": 2
-    },
-    {
-      "name": "neural",
+      "name": "ai_agentura",
       "lang": "ru",
       "weight": 2
     }

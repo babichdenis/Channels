@@ -839,7 +839,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=43886264",
     "points": 7,
-    "status": "extracted",
+    "status": "rejected",
     "query": "ChatGPT for resume",
     "problem": "Пользователь хочет понять, что система запомнила о его/её предпочтениях и привычках общения, чтобы проверить и при необходимости скорректировать «профиль» под себя",
     "ai_use_case": "Запрос у ChatGPT информации о собственных сохранённых предпочтениях (раздел «Assistant Response Preferences»), чтобы узнать, как AI адаптирует ответы под пользователя",
@@ -848,7 +848,33 @@
     "trust_level": 1,
     "novelty": 6,
     "interesting": true,
-    "audience_fit": 7
+    "audience_fit": 7,
+    "verified": "false",
+    "checked_against": [
+      "openai_blog: Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "openai_blog: Two years of OpenAI Academy",
+      "openai_blog: Better prompt caching for GPT-6",
+      "openai_blog: Introducing GPT-6 Sol and Luna",
+      "deepmind: Advancing Private AI Compute with secure, server-side memory",
+      "deepmind: Introducing Gemini 3.8 Live with Live Avatar",
+      "deepmind: Gemini 3.8 text-to-speech says hello",
+      "google_ai: Google Beam expands with new regions, partners, and customers",
+      "huggingface: Accelerating vision-language models with LFM2.5-VL-DSpark",
+      "huggingface: How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+      "huggingface: Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization"
+    ],
+    "limits": [
+      "Ни один из предоставленных официальных материалов не описывает раздел или функцию под названием «Assistant Response Preferences»",
+      "Понятие «сохранённые предпочтения пользователя» (память/кастомизация) в приведённых источниках напрямую не раскрывается",
+      "В перечне материалов отсутствует документация OpenAI по memory/custom instructions, где такая возможность могла бы подтверждаться",
+      "Вероятно, «Assistant Response Preferences» — не официальное название функции, а сторонняя/вымышленная формулировка"
+    ],
+    "seed": {
+      "core_idea": "Дать пользователю прозрачный доступ к тому, что AI запомнил о его предпочтениях общения, и позволить их просматривать и корректировать.",
+      "audience_problem": "Пользователь не знает, какие привычки и предпочтения система о нём сохранила, и не может проверить или исправить этот «профиль».",
+      "desired_result": "Пользователь видит список сохранённых предпочтений и может изменить или удалить их под себя.",
+      "category": "AI-персонализация и управление памятью"
+    }
   },
   {
     "hash": "13113826282709740981",
@@ -857,8 +883,37 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=41324819",
     "points": 2,
-    "status": "raw",
-    "query": "ChatGPT for resume"
+    "status": "verified",
+    "query": "ChatGPT for resume",
+    "problem": "Нужно адаптировать резюме под конкретную вакансию, чтобы пройти автоматический отбор и получить приглашение на собеседование",
+    "ai_use_case": "AI анализирует текст вакансии и резюме, подбирает формулировки, ключевые слова и перестраивает опыт под требования работодателя",
+    "action": "Загрузить своё резюме и текст вакансии, попросить AI переписать резюме под эту позицию: выделить релевантный опыт, добавить нужные ключевые слова, сформулировать достижения",
+    "evidence_type": "demonstrated_workflow",
+    "trust_level": 3,
+    "novelty": 2,
+    "interesting": true,
+    "audience_fit": 9,
+    "verified": "partial",
+    "checked_against": [
+      "openai_blog: Ringg's AI agents resolve up to 65% of customer calls with OpenAI",
+      "openai_blog: Better prompt caching for GPT-6",
+      "openai_blog: Introducing GPT-6 Sol and Luna",
+      "deepmind: Gemini 3.8 text-to-speech says hello",
+      "deepmind: Introducing Gemini 3.8 Live with Live Avatar",
+      "huggingface: Accelerating vision-language models with LFM2.5-VL-DSpark"
+    ],
+    "limits": [
+      "Ни один из перечисленных официальных материалов напрямую не описывает сценарий адаптации резюме под вакансию",
+      "Нет официальной документации, подтверждающей корректность прохождения ATS-отбора после переписывания резюме AI",
+      "Возможны галлюцинации и искажение фактов опыта при генерации формулировок",
+      "Этическая и юридическая неоднозначность: добавление ключевых слов без реального опыта может считаться искажением данных"
+    ],
+    "seed": {
+      "core_idea": "AI-сервис, который сопоставляет резюме с текстом вакансии и переписывает его: выделяет релевантный опыт, встраивает ключевые слова, переформулирует достижения под требования работодателя.",
+      "audience_problem": "Соискателям сложно адаптировать резюме под каждую вакансию, из-за чего их отсеивают автоматические системы (ATS) до просмотра рекрутером.",
+      "desired_result": "Резюме проходит автоматический отбор и повышает шанс получить приглашение на собеседование.",
+      "category": "HR Tech / AI-ассистент для карьеры"
+    }
   },
   {
     "hash": "3874505908595883064",
@@ -867,8 +922,43 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=46428699",
     "points": 14,
-    "status": "raw",
-    "query": "ChatGPT for resume"
+    "status": "rejected",
+    "query": "ChatGPT for resume",
+    "problem": "Нужно быстро написать сопроводительное письмо (cover letter) под конкретную вакансию, без найма копирайтера и без отправки личных данных в облачные сервисы",
+    "ai_use_case": "Генерация персонализированного сопроводительного письма с помощью локальной LLM (Ollama) на своём компьютере — данные резюме и вакансии не уходят в интернет",
+    "action": "Загрузить своё резюме и текст вакансии, попросить AI сгенерировать сопроводительное письмо под эту вакансию (локально через Ollama)",
+    "evidence_type": "demonstrated_workflow",
+    "trust_level": 3,
+    "novelty": 5,
+    "interesting": true,
+    "audience_fit": 7,
+    "verified": "false",
+    "checked_against": [
+      "openai_blog: Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "openai_blog: Better prompt caching for GPT-6",
+      "openai_blog: Introducing GPT-6 Sol and Luna",
+      "deepmind: Advancing Private AI Compute with secure, server-side memory",
+      "deepmind: Introducing Gemini 3.8 Live with Live Avatar",
+      "deepmind: Gemini 3.8 text-to-speech says hello",
+      "huggingface: Accelerating vision-language models with LFM2.5-VL-DSpark",
+      "huggingface: How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+      "huggingface: Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization",
+      "google_ai: Google Beam expands with new regions, partners, and customers",
+      "openai_blog: Two years of OpenAI Academy",
+      "openai_blog: OpenAI extends cyber access to Ukraine for civilian defense"
+    ],
+    "limits": [
+      "Ни один из перечисленных официальных материалов не описывает Ollama или локальный запуск LLM",
+      "Нет подтверждения возможности генерации сопроводительных писем из резюме и вакансии",
+      "Нет материалов о приватности/локальной обработке персональных данных в этом сценарии",
+      "Gemini Live, GPT-6 Sol/Luna, TTS, prompt caching, LFM2.5-VL и NVIDIA Warp относятся к другим задачам (мультимодальность, робототехника, диаризация, серверный приватный инференс) и не подтверждают данный сценарий"
+    ],
+    "seed": {
+      "core_idea": "Локальная LLM через Ollama генерирует персонализированное сопроводительное письмо по резюме и тексту вакансии, не отправляя данные в облако",
+      "audience_problem": "Соискателям нужно быстро писать cover letter под конкретную вакансию без копирайтера и без риска утечки личных данных в облачные сервисы",
+      "desired_result": "Готовое сопроводительное письмо, адаптированное под вакансию, полученное полностью локально и приватно",
+      "category": "приватный локальный AI-ассистент для карьерных задач / генерация текста"
+    }
   },
   {
     "hash": "306290284545052692",
@@ -877,7 +967,7 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=43099741",
     "points": 1,
-    "status": "raw",
+    "status": "not_signal",
     "query": "ChatGPT for resume"
   },
   {
@@ -887,8 +977,16 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=46431727",
     "points": 1,
-    "status": "raw",
-    "query": "ChatGPT for resume"
+    "status": "extracted",
+    "query": "ChatGPT for resume",
+    "problem": "Нужно быстро и качественно написать сопроводительное письмо под конкретную вакансию, без найма копирайтера и без утечки личных данных в облачные сервисы",
+    "ai_use_case": "Генерация персонализированного сопроводительного письма локальной моделью через Ollama — можно загрузить резюме и текст вакансии и получить готовое письмо, не отправляя данные на сторонние серверы",
+    "action": "Загрузить своё резюме и описание вакансии (или ключевые требования) и попросить AI составить сопроводительное письмо под эту позицию; при необходимости — попросить переписать в нужном тоне",
+    "evidence_type": "demonstrated_workflow",
+    "trust_level": 2,
+    "novelty": 6,
+    "interesting": true,
+    "audience_fit": 8
   },
   {
     "hash": "3182698197185705377",
@@ -897,8 +995,16 @@
     "source_type": "hacker_news",
     "source_url": "https://news.ycombinator.com/item?id=46683242",
     "points": 1,
-    "status": "raw",
-    "query": "ChatGPT for resume"
+    "status": "extracted",
+    "query": "ChatGPT for resume",
+    "problem": "Нужно быстро написать или улучшить текст (пост, письмо, документ, описание) без регистрации и оплаты",
+    "ai_use_case": "Пользователь вставляет свой текст в бесплатный онлайн-инструмент и просит AI переписать, сократить, исправить ошибки или сгенерировать черновик",
+    "action": "Открыть shrp.app, выбрать нужный инструмент (например, перефразирование или исправление), вставить свой текст и нажать кнопку обработки",
+    "evidence_type": "unverified_claim",
+    "trust_level": 1,
+    "novelty": 3,
+    "interesting": true,
+    "audience_fit": 8
   },
   {
     "hash": "9790071072047212013",

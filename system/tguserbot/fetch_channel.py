@@ -17,6 +17,10 @@ from zoneinfo import ZoneInfo
 
 import socks
 from telethon import TelegramClient
+try:
+    from telethon.extensions import html as tl_html
+except Exception:
+    tl_html = None
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROXY = (socks.SOCKS5, "127.0.0.1", 1080)
@@ -34,6 +38,10 @@ def content_db():
         source TEXT, post_id TEXT, text TEXT, ts TEXT, views INTEGER,
         image_url TEXT, image_local TEXT DEFAULT '', used INTEGER DEFAULT 0,
         hash TEXT UNIQUE, simhash INTEGER DEFAULT 0, dupe INTEGER DEFAULT 0)""")
+    try:
+        conn.execute("ALTER TABLE items ADD COLUMN video_local TEXT DEFAULT ''")
+    except sqlite3.OperationalError:
+        pass
     conn.commit()
     return conn
 
@@ -71,6 +79,18 @@ async def resolve(client, ref):
     return None
 
 
+SELF_REF = re.compile(r"aimarketcap", re.I)
+
+
+def scrub_selfref(text, is_title=False):
+    """Убирает самоссылки источника (AIMarketCap): строки-рекламы и упоминания."""
+    if is_title:
+        t = SELF_REF.sub("", text or "").strip(" ·—–-|🔗\t")
+        return t if len(t) >= 4 else ""
+    keep = [ln for ln in (text or "").split("\n") if not SELF_REF.search(ln)]
+    return "\n".join(keep)
+
+
 async def fetch_into(client, entity, count=150, do_news=True):
     """Забирает посты канала в content.db и news.db, качает фото. Возвращает сводку."""
     name = getattr(entity, "username", None) or "ub_%s" % entity.id
@@ -79,13 +99,26 @@ async def fetch_into(client, entity, count=150, do_news=True):
     os.makedirs(MEDIA, exist_ok=True)
     cconn = content_db()
     nconn = news_db() if do_news else None
-    added = skipped = photos = 0
+    added = skipped = photos = videos = updated = 0
     async for msg in client.iter_messages(entity, limit=count):
-        text = (msg.message or "").strip()
+        raw_text = msg.message or ""
+        if tl_html is not None:
+            try:
+                text = tl_html.unparse(raw_text, msg.entities or []).strip()
+            except Exception:
+                text = raw_text.strip()
+        else:
+            text = raw_text.strip()
+        text = scrub_selfref(text)
         if not text or len(text) < 40:
             continue
         post_id = "%s/%s" % (entity.id, msg.id)
-        if cconn.execute("SELECT 1 FROM items WHERE source = ? AND post_id = ?", (name, post_id)).fetchone():
+        existing = cconn.execute("SELECT id, text FROM items WHERE source = ? AND post_id = ?",
+                                 (name, post_id)).fetchone()
+        if existing:
+            if "<a " in text and "<a " not in (existing[1] or ""):
+                cconn.execute("UPDATE items SET text = ? WHERE id = ?", (scrub_selfref(text)[:4000], existing[0]))
+                updated += 1
             skipped += 1
             continue
         h = hashlib.md5(text[:400].encode("utf-8")).hexdigest()
@@ -104,25 +137,40 @@ async def fetch_into(client, entity, count=150, do_news=True):
                     photos += 1
             except Exception:
                 pass
+        video_local = ""
+        is_video = bool(getattr(msg, "video", None)) or bool(
+            getattr(msg, "document", None) and (msg.document.mime_type or "").startswith("video"))
+        if is_video:
+            size = (getattr(msg, "file", None) and msg.file.size) or 0
+            if 0 < size <= 47 * 1024 * 1024:
+                fname = re.sub(r"[^\w.-]", "_", "%s-%s" % (name, post_id))[:90] + ".mp4"
+                dest = os.path.join(MEDIA, fname)
+                try:
+                    await client.download_media(msg, file=dest)
+                    if os.path.exists(dest) and os.path.getsize(dest) > 10000:
+                        video_local = "media/" + fname
+                        videos += 1
+                except Exception:
+                    pass
         cconn.execute(
-            "INSERT OR IGNORE INTO items (source, post_id, text, ts, views, image_url, image_local, hash, simhash, dupe) "
-            "VALUES (?,?,?,?,?,?,?,?,?,0)",
-            (name, post_id, text[:4000], ts, msg.views or 0, "", image_local, h, to_signed(simhash(text))))
+            "INSERT OR IGNORE INTO items (source, post_id, text, ts, views, image_url, image_local, video_local, hash, simhash, dupe) "
+            "VALUES (?,?,?,?,?,?,?,?,?,?,0)",
+            (name, post_id, text[:4000], ts, msg.views or 0, "", image_local, video_local, h, to_signed(simhash(text))))
         if nconn is not None:
             nconn.execute(
                 "INSERT OR IGNORE INTO news (source, lang, title, text, url, ts, image_url, hash, simhash) "
                 "VALUES (?,?,?,?,?,?,?,?,?)",
-                (name, "ru", text.split("\n", 1)[0][:110], text[:1200],
+                (name, "ru", scrub_selfref(text.split("\n", 1)[0][:110], is_title=True), text[:1200],
                  ("https://t.me/%s/%s" % (name, msg.id)) if getattr(entity, "username", None) else "",
                  ts, "", "ub_" + h, to_signed(simhash(text))))
         added += 1
     cconn.commit()
     if nconn is not None:
         nconn.commit()
-    print("импортировано: %d | уже было: %d | с фото: %d" % (added, skipped, photos))
+    print("импортировано: %d | уже было: %d | с фото: %d | с видео: %d | со ссылками обновлено: %d" % (added, skipped, photos, videos, updated))
     if do_news:
         print("(новостная база тоже пополнена — новостной конвейер сам отберёт, что достойно канала)")
-    return {"imported": added, "skipped": skipped, "photos": photos, "name": name}
+    return {"imported": added, "skipped": skipped, "photos": photos, "videos": videos, "name": name}
 
 
 async def main():

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""approval_bot.py — утверждение постов через Telegram-бота (Нейро-Пульс и каналы).
+"""approval_bot.py — утверждение постов через Telegram-бота (НейроСигнал и каналы).
 
 Кнопки под постом:
   ✅ Опубликовать — пост уходит в канал сразу (через минуту)
@@ -216,6 +216,13 @@ def post_caption(post, titles):
 def send_for_approval(post, admin, titles):
     full = post_caption(post, titles)
     image = post.get("image")
+    video = post.get("video")
+    if video and os.path.exists(os.path.join(HERE, video)) and len(full) <= 1024:
+        with open(os.path.join(HERE, video), "rb") as fh:
+            blob = fh.read()
+        return api("sendVideo", {"chat_id": admin, "caption": full,
+                                 "parse_mode": "HTML", "reply_markup": keyboard(post["id"])},
+                   files={"video": ("video.mp4", blob)}, timeout=240), "video"
     if image and os.path.exists(os.path.join(HERE, image)) and len(full) <= 1024:
         with open(os.path.join(HERE, image), "rb") as fh:
             blob = fh.read()
@@ -245,7 +252,7 @@ def mark_message(post, admin, status_text):
     payload = {"chat_id": admin, "message_id": mid,
                "reply_markup": json.dumps({"inline_keyboard": nav}, ensure_ascii=False)}
     kind = post.get("_approval_kind") or ("photo" if post.get("image") else "text")
-    if kind == "photo":
+    if kind in ("photo", "video"):
         payload["caption"] = (post_caption(post, {}) + "\n\n" + status_text)[:1024]
         res = api("editMessageCaption", payload)
     else:
@@ -621,6 +628,73 @@ def main():
                         log("отредактирован: %s" % awaiting_edit)
                     awaiting_edit = ""
                     continue
+                m_tok = re.search(r"access_token=([A-Za-z0-9._\-]+)", text)
+                if m_tok and len(text) > 60:
+                    vk_tok = m_tok.group(1)
+                    ok = False
+                    try:
+                        opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+                        req = urllib.request.Request(
+                            "https://api.vk.com/method/users.get?access_token=%s&v=5.199"
+                            % urllib.parse.quote(vk_tok))
+                        with opener.open(req, timeout=20) as resp:
+                            vd = json.loads(resp.read().decode("utf-8", "ignore"))
+                        ok = not vd.get("error")
+                        err = (vd.get("error") or {}).get("error_msg", "")
+                    except Exception as exc:
+                        err = type(exc).__name__
+                    if ok:
+                        sec = os.path.expanduser("~/secrets")
+                        os.makedirs(sec, exist_ok=True)
+                        with open(os.path.join(sec, "vk_user_token"), "w", encoding="utf-8") as fh:
+                            fh.write(vk_tok)
+                        os.chmod(os.path.join(sec, "vk_user_token"), 0o600)
+                        api("sendMessage", {"chat_id": chat_id, "text": "✅ VK-токен обновлён — VK-сбор продолжается."})
+                        log("VK-токен обновлён из сообщения")
+                    else:
+                        api("sendMessage", {"chat_id": chat_id, "text": "⚠️ VK-токен не принят: %s" % str(err)[:100]})
+                    continue
+                m_code = re.search(r"[?&#]code=([A-Za-z0-9._\-]{10,})", text)
+                if m_code:
+                    m_dev = re.search(r"[?&#]device_id=([A-Za-z0-9._\-]+)", text)
+                    try:
+                        pk = load_json(os.path.expanduser("~/secrets/vk_pkce.json"), {}) or {}
+                        secret = ""
+                        try:
+                            secret = open(os.path.expanduser("~/secrets/vk_app_secret"), encoding="utf-8").read().strip()
+                        except OSError:
+                            pass
+                        payload = urllib.parse.urlencode({
+                            "grant_type": "authorization_code",
+                            "code": m_code.group(1),
+                            "code_verifier": pk.get("verifier") or "",
+                            "client_id": "52149278",
+                            "client_secret": secret,
+                            "redirect_uri": "https://oauth.vk.com/blank.html",
+                            "device_id": m_dev.group(1) if m_dev else "",
+                        }).encode()
+                        opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+                        req = urllib.request.Request(
+                            "https://id.vk.ru/oauth2/auth", data=payload,
+                            headers={"Content-Type": "application/x-www-form-urlencoded"})
+                        with opener.open(req, timeout=30) as resp:
+                            td = json.loads(resp.read().decode("utf-8", "ignore"))
+                        if td.get("access_token"):
+                            sec = os.path.expanduser("~/secrets")
+                            with open(os.path.join(sec, "vk_user_token"), "w", encoding="utf-8") as fh:
+                                fh.write(td["access_token"])
+                            if td.get("refresh_token"):
+                                with open(os.path.join(sec, "vk_refresh_token"), "w", encoding="utf-8") as fh:
+                                    fh.write(td["refresh_token"])
+                            api("sendMessage", {"chat_id": chat_id,
+                                                "text": "✅ VK подключён надолго (токен с авто-обновлением)."})
+                            log("VK ID: токены получены")
+                        else:
+                            api("sendMessage", {"chat_id": chat_id,
+                                                "text": "⚠️ Обмен кода не удался: %s" % str(td)[:200]})
+                    except Exception as exc:
+                        api("sendMessage", {"chat_id": chat_id, "text": "⚠️ Обмен кода: %s" % str(exc)[:120]})
+                    continue
                 inv = re.search(r"(?:https?://)?t\.me/\+[A-Za-z0-9_-]{8,}", text)
                 if inv and not msg.get("photo") and not awaiting_edit and len(text) <= 300:
                     api("sendMessage", {"chat_id": chat_id, "text": "🔒 Закрытый канал — подписываюсь и забираю посты…"})
@@ -656,8 +730,8 @@ def main():
                     state["pending_origin"] = origin
                     state["pending_origin_user"] = fo_chat.get("username") or ""
                     save_json(STATE, state)
-                    rows = [[{"text": "🔮 В Нейро-секреты", "callback_data": "to:neuro_secrets"},
-                             {"text": "🪄 В Волшебные промпты", "callback_data": "to:wizard_prompts"}]]
+                    rows = [[{"text": "🔮 В НейроХитрости", "callback_data": "to:neuro_secrets"},
+                             {"text": "🪄 В ПромптКлад", "callback_data": "to:wizard_prompts"}]]
                     if fo_chat.get("username"):
                         rows.append([{"text": "➕ Канал @%s — в источники" % fo_chat["username"],
                                       "callback_data": "addsrc:%s" % fo_chat["username"]}])

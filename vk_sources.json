@@ -1,0 +1,53 @@
+{
+  "groups": [
+    {
+      "screen": "claude_expert",
+      "title": "Нейросети | AI-агентура | Claude Code",
+      "vk_name": "Claude | AI-агенты для бизнеса. Обучение",
+      "fits": "work",
+      "note": "Аналитика ИИ для профессионалов: медицина, право, SEO"
+    },
+    {
+      "screen": "club237337068",
+      "title": "AIMarketCap | Нейросети & Промпты",
+      "vk_name": "AIMarketCap | Нейросети & Промпты",
+      "fits": "secrets",
+      "note": "Гайды и лайфхаки: видео без лица, бесплатные нейросети"
+    },
+    {
+      "screen": "ai21century",
+      "title": "Data Science | Machinelearning [ru]",
+      "vk_name": "AI/Data science/Deep learning/Machine learning..",
+      "fits": "?",
+      "note": "проверка не удалась"
+    },
+    {
+      "screen": "neurospherepro",
+      "title": "Neurosphere News",
+      "vk_name": "Neurosphere",
+      "fits": "mixed",
+      "note": "совпадение имени"
+    },
+    {
+      "screen": "ai_soulcode",
+      "title": "Вайб-кодинг",
+      "vk_name": "Вайб кодинг для души",
+      "fits": "mixed",
+      "note": "совпадение имени"
+    },
+    {
+      "screen": "studyai",
+      "title": "StudyAI | Нейросети",
+      "vk_name": "StudyAI | Нейросети",
+      "fits": "mixed",
+      "note": "совпадение имени"
+    },
+    {
+      "screen": "club238050971",
+      "title": "MGUTU.RU - НЕЙРОСЕТИ ДЛЯ БИЗНЕСА И ЖИЗНИ",
+      "vk_name": "Нейросети для бизнеса и жизни",
+      "fits": "mixed",
+      "note": "совпадение имени"
+    }
+  ]
+}

@@ -4,25 +4,25 @@
       "chat_id": "-1003825051997",
       "token_env": "TG_TOKEN_CHANNELS",
       "link": "https://t.me/+2R6j65w5eLgyZWUy",
-      "title": "Нейро-секреты"
+      "title": "НейроХитрости | Нейросети и ИИ"
     },
     "wizard_prompts": {
       "chat_id": "-1003736827573",
       "token_env": "TG_TOKEN_CHANNELS",
       "link": "https://t.me/+a4SwAzyJYfk4OTAy",
-      "title": "Волшебные промпты"
+      "title": "ПромптКлад | Промпты для нейросетей"
     },
     "ai_news": {
       "chat_id": "-1004397291110",
       "token_env": "TG_TOKEN_CHANNELS",
       "link": "https://t.me/+1HmtLnExcnczMDVi",
-      "title": "Нейро-Пульс"
+      "title": "НейроСигнал | Новости ИИ и нейросетей"
     },
     "neuro_work": {
       "chat_id": "-1004354464851",
       "token_env": "TG_TOKEN_CHANNELS",
       "link": "https://t.me/+WOqsx8M6v7cwY2Uy",
-      "title": "Нейро-работа"
+      "title": "Нейропомощник | Нейросети для работы"
     }
   },
   "admin_chat_id": "224008722",

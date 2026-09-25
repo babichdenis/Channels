@@ -40,7 +40,7 @@ CONTENT MEMORY → СТРАТЕГ → ПЛАНИРОВЩИК → HOOKS → ГЕ�
 ```json
 {
   "id": "neuro_secrets",
-  "title": "Нейро-секреты",
+  "title": "НейроХитрости",
   "content_mode": "evergreen",          // evergreen | current | mixed
   "audience": "женщины 25–45, не технари",
   "tone": "тёплый, как подруга, без жаргона",

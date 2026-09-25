@@ -110,9 +110,30 @@ def publish(post, channels, dry=False):
     if post.get("hashtags"):
         text = text + "\n\n" + " ".join(post["hashtags"])
     image = post.get("image")
+    video = post.get("video")
     if image and len(text) > 1024:
         image = None  # длинный текст не влезает в подпись — публикуем без картинки
-    if image and os.path.exists(os.path.join(HERE, image)):
+    if video and len(text) > 1024:
+        video = None
+    if video and os.path.exists(os.path.join(HERE, video)):
+        with open(os.path.join(HERE, video), "rb") as fh:
+            vblob = fh.read()
+        boundary = "----schedv%d" % int(time.time())
+        parts = []
+        for key, val in (("chat_id", chat_id), ("caption", text[:1024]), ("parse_mode", "HTML")):
+            parts.append("--%s\r\nContent-Disposition: form-data; name=\"%s\"\r\n\r\n%s\r\n" % (boundary, key, val))
+        parts.append("--%s\r\nContent-Disposition: form-data; name=\"video\"; filename=\"video.mp4\"\r\n"
+                     "Content-Type: video/mp4\r\n\r\n" % boundary)
+        body = "".join(parts).encode("utf-8") + vblob + ("\r\n--%s--\r\n" % boundary).encode("utf-8")
+        req = urllib.request.Request(
+            "https://api.telegram.org/bot%s/sendVideo" % token, data=body,
+            headers={"Content-Type": "multipart/form-data; boundary=%s" % boundary})
+        try:
+            with urllib.request.urlopen(req, timeout=300) as resp:
+                res = json.loads(resp.read().decode("utf-8", "ignore"))
+        except Exception as exc:
+            res = {"ok": False, "error": "%s: %s" % (type(exc).__name__, str(exc)[:200])}
+    elif image and os.path.exists(os.path.join(HERE, image)):
         with open(os.path.join(HERE, image), "rb") as fh:
             files = {"photo": fh.read()}
         # multipart для sendPhoto

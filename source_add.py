@@ -49,6 +49,23 @@ def main():
         except Exception as exc:
             print("userbot ошибка: %s" % str(exc)[:120])
         return 0
+    m_vk = re.search(r"vk\.com/([A-Za-z0-9_.]+)", raw)
+    if m_vk:
+        screen = m_vk.group(1).lower().strip(".")
+        vp = os.path.join(HERE, "vk_sources.json")
+        vk = {"groups": []}
+        if os.path.exists(vp):
+            try:
+                vk = json.load(open(vp, encoding="utf-8"))
+            except Exception:
+                vk = {"groups": []}
+        if any((g.get("screen") or "").lower() == screen for g in vk.get("groups", [])):
+            print("ℹ️ VK-группа vk.com/%s уже подключена." % screen)
+            return 0
+        vk.setdefault("groups", []).append({"screen": screen, "title": ""})
+        json.dump(vk, open(vp, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        print("✅ VK-группа vk.com/%s добавлена — посты пойдут в копии (сбор каждые 30 минут)." % screen)
+        return 0
     name = re.sub(r"^https?://", "", raw)
     name = re.sub(r"^t\.me/(?:s/)?", "", name)
     name = name.lstrip("@").split("?")[0].split("/")[0].strip()
