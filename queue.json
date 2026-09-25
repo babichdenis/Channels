@@ -5926,5 +5926,113 @@
     "_sent": true,
     "_approval_kind": "text",
     "_approval_message_id": 3205
+  },
+  {
+    "id": "an-2026-09-24-174400-c586",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-24T17:44:00+03:00",
+    "rubric": "Новость",
+    "news_type": "funding",
+    "news_score": 3,
+    "event_date": "",
+    "text": "Стартап Ando запустил командный мессенджер, где люди и AI-агенты сидят в одном чате. Не сложно догадаться, на чью территорию это покушение — Slack, берегись 🥊\n\nПодняли сразу **$20 млн** на pre-seed и seed.\n\nЗа спиной — серьёзная поддержка: **Accel**, **Index Ventures** и **Emergence**.\n\nГлавный посыл — никаких ботов «на подхвате». Агенты здесь — полноценные члены команды: им ставят задачи, они отвечают и работают плечом к плечу с людьми.\n\n🔗 **Источник:** TechCrunch",
+    "hashtags": [
+      "#новости_ии",
+      "#стартапы",
+      "#финансирование"
+    ],
+    "image": "posts/an-2026-09-24-174400-c586.jpg",
+    "source_image": "",
+    "source_url": "https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/",
+    "status": "rejected",
+    "check": {
+      "news": true,
+      "sources": 1
+    },
+    "origin": "techcrunch_ai",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3210
+  },
+  {
+    "id": "an-2026-09-24-174400-c587",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-24T17:44:00+03:00",
+    "rubric": "Новость",
+    "news_type": "product_release",
+    "news_score": 3,
+    "event_date": "",
+    "text": "⚡️ AlphaFold пополнился ИИ-предсказанными структурами белков тысяч вирусов\n\nВ базу данных AlphaFold добавлены предсказанные ИИ структуры белков для тысяч вирусов. Инструмент DeepMind расширяет набор данных за счёт вирусных белков, структуры которых до этого не были известны экспериментально.\n\n⚡️ Что добавили: предсказанные ИИ структуры белков тысяч вирусов\n⚡️ Куда: в базу данных AlphaFold\n⚡️ Зачем: структуры вирусных белков, не определённые экспериментально\n\nДанные доступны в базе AlphaFold.\n\n🔗 Источник: DeepMind",
+    "hashtags": [
+      "#новости_ии",
+      "#AlphaFold",
+      "#DeepMind"
+    ],
+    "image": "posts/an-2026-09-24-174400-c587.jpg",
+    "source_image": "",
+    "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbzNiZ2J4Vm5CeTRDZUd6eE5oSEQ1OUxFeFZMNnRWdTQtZWh2SlA2TWl1eVA0YzhKQlRic25uYVpjSFIxa2hzUVFuTVdEbm1MNC1SVDEzcUs5OHZVTUY3UkFxaVJQUWZuSXBDMEdVaHFUd0poSjNuYXpONGdVM0hlVl91NmQ?oc=5",
+    "status": "rejected",
+    "check": {
+      "news": true,
+      "sources": 1
+    },
+    "origin": "gnews_en_deepmind",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3209
+  },
+  {
+    "id": "an-2026-09-24-180100-c589",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-24T18:01:00+03:00",
+    "rubric": "Новость",
+    "news_type": "business_metric",
+    "news_score": 3,
+    "event_date": "",
+    "text": "⚡️ Годовая выручка Lovable превысила $600 млн — приложения на платформе набирают почти миллиард просмотров в месяц\n\nLovable сообщила, что её annualized revenue — годовая выручка в пересчёте на текущий темп — превысила $600 млн. Сооснователь компании Фабиан Хедин заявил, что приложения, созданные на платформе, суммарно набирают почти миллиард просмотров в месяц.\n\nЦифра касается всей экосистемы приложений, собранных пользователями на Lovable, а не одного продукта компании.\n\nДанные озвучены сооснователем компании, без раскрытия методологии расчёта annualized revenue и без независимого подтверждения.",
+    "hashtags": [
+      "#новости_ии",
+      "#lovable",
+      "#vibecoding"
+    ],
+    "image": "posts/an-2026-09-24-180100-c589.jpg",
+    "source_image": "",
+    "source_url": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/",
+    "status": "rejected",
+    "check": {
+      "news": true,
+      "sources": 1
+    },
+    "origin": "techcrunch_ai",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3211
+  },
+  {
+    "id": "an-2026-09-24-180100-c590",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-24T18:01:00+03:00",
+    "rubric": "Новость",
+    "news_type": "regulation",
+    "news_score": 3,
+    "event_date": "2025-09-23",
+    "text": "⚡️ Сандерс и Касар внесли законопроект о пожизненном запрете сверхинтеллекта\n\n23 сентября в США внесён законопроект, который навсегда запрещает разработку и использование искусственного сверхинтеллекта. Документ внесли сенатор Берни Сандерс и конгрессмен Грег Касар.\n\nВторая часть инициативы — создание нового федерального агентства по надзору за ИИ. Именно оно должно отвечать за регулирование сферы.\n\nТекст законопроекта: постоянный запрет на разработку и применение сверхинтеллекта в США.\n\n🔗 Источник: The Decoder",
+    "hashtags": [
+      "#новости_ии",
+      "#регулирование",
+      "#сша"
+    ],
+    "image": "posts/an-2026-09-24-180100-c590.jpg",
+    "source_image": "",
+    "source_url": "https://the-decoder.com/u-s-bill-proposes-permanent-ban-on-artificial-superintelligence-and-creation-of-new-federal-ai-agency/",
+    "status": "rejected",
+    "check": {
+      "news": true,
+      "sources": 1
+    },
+    "origin": "the_decoder",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3212
   }
 ]

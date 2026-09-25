@@ -9,6 +9,7 @@ import json
 import os
 import subprocess
 import time
+import urllib.error
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -71,6 +72,17 @@ def main():
                           timeout=60)
             if not (r.get("choices") or [{}])[0].get("message", {}).get("content"):
                 problems.append("GLM-бридж: пустой ответ на ping")
+        except urllib.error.HTTPError as exc:
+            body = ""
+            try:
+                body = exc.read().decode("utf-8", "ignore")[:200]
+            except Exception:
+                pass
+            low = body.lower()
+            if "capacity" in low or "concurrency" in low or "rate" in low:
+                print("(модель временно занята на Z.AI — не считаю сбоем)", flush=True)
+            else:
+                problems.append("GLM-бридж: ping HTTP %d (%s)" % (exc.code, body[:80]))
         except Exception as exc:
             problems.append("GLM-бридж: ошибка на ping (%s)" % type(exc).__name__)
 
@@ -83,6 +95,17 @@ def main():
                        timeout=60)
         if not (r2.get("choices") or [{}])[0].get("message", {}).get("content"):
             problems.append("DeepRouter: пустой ответ на ping")
+    except urllib.error.HTTPError as exc:
+        body = ""
+        try:
+            body = exc.read().decode("utf-8", "ignore")[:200]
+        except Exception:
+            pass
+        low = body.lower()
+        if "capacity" in low or "concurrency" in low or "rate" in low or "overload" in low:
+            print("(DeepRouter временно занят — не считаю сбоем)", flush=True)
+        else:
+            problems.append("DeepRouter: ping HTTP %d (%s)" % (exc.code, body[:80]))
     except Exception as exc:
         problems.append("DeepRouter: ошибка (%s)" % type(exc).__name__)
 
