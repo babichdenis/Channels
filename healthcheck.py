@@ -66,27 +66,37 @@ def main():
     except Exception as exc:
         problems.append("GLM-бридж недоступен (%s)" % type(exc).__name__)
     if bridge_up:
-        try:
-            r = http_json("http://127.0.0.1:3001/v1/chat/completions",
-                          {"model": "glm-5.3", "messages": [{"role": "user", "content": "ping"}],
-                           "max_tokens": 5, "stream": False},
-                          {"Authorization": "Bearer glm-local", "Content-Type": "application/json"},
-                          timeout=60)
-            if not (r.get("choices") or [{}])[0].get("message", {}).get("content"):
-                problems.append("GLM-бридж: пустой ответ на ping")
-        except urllib.error.HTTPError as exc:
-            body = ""
+        # Z.AI периодически рвёт соединение: 3 попытки, алерт только если упали все
+        glm_ok, glm_err = False, ""
+        for attempt in range(3):
             try:
-                body = exc.read().decode("utf-8", "ignore")[:200]
-            except Exception:
-                pass
-            low = body.lower()
-            if "capacity" in low or "concurrency" in low or "rate" in low:
-                print("(модель временно занята на Z.AI — не считаю сбоем)", flush=True)
-            else:
-                problems.append("GLM-бридж: ping HTTP %d (%s)" % (exc.code, body[:80]))
-        except Exception as exc:
-            problems.append("GLM-бридж: ошибка на ping (%s)" % type(exc).__name__)
+                r = http_json("http://127.0.0.1:3001/v1/chat/completions",
+                              {"model": "glm-5.3", "messages": [{"role": "user", "content": "ping"}],
+                               "max_tokens": 5, "stream": False},
+                              {"Authorization": "Bearer glm-local", "Content-Type": "application/json"},
+                              timeout=60)
+                if (r.get("choices") or [{}])[0].get("message", {}).get("content"):
+                    glm_ok = True
+                    break
+                glm_err = "пустой ответ на ping"
+            except urllib.error.HTTPError as exc:
+                body = ""
+                try:
+                    body = exc.read().decode("utf-8", "ignore")[:200]
+                except Exception:
+                    pass
+                low = body.lower()
+                if "capacity" in low or "concurrency" in low or "rate" in low:
+                    print("(модель временно занята на Z.AI — не считаю сбоем)", flush=True)
+                    glm_ok = True
+                    break
+                glm_err = "ping HTTP %d (%s)" % (exc.code, body[:80])
+            except Exception as exc:
+                glm_err = "ошибка на ping (%s)" % type(exc).__name__
+            if attempt < 2:
+                time.sleep(5)
+        if not glm_ok:
+            problems.append("GLM-бридж: " + glm_err)
 
     # 2) DeepRouter (модель контента)
     try:
@@ -133,15 +143,23 @@ def main():
     if age_min("/tmp/git_backup_ok") > 26 * 60:
         problems.append("git-бэкап: не запускался >26 ч")
 
-    # 5) SOCKS-туннель до Telegram
-    try:
-        chk = subprocess.run(["curl", "-s", "--socks5-hostname", "127.0.0.1:1080", "-m", "12",
-                              "-o", "/dev/null", "-w", "%{http_code}", "https://api.telegram.org"],
-                             capture_output=True, text=True, timeout=20).stdout.strip()
-        if chk == "000":
-            problems.append("SOCKS-туннель до Telegram не работает")
-    except Exception:
-        problems.append("SOCKS-туннель: проверка не удалась")
+    # 5) SOCKS-туннель до Telegram (3 попытки: одиночный флак не должен поднимать алерт)
+    socks_ok, socks_err = False, ""
+    for attempt in range(3):
+        try:
+            chk = subprocess.run(["curl", "-s", "--socks5-hostname", "127.0.0.1:1080", "-m", "12",
+                                  "-o", "/dev/null", "-w", "%{http_code}", "https://api.telegram.org"],
+                                 capture_output=True, text=True, timeout=20).stdout.strip()
+            if chk and chk != "000":
+                socks_ok = True
+                break
+            socks_err = "не работает (HTTP %s)" % (chk or "пусто")
+        except Exception as exc:
+            socks_err = "проверка не удалась (%s)" % type(exc).__name__
+        if attempt < 2:
+            time.sleep(3)
+    if not socks_ok:
+        problems.append("SOCKS-туннель до Telegram: " + socks_err)
 
     # 6) конвейер новостей не молчит: если после 14:00 за сегодня не было ни одного поста
     try:
