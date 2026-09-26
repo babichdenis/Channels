@@ -41,7 +41,7 @@
     "origin": "ai_machinelearning_big_data (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3288
+    "_approval_message_id": 3299
   },
   {
     "id": "rp-2026-09-25-215404-587",
@@ -132,7 +132,7 @@
   {
     "id": "rp-2026-09-25-225506-1998",
     "channel": "ai_news",
-    "scheduled_at": "2026-09-25T22:55:00+03:00",
+    "scheduled_at": "2026-09-25T23:25:00+03:00",
     "rubric": "Репост",
     "text": "<strong>Полезное на ночь: </strong>Docker выпустила первые официальные навыки для ИИ-агентов, которые работают с кодом:\n\n<a href=\"https://github.com/docker/skills\">https://github.com/docker/skills</a>\n\nОни предназначены для того, чтобы помогать агентам с задачами, связанными с Docker. Со временем набор будет расширяться.\n\nПосмотреть доступные навыки и инструкции по установке можно здесь:\n\n<a href=\"https://docs.docker.com/ai/skills\">https://docs.docker.com/ai/skills</a>",
     "hashtags": [
@@ -141,14 +141,16 @@
     "image": "media/vibecoding_tg-1555418015_3955.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "published",
     "check": {
       "repost": true
     },
     "origin": "vibecoding_tg (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3293
+    "_approval_message_id": 3300,
+    "published_at": "2026-09-25T23:25:27+03:00",
+    "message_id": 59
   },
   {
     "id": "rp-2026-09-25-225524-1807",
@@ -193,5 +195,540 @@
     "_approval_message_id": 3295,
     "published_at": "2026-09-25T22:55:17+03:00",
     "message_id": 58
+  },
+  {
+    "id": "rp-2026-09-25-232544-1806",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-25T23:25:00+03:00",
+    "rubric": "Репост",
+    "text": "🤖 AIgrator - топовые нейросети без VPN и с оплатой картами РФ\n\nХотите пользоваться ChatGPT, Claude, Gemini, Midjourney и другими моделями из России без лишних танцев с бубном?\n\nAIgrator (https://aigrator.ai/?auth=register&ref=c6f7ddd1-1c6f-4425-aa82-f0c48d0f6d2e) собирает доступ к сильным нейросетям в одном окне:\n🟣 Текст\n🟣 Фото\n🟣 Видео\n\n➡️ Что удобно\n🔘 Не нужен VPN\n🔘 Оплата российскими картами\n🔘 Один аккаунт вместо десятка регистраций\n🔘 Можно быстро переключаться между моделями и сравнивать результаты\n\nПо сути, это агрегатор для тех, кто устал от блокировок, иностранных карт и вечных «сервис недоступен в вашем регионе».\nЕсли работаете с контентом, промптами, генерацией изображений или просто хотите держать под рукой несколько сильных моделей - вариант рабочий.\n\nПопробовать: aigrator.ai (https://aigrator.ai/?auth=register&ref=c6f7ddd1-1c6f-4425-aa82-f0c48d0f6d2e)\n\nКто уже сидит на агрегаторах?\nКакой функционал для вас важнее всего - цена, стабильность или набор моделей?",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "media/vk-club237337068-277.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "vk_club237337068 (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3301
+  },
+  {
+    "id": "rp-2026-09-25-232547-1292",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-25T23:25:00+03:00",
+    "rubric": "Репост",
+    "text": "Это нарисовал не человек 😨\n\nClaude Opus 5.5 написала код, который покадрово создал эту анимацию. Сначала — забавный маленький кубик, затем космические орбиты, разложение света призмой, вихрь частиц, чёрная дыра и вид Земли с Луны.\n\nВсе 32 секунды созданы ИИ.",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "vibecoding_tg (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3302
+  },
+  {
+    "id": "rp-2026-09-25-235555-1345",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T03:12:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>🤖 GPT-6 Sol и Luna: скидка 50% считается от промо-цены предыдущей серии</strong>\n\nOpenAI выпустила GPT-6 Sol (для сложных задач и кодинга) и GPT-6 Luna (для типовой рутины: суммаризация, извлечение данных, быстрые ответы). Обе доступны в ChatGPT Work, Codex и через API, Luna — ещё и в десктопе для Free и Go.\n\nГлавный маркетинговый ход — цена. В блоге написано: API-тарифы серии 6 <strong>ниже на 50%</strong> относительно предыдущей серии 5.6. Но это не «в два раза дешевле рынка» — это скидка к промо-цене собственного предыдущего поколения, и сама OpenAI объясняет её улучшениями кэширования и инференса, а не демпингом.\n\nВторое заявление — про ошибки: <blockquote>GPT-6 Sol makes about half as many mistakes as its predecessor, reaching Astra-level reliability at much lower cost</blockquote> Это внутренняя оценка OpenAI на деидентифицированных диалогах, где пользователи сами жаловались на ошибки, — не независимый бенчмарк, а разбор своих же тикетов.\n\nТретье — «Sol и Luna существенно лучше моделей Anthropic (Fable, Opus)». Ни методологии, ни цифр в релизе нет: сравнение подано как факт, а по сути голое заявление вендора против вендора. Тарифы Anthropic и Google в открытом доступе не дают точных ставок $/токен для прямого пересчёта — сравнить стоимость с конкурентами по цифрам сейчас нельзя.\n\nAstra остаётся флагманом OpenAI и лучшей моделью для computer use — тут претензий нет, это отдельный релиз более раннего числа.\n\n<a href=\"https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/\">TechCrunch</a>\n\n#разбор #openai #для_бизнеса",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_agentura-1550121216_244.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true
+    },
+    "origin": "ai_agentura (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3305,
+    "published_at": "2026-09-26T03:12:26+03:00",
+    "message_id": 60
+  },
+  {
+    "id": "rp-2026-09-25-235559-1293",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-25T23:55:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>И OpenAI подтянулась с новым релизом: </strong><a href=\"https://openai.com/index/introducing-gpt-6-sol-and-luna/\"><strong>встречайте</strong></a><strong> GPT-6 Sol и Luna</strong>\n\nSol стала примерно вдвое дешевле и теперь стоит $2/$10 за 1 млн токенов. Luna подешевела ещё сильнее – до $0.1/$0.5\n\nПлюсом подписчикам <a href=\"https://x.com/thsottiaux/status/2102463847714247142?s=20\">выдали</a> по одному сохранённому сбросу лимита <tg-emoji emoji-id=\"5294039120694257573\">👋</tg-emoji>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_3926.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "vibecoding_tg (копия)",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3306
+  },
+  {
+    "id": "rp-2026-09-25-235603-1242",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T03:13:00+03:00",
+    "rubric": "Репост",
+    "text": "⚡️OpenAI выпустила GPT-6 Sol и GPT-6 Luna\n\nСемейство<strong> GPT-6 </strong>расширилось сразу двумя новыми моделями —<strong> Sol </strong>и<strong> Luna.</strong>\n\nОбе построены на наработках<strong> GPT-6 Astra,</strong> но рассчитаны на более быстрые и дешёвые сценарии работы в масштабе.\n\n<strong> GPT-6 Sol </strong>— более мощная рабочая модель для сложных задач.\n<strong> GPT-6 Luna </strong>— более быстрая и экономичная версия для массовых запросов и автоматизаций.\nOpenAI отдельно оптимизировала<strong> кэширование и inference.</strong>\n<strong> API для Sol и Luna стал на 50% дешевле </strong>по сравнению с промо-ценами GPT-5.6.\nНа<strong> AutomationBench </strong>новые модели заметно улучшают соотношение<strong> качество / стоимость </strong>относительно GPT-5.6.\n\nТеперь линейка выглядит так:\n\n<strong>GPT-6 Astra </strong>— максимум возможностей\n<strong>GPT-6 Sol </strong>— сильная модель для серьёзной повседневной работы\n<strong>GPT-6 Luna </strong>— скорость, масштаб и низкая стоимость\n\nOpenAI явно хочет сделать<strong> агентов и автоматизации заметно дешевле для продакшена.</strong>\n\n<strong>GPT-6 Sol стоит всего $2 за вход и $10 за вывод.</strong>\n\n<a href=\"https://openai.com/index/introducing-gpt-6-sol-and-luna/\">https://openai.com/index/introducing-gpt-6-sol-and-luna/</a>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_machinelearning_big_data-1114591086_10986.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true
+    },
+    "origin": "ai_machinelearning_big_data (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3307,
+    "published_at": "2026-09-26T03:13:28+03:00",
+    "message_id": 61
+  },
+  {
+    "id": "rp-2026-09-26-002656-2022",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-26T00:26:00+03:00",
+    "rubric": "Репост",
+    "text": "<tg-emoji emoji-id=\"5415970837045990457\">🩵</tg-emoji> <strong>Генератор:</strong> Nano Banana 2 🍌\n<tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji>\nПромпт взяла тут <tg-emoji emoji-id=\"5345973839467656030\">⤵️</tg-emoji>",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "media/promtychatgpt-2343842463_3526.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "promtychatgpt (копия)",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3308
+  },
+  {
+    "id": "rp-2026-09-26-010129-2030",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T01:01:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>Google выпустил обновление для генерации речи </strong>— Gemini 3.8 Flash TTS и Flash-Lite\nв базе данной ии более 100 языков и диалектов\n\n<tg-emoji emoji-id=\"5248966320845768373\">◀️</tg-emoji> Внутри — 2000 разных голосов на выбор с акцентами и эмоциями\n<tg-emoji emoji-id=\"5248966320845768373\">◀️</tg-emoji> Можно сгенерировать свой голос и сразу отредактировать под свои нужды\n<tg-emoji emoji-id=\"5248966320845768373\">◀️</tg-emoji> Голос не меняет даже по ходу зачитывания самых больших файлов\n<tg-emoji emoji-id=\"5248966320845768373\">◀️</tg-emoji> Смех, охи, вздохи, целые диалоги с разными участниками\n\nДелаем озвучку в AI Studio БЕСПЛАТНО <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji> <a href=\"https://aistudio.google.com/generate-speech?model=gemini-3.8-flash-tts\">здесь</a>\nЗаписывал о данной теме давненько ролик <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji> <a href=\"https://www.youtube.com/channel/UC4td2rZDvG6_V40qnBQRWKw/\">тут</a>\n\n</a><tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>\n<tg-emoji emoji-id=\"5188271260357899463\">🆎</tg-emoji> <a href=\"http://www.youtube.com//\">YouTube Канал</a>\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "video": "media/neyrolabs-1901741543_2390.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "neyrolabs (копия)"
+  },
+  {
+    "id": "rp-2026-09-26-010133-2031",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T01:01:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>Runway запустила площадку для найма специалистов по ИИ-креативу</strong>\n\nRunway представила DIFFUSE, площадку, где бренды, агентства и студии могут находить и нанимать дизайнеров, режиссеров и других специалистов, работающих с генеративным ИИ.\n\nАвторы могут создать профиль, загрузить портфолио и напрямую получать предложения от компаний. Runway изучила более 1000 вакансий почти от 400 компаний и обнаружила, что уже 17% из них требуют навыков работы с ИИ или генеративными инструментами.\n\nОзнакомится с сервисом можно <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji> <a href=\"https://runway.com/news/company-news/introducing-diffuse\">тут</a>\n\n</a><tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>\n<tg-emoji emoji-id=\"5188271260357899463\">🆎</tg-emoji> <a href=\"http://www.youtube.com//\">YouTube Канал</a>\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "video": "media/neyrolabs-1901741543_2389.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "neyrolabs (копия)"
+  },
+  {
+    "id": "rp-2026-09-26-010146-2023",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-26T01:01:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>Нужен визуал на миллион, но нет бюджета на фотосессии?</strong> <tg-emoji emoji-id=\"4956468890390496140\">🍃</tg-emoji>\n\n<strong>Делюсь с вами классным каналом коллеги</strong> 👇🏻\n\nВ канале ты найдешь готовые формулы для генерации:\n\nмодельных фотосессий.\nуютного лайфстайл.\n\n<strong>А ещё там очень много уютных осенних фото, чтобы обновить ленту </strong><strong><tg-emoji emoji-id=\"5305405309261461210\">🥺</tg-emoji></strong><strong>😍</strong>\n\n<tg-emoji emoji-id=\"5377717113823719143\">🌹</tg-emoji><tg-emoji emoji-id=\"5377755807184086263\">🌹</tg-emoji><tg-emoji emoji-id=\"5377379331825756192\">🌹</tg-emoji><tg-emoji emoji-id=\"5377778617755393618\">🌹</tg-emoji><tg-emoji emoji-id=\"5377532730877702454\">❤️</tg-emoji>",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "media/promtychatgpt-2343842463_3514.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "promtychatgpt (копия)",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3310
+  },
+  {
+    "id": "rp-2026-09-26-013345-2032",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-26T01:33:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>Креативная смена одежды</strong> с <strong>помощью Seedance 2.5</strong><strong><tg-emoji emoji-id=\"5381970617505428041\">😉</tg-emoji></strong>\n<blockquote>Как повторить?\nЗаходим в Seedance 2.5 <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji>Добавляем промпт и референсы\nСгенерировать можно в <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji>  <a href=\"https://syntx.ai/welcome/RSs8M6C6\"><strong>Syntx</strong></a>  (работает без впн)</blockquote>\n<pre>\n<code class='language-'>\nCreate a 15-second ultra-realistic vertical 9: 16 fashion film shot entirely from a fixed 90° overhead camera, using the supplied character and wardrobe images as strict references; preserve the same face, body proportions, hair and identity throughout. The Korean woman lies on a luxurious autumn-toned Persian-inspired rug over walnut flooring, surrounded by subtle upscale apartment furniture, while warm late-afternoon sunlight creates realistic shadows. A realistic wooden ceiling fan rotates continuously above her and acts as the only transition device. LOOK 1 chocolate ribbed tank, oversized camel suede bomber, burgundy pleated mini skirt, espresso tights, tobacco slouch boots, oxblood shoulder bag, gold hoops and tortoiseshell sunglasses. She casually picks up a remote and looks upward. As the fan blade physically passes over her body, seamlessly reveal LOOK 2 cream shearling hat, ivory knit sweater, olive utility jacket, wide faded jeans, cream socks, leopard slingbacks and espresso tote. Another blade sweep reveals LOOK 3 oxblood asymmetric knit top, chocolate faux-fur coat, charcoal pinstripe trousers, black kitten-heel boots and cherry-red handbag. The next rotation reveals LOOK 4 charcoal beret, moss-green mohair cardigan, chocolate tank, espresso leather trousers, burgundy loafers, charcoal socks and cherry-red handbag. She makes subtle editorial pose adjustments after each transition, always looking directly upward. End with her completely still in LOOK 4 as the fan continues rotating. Ultra-realistic fabrics, leather, suede, fur and skin, cinematic autumn color grading, natural film grain and premium fashion-campaign realism. Strictly no cuts, camera movement, zooms, angle changes, morphing, identity drift, outfit glitches, warped hands, duplicated limbs, disappearing accessories, text, logos or watermark.{}\n</code>\n</pre>\n<blockquote>🔥, промт — огонь.\n❤️, хочу ещё таких подборок\n😈, та я в шоке</blockquote>\n#нейровидео\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>\n<tg-emoji emoji-id=\"5188271260357899463\">🆎</tg-emoji> <a href=\"http://www.youtube.com//\">YouTube Канал</a>\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "",
+    "video": "media/neyrolabs-1901741543_2388.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "neyrolabs (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3311
+  },
+  {
+    "id": "rp-2026-09-26-013402-2025",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-26T01:34:00+03:00",
+    "rubric": "Репост",
+    "text": "<tg-emoji emoji-id=\"5415970837045990457\">🩵</tg-emoji> <strong>Генератор:</strong> Seedream 5.0 PRO\n<tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji><tg-emoji emoji-id=\"5393191984070404768\">➖</tg-emoji>\nㅤㅤㅤㅤㅤㅤㅤ<strong><em>+15 <u>бесплатных</u> кредитов\nㅤㅤㅤㅤㅤㅤㅤㅤ ㅤза подписку на канал\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤи web ресурс</em></strong>\nㅤㅤㅤㅤㅤ\n<strong><u>Бельё для промпта в комментариях!</u></strong>\nㅤㅤㅤㅤㅤ\n<blockquote expandable><code>Не меняй черты лица. Создай фотореалистичное изображение. Формат: 3:4. Тип съёмки и ракурс: вертикальный кадр, средний план по бёдра. Ракурс на уровне глаз, чуть сбоку. Поза и взгляд: девушка стоит в ванной комнате, корпус слегка повёрнут, голова наклонена. Взгляд направлен в сторону, не в камеру. Губы приоткрыты, выражение лица спокойное, расслабленное. Правая рука лежит на животе, пальцы слегка касаются кожи. Левая рука опущена. Макияж: ровный тон кожи с лёгким сиянием, мягкие тени, уложенные брови, пушистые ресницы, нюдово-розовый оттенок на губах. Маникюр: не виден. Волосы: густые, объёмные, волнистые, свободно спадают по плечам и спине, пряди обрамляют лицо. Одежда: кружевное бельё с референса. Аксессуары и украшения: несколько тонких цепочек на шее с подвесками, маленькие серьги-кольца, тонкий браслет на запястье. Фон: ванная комната. Стены выложены белой плиткой с синим растительным орнаментом. Справа овальное зеркало в деревянной раме, в котором отражается свет. Рядом ванна, латунный смеситель с душем, флакон на бортике. Освещение: естественное дневное, мягкое, рассеянное, тёплые блики. Цветокор и атмосфера: тёплая приглушённая палитра, лёгкая зернистость, эффект плёночного фото. Реалистичная текстура кожи и тканей. Фотореализм, высокая детализация. 3:4.</code>\n</blockquote>ㅤ",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "media/promtychatgpt-2343842463_3503.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "promtychatgpt (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3312
+  },
+  {
+    "id": "rp-2026-09-26-020620-2026",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-09-26T02:06:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>Возвращаем ежедневную публикацию промптов после перерыва </strong><strong><tg-emoji emoji-id=\"5332408683479465042\">🫶</tg-emoji></strong>",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "",
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "promtychatgpt (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3315
+  },
+  {
+    "id": "rp-2026-09-26-020626-2033",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T02:06:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>Claude Opus 5.5 — имба для генерации видео</strong>\nНовая нейронка создает крутейшие 30-секундные короткометражки, используя только JavaScript\n\nАгент не только создает анимацию,\nно также <strong>продюсирует весь процесс:</strong> пишет сценарий, делает саунд-дизайн и рисует каждый кадр.\nРезультаты — огонь, оцените сами в прикреплённых видео\n\nАгент лежит на GitHub <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji> <a href=\"https://github.com/kuhnhomeuk-cell/procedural-film/\">тут</a>\n\n</a><tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>\n<tg-emoji emoji-id=\"5188271260357899463\">🆎</tg-emoji> <a href=\"http://www.youtube.com//\">YouTube Канал</a>\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "video": "media/neyrolabs-1901741543_2385.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "neyrolabs (копия)"
+  },
+  {
+    "id": "rp-2026-09-26-020629-2034",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T02:06:00+03:00",
+    "rubric": "Репост",
+    "text": "<tg-emoji emoji-id=\"5197624930329444671\">❗️</tg-emoji><strong>Opus 5.5, GPT-6 Luna и Sol стали БЕСПЛАТНЫМИ </strong>\nоснователь сервиса Experiential Labs дает возможность ВСЕМ потестить новенькие нейронки\n\nСроки окончания халявы не назвали,\nпоэтому бежим щупать быстрее <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji><tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji><tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji> <a href=\"https://platform.experientiallabs.ai/models\">сюда</a>\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>\n<tg-emoji emoji-id=\"5188271260357899463\">🆎</tg-emoji> <a href=\"http://www.youtube.com//\">YouTube Канал</a>\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/neyrolabs-1901741543_2383.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "neyrolabs (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3316
+  },
+  {
+    "id": "rp-2026-09-26-024132-2035",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-09-26T02:41:00+03:00",
+    "rubric": "Репост",
+    "text": "В тредсах вирусится интересный световой фильтр для ваших фоток\nДанное свечение добавит вашим фотографиям изюминку<tg-emoji emoji-id=\"5381970617505428041\">😉</tg-emoji>\n<blockquote>Как повторить?\nЗаходим в <a href=\"https://syntx.ai/welcome/RSs8M6C6\"><strong>Syntx</strong></a> <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji>Генерация картинок <tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji>Nano Banana или Gpt Image<tg-emoji emoji-id=\"5192923856695739466\">➡️</tg-emoji>Вставляем промпт +референс </blockquote>\n<pre>\n<code class='language-'>\nUltra realistic cinematic night portrait of a reference img, dramatic glowing backlight behind subject, halo light around hair, warm golden rim light, particles visible in air, dark black background, glowing hair strands, soft smile, aesthetic fashion pose, realistic skin texture, DSLR photography, shallow depth of field, high contrast lighting, warm cinematic tones, ultra detailed, photorealistic, 85mm lens, night photography, dreamy glow effect, Instagram trending aesthetic, 4k{}\n</code>\n</pre>\n<blockquote>Поль<strong>зуйтесь</strong><strong><tg-emoji emoji-id=\"5381970617505428041\">😉</tg-emoji></strong></blockquote>\n<blockquote>🔥, промт — огонь.\n❤️, хочу ещё таких подборок\n😈, та я в шоке</blockquote>\n#нейроарт\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>\n<tg-emoji emoji-id=\"5188271260357899463\">🆎</tg-emoji> <a href=\"http://www.youtube.com//\">YouTube Канал</a>\n<tg-emoji emoji-id=\"5330462483473771381\">➗</tg-emoji><tg-emoji emoji-id=\"5330389310115949633\">➗</tg-emoji><tg-emoji emoji-id=\"5330317755960796646\">➗</tg-emoji><tg-emoji emoji-id=\"5332571432675188476\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5332637502157103742\">➗</tg-emoji><tg-emoji emoji-id=\"5330029898662684247\">➗</tg-emoji><tg-emoji emoji-id=\"5330440093809257492\">➗</tg-emoji>",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "media/neyrolabs-1901741543_2379.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "neyrolabs (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3317
+  },
+  {
+    "id": "rp-2026-09-26-024139-976",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T02:41:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>Китай в отпуске — DeepSeek дешевеет</strong>\n\nПрикинуть, во сколько реально встаёт использование DeepSeek, с каждым разом всё мутнее. Токены у него не равнозначные, и цена на них гуляет будь здоров. Часы пик — платишь вдвое больше.\n\nПоначалу пиковые окна висели ежедневно: 01:00–04:00 и 06:00–10:00 UTC. Кто хотел сэкономить, тот быстро освоил пересчёт UTC в MSK. Потом выходные целиком стали непиковыми — и «экономисты» зазубрили, когда по UTC наступает суббота и когда заканчивается воскресенье.\n\nА сейчас к непиковым дням добавились китайские национальные праздники. Ну что ж, выучим и их — праздник середины осени уже на подходе. <a href=\"https://habr.com/ru/articles/1084426/?utm_campaign=1084426&amp;utm_source=habrahabr&amp;utm_medium=rss\">Читать далее</a>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/devsp-1121902388_5950.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "devsp (копия)",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3318
+  },
+  {
+    "id": "rp-2026-09-26-024144-1346",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T03:43:00+03:00",
+    "rubric": "Репост",
+    "text": "🤖 <strong>Claude Opus 5.5: «дешевле на 40%» — это не скидка на прайс-лист</strong>\n\nAnthropic представила Claude Opus 5.5 — модель, которая, по заявлению компании, показывает уровень Fable 5.1 на большинстве задач и работает заметно дешевле предшественника.\n\n<blockquote>costing about 40 percent less to run than Opus 5</blockquote>\n\nЦена токенов на самом деле упала на 20%: $5→$4 за вход, $25→$20 за выход на миллион. Кэш-чтение подешевело сильнее — на 60%, до $0.20 за миллион. Оставшиеся проценты в «40% дешевле» набираются не из прайса, а из эффективности: модель тратит меньше токенов и генерирует ответ на 30% быстрее.\n\nЗначит выгода делится неравномерно. Разовый запрос без кэша получит честную скидку в <strong>20%</strong> на входные и выходные токены. Полные <strong>40%</strong> увидят агенты с длинным контекстом и многократным перечитыванием кэша — те же паттерны, что выигрывали от изменений Fable 5.1.\n\nНа CursorBench Opus 5.5 обходит GPT-5.6 Sol на 11 пунктов при трети стоимости задачи — сравнение внутреннее, независимой проверки нет.\n\n<a href=\"https://the-decoder.com/claude-opus-5-5-matches-fable-5-1-at-40-percent-lower-cost-as-anthropic-promises-to-fix-claudish-writing/\">https://the-decoder.com/claude-opus-5-5-matches-fable-5-1-at-40-percent-lower-cost-as-anthropic-promises-to-fix-claudish-writing/</a>\n\n#разбор #claude #агенты",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_agentura-1550121216_243.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true
+    },
+    "origin": "ai_agentura (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3319,
+    "published_at": "2026-09-26T03:43:10+03:00",
+    "message_id": 62
+  },
+  {
+    "id": "rp-2026-09-26-031150-590",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T03:44:00+03:00",
+    "rubric": "Репост",
+    "text": "🇷🇺 <strong>Яндекс выложил суверенную модель Alice AI Foundation LLM</strong>\n\nAlice AI Foundation LLM - большая языковая модель от Яндекса на <strong>80 млрд параметров</strong>, обученная с нуля на <strong>18 трлн токенов</strong>.\n\n<tg-emoji emoji-id=\"5215229232476596064\">➡️</tg-emoji> <strong>Что важно</strong>\n<tg-emoji emoji-id=\"5215438204110382731\">🟣</tg-emoji> Полностью обучена без сторонних иностранных компонентов\n<tg-emoji emoji-id=\"5215438204110382731\">🟣</tg-emoji> Заявлена как <strong>суверенная</strong> архитектура\n<tg-emoji emoji-id=\"5215438204110382731\">🟣</tg-emoji> Веса открыты для коммерческого и исследовательского использования\n<tg-emoji emoji-id=\"5215438204110382731\">🟣</tg-emoji> Из 80 млрд параметров в работе одновременно активны около 3 млрд (MoE) - это даёт скорость и экономичность\n\nМодель должна стать основой для будущей рассуждающей версии и агентных возможностей Алисы AI.\n<tg-emoji emoji-id=\"5215229232476596064\">➡️</tg-emoji> <strong>Почему это важно для рынка</strong>\nС 1 марта 2027 года в России планируют ввести требования к суверенным фундаментальным моделям:\n<tg-emoji emoji-id=\"5215730283361348240\">🔘</tg-emoji> российский разработчик\n<tg-emoji emoji-id=\"5215730283361348240\">🔘</tg-emoji> воспроизводимость жизненного цикла\n<tg-emoji emoji-id=\"5215730283361348240\">🔘</tg-emoji> хранение данных в российских ЦОД\n<tg-emoji emoji-id=\"5215730283361348240\">🔘</tg-emoji> подтверждение соответствия\n\nAlice AI Foundation LLM - один из первых крупных шагов в этом направлении.\n\n<strong>Подробнее</strong>: <a href=\"https://www.forbes.ru/tekhnologii/568928-andeks-vylozil-v-opensors-obucennuu-s-nula-ii-model-alice-ai-foundation-llm\">Forbes</a> / официальные материалы Яндекса\n\n<em>Как вам такой ход Яндекса?</em>\n<em>Реально суверенная альтернатива или пока больше заявление?</em>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ub_3171990466-3171990466_803.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true
+    },
+    "origin": "ub_3171990466 (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3320,
+    "published_at": "2026-09-26T03:44:13+03:00",
+    "message_id": 63
+  },
+  {
+    "id": "rp-2026-09-26-031157-1243",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T03:44:00+03:00",
+    "rubric": "Репост",
+    "text": "🚀<strong> Anthropic представила Claude Opus 5.5\n</strong>\nНовая флагманская модель стала сильнее Opus 5, при этом работает быстрее и дешевле.\n\nЧто изменилось:\n\nсильнее в<strong> агентном программировании, computer use и knowledge work\n</strong>- лучше справляется с длинными задачами и большими кодовыми базами\nответы стали короче и естественнее\nулучшена устойчивость к<strong> prompt injection\n</strong>- Anthropic заявляет примерно<strong> на 40% более низкую стоимость </strong>на типичных задачах и более чем<strong> на 30% более быструю генерацию\n</strong>\nодин из ранних тестеров провёл миграцию<strong> 680 000 строк кода менее чем за день\n</strong>- в тесте Anthropic модель переписала<strong> HAProxy с C на Rust за 9,5 часа\n\n</strong>- $4 / 1M входных токенов\n$20 / 1M выходных токенов\n$0,20 / 1M токенов при чтении кеша\n<strong>\n</strong>- Terminal-Bench 4.0 —<strong> 66,4%\n</strong>- FrontierCode v1.1 —<strong> 54,4%\n</strong>- Humanity’s Last Exam —<strong> 67,7% с инструментами\n</strong>\nТакже Anthropic подтвердила, что<strong> Claude Sonnet 5.5 и Haiku 5.5 выйдут в ближайшие недели.</strong>\n\n<a href=\"https://www.anthropic.com/claude-opus-5-5\">https://www.anthropic.com/claude-opus-5-5</a>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_machinelearning_big_data-1114591086_10985.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true
+    },
+    "origin": "ai_machinelearning_big_data (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3321,
+    "published_at": "2026-09-26T03:44:13+03:00",
+    "message_id": 64
+  },
+  {
+    "id": "rp-2026-09-26-034201-1244",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T03:44:00+03:00",
+    "rubric": "Репост",
+    "text": "<tg-emoji emoji-id=\"5357418948058947089\">🌟</tg-emoji> <strong>Samsone: открытые аудиоязыковые модели для смартфонов</strong>\n\nSamsung опубликовали <a href=\"https://arxiv.org/pdf/2609.21666\">Samsone</a> - семейство из трёх небольших аудиоязыковых моделей для работы на мобильных устройствах: Samsone-99M, Samsone-134M и Samsone-356M.\n\n<blockquote>Проект будет участвовать в конференции <a href=\"https://interspeech2026.org/en-AU\">Interspeech 2026</a>, которая пройдет с 27 сентября по 1 октября в Сиднее.</blockquote>\n\nМодели принимают один или несколько аудиофрагментов вместе с текстовым запросом и отвечают текстом: описывают звук, отвечают на вопросы о записи, сравнивают клипы между собой.\n\nЗаявлено понимание речи, музыки и звуки окружения. Отвечают модели только по-английски и строчными буквами - ради экономии параметров оставили в обучающих текстах только строчные символы ASCII и вычистили из словаря редкие токены.\n\nАвторы предупреждают, что после дообучения на аудиовопросах модели теряют общие языковые навыки, так что это точечный инструмент, а не полноценный собеседник.\n\n<tg-emoji emoji-id=\"5415597204955996883\">🟡</tg-emoji><strong>Архитектура</strong>\n\nАудиоэнкодер Whisper-Tiny на 9 млн параметров, нелинейный проектор в пространство текстовых эмбеддингов и языковая модель SmolLM2 от Hugging Face на 135 или 360 млн параметров.\n\nКаждый клип усредняется до 50 аудиотокенов, а разделитель SEP отделяет клипы друг от друга и от текста, поэтому аудио можно вставлять в любое место запроса.\n\n<tg-emoji emoji-id=\"5415597204955996883\">🟡</tg-emoji><strong>Тесты</strong>\n\nНа MMAU (10 тысяч вопросов о звуках, музыке и речи) Samsone-134M набирает 61,33% против 53,34% у прежнего лидера среди малых моделей Mellow на 167 млн параметров.\n\n<blockquote>Это выше Qwen2-Audio-Instruct на 8,4 млрд параметров (57,4%) и на уровне Audio Flamingo 2 на 3 млрд (61,06%).</blockquote>\n\nНа речевой части результаты хуже. В более сложном MMAU-Pro расзница с Mellow составляет 10 пп (37,57% против 27,5%), здесь впереди Qwen2-Audio (45,41%) и GPT-4o Audio (52,5%).\n\nНа Galaxy S25 Ultra без аппаратных оптимизаций Samsone-99M генерирует 125 токенов в секунду, Samsone-134M - 87, Samsone-356M - 39.\n\nОбработка аудио перед генерацией занимает от 0,7 до 1,1 секунды.\n\nВеса для PyTorch, код обучения и экспорта, а также Android-приложение под Android 12 и новее выложены в <a href=\"https://github.com/SamsungLabs/samsone\">репозитории проекта</a>.\n\n<a href=\"https://github.com/SamsungLabs/samsone/releases\">🟡Веса</a>\n<tg-emoji emoji-id=\"5415597204955996883\">🟡</tg-emoji><a href=\"https://arxiv.org/pdf/2609.21666\">Arxiv</a>\n<tg-emoji emoji-id=\"4983325655899833037\">🖥</tg-emoji><a href=\"https://github.com/SamsungLabs/samsone\">GitHub</a>\n\n#AI #ML #SALM #Samsone #Samsung",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_machinelearning_big_data-1114591086_10983.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true
+    },
+    "origin": "ai_machinelearning_big_data (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3322,
+    "published_at": "2026-09-26T03:44:13+03:00",
+    "message_id": 65
+  },
+  {
+    "id": "rp-2026-09-26-034204-1295",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T03:42:00+03:00",
+    "rubric": "Репост",
+    "text": "GPT-6 Sol и GPT-6 Luna готовятся к выходу. Модели уже находятся на финальном этапе подготовки.\n\n> В конфигурации Azure появились gpt-6-sol, gpt-6-luna и gpt-6-astra-minor\n> В том же коммите GPT-5.6 Sol получил обозначение workhorse\n> Новые модели уже добавлены в реестр моделей Microsoft\n\nОфициального анонса пока не было, но Azure уже готовится к их запуску.",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_3923.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "vibecoding_tg (копия)",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3323
+  },
+  {
+    "id": "rp-2026-09-26-034208-1245",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T03:42:00+03:00",
+    "rubric": "Репост",
+    "text": "<tg-emoji emoji-id=\"5384156193218371832\">🙂</tg-emoji> <strong>Яндекс открыл LLM, обученную с нуля: модель обгоняет решение NVIDIA в коде</strong>\n\nAlice AI Foundation LLM обучена на данных Яндекса без инициализации чужими открытыми весами. Претрейн распространяется под лицензией Apache 2.0, что позволяет использовать решение в коммерческих и исследовательских целях, дообучая под свои задачи.\n\nМодель — экспериментальная ступень на пути к единой рассуждающей модели (ЕРМ): на ней Яндекс проверяет архитектурные решения, а сама ЕРМ станет основой агентных возможностей Алисы AI.\n\n<tg-emoji emoji-id=\"5415597204955996883\">🟡</tg-emoji> <strong>Архитектура</strong>\n\nМодель построена на MoE: из 80 млрд параметров в моменте активны только 3 млрд. Она уже прошла основной этап обучения, поэтому её можно использовать как основу для собственных проектов.\n\n<tg-emoji emoji-id=\"5415597204955996883\">🟡</tg-emoji> <strong>Качество</strong>\n\nПо данным тестов:\n\n<tg-emoji emoji-id=\"5215584915898243758\">🟢</tg-emoji> в написании кода модель обгоняет решение от NVIDIA;\n\n<tg-emoji emoji-id=\"5215584915898243758\">🟢</tg-emoji> в олимпиадных задачах по математике делит лидерство с моделью от Alibaba;\n\n<tg-emoji emoji-id=\"5215584915898243758\">🟢</tg-emoji> при меньшем размере превосходит DeepSeek в задачах, требующих широких фактических знаний.\n\nС предыдущей моделью компании, Alice AI LLM 235B, новая версия выигрывает в 75% случаев на фактологических вопросах, хотя у той втрое больше параметров и всемеро больше активных. С длинными текстами до 128K токенов модель работает на уровне лидеров рынка, разделяя первенство с DeepSeek.\n\n<tg-emoji emoji-id=\"5415597204955996883\">🟡</tg-emoji> <strong>Бенчмарки</strong>\n\nЧтобы проверять знания, важные именно для русскоязычной аудитории, компания подготовила два собственных набора: WikiWebFacts построен на Википедии, HardMultiQA — на данных запросов пользователей к Алисе AI. Вместе с задачами опубликованы эталонные ответы и протокол оценки.\n\n<tg-emoji emoji-id=\"5415597204955996883\">🟡</tg-emoji> <strong>Обучение</strong>\n\nВо-первых, перестроили работу оптимизатора так, чтобы пересылки данных между видеокартами шли параллельно с вычислениями. Также в архитектуре появился механизм обращения к выходам предыдущих слоев. Чтобы потребление памяти при этом не возросло, поменяли схему хранения и пересчета промежуточных результатов.\n\nВо-вторых, оптимизировали подготовку данных для обучения. Ранее для оценки и отбора массивов использовалась исключительно отдельная ресурсоемкая модель — ее затраты оценивались в 200 тыс. часов работы видеокарт. Для нового решения построили каскад классификаторов. На каждом этапе более сложная и вычислительно затратная модель работает с уменьшающимся количеством документов. Это в десятки раз сократило количество вычислений.\n\nМодель, технические отчёты и бенчмарки доступны на Hugging Face, техрепорт опубликован <a href=\"https://habr.com/ru/companies/yandex/articles/1083300/\">на Хабре</a>.\n\n#news #ai #ml",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_machinelearning_big_data-1114591086_10982.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true
+    },
+    "origin": "ai_machinelearning_big_data (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3324
+  },
+  {
+    "id": "rp-2026-09-26-041306-977",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T04:13:00+03:00",
+    "rubric": "Репост",
+    "text": "<strong>Писать код стало дёшево. Дорого — придумать, нахрена</strong>\n\nЛет тридцать-сорок весь IT-менеджмент молился на утилизацию дорогих человеко-часов: чем больше строк выдал разработчик, тем красивее в отчётах выглядела эффективность конторы. Потом приехал ИИ, обнулил цену написания кода — и внезапно выяснилось, что узкое место там и не стояло. Оно в идеях, которые вообще стоит тащить в прод.\n\nС ИИ у бизнеса появилась возможность клепать MVP, фичи и рефакторинги не кварталами, а неделями. И тут же обнаружилось: львиная доля этих MVP — хрен кому нужна.\n\nОтсюда и вопрос: «А точно ли горлышко было в разработке?» Логика простая: если MVP штампуются быстро, но спроса не находят, то косяк в самом MVP, а не в том, как быстро ты это клепаешь. <a href=\"https://habr.com/ru/articles/1084374/?utm_campaign=1084374&amp;utm_source=habrahabr&amp;utm_medium=rss\">Читать далее</a>",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/devsp-1121902388_5949.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "devsp (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3325
+  },
+  {
+    "id": "rp-2026-09-26-041309-1756",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T04:13:00+03:00",
+    "rubric": "Репост",
+    "text": "🚀 Grok 4.7 официально вышел. И похоже, xAI решила сделать ставку не на «ещё один чатик», а на ИИ, который реально работает над задачей часами.\n\n21 сентября xAI представила Grok 4.7 — новую модель для программирования, аналитики, агентных сценариев и профессиональной работы.\nПричём это не слух и не очередное обещание Илона Маска: модель уже появилась в API, Cursor и Grok Build.\n\nЧто изменилось? 👇\n\n🧠 1. Grok стал дольше «думать» над сложными задачами\nxAI обучала 4.7 на задачах, выполнение которых может занимать много часов.\nТо есть основной акцент теперь не на том, чтобы быстро написать абзац текста, а на задачах вроде:\nразобраться в большом проекте;\nнайти и исправить несколько связанных ошибок;\nпровести исследование;\nобработать большой массив документов;\nвыполнить последовательность действий через инструменты;\nподготовить полноценный документ или презентацию.\nИменно туда сейчас движутся практически все большие модели: от ответа на вопрос → к выполнению работы.\n\n🔍 2. Усилили самопроверку\nОдна из важных заявленных фишек — модель должна лучше проверять собственный результат.\nДля агентных систем это критично.\n\nПотому что хороший ИИ-агент — это не тот, который быстро написал код. А тот, который:\nнаписал → запустил → увидел ошибку → исправил → перепроверил.\n\n📚 3. Контекст — до 500 000 токенов\nЭто позволяет загружать большие документы, кодовые базы и длинные истории работы.\nА ещё появились уровни reasoning:\nLow → Medium → High → XHigh.\nТо есть вычислительные ресурсы можно подбирать под сложность задачи.\n\n💰 4. Цена интересная\nAPI Grok 4.7 стоит от:\n$2 за 1 млн входных токенов\n$6 за 1 млн выходных.\nДля frontier-модели это довольно агрессивное ценообразование.\n\n⚡️ 5. Особенно сильно прокачали программирование и агентов\nПо данным независимого Artificial Analysis, Grok 4.7 заметно прибавил именно в длинных агентных задачах и coding-agent сценариях.\nНо есть нюанс.\n\nНа максимальном reasoning модель может потреблять значительно больше токенов, чем Grok 4.6.\n\nТо есть «умнее» не всегда означает «дешевле выполнить конкретную задачу».\n😏 А что говорят первые пользователи?\nИ вот здесь начинается самое интересное.\n👍 лучше понимает сложные задачи;\n👍 меньше приходится исправлять результат дополнительными промптами;\n👍 понятнее объясняет архитектуру и технические решения;\n👍 хорошо работает с большими проектами.\nДругие отвечают:\n🤔 стала слишком многословной;\n🤔 расходует много токенов;\n🤔 скачок относительно 4.6 чувствуется не во всех задачах.\n\nА пользователи, которым Grok нравился за креативные тексты и необычный стиль, вообще немного расстроены.\n\nGrok 4.7 явно создавали прежде всего как рабочую модель.\nИ мне кажется, это важнее очередного соревнования «кто лучше написал стихотворение».\nМы постепенно переходим от эпохи:\n«Напиши мне текст»\n«Вот задача. Вот файлы. Вот инструменты. Выполни работу, проверь себя и принеси готовый результат».\nИ вот здесь Grok 4.7 действительно интересно протестировать.\n\n#новости #нейросети #Grok #ИИ #инструменты #тренды",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/forward_neural-2347768910_827.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "forward_neural (копия)",
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3326
+  },
+  {
+    "id": "rp-2026-09-26-041312-1296",
+    "channel": "ai_news",
+    "scheduled_at": "2026-09-26T04:13:00+03:00",
+    "rubric": "Репост",
+    "text": "Семейство Qwen4 впервые анонсировали официально.\n\nНа открытии Cloud Intelligence Conference 2026, новый руководитель направления LLM в Qwen, Лю Даи Хэн, анонсировал готовящееся семейство Qwen4.\n\nВ него войдут:\n\nQwen4-Max\nQwen4-Flash\nQwen4-Plus\nQwen4-27B\n\nВ дальнейшем Qwen намерена перейти к обучению моделей масштаба 5–10 трлн параметров.\n\nПараллельно Alibaba представила ИИ-чип Zhenwu V900, который, по заявлению компании, в три раза производительнее предыдущего поколения. На его базе рассчитывают строить кластеры до 500 тысяч ускорителей, а к 2032 году мощность дата-центров Alibaba должна вырасти до 20 ГВт.",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_3921.jpg",
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true
+    },
+    "origin": "vibecoding_tg (копия)",
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3327
   }
 ]

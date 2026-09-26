@@ -251,6 +251,24 @@
       "lang": "ru",
       "topic": "work",
       "weight": 2
+    },
+    {
+      "name": "neirokris_oz",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "promtychatgpt",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "neyrolabs",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
     }
   ],
   "channels": {
