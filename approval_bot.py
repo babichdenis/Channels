@@ -29,6 +29,10 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+HERE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE_DIR)
+from adfilter import clean_post_text  # noqa: E402
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 QUEUE = os.path.join(HERE, "queue.json")
 CONFIG = os.path.join(HERE, "config.json")
@@ -78,32 +82,174 @@ def save_json(path, data):
     os.replace(tmp, path)
 
 
+MAX_VIDEO_BYTES = 3 * 1024 * 1024    # больше 3 МБ не грузим: прокси ~0.04 МБ/с
+ALLOWED_TAGS = ("b", "strong", "i", "em", "u", "s", "a", "code", "pre",
+                "blockquote", "tg-spoiler", "tg-emoji")
+_OPEN_CLOSE = re.compile(r"<(/?)(\w+)[^>]*>")
+_TG_EMOJI = re.compile(r'<tg-emoji emoji-id="\d+">.*?</tg-emoji>', re.S)
+
+
+def _html_ok(text):
+    """True, если в тексте только сбалансированные разрешённые теги."""
+    if "<" not in text:
+        return True
+    if _TG_EMOJI.search(text):
+        return True
+    st = []
+    for m in _OPEN_CLOSE.finditer(text):
+        tag = m.group(2).lower()
+        if tag not in ALLOWED_TAGS:
+            return False
+        if tag == "tg-emoji":
+            continue
+        if m.group(1):
+            if not st or st[-1] != tag:
+                return False
+            st.pop()
+        else:
+            st.append(tag)
+    return not st
+
+
+def safe_trunc(text, limit):
+    """Обрезает до limit, не разрывая HTML. Если разорвать нельзя —
+    экранирует всё целиком (гарантированно валидный Telegram-HTML)."""
+    text = text or ""
+    if len(text) <= limit and _html_ok(text):
+        return text
+    if not _html_ok(text):
+        # битый/чужой HTML — экранируем целиком, размечая безопасные теги
+        from adfilter import strip_html as _sh
+        text = (_sh(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+        return text[:limit]
+    # режем по границе строк/пробела, не разрывая теги
+    cut = text[:limit]
+    for _ in range(12):
+        if _html_ok(cut):
+            return cut
+        nl = cut.rfind("\n")
+        sp = cut.rfind(" ")
+        pos = max(nl, sp)
+        if pos <= 0:
+            break
+        cut = cut[:pos]
+    if _html_ok(cut):
+        return cut
+    # нигде нет границы — оставляем только то, что до незакрытого тега
+    tail = cut.rsplit("<", 1)[0]
+    if tail and _html_ok(tail):
+        return tail
+    # разрывать негде (например, один гигантский <strong>…</strong>)
+    # — экранируем ИСХОДНЫЙ текст, он гарантированно валиден для Telegram
+    return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))[:limit]
+
+
+def _opener():
+    """Прокси обязателен: без него api.telegram.org периодически отваливается."""
+    global _OPENER
+    if _OPENER is None:
+        px = None
+        for src in (CONFIG, os.path.join(HERE, "config.json")):
+            try:
+                d = load_json(src, {}) or {}
+                if isinstance(d, dict) and d.get("proxy"):
+                    px = d.get("proxy")
+                    break
+            except Exception:
+                pass
+        px = px or os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
+        _OPENER = urllib.request.build_opener(
+            urllib.request.ProxyHandler({"http": px, "https": px} if px else {}))
+    return _OPENER
+
+
+_OPENER = None
+_DIRECT = None
+
+
+def _direct_opener():
+    """Запасной путь в обход прокси: прокси иногда отдаёт 503/EOF."""
+    global _DIRECT
+    if _DIRECT is None:
+        _DIRECT = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    return _DIRECT
+
+
 def api(method, payload, timeout=70, files=None):
     url = "https://api.telegram.org/bot%s/%s" % (TOKEN, method)
     try:
         if files:
             boundary = "----appr%d" % int(time.time() * 1000)
-            parts = []
+            head, tail = [], []
             for key, val in payload.items():
-                parts.append("--%s\r\nContent-Disposition: form-data; name=\"%s\"\r\n\r\n%s\r\n"
-                             % (boundary, key, val))
+                if isinstance(val, (dict, list)):
+                    val = json.dumps(val, ensure_ascii=False)
+                head.append('--%s\r\nContent-Disposition: form-data; name="%s"\r\n\r\n%s\r\n'
+                            % (boundary, key, val))
             for key, (fname, blob) in files.items():
-                parts.append("--%s\r\nContent-Disposition: form-data; name=\"%s\"; filename=\"%s\"\r\n"
-                             "Content-Type: image/jpeg\r\n\r\n" % (boundary, key, fname))
-            body = "".join(parts).encode("utf-8") + blob + ("\r\n--%s--\r\n" % boundary).encode("utf-8")
-            req = urllib.request.Request(url, data=body,
-                                         headers={"Content-Type": "multipart/form-data; boundary=%s" % boundary})
+                head.append('--%s\r\nContent-Disposition: form-data; name="%s"; filename="%s"\r\n'
+                            'Content-Type: image/jpeg\r\n\r\n' % (boundary, key, fname))
+                tail.append(blob)
+                # разделитель между бинарными частями: без него
+                # Telegram отвечает "can't parse InputMedia: media not found"
+                tail.append(b"\r\n")
+            head = "".join(x if isinstance(x, str) else x.decode("utf-8", "ignore") for x in head)
+            tail = b"".join(x if isinstance(x, bytes) else str(x).encode("utf-8") for x in tail)
+            body = (head.encode("utf-8") + tail
+                    + ("\r\n--%s--\r\n" % boundary).encode("utf-8"))
+            req = urllib.request.Request(
+                url, data=body,
+                headers={"Content-Type": "multipart/form-data; boundary=%s" % boundary})
         else:
             req = urllib.request.Request(url, data=urllib.parse.urlencode(payload).encode("utf-8"))
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return json.loads(resp.read().decode("utf-8", "ignore"))
+        last = None
+        # загрузка медиа идёт долго — отдельный таймаут, иначе альбом
+        # из 10 кадров не успевает и Telegram его теряет
+        if files:
+            tmo = max(timeout, 240)
+            attempts = 3
+        else:
+            tmo = min(timeout, 25)
+            attempts = 2
+        for attempt in range(attempts):
+            # сначала прокси (он нужен для скорости/лимитов), затем прямой
+            for op in (_opener(), _direct_opener()):
+                try:
+                    with op.open(req, timeout=tmo) as resp:
+                        return json.loads(resp.read().decode("utf-8", "ignore"))
+                except urllib.error.HTTPError:
+                    raise
+                except Exception as exc:
+                    last = exc
+            if attempt < attempts - 1:
+                time.sleep(1.5 * (attempt + 1))
+        raise last if last else RuntimeError("нет соединения")
     except urllib.error.HTTPError as exc:
         try:
-            return json.loads(exc.read().decode("utf-8", "ignore"))
+            res = json.loads(exc.read().decode("utf-8", "ignore"))
         except Exception:
-            return {"ok": False, "error": str(exc)}
+            res = {"ok": False, "error": str(exc)}
+        log("api %s -> %s: %s" % (method, exc.code, str(res.get("description") or res.get("error"))[:140]))
+        return res
     except Exception as exc:
+        log("api %s -> %s: %s" % (method, type(exc).__name__, str(exc)[:140]))
         return {"ok": False, "error": "%s: %s" % (type(exc).__name__, str(exc)[:150])}
+
+
+def answer_cq(cq, text=""):
+    """Гасит спиннер на кнопке. С retry: через HTTPS_PROXY мелкие запросы
+    иногда падают, и без этого кнопка «крутится вечно»."""
+    cid = (cq or {}).get("id")
+    if not cid:
+        return
+    for attempt in range(3):
+        res = api("answerCallbackQuery", {"callback_query_id": cid, "text": text} if text
+                  else {"callback_query_id": cid})
+        if res.get("ok"):
+            return
+        if attempt < 2:
+            time.sleep(1.2)
+    log("answerCallbackQuery НЕ прошёл: %s" % str(res.get("error"))[:120])
 
 
 def bridge_call(system, user, timeout=240):
@@ -176,6 +322,7 @@ def keyboard(post_id):
     return json.dumps({"inline_keyboard": [
         [{"text": "✅ Опубликовать сейчас", "callback_data": "approve_now:%s" % post_id},
          {"text": "🗓 В расписание", "callback_data": "approve_sched:%s" % post_id}],
+        [{"text": "✏️ Редактировать", "callback_data": "edit:%s" % post_id}],
         [{"text": "❌ Отклонить", "callback_data": "reject:%s" % post_id},
          {"text": "♻️ Перегенерировать", "callback_data": "regen:%s" % post_id}],
     ]}, ensure_ascii=False)
@@ -210,26 +357,72 @@ def post_caption(post, titles):
         head += " | источник: %s" % post["origin"]
     if post.get("source_url"):
         head += ' | <a href="%s">оригинал</a>' % post["source_url"]
-    return "%s\n\n%s\n\n%s" % (head, clean_tags(post.get("text", "")), " ".join(post.get("hashtags") or []))
+    return "%s\n\n%s\n\n%s" % (head,
+                                 clean_post_text(post.get("text", "")),
+                                 " ".join(post.get("hashtags") or []))
+
+
+def post_images(post):
+    """Все существующие файлы-картинки поста: сначала главная, потом остальные."""
+    paths = [p for p in (post.get("images") or []) if p]
+    if not paths and post.get("image"):
+        paths = [post["image"]]
+    out = []
+    for p in paths:
+        full_p = p if os.path.isabs(p) else os.path.join(HERE, p)
+        if os.path.exists(full_p) and full_p not in out:
+            out.append(full_p)
+    return out
 
 
 def send_for_approval(post, admin, titles):
     full = post_caption(post, titles)
-    image = post.get("image")
     video = post.get("video")
-    if video and os.path.exists(os.path.join(HERE, video)) and len(full) <= 1024:
-        with open(os.path.join(HERE, video), "rb") as fh:
+    gallery = post_images(post)
+    # Карусель: показываем ВСЕ фото. Раньше уходила только первая, и по
+    # карточке было невозможно понять, что вообще сделал промпт.
+    if not video and len(gallery) > 1:
+        media, files = [], {}
+        for i, p in enumerate(gallery[:10]):
+            key = "m%d" % i
+            with open(p, "rb") as fh:
+                files[key] = ("%d.jpg" % i, fh.read())
+            item = {"type": "photo", "media": "attach://%s" % key}
+            if i == 0 and len(full) <= 1024:
+                item["caption"] = safe_trunc(full, 1024)
+                item["parse_mode"] = "HTML"
+            media.append(item)
+        res = api("sendMediaGroup", {"chat_id": admin, "media": json.dumps(media)},
+                  files=files, timeout=240)
+        if not res.get("ok"):
+            log("альбом не отправился (%s): %s" % (post.get("id"), str(res.get("error"))[:120]))
+            return api("sendMessage", {"chat_id": admin, "text": safe_trunc(full, 4000),
+                                       "parse_mode": "HTML",
+                                       "reply_markup": keyboard(post["id"])}), "text"
+        head = "🖼 %s%s — %d фото" % (post.get("rubric") or "", " ⏱ %s" % (post.get("scheduled_at") or "")[11:16] or "", len(gallery[:10]))
+        return api("sendMessage", {"chat_id": admin, "text": head,
+                                   "reply_markup": keyboard(post["id"])}), "album"
+    vpath = os.path.join(HERE, video) if video else ""
+    # крупное видео через прокси не отправить адекватно по времени —
+    # уходим на фото/текст, чтобы карточка не потерялась
+    vbig = bool(vpath) and os.path.exists(vpath) \
+        and os.path.getsize(vpath) > MAX_VIDEO_BYTES
+    if vbig:
+        log("видео пропущено, %.1f МБ > лимита: %s"
+            % (os.path.getsize(vpath) / 1048576.0, post.get("id")))
+    if not vbig and video and os.path.exists(vpath) and len(full) <= 1024:
+        with open(vpath, "rb") as fh:
             blob = fh.read()
-        return api("sendVideo", {"chat_id": admin, "caption": full,
+        return api("sendVideo", {"chat_id": admin, "caption": safe_trunc(full, 1024),
                                  "parse_mode": "HTML", "reply_markup": keyboard(post["id"])},
                    files={"video": ("video.mp4", blob)}, timeout=240), "video"
-    if image and os.path.exists(os.path.join(HERE, image)) and len(full) <= 1024:
-        with open(os.path.join(HERE, image), "rb") as fh:
+    if gallery and len(gallery) == 1 and len(full) <= 1024:
+        with open(gallery[0], "rb") as fh:
             blob = fh.read()
-        return api("sendPhoto", {"chat_id": admin, "caption": full,
+        return api("sendPhoto", {"chat_id": admin, "caption": safe_trunc(full, 1024),
                                  "parse_mode": "HTML", "reply_markup": keyboard(post["id"])},
                    files={"photo": ("photo.jpg", blob)}), "photo"
-    return api("sendMessage", {"chat_id": admin, "text": full[:4000],
+    return api("sendMessage", {"chat_id": admin, "text": safe_trunc(full, 4000),
                                "parse_mode": "HTML", "reply_markup": keyboard(post["id"])}), "text"
 
 
@@ -253,10 +446,10 @@ def mark_message(post, admin, status_text):
                "reply_markup": json.dumps({"inline_keyboard": nav}, ensure_ascii=False)}
     kind = post.get("_approval_kind") or ("photo" if post.get("image") else "text")
     if kind in ("photo", "video"):
-        payload["caption"] = (post_caption(post, {}) + "\n\n" + status_text)[:1024]
+        payload["caption"] = safe_trunc(post_caption(post, {}) + "\n\n" + status_text, 1024)
         res = api("editMessageCaption", payload)
     else:
-        payload["text"] = (post_caption(post, {}) + "\n\n" + status_text)[:4000]
+        payload["text"] = safe_trunc(post_caption(post, {}) + "\n\n" + status_text, 4000)
         res = api("editMessageText", payload)
     if not res.get("ok"):
         log("mark_message ошибка (%s): %s" % (mid, res.get("error") or res.get("description")))
@@ -381,7 +574,7 @@ def send_monitoring(chat_id):
             title, pub_today, pend, rej))
     lines.append("")
     lines.append("🤖 бридж: %s" % bridge_status())
-    api("sendMessage", {"chat_id": chat_id, "text": "\n".join(lines)[:4000], "parse_mode": "HTML"})
+    api("sendMessage", {"chat_id": chat_id, "text": safe_trunc("\n".join(lines), 4000), "parse_mode": "HTML"})
 
 
 def bridge_status():
@@ -588,6 +781,25 @@ def main():
                         api("answerCallbackQuery", {"callback_query_id": cq["id"], "text": toast})
                         mark_message(post, admin, mark)
                         log("одобрен (%s): %s" % (action, post_id))
+                    elif action == "edit":
+                        awaiting_edit = post_id
+                        save_json(STATE, dict(state, awaiting_edit=awaiting_edit))
+                        answer_cq(cq, "✏️ жду новый текст")
+                        cur = post_caption(post, {})
+                        api("sendMessage", {"chat_id": admin, "text":
+                                            "✏️ Редактирую %s\n\nПришли новый текст одним сообщением "
+                                            "— заменю целиком. /cancel — отменить.\n\n"
+                                            "Текущий текст:\n%s" % (post_id, (cur or "")[:900]),
+                                            "reply_markup": json.dumps({"inline_keyboard": [[
+                                                {"text": "✖️ Отмена", "callback_data": "editcancel:%s" % post_id}]]})})
+                        log("редактирование: %s" % post_id)
+                    elif action == "editcancel":
+                        awaiting_edit = ""
+                        save_json(STATE, dict(state, awaiting_edit=""))
+                        answer_cq(cq, "✖️ отменено")
+                        api("sendMessage", {"chat_id": admin,
+                                            "text": "✖️ Редактирование отменено."})
+                        log("редактирование отменено: %s" % post_id)
                     elif action == "reject":
                         post["status"] = "rejected"
                         save_json(QUEUE, queue)
@@ -617,7 +829,14 @@ def main():
                 text = (msg.get("text") or msg.get("caption") or "").strip()
                 if str(chat_id) != admin:
                     continue
-                if awaiting_edit and not text.startswith("/") and text not in ("📋 Очередь", "📊 Мониторинг"):
+                if text.strip() in ("/cancel", "/стоп"):
+                    if awaiting_edit:
+                        awaiting_edit = ""
+                        save_json(STATE, dict(state, awaiting_edit=""))
+                        api("sendMessage", {"chat_id": chat_id, "text": "✖️ Редактирование отменено."})
+                        log("редактирование отменено")
+                    continue
+                if awaiting_edit and text and not text.startswith("/") and text not in ("📋 Очередь", "📊 Мониторинг"):
                     queue = load_json(QUEUE, [])
                     post = find_post(queue, awaiting_edit)
                     if post:
@@ -725,7 +944,7 @@ def main():
                     fo_chat = fo.get("chat") or {}
                     origin = (fo_chat.get("title") or fo_chat.get("username")
                               or (fo.get("sender_user") or {}).get("first_name") or "")
-                    state["pending_text"] = text[:4000]
+                    state["pending_text"] = safe_trunc(text, 4000)
                     state["pending_photo"] = ((msg.get("photo") or [{}])[-1].get("file_id") or "")
                     state["pending_origin"] = origin
                     state["pending_origin_user"] = fo_chat.get("username") or ""
@@ -771,13 +990,13 @@ def main():
                                          if f.startswith("report_")) if os.path.isdir(os.path.join(HERE, "reports")) else []
                         if reports:
                             body = open(os.path.join(HERE, "reports", reports[-1]), encoding="utf-8").read()
-                            api("sendMessage", {"chat_id": chat_id, "text": body[:4000]})
+                            api("sendMessage", {"chat_id": chat_id, "text": safe_trunc(body, 4000)})
                         else:
                             api("sendMessage", {"chat_id": chat_id, "text": "Отчётов пока нет — первый придёт в понедельник."})
                     else:
                         out = subprocess.run([sys.executable, os.path.join(HERE, "analytics.py"), "--stats"],
                                              capture_output=True, text=True, timeout=120).stdout
-                        api("sendMessage", {"chat_id": chat_id, "text": out[:4000] or "нет данных"})
+                        api("sendMessage", {"chat_id": chat_id, "text": safe_trunc(out, 4000) or "нет данных"})
                 elif text.startswith("/edit"):
                     parts = text.split()
                     if len(parts) > 1:

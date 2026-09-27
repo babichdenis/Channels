@@ -27,6 +27,10 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from adfilter import clean_post_text  # noqa: E402
+
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -239,6 +243,66 @@ def fetch_bytes(url, proxy, timeout=60):
         return resp.read()
 
 
+_TAG_RE = re.compile(r"<[^>]+>")
+
+
+def strip_html(text):
+    """Выкидывает HTML-разметку. Без этого текст одного материала из разных
+    источников даёт разный md5 (теги есть только в телеграмной версии),
+    и копия проходит дедуп как новая."""
+    if not text:
+        return ""
+    t = _TAG_RE.sub(" ", text)
+    for a, b in (("&nbsp;", " "), ("&quot;", '"'), ("&#39;", "'"),
+                 ("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">")):
+        t = t.replace(a, b)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    return re.sub(r"\n{3,}", "\n\n", t).strip()
+
+
+def post_images(it):
+    """Все картинки поста: image_urls если есть, иначе единственная image_url."""
+    urls = [u for u in (it.get("image_urls") or []) if u and u.startswith("http")]
+    if not urls and it.get("image_url"):
+        urls = [it["image_url"]]
+    seen = []
+    for u in urls:
+        if u not in seen:
+            seen.append(u)
+    return seen
+
+
+def save_media_set(conn, source, post_id, urls, proxy, item_id):
+    """Сохраняет ВСЕ картинки поста. Первая идёт в items.image_local
+    (обратная совместимость), остальные — в post_media."""
+    saved = 0
+    for seq, url in enumerate(urls):
+        rel = download_media(conn, source, post_id, url, proxy,
+                             item_id if seq == 0 else None,
+                             None if seq == 0 else str(seq))
+        if not rel:
+            continue
+        if seq > 0:
+            conn.execute(
+                "INSERT INTO post_media (item_id, seq, url, local) VALUES (?,?,?,?)",
+                (item_id, seq, url, rel))
+        saved += 1
+    return saved
+
+
+def find_duplicate_id(conn, sh, max_dist=10, limit=800):
+    """id последнего похожего дубля (нужен, чтобы докинуть ему картинку)."""
+    rows = conn.execute(
+        "SELECT id, simhash FROM items ORDER BY id DESC LIMIT ?", (limit,)).fetchall()
+    best = 0
+    for r in rows:
+        if not r[1]:
+            continue
+        if hamming(sh, from_signed(r[1])) <= max_dist:
+            best = r[0]
+    return best
+
+
 def simhash(text):
     """64-битный SimHash по словам текста."""
     tokens = re.findall(r"[а-яёa-z0-9]{3,}", (text or "").lower())
@@ -270,8 +334,7 @@ def from_signed(value):
 
 
 def is_duplicate(conn, sh, max_dist=10, limit=800):
-    rows = conn.execute("SELECT simhash FROM items ORDER BY id DESC LIMIT ?", (limit,)).fetchall()
-    return any(hamming(sh, from_signed(r[0])) <= max_dist for r in rows if r[0])
+    return bool(find_duplicate_id(conn, sh, max_dist, limit))
 
 
 CJK_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\u3040-\u30ff\uac00-\ud7af\u3000-\u303f\uff00-\uffef]")
@@ -296,17 +359,29 @@ def looks_garbage(text):
 
 
 def db():
-    conn = sqlite3.connect(DB)
+    # Несколько задач пишут в content.db одновременно (scheduler, vk_ingest,
+    # repost) — без busy_timeout ingest падает с "database is locked".
+    conn = sqlite3.connect(DB, timeout=60)
+    conn.execute("PRAGMA busy_timeout = 60000")
+    conn.execute("PRAGMA journal_mode = WAL")
     conn.execute("""CREATE TABLE IF NOT EXISTS items (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         source TEXT, post_id TEXT, text TEXT, ts TEXT, views INTEGER,
         image_url TEXT, image_local TEXT DEFAULT '', used INTEGER DEFAULT 0,
         hash TEXT UNIQUE, simhash INTEGER DEFAULT 0, dupe INTEGER DEFAULT 0)""")
-    for column in ("simhash INTEGER DEFAULT 0", "dupe INTEGER DEFAULT 0", "image_local TEXT DEFAULT ''"):
+    for column in ("simhash INTEGER DEFAULT 0", "dupe INTEGER DEFAULT 0",
+                   "image_local TEXT DEFAULT ''", "is_media INTEGER DEFAULT 0"):
         try:
             conn.execute("ALTER TABLE items ADD COLUMN %s" % column)
         except sqlite3.OperationalError:
             pass
+    # Все картинки поста. items.image_local остаётся первой (главной) картинкой,
+    # чтобы не ломать выборку кандидатов и публикацию.
+    conn.execute("""CREATE TABLE IF NOT EXISTS post_media (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        item_id INTEGER, seq INTEGER DEFAULT 0,
+        url TEXT, local TEXT DEFAULT '')""")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_post_media_item ON post_media(item_id)")
     conn.commit()
     return conn
 
@@ -333,13 +408,17 @@ def parse_tme(page, source):
         raw = text_m.group(1) if text_m else ""
         raw = re.sub(r"<br\s*/?>", "\n", raw)
         raw = re.sub(r"<[^>]+>", "", raw)
-        text = html_mod.unescape(raw).strip()
-        if len(text) < 120:
+        text = strip_html(raw)
+        photos_all = [u for u in re.findall(r"background-image:url\('([^']+)'\)", chunk)
+                      if "telegram.org/img/emoji" not in u]
+        # Пост может быть чистой картинкой без подписи: text пустой, и старый
+        # порог 120 символов выбрасывал его вместе с картинкой.
+        if len(text) < 120 and not photos_all:
             continue
         dt = re.search(r'<time datetime="([^"]+)"', chunk)
         views = re.search(r'tgme_widget_message_views[^>]*>([^<]+)<', chunk)
-        photos = re.findall(r"background-image:url\('([^']+)'\)", chunk)
-        photo = next((u for u in photos if "telegram.org/img/emoji" not in u), "")
+        photos = photos_all
+        photo = photos[0] if photos else ""
         items.append({
             "source": source,
             "post_id": pid.group(1) if pid else "",
@@ -347,6 +426,7 @@ def parse_tme(page, source):
             "ts": dt.group(1) if dt else "",
             "views": parse_views(views.group(1)) if views else 0,
             "image_url": photo,
+            "image_urls": photos,
         })
     return items
 
@@ -407,7 +487,8 @@ def download_media(conn, source, post_id, image_url, proxy, item_id=None):
     """Скачивает картинку поста в media/ и возвращает относительный путь."""
     if not image_url or not image_url.startswith("http"):
         return ""
-    name = re.sub(r"[^\w.-]", "_", "%s-%s" % (source, post_id))[:90] + ".jpg"
+    tag_txt = ("-%s" % tag) if tag else ""
+    name = re.sub(r"[^\w.-]", "_", "%s-%s%s" % (source, post_id, tag_txt))[:96] + ".jpg"
     dest = os.path.join(MEDIA, name)
     rel = "media/" + name
     if not os.path.exists(dest):
@@ -443,29 +524,53 @@ def cmd_ingest(cfg):
             continue
         fresh = 0
         for it in items:
+            # Чистим HTML у всех источников (t.me, VK и пр.): без этого копия
+            # одного материала из разных каналов получает разный md5.
+            it["text"] = strip_ad_blocks(strip_html(it.get("text") or ""))
+            it["image_urls"] = post_images(it)
             # 1) этот же пост уже есть? (матч по стабильному post_id) — обновляем фото
             row = conn.execute("SELECT id, image_local FROM items WHERE source = ? AND post_id = ?",
                                (name, it["post_id"])).fetchone()
             if row:
-                if not row[1] and it["image_url"]:
-                    if download_media(conn, name, it["post_id"], it["image_url"], cfg.get("proxy"), row[0]):
-                        media += 1
+                if not row[1] and it["image_urls"]:
+                    media += save_media_set(conn, name, it["post_id"],
+                                            it["image_urls"], cfg.get("proxy"), row[0])
                 continue
             # 2) точный дубль текста из другого канала
             h = hashlib.md5(it["text"][:400].encode("utf-8")).hexdigest()
-            if conn.execute("SELECT 1 FROM items WHERE hash = ?", (h,)).fetchone():
+            dup = conn.execute("SELECT id FROM items WHERE hash = ?", (h,)).fetchone()
+            if dup:
+                # Дубль по тексту: если у него нет картинки, а у нас есть —
+                # отдаём картинку копии, иначе она останется голой.
+                if it["image_urls"]:
+                    have = conn.execute("SELECT image_local FROM items WHERE id = ?",
+                                        (dup[0],)).fetchone()
+                    if not (have and have[0]):
+                        media += save_media_set(conn, name, it["post_id"],
+                                                it["image_urls"], cfg.get("proxy"), dup[0])
                 continue
             # 3) похожий текст (SimHash)
             sh = simhash(it["text"])
-            if is_duplicate(conn, sh):
+            dup_id = find_duplicate_id(conn, sh)
+            if dup_id:
                 dupes += 1
+                if it["image_urls"]:
+                    have = conn.execute("SELECT image_local FROM items WHERE id = ?",
+                                        (dup_id,)).fetchone()
+                    if not (have and have[0]):
+                        media += save_media_set(conn, name, it["post_id"],
+                                                it["image_urls"], cfg.get("proxy"), dup_id)
                 continue
+            # Пост без текста, но с медиа — сохраняем ради картинки (is_media=1),
+            # в публикацию как текстовый пост он не пойдёт.
+            is_media = 1 if len(it["text"]) < 40 and it["image_urls"] else 0
             cur = conn.execute(
-                "INSERT INTO items (source, post_id, text, ts, views, image_url, hash, simhash, dupe) "
-                "VALUES (?,?,?,?,?,?,?,?,0)",
-                (it["source"], it["post_id"], it["text"], it["ts"], it["views"], it["image_url"], h, to_signed(sh)))
-            if download_media(conn, name, it["post_id"], it["image_url"], cfg.get("proxy"), cur.lastrowid):
-                media += 1
+                "INSERT INTO items (source, post_id, text, ts, views, image_url, hash, simhash, dupe, is_media) "
+                "VALUES (?,?,?,?,?,?,?,?,0,?)",
+                (it["source"], it["post_id"], it["text"], it["ts"], it["views"],
+                 it["image_url"], h, to_signed(sh), is_media))
+            media += save_media_set(conn, name, it["post_id"],
+                                    it["image_urls"], cfg.get("proxy"), cur.lastrowid)
             new += 1
             fresh += 1
         total += len(items)
@@ -668,6 +773,17 @@ def cmd_adapt(cfg, count, channel, auto=False):
         while post_id in existing_ids:
             post_id = "%s-%d" % (base_id, suffix)
             suffix += 1
+        # Все фото поста (карусель): в post_media лежат дополнительные,
+        # в items.image_local — главное. Без этого карточка показывала
+        # только одну картинку, и по промпту нельзя было понять результат.
+        gallery = []
+        try:
+            for r in conn.execute("SELECT local FROM post_media WHERE item_id = ? ORDER BY seq",
+                                  (item_id,)).fetchall():
+                if r[0] and r[0] not in gallery:
+                    gallery.append(r[0])
+        except sqlite3.OperationalError:
+            pass
         image_path = ""
         if draft.get("visual_required", True):
             image_path = image_local or ""
@@ -678,9 +794,10 @@ def cmd_adapt(cfg, count, channel, auto=False):
             "channel": target,
             "scheduled_at": slot.isoformat(),
             "rubric": draft.get("rubric") or "Промпт дня",
-            "text": draft.get("text", "").strip(),
+            "text": clean_post_text(draft.get("text", "")),
             "hashtags": draft.get("hashtags") or [],
             "image": image_path,
+            "images": ([image_path] if image_path else []) + [g for g in gallery if g != image_path],
             "source_image": image_url or "",
             "status": post_status(target),
             "check": {"evergreen": True, "editor": "conveyor"},

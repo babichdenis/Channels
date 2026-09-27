@@ -1,0 +1,2493 @@
+{
+  "seen": {
+    "gh:mpeddicord/jev-tab-filter": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:damian87x/jev-pi-skills": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:damian87x/jev-pi-model-router": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:juspay/neurolink": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:ab2webco/orca-jev-advisor": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:damian87x/jev-claude-orchestrator": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:TechyAditya/jev-browser-sidekick-mcp": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:damian87x/jev-browser-use": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:frederico-kluser/anonymous-browser": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:24601/Augustus": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:54Lynnn/graphify-jev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:hughesbrayden/sightline": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:italoalmeida0/laya-system-one": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:cdubiel08/jev-ercot": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:jkudish/jev-mcp": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:roshan-shaik-ml/fast-jev-opencode": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:tbrought/honeytongue": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:iamaamir/system-one": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:ARCJ137442/jev-switch": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:TypeSafeAI/jev-harness": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:codicate/pi-grail": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:jpwinans/herdr-jev-auto-compaction": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:damiensmith1/jev-gmail-filter": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:Stephane-Dedu/jev-tactics": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:tomerglick57/Jevstiller": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:Pukujan/jev-classifier": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:Aryan-stark/jev-voice": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:evoke-build/evoke": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:jerryjliu/docjev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:Sweet-Butters/korea-ai-contest-tracker": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:adelvillar1/dev-decisions": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:ayushap18/tracegraph": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:shashnkvats/BYOC": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:webNeat/llama-jev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:kellystuard/jev-gmail-classifier": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:esterhuizen/laya-packet-analyser": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:ipenywis/Jef": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:smixs/code-quality": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:umstek/zero-shot-ie-bench": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:tameernoor/aotn-jev-invoices": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:featherless-ai/simple-jev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:eaisdevelopment/jevmcp": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:PyModel/jev-judge-mcp": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:Partysun/jigor": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:bnap00/pigeonhole": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:paramiyer/jev-ml-exp": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:charlie128233/claude-context-injection": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:artemnovitckii/apollo-jev-lead-classifier": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:ashwin-aggarwal/Detective-Jev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:Wany-i/jev-decision-layer": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:manjunathshiva/jev-frontier-bench": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:saahmadnejad/cline-option-scorer": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:tbrandenburg/classifier-model-test": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:BargLabs/jev-judge-calibration": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:domini-code/-demo-jev-youtube": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:emretheus/jev-rag-benchmark": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:dannyowelch/jev-noul-vs-choice": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:kimjooyoon/gooo-jev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:oneryalcin/hunch": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:Protocol-Lattice/harness-router": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:tcruz1978-afk/jev-model-routing": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:mohit67890/imajev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:AppitStudio/awesome-jev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:nokia-applied-research/AnyJev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:AnEntrypoint/sembrowse": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:dtduc-git/jevnav": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:krisitown/jev-loop-control": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:jimmckerchar/layar": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:robokrunch/awesome-jev": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:pCwOrM/werr": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:weitianxin/JevAny": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "gh:abhishek085/JevControl": {
+      "src": "github",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/e624c92035e50ac0531538ed6f9b9d0f69f73508": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/2459c3100fa9b27faabf535e9a73461935678277": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/f8aff08ef4f70e12dcbff7d4f13325eb143c198b": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/64ead0c25ba14a10d6d347c9958d6af5ceb05395": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/db3914a00a5c521a6e0b2c961bc88a351e85a802": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/6fbbee8824d2273784d7f37839c9089ce7d68305": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/04437ac5450f35aa16500bd1a5de5834f662f66e": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/47bc5ff176be469dddc011d1b48df271b4d46f3a": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/deac7b11204d79fc51d53f9fc83ac1c01e5e6e03": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/4e52e0b7568b797cd7170becaabc1c848543ffef": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/914c10c1d3754753279636f03df4ba538bc66cb7": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/06d087e95afe473e662371c9e1e396d8ce5795f9": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/cfe5973a6edcbf0a0686245b01e9e5c4e4975501": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/5f985be1b6c22689094418c443d55bce9b883331": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/fa748280f1cc6c58ceee0fab0e568227a2c5673e": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/6998105104c62ecf88ace5284bc3ad66d3a3c426": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/5beff42fc6d431e6d4a754499d2b5f612a19ba40": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/3935f131297f06addb2d6f414f7bf6a5cceb2285": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/45eacc942ac8899a5df89378db8dd1fb7f4a49b5": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/155272cfab4863586f6c251f46ed97e65a461250": {
+      "src": "awesome",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hn:49840561": {
+      "src": "hn",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:oomu/OOMU-SystemOne-0.6B-GGUF": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:imtk/OpenThai-SystemOne-ONNX": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:dwidlee/systemone-lite-0.5b": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-MLX-mxfp4": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-MLX-nvfp4": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-MLX-4bit": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-MLX-8bit": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-MLX-bf16": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-bnb-8bit": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-bnb-4bit": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-NVFP4A16": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-NVFP4": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-W4A16-GPTQ": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-W8A8-INT8": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-FP8-Dynamic": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:iapp/OpenThai-SystemOne-GGUF": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "hf:mlboydaisuke/OpenThai-SystemOne-CoreAI": {
+      "src": "huggingface",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fcryptobriefing.com%2Ftypesafe-jev-ai-public-access%2F&c=16868069012617319170&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fenglish.mathrubhumi.com%2Ftechnology%2Fjev-ai-model-explained-decision-making-ai-fajsf1e6&c=10051977691250550885&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.51cto.com%2Farticle%2F856577.html&c=17398840015922468026&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Ffinance.sina.com.cn%2Fstock%2Festate%2Fintegration%2F2026-09-21%2Fdoc-inispyne8962439.shtml&c=567321128888841080&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.chinaz.com%2Fainews%2F31215.shtml&c=9574850184342157771&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.marktechpost.com%2F2026%2F09%2F19%2Ftypesafe-ai-releases-jev%2F&c=2279463884315472002&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fjosipamajic%2F2026%2F09%2F19%2Fjev-cuts-ai-decision-costs-100x-and-vercel-cloudflare-rushed-to-add-it%2F&c=654690661410010184&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.sohu.com%2Fa%2F1079287630_121124363&c=5165781126512464598&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fventurebeat.com%2Fsecurity%2Fcompanies-are-putting-jev-in-charge-of-ai-agent-decisions-and-prompt-injection-can-influence-the-verdict&c=11241839067789722981&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fforbesjapan.com%2Farticles%2Fdetail%2F105002&c=617241245571356431&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.business-standard.com%2Ftechnology%2Fartificial-intelligence%2Fwhat-is-jev-inside-the-new-ai-model-built-to-make-software-decisions-126092200452_1.html&c=4821269419964707615&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fnote.com%2Fnovel_honest3661%2Fn%2Fn71e154f03b56&c=5671884043025085924&mkt=ru-ru": {
+      "src": "bing:ru-RU",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fcryptobriefing.com%2Ftypesafe-ai-billion-dollar-funding-jev-model%2F&c=7591918025494831902&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.theregister.com%2Fdevops%2F2026%2F09%2F23%2Fshut-up-and-calculate-jevs-new-ai-primitives-for-coders%2F5298431&c=1896066586653343097&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.msn.com%2Fen-ca%2Ftechnology%2Fartificial-intelligence%2Fwhat-is-jev-the-ai-tool-200-times-faster-than-chatgpt%2Far-AA2cLHq6&c=16426185114080422801&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F09%2F16%2Ftypesafe-ai-debuts-model-for-machines-that-plays-doom%2F5296711&c=10822715796124553634&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fcryptobriefing.com%2Fjev-ai-model-faster-cheaper-alternative%2F&c=11823668237276274512&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fnote.com%2Fnovel_yak5526%2Fn%2Fn276ec0e45e08%3Fhl%3Den&c=6070521820417250482&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fjosipamajic%2F2026%2F09%2F19%2Fjev-cuts-ai-decision-costs-100x-and-vercel-cloudflare-rushed-to-add-it%2F&c=654690661410010184&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fsiliconangle.com%2F2026%2F09%2F16%2Ftypesafe-ai-exits-stealth-with-40m-to-build-ai-for-use-by-software%2F&c=13866322713770846477&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.geeky-gadgets.com%2Fjev-classification-model%2F&c=13264299259048873007&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fronschmelzer%2F2026%2F09%2F22%2Fwhy-everyone-is-talking-about-jev-the-ai-that-doesnt-chat%2F&c=14467626729921402508&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fnote.com%2Fcoconobi%2Fn%2Fn51f7f640e753%3Fhl%3Den&c=4132197519657850533&mkt=en-us": {
+      "src": "bing:en-US",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "err:bing:zh-CN": {
+      "src": "bing:zh-CN",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fnote.com%2Fnovel_yak5526%2Fn%2Fn276ec0e45e08%3Fhl%3Dko&c=411352129668041655&mkt=ko-kr": {
+      "src": "bing:ko-KR",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fzdnet.co.kr%2Fview%2F%3Fno%3D20260920215302&c=4521974730756144501&mkt=ko-kr": {
+      "src": "bing:ko-KR",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fit.chosun.com%2Fnews%2FarticleView.html%3Fidxno%3D2023092170636&c=2889568842258642874&mkt=ko-kr": {
+      "src": "bing:ko-KR",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fwww.lecturernews.com%2Fnews%2FarticleView.html%3Fidxno%3D211096&c=4449956323511634952&mkt=ko-kr": {
+      "src": "bing:ko-KR",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fwww.panewslab.com%2Fko%2Farticles%2F01a0db2d-ccc3-7014-9538-7c1854b0ef9f&c=6735680964727690543&mkt=ko-kr": {
+      "src": "bing:ko-KR",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fwww.panewslab.com%2Fko%2Farticles%2F01a0c8d0-dbee-71cb-8251-ec1dac113f09&c=18314019462161887660&mkt=ko-kr": {
+      "src": "bing:ko-KR",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.diariobitcoin.com%2Fstartups-verticales%2Ftypesafe-ai-buscaria-mas-de-usd-1-000-millones-tras-el-lanzamiento-de-jev%2F&c=7855679974971867397&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fecosistemastartup.com%2Ftypesafe-ai-creadores-de-jev-negocian-ronda-de-us1-000m%2F&c=62762155807099757&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fecosistemastartup.com%2Fjev-el-decision-model-de-typesafe-que-cuesta-444x-menos%2F&c=17518666317563003608&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fcryptobriefing.com%2Ftypesafe-ai-billion-dollar-funding-jev-model%2F&c=7591918025494831902&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fobservatorioblockchain.com%2Finteligencia-artificial%2Fasi-es-jev-la-ia-que-no-escribe-y-decide-a-precios-de-saldo%2F&c=1604917300294795169&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.redhotcyber.com%2Fpost%2Fjev-di-typesafe-ai-lai-che-smette-di-parlare-e-comincia-a-decidere%2F&c=12634682728349263649&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.diariobitcoin.com%2Fstartups-verticales%2Ftypesafe-ai-lanza-jev-un-modelo-que-promete-automatizar-decisiones-con-salidas-estructuradas%2F&c=3408169241602344288&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.redimin.cl%2Ftypesafe-ai-lanza-jev-un-modelo-que-sustituye-el-texto-por-decisiones-estructuradas-para-automatizar-software&c=15616827546671081120&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.forbesargentina.com%2Finnovacion%2Fque-jev-nueva-ia-chatea-compite-modelos-chatgpt-n98575&c=2264475927882374074&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fgrenade.tw%2Fblog%2Fjev-typesafe-ai-tutorial%2F&c=1826757173650995583&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.myzaker.com%2Farticle%2F6ab74c038e9f0931643dc8f2&c=6236727035652302276&mkt=es-es": {
+      "src": "bing:es-ES",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.diariobitcoin.com%2Fstartups-verticales%2Ftypesafe-ai-buscaria-mas-de-usd-1-000-millones-tras-el-lanzamiento-de-jev%2F&c=7855679974971867397&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fcryptobriefing.com%2Ftypesafe-ai-billion-dollar-funding-jev-model%2F&c=7591918025494831902&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.heise.de%2Fen%2Fnews%2FAI-model-Jev-to-make-machines-decide-faster-11457071.html&c=17767439043993678205&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fecosistemastartup.com%2Ftypesafe-ai-creadores-de-jev-negocian-ronda-de-us1-000m%2F&c=62762155807099757&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.redhotcyber.com%2Fpost%2Fjev-di-typesafe-ai-lai-che-smette-di-parlare-e-comincia-a-decidere%2F&c=12634682728349263649&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fch.marketscreener.com%2Fboerse-nachrichten%2Fgptbots-ai-von-aurora-mobile-limited-integriert-jev-fuer-eine-zweistufige-ki-architektur-ce785ad9dc8dff27&c=8235430863591335673&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fgrenade.tw%2Fblog%2Fjev-typesafe-ai-tutorial%2F&c=1826757173650995583&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.myzaker.com%2Farticle%2F6ab74c038e9f0931643dc8f2&c=6236727035652302276&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.01net.it%2Ftypesafe-ai-jev-modello-decisioni-finanziamenti%2F&c=17463991775196192324&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.heise.de%2Fnews%2FKI-Modell-Jev-soll-Maschinen-schneller-entscheiden-lassen-11456995.html&c=15606020474437614598&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fecosistemastartup.com%2Fjev-de-typesafe-ai-decisiones-tipadas-a-us0042-m-tokens%2F&c=11541884264913818045&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    },
+    "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fnote.com%2Flush_rat3266%2Fn%2Fn1b6fccfa9b38%3Fhl%3Dko&c=3147699528043134445&mkt=de-de": {
+      "src": "bing:de-DE",
+      "ts": "2026-09-26T19:53:03+00:00"
+    }
+  },
+  "items": [
+    {
+      "src": "github",
+      "key": "gh:mpeddicord/jev-tab-filter",
+      "url": "https://github.com/mpeddicord/jev-tab-filter",
+      "title": "mpeddicord/jev-tab-filter",
+      "text": "Chrome extension: group, hide, or close tabs by theme, scored by TypeSafe's Jev model",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:damian87x/jev-pi-skills",
+      "url": "https://github.com/damian87x/jev-pi-skills",
+      "title": "damian87x/jev-pi-skills",
+      "text": "pi extension: TypeSafe Jev decisions as tools (search, rerank, supervise, pick) and hooks (skill select, compaction)",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:damian87x/jev-pi-model-router",
+      "url": "https://github.com/damian87x/jev-pi-model-router",
+      "title": "damian87x/jev-pi-model-router",
+      "text": "pi extension: TypeSafe Jev picks the model for each turn, only from models pi can use",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:juspay/neurolink",
+      "url": "https://github.com/juspay/neurolink",
+      "title": "juspay/neurolink",
+      "text": "The pipe layer of an AI nervous system — one interface connecting provider neurons to your application, across three inference types: generate, stream, and a calibrated decide (via TypeSafe Jev). MCP-native, voice (TTS/STT/realtime), RAG, memory, file processors. Powers Tara, Yama and Clairvoyance at Juspay.",
+      "stars": 141,
+      "created": "2025-05-31",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:ab2webco/orca-jev-advisor",
+      "url": "https://github.com/ab2webco/orca-jev-advisor",
+      "title": "ab2webco/orca-jev-advisor",
+      "text": "Jev (TypeSafe)-backed decision layer for Orca Lab: judges what agents are about to run, and stays out of the way otherwise.",
+      "stars": 0,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:damian87x/jev-claude-orchestrator",
+      "url": "https://github.com/damian87x/jev-claude-orchestrator",
+      "title": "damian87x/jev-claude-orchestrator",
+      "text": "Jev-supervised madmax conductor for Claude Code: tiny slices, parallel subagent workers in worktrees, TypeSafe Jev makes routing/review/QA/supervision decisions.",
+      "stars": 0,
+      "created": "2026-09-22",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:TechyAditya/jev-browser-sidekick-mcp",
+      "url": "https://github.com/TechyAditya/jev-browser-sidekick-mcp",
+      "title": "TechyAditya/jev-browser-sidekick-mcp",
+      "text": "MCP server that runs plain-language browser steps. Jev, a typed decision model, picks the control on each page instead of an LLM reading the DOM.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:damian87x/jev-browser-use",
+      "url": "https://github.com/damian87x/jev-browser-use",
+      "title": "damian87x/jev-browser-use",
+      "text": "Fast browser QA from Claude Code or pi: TypeSafe Jev picks every click via Jev Ultrafast, you supply text and the pass check.",
+      "stars": 0,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:frederico-kluser/anonymous-browser",
+      "url": "https://github.com/frederico-kluser/anonymous-browser",
+      "title": "frederico-kluser/anonymous-browser",
+      "text": "Disposable, fingerprint-rotating browser via Tor (Camoufox) for you and for AI agents. The installer sets up Tor, Camoufox and a global agent skill: from one prompt, TypeSafe Jev decides each step, Gemini 3.8 Flash types and backs it up, and you are asked only when it gets stuck or a CAPTCHA shows up. npm i -g anonymous-browser",
+      "stars": 0,
+      "created": "2026-05-12",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:24601/Augustus",
+      "url": "https://github.com/24601/Augustus",
+      "title": "24601/Augustus",
+      "text": "Agent skill for finding, building, evaluating, and improving decision-model systems. Compositional decision calculus, eval harnesses, and bounded prompt/program hill climbing for Software 3.0. TypeSafe Jev is the default hosted exemplar. Independent of TypeSafe.",
+      "stars": 11,
+      "created": "2026-09-18",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:54Lynnn/graphify-jev",
+      "url": "https://github.com/54Lynnn/graphify-jev",
+      "title": "54Lynnn/graphify-jev",
+      "text": "Next-gen Codebase Knowledge Graph with TypeSafe JEV Semantic Navigation & Zero Vector DB. Accurate to the code line, 90% fewer tokens.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:hughesbrayden/sightline",
+      "url": "https://github.com/hughesbrayden/sightline",
+      "title": "hughesbrayden/sightline",
+      "text": "A harness that teaches itself what context to show Jev (TypeSafe's fast decision model). Hackathon project.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:italoalmeida0/laya-system-one",
+      "url": "https://github.com/italoalmeida0/laya-system-one",
+      "title": "italoalmeida0/laya-system-one",
+      "text": "Self-contained, ultra-fast System 1 decision engine with WebGPU/WASM acceleration, 100% wire-compatible with TypeSafe Jev (/v1/systemone).",
+      "stars": 0,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:cdubiel08/jev-ercot",
+      "url": "https://github.com/cdubiel08/jev-ercot",
+      "title": "cdubiel08/jev-ercot",
+      "text": "Texas retail electric plan shopper: Power to Choose corpus, Jev (TypeSafe System One) classifier, Next.js app",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:jkudish/jev-mcp",
+      "url": "https://github.com/jkudish/jev-mcp",
+      "title": "jkudish/jev-mcp",
+      "text": "Fast, cheap, typed judgments from TypeSafe's Jev model, as MCP tools.",
+      "stars": 384,
+      "created": "2026-09-17",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:roshan-shaik-ml/fast-jev-opencode",
+      "url": "https://github.com/roshan-shaik-ml/fast-jev-opencode",
+      "title": "roshan-shaik-ml/fast-jev-opencode",
+      "text": "OpenCode v1 + v2 plugin: prune stale tool calls and truncate bulky tool results from the outgoing request using TypeSafe Jev decisions (verbatim compaction, no summarization).",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:tbrought/honeytongue",
+      "url": "https://github.com/tbrought/honeytongue",
+      "title": "tbrought/honeytongue",
+      "text": "\"Characters your players can actually argue with.\" Honeytongue is a persuasion mechanic for text games: give a character a persona and a goal, pass in whatever the player typed, and find out whether they were convinced, judged by that character's values. It's powered by Jev, TypeSafe's typed decision model.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:iamaamir/system-one",
+      "url": "https://github.com/iamaamir/system-one",
+      "title": "iamaamir/system-one",
+      "text": "Provider-neutral System One runtime for TypeScript and Pi",
+      "stars": 58,
+      "created": "2026-09-22",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:ARCJ137442/jev-switch",
+      "url": "https://github.com/ARCJ137442/jev-switch",
+      "title": "ARCJ137442/jev-switch",
+      "text": "A fast, local-first gateway for aggregating and routing TypeSafe Jev model endpoints | 一款快速、本地优先的网关，用于聚合与路由 TypeSafe Jev 模型入口",
+      "stars": 1,
+      "created": "2026-09-22",
+      "pushed": "2026-09-26",
+      "lang": "Rust",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:TypeSafeAI/jev-harness",
+      "url": "https://github.com/TypeSafeAI/jev-harness",
+      "title": "TypeSafeAI/jev-harness",
+      "text": "A custom coding harness for TypeSafe AI's Jev: an LLM proposes, Jev answers narrow questions, code decides, every step leaves a receipt.",
+      "stars": 18,
+      "created": "2026-09-22",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:codicate/pi-grail",
+      "url": "https://github.com/codicate/pi-grail",
+      "title": "codicate/pi-grail",
+      "text": "Minimal production Pi extension bootstrap for TypeSafe Jev and future Grail reviews",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:jpwinans/herdr-jev-auto-compaction",
+      "url": "https://github.com/jpwinans/herdr-jev-auto-compaction",
+      "title": "jpwinans/herdr-jev-auto-compaction",
+      "text": "Auto-compact Claude Code sessions when a task finishes, not when context fills up. Jev judges task completion; Herdr types /compact.",
+      "stars": 0,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:damiensmith1/jev-gmail-filter",
+      "url": "https://github.com/damiensmith1/jev-gmail-filter",
+      "title": "damiensmith1/jev-gmail-filter",
+      "text": "Filter Gmail with plain-English topics, powered by jevfilter and TypeSafe's Jev.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:Stephane-Dedu/jev-tactics",
+      "url": "https://github.com/Stephane-Dedu/jev-tactics",
+      "title": "Stephane-Dedu/jev-tactics",
+      "text": "Perception par vision et decision tactique confiee a Jev (TypeSafe AI) sur un combat isometrique au tour par tour. Recherche.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:tomerglick57/Jevstiller",
+      "url": "https://github.com/tomerglick57/Jevstiller",
+      "title": "tomerglick57/Jevstiller",
+      "text": "Distill a repeated Jev classification task into a local model, on the fly — same answers, your hardware.",
+      "stars": 2,
+      "created": "2026-09-21",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:Pukujan/jev-classifier",
+      "url": "https://github.com/Pukujan/jev-classifier",
+      "title": "Pukujan/jev-classifier",
+      "text": "Mostly-deterministic JEV-based classifier for epistemic/bitemporal summarization of AI-research transcripts/papers into medium-quality research papers with provenance, lineage, and citations.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:cdubiel08/jev-ercot",
+      "url": "https://github.com/cdubiel08/jev-ercot",
+      "title": "cdubiel08/jev-ercot",
+      "text": "Texas retail electric plan shopper: Power to Choose corpus, Jev (TypeSafe System One) classifier, Next.js app",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:Aryan-stark/jev-voice",
+      "url": "https://github.com/Aryan-stark/jev-voice",
+      "title": "Aryan-stark/jev-voice",
+      "text": "Voice-controlled macOS agent: local whisper.cpp + Jev classifier + local planner tier, with verified execution and risk gating",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:evoke-build/evoke",
+      "url": "https://github.com/evoke-build/evoke",
+      "title": "evoke-build/evoke",
+      "text": "Software, by reflex. Say it, and the right small program runs: chosen by a calibrated classifier, run only when it is sure enough, and it asks before anything that cannot be undone. A CLI, a package manager and a TypeScript SDK: the first implementation of the idea.",
+      "stars": 17,
+      "created": "2026-09-21",
+      "pushed": "2026-09-26",
+      "lang": "Rust",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:jerryjliu/docjev",
+      "url": "https://github.com/jerryjliu/docjev",
+      "title": "jerryjliu/docjev",
+      "text": "A very fast document classifier/splitter using Jev ",
+      "stars": 460,
+      "created": "2026-09-19",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:Sweet-Butters/korea-ai-contest-tracker",
+      "url": "https://github.com/Sweet-Butters/korea-ai-contest-tracker",
+      "title": "Sweet-Butters/korea-ai-contest-tracker",
+      "text": "Self-updating directory of AI competitions & hackathons in South Korea — with TypeSafe Jev as a classifier. 대한민국 AI 공모전·해커톤 자동 수집",
+      "stars": 0,
+      "created": "2026-09-22",
+      "pushed": "2026-09-26",
+      "lang": "HTML",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:adelvillar1/dev-decisions",
+      "url": "https://github.com/adelvillar1/dev-decisions",
+      "title": "adelvillar1/dev-decisions",
+      "text": "Decision-model gates for git + ZCode workflows: scan secrets/PII, classify diffs with Jev/GLiNER/Decide, and log every decision to JSONL for calibration",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:ayushap18/tracegraph",
+      "url": "https://github.com/ayushap18/tracegraph",
+      "title": "ayushap18/tracegraph",
+      "text": "Live multi-agent query routing with the Jev classifier, visualized as a real-time trace graph. Python + aiohttp + React + D3.",
+      "stars": 1,
+      "created": "2026-09-25",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:shashnkvats/BYOC",
+      "url": "https://github.com/shashnkvats/BYOC",
+      "title": "shashnkvats/BYOC",
+      "text": "Build Your Own Classifier - describe a classification need in plain English and get a hosted, Jev-backed API endpoint for guardrails, agent/skill routing, and MCP tool selection.",
+      "stars": 0,
+      "created": "2026-09-25",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:webNeat/llama-jev",
+      "url": "https://github.com/webNeat/llama-jev",
+      "title": "webNeat/llama-jev",
+      "text": "Reproducing jev classifier API on top of llama.cpp",
+      "stars": 0,
+      "created": "2026-09-19",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:kellystuard/jev-gmail-classifier",
+      "url": "https://github.com/kellystuard/jev-gmail-classifier",
+      "title": "kellystuard/jev-gmail-classifier",
+      "text": "Google Apps Script that classifies Gmail messages with Jev, TypeSafe's decision-only AI model. Runs on a time-driven trigger, sends each email's sender, subject, and trimmed body to Jev (via TypeSafe, OpenRouter, or Vercel AI Gateway), and applies Gmail labels based on typed Choice, Score, and Noul answers with confidence thresholds.",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:esterhuizen/laya-packet-analyser",
+      "url": "https://github.com/esterhuizen/laya-packet-analyser",
+      "title": "esterhuizen/laya-packet-analyser",
+      "text": "Real-time network security analyser for your laptop: packet detectors + a local Laya model (Jev-compatible) that triages alerts and classifies every conversation. Live dashboard, pcap support, stdlib-only Python.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:ipenywis/Jef",
+      "url": "https://github.com/ipenywis/Jef",
+      "title": "ipenywis/Jef",
+      "text": "Like Jev. Finetuned Qwen 3.5 to be your classifier ",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:smixs/code-quality",
+      "url": "https://github.com/smixs/code-quality",
+      "title": "smixs/code-quality",
+      "text": "Deterministic code quality gate for AI coding agents (Claude Code, Codex, pi): git hooks that block test tampering, hold the CRAP bar on changed functions, check diff coverage, secrets and dependencies. 12 languages, one config file. Optional Jev classifier for test hunks.",
+      "stars": 13,
+      "created": "2026-09-21",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:umstek/zero-shot-ie-bench",
+      "url": "https://github.com/umstek/zero-shot-ie-bench",
+      "title": "umstek/zero-shot-ie-bench",
+      "text": "38 zero-shot information-extraction & classification systems across 23 families — extractors, classifiers, cross-encoder rerankers and typed-decision engines, local + hosted (OpenRouter) — demos, accuracy/latency/cost benchmarks, 9-language suite, web UI",
+      "stars": 3,
+      "created": "2026-09-20",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:tameernoor/aotn-jev-invoices",
+      "url": "https://github.com/tameernoor/aotn-jev-invoices",
+      "title": "tameernoor/aotn-jev-invoices",
+      "text": "Jev judges invoices, code decides. Companion code for the article \"The classifier you don't have to train\".",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:featherless-ai/simple-jev",
+      "url": "https://github.com/featherless-ai/simple-jev",
+      "title": "featherless-ai/simple-jev",
+      "text": "Turn any open model into a classifier/jev endpoint",
+      "stars": 547,
+      "created": "2026-09-18",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:eaisdevelopment/jevmcp",
+      "url": "https://github.com/eaisdevelopment/jevmcp",
+      "title": "eaisdevelopment/jevmcp",
+      "text": "Plugin for Claude Code and Codex: TypeSafe's fast classifier Jev screens spec drift, failed CI runs and code-rule violations in seconds; your agent investigates only what it flags. Specs in English, Latin-alphabet languages, Chinese, Japanese and Korean.",
+      "stars": 0,
+      "created": "2026-09-22",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:PyModel/jev-judge-mcp",
+      "url": "https://github.com/PyModel/jev-judge-mcp",
+      "title": "PyModel/jev-judge-mcp",
+      "text": "Typed judgment tools for MCP agents. TypeSafe's Jev model as verify, screen, find, classify, rerank, decide, compare, extract, review, gate, and score: the model judges, policy decides auto, review, or escalate.",
+      "stars": 29,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:Partysun/jigor",
+      "url": "https://github.com/Partysun/jigor",
+      "title": "Partysun/jigor",
+      "text": " zero-shot classifier models gateway and runner",
+      "stars": 2,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Rust",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:bnap00/pigeonhole",
+      "url": "https://github.com/bnap00/pigeonhole",
+      "title": "bnap00/pigeonhole",
+      "text": "Weekend project: describe a classifier in English, get a typed API on a decision model (Jev)",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:paramiyer/jev-ml-exp",
+      "url": "https://github.com/paramiyer/jev-ml-exp",
+      "title": "paramiyer/jev-ml-exp",
+      "text": "Autonomous feature discovery for frozen LLM classifiers across ML benchmark datasets.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:charlie128233/claude-context-injection",
+      "url": "https://github.com/charlie128233/claude-context-injection",
+      "title": "charlie128233/claude-context-injection",
+      "text": "Reversible, per-request context injection for Claude Code. A local proxy asks a small classifier (Jev or any Jev-compatible model) which old tool results matter for your current request, hides the rest behind a one-line note, and puts them back in place when they become relevant again. Nothing is lost.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:artemnovitckii/apollo-jev-lead-classifier",
+      "url": "https://github.com/artemnovitckii/apollo-jev-lead-classifier",
+      "title": "artemnovitckii/apollo-jev-lead-classifier",
+      "text": "Connect saved Apollo contacts or CSVs to JEV, qualify leads and prepare company-specific outreach drafts with message checks and call invitations. Includes AI setup and offline tests.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:ashwin-aggarwal/Detective-Jev",
+      "url": "https://github.com/ashwin-aggarwal/Detective-Jev",
+      "title": "ashwin-aggarwal/Detective-Jev",
+      "text": "Watching a new and viral classifier , Jev, solve a murder mystery: JEV reads detective novels chunk by chunk and outputs calibrated suspect probabilities at every step.",
+      "stars": 0,
+      "created": "2026-09-25",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:Wany-i/jev-decision-layer",
+      "url": "https://github.com/Wany-i/jev-decision-layer",
+      "title": "Wany-i/jev-decision-layer",
+      "text": "把决策模型（typesafe/jev-1.13，经 OpenRouter 的 decisions 端点调用）封装成业务决策工具：注册表驱动，带置信度门控与硬约束。非官方项目。",
+      "stars": 0,
+      "created": "2026-09-18",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:manjunathshiva/jev-frontier-bench",
+      "url": "https://github.com/manjunathshiva/jev-frontier-bench",
+      "title": "manjunathshiva/jev-frontier-bench",
+      "text": "TypeSafe Jev 1.13 vs Claude Fable 5.1, GPT-6 Astra, Kimi K3, MiniMax M3 and DeepSeek V4.1 Flash on 200 typed decisions: accuracy, calibration, agreement with 100 human annotators, latency and cost",
+      "stars": 1,
+      "created": "2026-09-19",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:saahmadnejad/cline-option-scorer",
+      "url": "https://github.com/saahmadnejad/cline-option-scorer",
+      "title": "saahmadnejad/cline-option-scorer",
+      "text": "Calibrated Jev 1.13 percentages for Cline ask_question options — PreToolUse/PostToolUse hooks, a Cline plugin, a universal MCP server and a CLI.",
+      "stars": 0,
+      "created": "2026-09-21",
+      "pushed": "2026-09-25",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:tbrandenburg/classifier-model-test",
+      "url": "https://github.com/tbrandenburg/classifier-model-test",
+      "title": "tbrandenburg/classifier-model-test",
+      "text": "Typesafe uv project testing the OpenRouter Decisions API (Jev 1.13) against synthetic static-analysis findings",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-24",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:BargLabs/jev-judge-calibration",
+      "url": "https://github.com/BargLabs/jev-judge-calibration",
+      "title": "BargLabs/jev-judge-calibration",
+      "text": "Preregistered calibration test of TypeSafe Jev 1.13 as a judge of agent completion reports (2026-09-20): protocol, errata, harness, corpus, result",
+      "stars": 0,
+      "created": "2026-09-21",
+      "pushed": "2026-09-24",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:domini-code/-demo-jev-youtube",
+      "url": "https://github.com/domini-code/-demo-jev-youtube",
+      "title": "domini-code/-demo-jev-youtube",
+      "text": " Demos en Python con llamadas reales a Jev 1.13.0: comparación de clasificación de tickets contra Claude Sonnet 5 (race.py) y casos de fallo/mitigación del modelo — inyección y aritmética (break_it.py)",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-24",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:emretheus/jev-rag-benchmark",
+      "url": "https://github.com/emretheus/jev-rag-benchmark",
+      "title": "emretheus/jev-rag-benchmark",
+      "text": "Free English RAG benchmark for TypeSafe Jev 1.13 — frozen candidate pools, calibration, paired bootstrap CIs, $0 runs. Compared with OpenJev and NVIDIA cross-encoders.",
+      "stars": 0,
+      "created": "2026-09-20",
+      "pushed": "2026-09-24",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:dannyowelch/jev-noul-vs-choice",
+      "url": "https://github.com/dannyowelch/jev-noul-vs-choice",
+      "title": "dannyowelch/jev-noul-vs-choice",
+      "text": "Interactive Jev demo: Noul vs yes/no Choice disagree (TypeSafe jev-1.13 jaggedness)",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-24",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:kimjooyoon/gooo-jev",
+      "url": "https://github.com/kimjooyoon/gooo-jev",
+      "title": "kimjooyoon/gooo-jev",
+      "text": "Provider-neutral typed decision receipts for Go and .gooo execution plans",
+      "stars": 1,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Go",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:damian87x/jev-pi-skills",
+      "url": "https://github.com/damian87x/jev-pi-skills",
+      "title": "damian87x/jev-pi-skills",
+      "text": "pi extension: TypeSafe Jev decisions as tools (search, rerank, supervise, pick) and hooks (skill select, compaction)",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:ab2webco/orca-jev-advisor",
+      "url": "https://github.com/ab2webco/orca-jev-advisor",
+      "title": "ab2webco/orca-jev-advisor",
+      "text": "Jev (TypeSafe)-backed decision layer for Orca Lab: judges what agents are about to run, and stays out of the way otherwise.",
+      "stars": 0,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:damian87x/jev-claude-orchestrator",
+      "url": "https://github.com/damian87x/jev-claude-orchestrator",
+      "title": "damian87x/jev-claude-orchestrator",
+      "text": "Jev-supervised madmax conductor for Claude Code: tiny slices, parallel subagent workers in worktrees, TypeSafe Jev makes routing/review/QA/supervision decisions.",
+      "stars": 0,
+      "created": "2026-09-22",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:TechyAditya/jev-browser-sidekick-mcp",
+      "url": "https://github.com/TechyAditya/jev-browser-sidekick-mcp",
+      "title": "TechyAditya/jev-browser-sidekick-mcp",
+      "text": "MCP server that runs plain-language browser steps. Jev, a typed decision model, picks the control on each page instead of an LLM reading the DOM.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:oneryalcin/hunch",
+      "url": "https://github.com/oneryalcin/hunch",
+      "title": "oneryalcin/hunch",
+      "text": "dbt for judgments: declarative, tested, versioned semantic decisions powered by System One models like Jev",
+      "stars": 0,
+      "created": "2026-09-25",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:24601/Augustus",
+      "url": "https://github.com/24601/Augustus",
+      "title": "24601/Augustus",
+      "text": "Agent skill for finding, building, evaluating, and improving decision-model systems. Compositional decision calculus, eval harnesses, and bounded prompt/program hill climbing for Software 3.0. TypeSafe Jev is the default hosted exemplar. Independent of TypeSafe.",
+      "stars": 11,
+      "created": "2026-09-18",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:Protocol-Lattice/harness-router",
+      "url": "https://github.com/Protocol-Lattice/harness-router",
+      "title": "Protocol-Lattice/harness-router",
+      "text": "Fast decision routing for agent harnesses — native MCP with Jev for tool selection and MCTS for multi-step decisions.",
+      "stars": 3,
+      "created": "2026-09-25",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:tcruz1978-afk/jev-model-routing",
+      "url": "https://github.com/tcruz1978-afk/jev-model-routing",
+      "title": "tcruz1978-afk/jev-model-routing",
+      "text": "Jev model and decision routing",
+      "stars": 0,
+      "created": "2026-09-25",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:hughesbrayden/sightline",
+      "url": "https://github.com/hughesbrayden/sightline",
+      "title": "hughesbrayden/sightline",
+      "text": "A harness that teaches itself what context to show Jev (TypeSafe's fast decision model). Hackathon project.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:italoalmeida0/laya-system-one",
+      "url": "https://github.com/italoalmeida0/laya-system-one",
+      "title": "italoalmeida0/laya-system-one",
+      "text": "Self-contained, ultra-fast System 1 decision engine with WebGPU/WASM acceleration, 100% wire-compatible with TypeSafe Jev (/v1/systemone).",
+      "stars": 0,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:mohit67890/imajev",
+      "url": "https://github.com/mohit67890/imajev",
+      "title": "mohit67890/imajev",
+      "text": "Open Jev-style typed-decision model that also takes images: photo + app state + typed questions in, calibrated probabilities out, locally.",
+      "stars": 3,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:roshan-shaik-ml/fast-jev-opencode",
+      "url": "https://github.com/roshan-shaik-ml/fast-jev-opencode",
+      "title": "roshan-shaik-ml/fast-jev-opencode",
+      "text": "OpenCode v1 + v2 plugin: prune stale tool calls and truncate bulky tool results from the outgoing request using TypeSafe Jev decisions (verbatim compaction, no summarization).",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:tbrought/honeytongue",
+      "url": "https://github.com/tbrought/honeytongue",
+      "title": "tbrought/honeytongue",
+      "text": "\"Characters your players can actually argue with.\" Honeytongue is a persuasion mechanic for text games: give a character a persona and a goal, pass in whatever the player typed, and find out whether they were convinced, judged by that character's values. It's powered by Jev, TypeSafe's typed decision model.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:AppitStudio/awesome-jev",
+      "url": "https://github.com/AppitStudio/awesome-jev",
+      "title": "AppitStudio/awesome-jev",
+      "text": "Curated Jev resources and runnable examples for typed AI decisions.",
+      "stars": 86,
+      "created": "2026-09-18",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:nokia-applied-research/AnyJev",
+      "url": "https://github.com/nokia-applied-research/AnyJev",
+      "title": "nokia-applied-research/AnyJev",
+      "text": "Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue updating, welcome any issue and PR request)",
+      "stars": 790,
+      "created": "2026-09-21",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:AnEntrypoint/sembrowse",
+      "url": "https://github.com/AnEntrypoint/sembrowse",
+      "title": "AnEntrypoint/sembrowse",
+      "text": "Portable local browser decision runner combining Jev Ultrafast with SemIf-OpenJev",
+      "stars": 0,
+      "created": "2026-09-25",
+      "pushed": "2026-09-26",
+      "lang": "JavaScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:dtduc-git/jevnav",
+      "url": "https://github.com/dtduc-git/jevnav",
+      "title": "dtduc-git/jevnav",
+      "text": "Page truth for browser agents — and decisions that replay, test and audit. Jev picks the element, risky actions are gated, every run replays offline in CI.",
+      "stars": 1,
+      "created": "2026-09-21",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:Stephane-Dedu/jev-tactics",
+      "url": "https://github.com/Stephane-Dedu/jev-tactics",
+      "title": "Stephane-Dedu/jev-tactics",
+      "text": "Perception par vision et decision tactique confiee a Jev (TypeSafe AI) sur un combat isometrique au tour par tour. Recherche.",
+      "stars": 0,
+      "created": "2026-09-26",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:krisitown/jev-loop-control",
+      "url": "https://github.com/krisitown/jev-loop-control",
+      "title": "krisitown/jev-loop-control",
+      "text": "Bounded Jev supervision for Pi: observe decisions, block tool batches, and continue unfinished tasks.",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-26",
+      "lang": "TypeScript",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:jimmckerchar/layar",
+      "url": "https://github.com/jimmckerchar/layar",
+      "title": "jimmckerchar/layar",
+      "text": "Laya/Jev-style typed decisions (choice, bool, score) running locally in Ruby",
+      "stars": 0,
+      "created": "2026-09-24",
+      "pushed": "2026-09-26",
+      "lang": "Ruby",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:robokrunch/awesome-jev",
+      "url": "https://github.com/robokrunch/awesome-jev",
+      "title": "robokrunch/awesome-jev",
+      "text": "A curated list of resources for Jev — TypeSafe AI's System One decision model. Maintained by RoboKrunch.",
+      "stars": 2,
+      "created": "2026-09-19",
+      "pushed": "2026-09-26",
+      "lang": "",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:pCwOrM/werr",
+      "url": "https://github.com/pCwOrM/werr",
+      "title": "pCwOrM/werr",
+      "text": "Zero-memory System-1 decision engine & TypeSafe Jev wire-compatible runtime powered by Mandelbrot wave dynamics (The Zero-VRAM Gauntlet).",
+      "stars": 4,
+      "created": "2026-09-18",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:weitianxin/JevAny",
+      "url": "https://github.com/weitianxin/JevAny",
+      "title": "weitianxin/JevAny",
+      "text": "Calibration-aware reinforcement learning for adaptive decision systems",
+      "stars": 17,
+      "created": "2026-09-22",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "github",
+      "key": "gh:abhishek085/JevControl",
+      "url": "https://github.com/abhishek085/JevControl",
+      "title": "abhishek085/JevControl",
+      "text": "Benchmarking framework: System One (Jev) decision models vs System Two (LLM) harnesses — routing, context scoring, fact-checking. Nokast open-source AI initiative.",
+      "stars": 0,
+      "created": "2026-09-23",
+      "pushed": "2026-09-26",
+      "lang": "Python",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/e624c92035e50ac0531538ed6f9b9d0f69f73508",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/e624c92035e50ac0531538ed6f9b9d0f69f73508",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/2459c3100fa9b27faabf535e9a73461935678277",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/2459c3100fa9b27faabf535e9a73461935678277",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/f8aff08ef4f70e12dcbff7d4f13325eb143c198b",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/f8aff08ef4f70e12dcbff7d4f13325eb143c198b",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/64ead0c25ba14a10d6d347c9958d6af5ceb05395",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/64ead0c25ba14a10d6d347c9958d6af5ceb05395",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/db3914a00a5c521a6e0b2c961bc88a351e85a802",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/db3914a00a5c521a6e0b2c961bc88a351e85a802",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/6fbbee8824d2273784d7f37839c9089ce7d68305",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/6fbbee8824d2273784d7f37839c9089ce7d68305",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/04437ac5450f35aa16500bd1a5de5834f662f66e",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/04437ac5450f35aa16500bd1a5de5834f662f66e",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/47bc5ff176be469dddc011d1b48df271b4d46f3a",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/47bc5ff176be469dddc011d1b48df271b4d46f3a",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/deac7b11204d79fc51d53f9fc83ac1c01e5e6e03",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/deac7b11204d79fc51d53f9fc83ac1c01e5e6e03",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/4e52e0b7568b797cd7170becaabc1c848543ffef",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/4e52e0b7568b797cd7170becaabc1c848543ffef",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/914c10c1d3754753279636f03df4ba538bc66cb7",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/914c10c1d3754753279636f03df4ba538bc66cb7",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/06d087e95afe473e662371c9e1e396d8ce5795f9",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/06d087e95afe473e662371c9e1e396d8ce5795f9",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/cfe5973a6edcbf0a0686245b01e9e5c4e4975501",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/cfe5973a6edcbf0a0686245b01e9e5c4e4975501",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/5f985be1b6c22689094418c443d55bce9b883331",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/5f985be1b6c22689094418c443d55bce9b883331",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/fa748280f1cc6c58ceee0fab0e568227a2c5673e",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/fa748280f1cc6c58ceee0fab0e568227a2c5673e",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/6998105104c62ecf88ace5284bc3ad66d3a3c426",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/6998105104c62ecf88ace5284bc3ad66d3a3c426",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/5beff42fc6d431e6d4a754499d2b5f612a19ba40",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/5beff42fc6d431e6d4a754499d2b5f612a19ba40",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/3935f131297f06addb2d6f414f7bf6a5cceb2285",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/3935f131297f06addb2d6f414f7bf6a5cceb2285",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/45eacc942ac8899a5df89378db8dd1fb7f4a49b5",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/45eacc942ac8899a5df89378db8dd1fb7f4a49b5",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "awesome",
+      "key": "aw:robokrunch/awesome-jev:https://github.com/robokrunch/awesome-jev/commit/155272cfab4863586f6c251f46ed97e65a461250",
+      "url": "https://github.com/robokrunch/awesome-jev/commit/155272cfab4863586f6c251f46ed97e65a461250",
+      "title": "awesome-jev: Update README.md",
+      "text": "",
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "hn",
+      "key": "hn:49840561",
+      "url": "https://github.com/sumant1122/knowledge-signal",
+      "title": "Show HN: Knowledge Signal – A JEV-powered rubric assessment tool for study notes",
+      "text": "I built Knowledge Signal, an open-source prototype that turns study notes into structured, \nconfidence-aware knowledge profiles using TypeSafe AI&#x27;s Jev model.",
+      "points": 3,
+      "comments": 0,
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:oomu/OOMU-SystemOne-0.6B-GGUF",
+      "url": "https://huggingface.co/oomu/OOMU-SystemOne-0.6B-GGUF",
+      "title": "oomu/OOMU-SystemOne-0.6B-GGUF",
+      "text": "tags: gguf, routing, decision-making, edge, macos, apple-silicon, text-classification, license:apache-2.0",
+      "stars": 1,
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:imtk/OpenThai-SystemOne-ONNX",
+      "url": "https://huggingface.co/imtk/OpenThai-SystemOne-ONNX",
+      "title": "imtk/OpenThai-SystemOne-ONNX",
+      "text": "tags: onnxruntime, onnx, thai, qwen3.5, base_model:iapp/OpenThai-SystemOne, base_model:quantized:iapp/OpenThai-SystemOne, license:apache-2.0, region:us",
+      "stars": 0,
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:dwidlee/systemone-lite-0.5b",
+      "url": "https://huggingface.co/dwidlee/systemone-lite-0.5b",
+      "title": "dwidlee/systemone-lite-0.5b",
+      "text": "tags: transformers, safetensors, qwen2, text-generation, system-one, decision, qwen2.5, conversational",
+      "stars": 0,
+      "pushed": "2026-09-26",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-MLX-mxfp4",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-MLX-mxfp4",
+      "title": "iapp/OpenThai-SystemOne-MLX-mxfp4",
+      "text": "tags: mlx, safetensors, qwen3_5, system-one, decision-model, thai, qwen3.5, quantized",
+      "stars": 0,
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-MLX-nvfp4",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-MLX-nvfp4",
+      "title": "iapp/OpenThai-SystemOne-MLX-nvfp4",
+      "text": "tags: mlx, safetensors, qwen3_5, system-one, decision-model, thai, qwen3.5, quantized",
+      "stars": 0,
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-MLX-4bit",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-MLX-4bit",
+      "title": "iapp/OpenThai-SystemOne-MLX-4bit",
+      "text": "tags: mlx, safetensors, qwen3_5, system-one, decision-model, thai, qwen3.5, quantized",
+      "stars": 0,
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-MLX-8bit",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-MLX-8bit",
+      "title": "iapp/OpenThai-SystemOne-MLX-8bit",
+      "text": "tags: mlx, safetensors, qwen3_5, system-one, decision-model, thai, qwen3.5, quantized",
+      "stars": 0,
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-MLX-bf16",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-MLX-bf16",
+      "title": "iapp/OpenThai-SystemOne-MLX-bf16",
+      "text": "tags: mlx, safetensors, qwen3_5, system-one, decision-model, thai, qwen3.5, quantized",
+      "stars": 0,
+      "pushed": "2026-09-25",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-bnb-8bit",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-bnb-8bit",
+      "title": "iapp/OpenThai-SystemOne-bnb-8bit",
+      "text": "tags: transformers, safetensors, openthai_systemone, feature-extraction, system-one, decision-model, thai, qwen3.5",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-bnb-4bit",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-bnb-4bit",
+      "title": "iapp/OpenThai-SystemOne-bnb-4bit",
+      "text": "tags: transformers, safetensors, openthai_systemone, feature-extraction, system-one, decision-model, thai, qwen3.5",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-NVFP4A16",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-NVFP4A16",
+      "title": "iapp/OpenThai-SystemOne-NVFP4A16",
+      "text": "tags: transformers, safetensors, openthai_systemone, feature-extraction, system-one, decision-model, thai, qwen3.5",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-NVFP4",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-NVFP4",
+      "title": "iapp/OpenThai-SystemOne-NVFP4",
+      "text": "tags: transformers, safetensors, openthai_systemone, feature-extraction, system-one, decision-model, thai, qwen3.5",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-W4A16-GPTQ",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-W4A16-GPTQ",
+      "title": "iapp/OpenThai-SystemOne-W4A16-GPTQ",
+      "text": "tags: transformers, safetensors, openthai_systemone, feature-extraction, system-one, decision-model, thai, qwen3.5",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-W8A8-INT8",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-W8A8-INT8",
+      "title": "iapp/OpenThai-SystemOne-W8A8-INT8",
+      "text": "tags: transformers, safetensors, openthai_systemone, feature-extraction, system-one, decision-model, thai, qwen3.5",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-FP8-Dynamic",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-FP8-Dynamic",
+      "title": "iapp/OpenThai-SystemOne-FP8-Dynamic",
+      "text": "tags: transformers, safetensors, openthai_systemone, feature-extraction, system-one, decision-model, thai, qwen3.5",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:iapp/OpenThai-SystemOne-GGUF",
+      "url": "https://huggingface.co/iapp/OpenThai-SystemOne-GGUF",
+      "title": "iapp/OpenThai-SystemOne-GGUF",
+      "text": "tags: gguf, system-one, decision-model, thai, qwen3.5, quantized, llama.cpp, text-classification",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "huggingface",
+      "key": "hf:mlboydaisuke/OpenThai-SystemOne-CoreAI",
+      "url": "https://huggingface.co/mlboydaisuke/OpenThai-SystemOne-CoreAI",
+      "title": "mlboydaisuke/OpenThai-SystemOne-CoreAI",
+      "text": "tags: openthai_systemone, coreai, decision-model, system-one, zero-shot-classification, thai, custom_code, th",
+      "stars": 0,
+      "pushed": "2026-09-24",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fcryptobriefing.com%2Ftypesafe-jev-ai-public-access%2F&c=16868069012617319170&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fcryptobriefing.com%2ftypesafe-jev-ai-public-access%2f&c=16868069012617319170&mkt=ru-ru",
+      "title": "TypeSafe opens Jev AI to public after rapid adoption forces waitlist removal",
+      "text": "TypeSafe AI opens its Jev decision-making model to the public after just five days on a waitlist, but adversarial vulnerabilities raise security ...",
+      "pushed": "Mon, 21 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fenglish.mathrubhumi.com%2Ftechnology%2Fjev-ai-model-explained-decision-making-ai-fajsf1e6&c=10051977691250550885&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fenglish.mathrubhumi.com%2ftechnology%2fjev-ai-model-explained-decision-making-ai-fajsf1e6&c=10051977691250550885&mkt=ru-ru",
+      "title": "Jev AI model explained and why developers are turning to decision-making AI",
+      "text": "Jev is a new AI model developed by TypeSafe AI that is designed to make quick, measured decisions rather than generate conversations or long pieces of text. Launched on September 15, it can help AI ...",
+      "pushed": "Tue, 22 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.51cto.com%2Farticle%2F856577.html&c=17398840015922468026&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fwww.51cto.com%2farticle%2f856577.html&c=17398840015922468026&mkt=ru-ru",
+      "title": "Jev 为什么突然爆火：不生成文字的 AI，为什么又快又便宜",
+      "text": "Jev 专门处理结构化决策。输入一段状态和若干问题，它会直接返回选项、评分或布尔概率，让程序继续执行；聊天、写作和代码生成仍由普通大语言模型完成。 2026 年 9 月 15 日，TypeSafe AI 发布了首个 System One Model：Jev。上线 Vercel AI Gateway 后的 24 小时内，它被近 13% 的付费团队使用，首日采用率超过该平台此前所有新模型。 Jev 专 ...",
+      "pushed": "Mon, 21 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Ffinance.sina.com.cn%2Fstock%2Festate%2Fintegration%2F2026-09-21%2Fdoc-inispyne8962439.shtml&c=567321128888841080&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2ffinance.sina.com.cn%2fstock%2festate%2fintegration%2f2026-09-21%2fdoc-inispyne8962439.shtml&c=567321128888841080&mkt=ru-ru",
+      "title": "TypeSafe AI的Jev全面开放 注册用户获5美元额度",
+      "text": "观点网讯： 9月21日，美国TypeSafe AI公司发布的首款“System One”模型Jev全面开放，所有注册用户无需申请候补名单即可使用，并获得5美元额度，约1.2亿Token。 Jev由前OpenAI研究员迪奥戈·阿尔梅达等人创办的TypeSafe AI研发。公司一直处于隐身状态，直到9月15日正式亮相，同时公布由DCVC领投的4000万美元种子轮融资，以及首个模型Jev。",
+      "pushed": "Mon, 21 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.chinaz.com%2Fainews%2F31215.shtml&c=9574850184342157771&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fwww.chinaz.com%2fainews%2f31215.shtml&c=9574850184342157771&mkt=ru-ru",
+      "title": "TypeSafe AI 推出决策专用模型 Jev：比大语言模型快 10 倍、成本仅十分之一",
+      "text": "旧金山初创公司 TypeSafe AI 近日发布了一款名为 Jev 的新型 AI 模型。与传统大语言模型不同，Jev 专门用于回答是 / 否问题以及多项选择题，并给出置信度评分。公司称，软件开发过程中大量工作本质是一系列决策，而 Jev 在这类任务上比大语言模型快10倍、成本仅为其十分之一。",
+      "pushed": "Mon, 21 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.marktechpost.com%2F2026%2F09%2F19%2Ftypesafe-ai-releases-jev%2F&c=2279463884315472002&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fwww.marktechpost.com%2f2026%2f09%2f19%2ftypesafe-ai-releases-jev%2f&c=2279463884315472002&mkt=ru-ru",
+      "title": "TypeSafe AI Releases Jev: A System One Model That Returns Typed, Calibrated Decisions Instead of Text",
+      "text": "TypeSafe AI's Jev returns typed decisions with calibrated probabilities instead of text, at $0.042 per 1M input tokens.",
+      "pushed": "Sat, 19 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fjosipamajic%2F2026%2F09%2F19%2Fjev-cuts-ai-decision-costs-100x-and-vercel-cloudflare-rushed-to-add-it%2F&c=654690661410010184&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fwww.forbes.com%2fsites%2fjosipamajic%2f2026%2f09%2f19%2fjev-cuts-ai-decision-costs-100x-and-vercel-cloudflare-rushed-to-add-it%2f&c=654690661410010184&mkt=ru-ru",
+      "title": "Jev Cuts AI Decision Costs 100x And Vercel, Cloudflare Rushed To Add It",
+      "text": "Forbes contributors publish independent expert analyses and insights. Founder & Advisor on Emerging Tech. Covering VC. TypeSafe AI has launched Jev, a groundbreaking AI model designed for rapid, ...",
+      "pushed": "Sat, 19 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.sohu.com%2Fa%2F1079287630_121124363&c=5165781126512464598&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fwww.sohu.com%2fa%2f1079287630_121124363&c=5165781126512464598&mkt=ru-ru",
+      "title": "在 VS Code 中免费用 Jev：一个不聊天、只负责做决定的 AI Agent",
+      "text": "一个不会写文章、不会陪聊，甚至不生成句子的 AI 模型，最近却突然火了。 它叫 Jev。TypeSafe AI 宣布全面开放后，发布帖在十几个小时内就获得了超过 180 万次浏览。真正吸引开发者的不是又多了一个聊天机器人，而是三个直接关系到自动化落地的数字： 在官方公布的一组 workflow eval 中，Jev 达到 193.6 倍更快、444.6 倍更便宜。 最后一组数字来自 TypeSaf ...",
+      "pushed": "Tue, 22 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fventurebeat.com%2Fsecurity%2Fcompanies-are-putting-jev-in-charge-of-ai-agent-decisions-and-prompt-injection-can-influence-the-verdict&c=11241839067789722981&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fventurebeat.com%2fsecurity%2fcompanies-are-putting-jev-in-charge-of-ai-agent-decisions-and-prompt-injection-can-influence-the-verdict&c=11241839067789722981&mkt=ru-ru",
+      "title": "Companies are putting Jev in charge of AI agent decisions — and prompt injection can influence the verdict",
+      "text": "TypeSafe’s Jev is spreading through AI agent infrastructure, but prompt injection can influence its decisions. Here’s what enterprise security teams should know.",
+      "pushed": "Mon, 21 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fforbesjapan.com%2Farticles%2Fdetail%2F105002&c=617241245571356431&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fforbesjapan.com%2farticles%2fdetail%2f105002&c=617241245571356431&mkt=ru-ru",
+      "title": "新興TypeSafe AIが放つ新AI「Jev」、ハルシネーションなしは本当か？",
+      "text": "TypeSafe AIは、Jevを学習させる手法をRLCDと呼んでいる。RLCD自体は生成AIや大規模言語モデル（LLM）の名称ではない。RLCDで学習したJevはAIモデルであり、通常のソフトウェアに組み込んだり、既存のAIシステムから呼び出したりできる。主要メディアでは、こうしたRLCDとJevの違いが十分に区別されていない。",
+      "pushed": "Sat, 19 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fwww.business-standard.com%2Ftechnology%2Fartificial-intelligence%2Fwhat-is-jev-inside-the-new-ai-model-built-to-make-software-decisions-126092200452_1.html&c=4821269419964707615&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fwww.business-standard.com%2ftechnology%2fartificial-intelligence%2fwhat-is-jev-inside-the-new-ai-model-built-to-make-software-decisions-126092200452_1.html&c=4821269419964707615&mkt=ru-ru",
+      "title": "What is Jev? Inside the new AI model built to make software decisions",
+      "text": "Jev is designed to make structured AI decisions for software, focusing on classification, scoring, routing and verification rather than generating conversational responses like conventional LLMs ...",
+      "pushed": "Tue, 22 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ru-RU",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3A%2F%2Fnote.com%2Fnovel_honest3661%2Fn%2Fn71e154f03b56&c=5671884043025085924&mkt=ru-ru",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab822985abf40e7b4fe215fbf2fbd23&url=https%3a%2f%2fnote.com%2fnovel_honest3661%2fn%2fn71e154f03b56&c=5671884043025085924&mkt=ru-ru",
+      "title": "【解説記事】米国のスタートアップ企業の「Typesafe AI社」の「Jev ai」を徹底解説します。",
+      "text": "どーも。こんにちは、ふくけんです。記事を投稿するのはなんと8日ぶりぐらいということで投稿が止まっていたことをお詫び申し上げます。 今回は9月15日に米国の「typesafe社」から発表された「Jev ai」について解説しようと思います。このAIは文章で回答を返してこないということで、判断に特化したAIということです。 私も使いまして、このAIはぜひ使ってほしいなということでご紹介します。 本日もよ ...",
+      "pushed": "Thu, 24 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fcryptobriefing.com%2Ftypesafe-ai-billion-dollar-funding-jev-model%2F&c=7591918025494831902&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fcryptobriefing.com%2ftypesafe-ai-billion-dollar-funding-jev-model%2f&c=7591918025494831902&mkt=en-us",
+      "title": "TypeSafe AI seeks $1B in funding as Jev model gains traction",
+      "text": "TypeSafe AI is in talks to raise over $1B at a $10B valuation, weeks after launching the Jev model with a $40M seed round led by DCVC.",
+      "pushed": "Sat, 26 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.theregister.com%2Fdevops%2F2026%2F09%2F23%2Fshut-up-and-calculate-jevs-new-ai-primitives-for-coders%2F5298431&c=1896066586653343097&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fwww.theregister.com%2fdevops%2f2026%2f09%2f23%2fshut-up-and-calculate-jevs-new-ai-primitives-for-coders%2f5298431&c=1896066586653343097&mkt=en-us",
+      "title": "Shut up and calculate: Jev's new AI primitives for coders",
+      "text": "That’s what I’m not able to figure out,” said AI YouTube personality Mo Bitar in a video. The demos are fun, but how accurate are the results? Jev is an LLM, but thus far, we have limited insight (or ...",
+      "pushed": "Wed, 23 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.msn.com%2Fen-ca%2Ftechnology%2Fartificial-intelligence%2Fwhat-is-jev-the-ai-tool-200-times-faster-than-chatgpt%2Far-AA2cLHq6&c=16426185114080422801&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fwww.msn.com%2fen-ca%2ftechnology%2fartificial-intelligence%2fwhat-is-jev-the-ai-tool-200-times-faster-than-chatgpt%2far-AA2cLHq6&c=16426185114080422801&mkt=en-us",
+      "title": "What is Jev? The AI tool ‘200 times’ faster than ChatGPT",
+      "text": "Why is everyone talking about Jev? The AI tool ‘200 times’ faster than ChatGPT - New AI system uses fundamentally different technology from common chatbots such as ChatGPT and Claude – and is nearly ...",
+      "pushed": "Wed, 23 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F09%2F16%2Ftypesafe-ai-debuts-model-for-machines-that-plays-doom%2F5296711&c=10822715796124553634&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fwww.theregister.com%2fai-and-ml%2f2026%2f09%2f16%2ftypesafe-ai-debuts-model-for-machines-that-plays-doom%2f5296711&c=10822715796124553634&mkt=en-us",
+      "title": "TypeSafe AI debuts model for machines that plays Doom",
+      "text": "Jev is a System One model, which relies on a different architecture called Reinforcement Learning for Calibrated Decisions (RLCD). Diogo Almeida, co-founder and CEO of TypeSafe AI, is a former OpenAI ...",
+      "pushed": "Tue, 15 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fcryptobriefing.com%2Fjev-ai-model-faster-cheaper-alternative%2F&c=11823668237276274512&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fcryptobriefing.com%2fjev-ai-model-faster-cheaper-alternative%2f&c=11823668237276274512&mkt=en-us",
+      "title": "Jev gains popularity as a faster, cheaper alternative to major AI models",
+      "text": "TypeSafe AI's Jev model processes decisions in milliseconds at $0.042 per million tokens, proving up to 18x faster than OpenAI models on ...",
+      "pushed": "Fri, 25 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fnote.com%2Fnovel_yak5526%2Fn%2Fn276ec0e45e08%3Fhl%3Den&c=6070521820417250482&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fnote.com%2fnovel_yak5526%2fn%2fn276ec0e45e08%3fhl%3den&c=6070521820417250482&mkt=en-us",
+      "title": "What is Jev? Why is TypeSafe AI's \"AI that doesn't write text\" 193.6 times faster?",
+      "text": "Recently, I've been seeing talk on X about a new AI model called \"Jev.\" It's a model released by TypeSafe AI, and it's taking a rather bold approach by positioning itself as an \"AI that doesn't ...",
+      "pushed": "Sat, 26 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fjosipamajic%2F2026%2F09%2F19%2Fjev-cuts-ai-decision-costs-100x-and-vercel-cloudflare-rushed-to-add-it%2F&c=654690661410010184&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fwww.forbes.com%2fsites%2fjosipamajic%2f2026%2f09%2f19%2fjev-cuts-ai-decision-costs-100x-and-vercel-cloudflare-rushed-to-add-it%2f&c=654690661410010184&mkt=en-us",
+      "title": "Jev Cuts AI Decision Costs 100x And Vercel, Cloudflare Rushed To Add It",
+      "text": "Forbes contributors publish independent expert analyses and insights. Founder & Advisor on Emerging Tech. Covering VC. TypeSafe AI has launched Jev, a groundbreaking AI model designed for rapid, ...",
+      "pushed": "Sat, 19 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fsiliconangle.com%2F2026%2F09%2F16%2Ftypesafe-ai-exits-stealth-with-40m-to-build-ai-for-use-by-software%2F&c=13866322713770846477&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fsiliconangle.com%2f2026%2f09%2f16%2ftypesafe-ai-exits-stealth-with-40m-to-build-ai-for-use-by-software%2f&c=13866322713770846477&mkt=en-us",
+      "title": "TypeSafe AI exits stealth with $40M to build AI for use by software",
+      "text": "TypeSafe AI Inc., a startup founded by a former OpenAI Group PBC researcher who helped develop ChatGPT, emerged from stealth yesterday with $40 million in seed funding and a model designed to put ...",
+      "pushed": "Wed, 16 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.geeky-gadgets.com%2Fjev-classification-model%2F&c=13264299259048873007&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fwww.geeky-gadgets.com%2fjev-classification-model%2f&c=13264299259048873007&mkt=en-us",
+      "title": "Jev by Typesafe AI Classifies Data in Under 500 Milliseconds",
+      "text": "Jev classification model delivers fast, intuitive System 1 decision-making. Typesafe AI claims response times of just 70 to 500 milliseconds.",
+      "pushed": "Tue, 22 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fronschmelzer%2F2026%2F09%2F22%2Fwhy-everyone-is-talking-about-jev-the-ai-that-doesnt-chat%2F&c=14467626729921402508&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fwww.forbes.com%2fsites%2fronschmelzer%2f2026%2f09%2f22%2fwhy-everyone-is-talking-about-jev-the-ai-that-doesnt-chat%2f&c=14467626729921402508&mkt=en-us",
+      "title": "Why Everyone Is Talking About Jev, The AI That Doesn’t Chat",
+      "text": "This voice experience is generated by AI. Learn more. This voice experience is generated by AI. Learn more. TypeSafe AI has launched Jev, a novel AI model designed for rapid, structured ...",
+      "pushed": "Tue, 22 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:en-US",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3A%2F%2Fnote.com%2Fcoconobi%2Fn%2Fn51f7f640e753%3Fhl%3Den&c=4132197519657850533&mkt=en-us",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ac1fc4a9cb4f73fa4fecfe6ad&url=https%3a%2f%2fnote.com%2fcoconobi%2fn%2fn51f7f640e753%3fhl%3den&c=4132197519657850533&mkt=en-us",
+      "title": "Can We Leave Decisions to Jev? — A 3-Part Series on Receiving Answers from AI",
+      "text": "Part 2: Does Jev's \"Confidence Level\" Prove Accuracy? (Preview available)Part 3: What if a Decision Left to Jev Goes Wrong? (Preview available)Parts 2 and 3 are available as a 2-part set for a ...",
+      "pushed": "Fri, 25 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:zh-CN",
+      "key": "err:bing:zh-CN",
+      "url": "",
+      "title": "Bing zh-CN ошибка",
+      "text": "syntax error: line 1, column 0",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ko-KR",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fnote.com%2Fnovel_yak5526%2Fn%2Fn276ec0e45e08%3Fhl%3Dko&c=411352129668041655&mkt=ko-kr",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3a%2f%2fnote.com%2fnovel_yak5526%2fn%2fn276ec0e45e08%3fhl%3dko&c=411352129668041655&mkt=ko-kr",
+      "title": "Jev란? TypeSafe AI의 '글을 쓰지 않는 AI'는 왜 193.6배 빠른가",
+      "text": "최근 X에서 'Jev(제브)'라는 새로운 AI 모델에 대한 이야기를 보았습니다. TypeSafe AI가 공개한 모델로, '대화를 생성하지 않는 AI'라는 꽤 과감한 방향성을 내세우고 있습니다.궁금해서 등록 화면까지 진행해 보았는데, 표시된 것은 'Whoops, we're full'이었습니다. 만원이었습니다..조금 허탈하기도 했습니다. 하지만 만원 화면을 보 ...",
+      "pushed": "Sat, 26 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ko-KR",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fzdnet.co.kr%2Fview%2F%3Fno%3D20260920215302&c=4521974730756144501&mkt=ko-kr",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3a%2f%2fzdnet.co.kr%2fview%2f%3fno%3d20260920215302&c=4521974730756144501&mkt=ko-kr",
+      "title": "[안광섭 AI 진테제] Jev, 역사상 가장 빠르게 사용량이 증가한 유료 모델",
+      "text": "지난 15일, 미국 스타트업 타입세이프 AI(TypeSafe AI)가 2년가량의 비공개 개발을 끝내고 첫 모델 '제브(Jev)'를 공개했다. 투자금 4000만 달러를 유치했다는 발표도 함께 나왔다. 최고경영자 디오고 알메이다는 오픈AI 연구원 출신이다.공개 후 며칠 ...",
+      "pushed": "Sun, 20 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ko-KR",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fit.chosun.com%2Fnews%2FarticleView.html%3Fidxno%3D2023092170636&c=2889568842258642874&mkt=ko-kr",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3a%2f%2fit.chosun.com%2fnews%2farticleView.html%3fidxno%3d2023092170636&c=2889568842258642874&mkt=ko-kr",
+      "title": "말하지 않는 AI Jev, 서술형 시험을 OMR로 바꾸다 [이승현의 AI 네이티브]",
+      "text": "9월 15일, 글을 한 줄도 쓰지 못하는 AI가 나왔다. 질문을 던지면 돌아오는 것은 문장 대신 숫자 몇 개다. 그런데 출시 닷새 만에 개발자 커뮤니티가 달아올랐다. 개발자 커뮤니티 해커뉴스에서는 하루 만에 추천 1500점과 댓글 400여 개가 붙었다. 미국 스타트업 타입세이프(Typ ...",
+      "pushed": "Tue, 22 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ko-KR",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fwww.lecturernews.com%2Fnews%2FarticleView.html%3Fidxno%3D211096&c=4449956323511634952&mkt=ko-kr",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3a%2f%2fwww.lecturernews.com%2fnews%2farticleView.html%3fidxno%3d211096&c=4449956323511634952&mkt=ko-kr",
+      "title": "[이용호의 손에 잡히는 인공지능] 제브(JEV), 공장에 필요한 AI는 작은 판단부터 시작된다",
+      "text": "[한국강사신문 이용호 칼럼니스트] 자동차 부품을 만드는 공장에서 검사 카메라가 표면의 얼룩을 찾았다고 하자. 그 얼룩이 제품 결함인지, 조명에 비친 먼지인지, 작업자가 한 번 더 살펴볼 부분인지 결정해야 한다. 카메라는 이미지를 찍고 검사 프로그램은 색과 모양을 비교한다. 현장 기록과 작업 지시까지 함께 읽어 다음 담당자를 정하는 일에는 여전히 사람의 판단 ...",
+      "pushed": "Thu, 24 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ko-KR",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fwww.panewslab.com%2Fko%2Farticles%2F01a0db2d-ccc3-7014-9538-7c1854b0ef9f&c=6735680964727690543&mkt=ko-kr",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3a%2f%2fwww.panewslab.com%2fko%2farticles%2f01a0db2d-ccc3-7014-9538-7c1854b0ef9f&c=6735680964727690543&mkt=ko-kr",
+      "title": "TypeSafe AI와 OpenRouter, Jev 스마트 라우터 출시로 LLM 호출 효율성 향상",
+      "text": "PANews 9월 26일 소식, TypeSafe AI가 X에 최근 게시한 글에 따르면 OpenRouter가 Jev 라우팅 기능을 모든 LLM 호출에 통합했다. typesafe/jev-router를 통해 매 요청마다 최적의 모델과 추론 강도를 동적으로 선택해 '캐시 인지(cache-aware)' 모델 라우팅을 구현함으로써 품질·속도·비용의 균형을 맞춘다. 이 ...",
+      "pushed": "Fri, 25 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:ko-KR",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3A%2F%2Fwww.panewslab.com%2Fko%2Farticles%2F01a0c8d0-dbee-71cb-8251-ec1dac113f09&c=18314019462161887660&mkt=ko-kr",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229c982e4d1392bfe52493acdf13&url=https%3a%2f%2fwww.panewslab.com%2fko%2farticles%2f01a0c8d0-dbee-71cb-8251-ec1dac113f09&c=18314019462161887660&mkt=ko-kr",
+      "title": "JEV 爆火成为 AI 新宠：盘点 20+ 个最前沿的加密实战用例与叙事标的",
+      "text": "前有小龙虾，后有 JEV，AI 应用传播的速度，永远比大家使用的速度快。 过去一周，一个名为 JEV 的全新 AI 模型在中英文媒体里各种刷屏，与 ChatGPT 或 Claude 这种擅长长文本推理的“系统 2”模型不同，由TypeSafe AI推出的 JEV 被称为“哑巴 AI”： 它不聊天、不写代码，只负责在 70 到 500 毫秒内对给定的状态做出结构化的“买/卖/持有”或“打分/分类”判 ...",
+      "pushed": "Tue, 22 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.diariobitcoin.com%2Fstartups-verticales%2Ftypesafe-ai-buscaria-mas-de-usd-1-000-millones-tras-el-lanzamiento-de-jev%2F&c=7855679974971867397&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fwww.diariobitcoin.com%2fstartups-verticales%2ftypesafe-ai-buscaria-mas-de-usd-1-000-millones-tras-el-lanzamiento-de-jev%2f&c=7855679974971867397&mkt=es-es",
+      "title": "TypeSafe AI buscaría más de USD $1.000 millones tras el lanzamiento de Jev",
+      "text": "TypeSafe AI, que salió del modo stealth el 15 de septiembre de 2026, estaría conversando para captar más de USD $1.000 millones con una valoración superior a USD $10.000 millones, según reportes citad ...",
+      "pushed": "Sat, 26 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fecosistemastartup.com%2Ftypesafe-ai-creadores-de-jev-negocian-ronda-de-us1-000m%2F&c=62762155807099757&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fecosistemastartup.com%2ftypesafe-ai-creadores-de-jev-negocian-ronda-de-us1-000m%2f&c=62762155807099757&mkt=es-es",
+      "title": "TypeSafe AI, creadores de Jev, negocian ronda de US$1.000M",
+      "text": "El «antes y después» que Silicon Valley está mirando Nueve días. Ese es el tiempo que separa el anuncio del primer millón de TypeSafe AI, un seed de ...",
+      "pushed": "Fri, 25 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fecosistemastartup.com%2Fjev-el-decision-model-de-typesafe-que-cuesta-444x-menos%2F&c=17518666317563003608&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fecosistemastartup.com%2fjev-el-decision-model-de-typesafe-que-cuesta-444x-menos%2f&c=17518666317563003608&mkt=es-es",
+      "title": "Jev: el decision model de TypeSafe que cuesta 444x menos",
+      "text": "Jev, el nuevo modelo de IA que devuelve decisiones, no texto TypeSafe AI presentó el 15 de septiembre Jev, un modelo que la propia compañía bautiza como ...",
+      "pushed": "Mon, 21 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fcryptobriefing.com%2Ftypesafe-ai-billion-dollar-funding-jev-model%2F&c=7591918025494831902&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fcryptobriefing.com%2ftypesafe-ai-billion-dollar-funding-jev-model%2f&c=7591918025494831902&mkt=es-es",
+      "title": "TypeSafe AI seeks $1B in funding as Jev model gains traction",
+      "text": "TypeSafe AI is in talks to raise over $1B at a $10B valuation, weeks after launching the Jev model with a $40M seed round led by DCVC.",
+      "pushed": "Sat, 26 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fobservatorioblockchain.com%2Finteligencia-artificial%2Fasi-es-jev-la-ia-que-no-escribe-y-decide-a-precios-de-saldo%2F&c=1604917300294795169&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fobservatorioblockchain.com%2finteligencia-artificial%2fasi-es-jev-la-ia-que-no-escribe-y-decide-a-precios-de-saldo%2f&c=1604917300294795169&mkt=es-es",
+      "title": "Así es Jev, la IA que no escribe y decide a precios de saldo",
+      "text": "Jev, la IA de TypeSafe AI, no genera texto y devuelve decisiones con probabilidad calibrada en milisegundos. Explicamos cómo funciona ...",
+      "pushed": "Wed, 23 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.redhotcyber.com%2Fpost%2Fjev-di-typesafe-ai-lai-che-smette-di-parlare-e-comincia-a-decidere%2F&c=12634682728349263649&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fwww.redhotcyber.com%2fpost%2fjev-di-typesafe-ai-lai-che-smette-di-parlare-e-comincia-a-decidere%2f&c=12634682728349263649&mkt=es-es",
+      "title": "Arriva Jev di TypeSafe AI! L’AI smette di parlare e comincia a decidere",
+      "text": "TypeSafe AI ha lanciato una nuova categoria di modelli pensata non per conversare con gli esseri umani, ma per prendere decisioni all’interno del software. Il primo si chiama Jev. E, a pochi giorni da ...",
+      "pushed": "Thu, 24 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.diariobitcoin.com%2Fstartups-verticales%2Ftypesafe-ai-lanza-jev-un-modelo-que-promete-automatizar-decisiones-con-salidas-estructuradas%2F&c=3408169241602344288&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fwww.diariobitcoin.com%2fstartups-verticales%2ftypesafe-ai-lanza-jev-un-modelo-que-promete-automatizar-decisiones-con-salidas-estructuradas%2f&c=3408169241602344288&mkt=es-es",
+      "title": "TypeSafe AI lanza Jev, un modelo que promete automatizar decisiones con salidas estructuradas",
+      "text": "TypeSafe AI presentó Jev, un modelo de acceso anticipado diseñado para entregar decisiones probabilísticas estructuradas en lugar de texto generado. La startup afirma que su sistema puede reducir de f ...",
+      "pushed": "Tue, 15 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.redimin.cl%2Ftypesafe-ai-lanza-jev-un-modelo-que-sustituye-el-texto-por-decisiones-estructuradas-para-automatizar-software&c=15616827546671081120&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fwww.redimin.cl%2ftypesafe-ai-lanza-jev-un-modelo-que-sustituye-el-texto-por-decisiones-estructuradas-para-automatizar-software&c=15616827546671081120&mkt=es-es",
+      "title": "TypeSafe AI lanza Jev, un modelo que sustituye el texto por decisiones estructuradas para automatizar software",
+      "text": "Descubre Jev, el nuevo modelo de IA de TypeSafe que optimiza la automatización de software transformando texto en decisiones estructuradas.",
+      "pushed": "Mon, 21 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.forbesargentina.com%2Finnovacion%2Fque-jev-nueva-ia-chatea-compite-modelos-chatgpt-n98575&c=2264475927882374074&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fwww.forbesargentina.com%2finnovacion%2fque-jev-nueva-ia-chatea-compite-modelos-chatgpt-n98575&c=2264475927882374074&mkt=es-es",
+      "title": "Qué es Jev, la nueva IA que no chatea y compite con los modelos de ChatGPT",
+      "text": "TypeSafe diseñó un sistema enfocado en resolver tareas concretas dentro del software. Ahora, sus primeras pruebas empiezan a despertar interés entre los desarrolladores.",
+      "pushed": "Wed, 23 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fgrenade.tw%2Fblog%2Fjev-typesafe-ai-tutorial%2F&c=1826757173650995583&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fgrenade.tw%2fblog%2fjev-typesafe-ai-tutorial%2f&c=1826757173650995583&mkt=es-es",
+      "title": "【教學】Jev 是什麼？TypeSafe AI 新模型註冊、功能、價格比較",
+      "text": "Jev 是 TypeSafe AI 推出的決策模型，不寫文章，只回答選擇、評分與是非題。本文整理三種題型、價格與 5 美元免費額度、API Key 申請、Claude Code 與 Codex 串接步驟，以及中文表現、提示注入等限制。",
+      "pushed": "Thu, 24 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:es-ES",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3A%2F%2Fwww.myzaker.com%2Farticle%2F6ab74c038e9f0931643dc8f2&c=6236727035652302276&mkt=es-es",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229d343e4e5d81300d2a4648a7e2&url=https%3a%2f%2fwww.myzaker.com%2farticle%2f6ab74c038e9f0931643dc8f2&c=6236727035652302276&mkt=es-es",
+      "title": "初创公司 TypeSafe AI 推出低幻觉“ Jev ”模型",
+      "text": "TypeSafe AI 由前 OpenAI 研究员 迪奥 戈 · 阿尔梅达（Diogo Almeida）创立。该公司上周刚刚发布了名为 \"Jev\" 的 AI 模型，并将其定位为一种更便宜的替代方案，用于执行某些任务，而不是依赖 ChatGPT 和 Claude 等传统大型语言模型（LLM）。",
+      "pushed": "Fri, 25 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.diariobitcoin.com%2Fstartups-verticales%2Ftypesafe-ai-buscaria-mas-de-usd-1-000-millones-tras-el-lanzamiento-de-jev%2F&c=7855679974971867397&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fwww.diariobitcoin.com%2fstartups-verticales%2ftypesafe-ai-buscaria-mas-de-usd-1-000-millones-tras-el-lanzamiento-de-jev%2f&c=7855679974971867397&mkt=de-de",
+      "title": "TypeSafe AI buscaría más de USD $1.000 millones tras el lanzamiento de Jev",
+      "text": "TypeSafe AI, que salió del modo stealth el 15 de septiembre de 2026, estaría conversando para captar más de USD $1.000 millones con una valoración superior a USD $10.000 millones, según reportes citad ...",
+      "pushed": "Sat, 26 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fcryptobriefing.com%2Ftypesafe-ai-billion-dollar-funding-jev-model%2F&c=7591918025494831902&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fcryptobriefing.com%2ftypesafe-ai-billion-dollar-funding-jev-model%2f&c=7591918025494831902&mkt=de-de",
+      "title": "TypeSafe AI seeks $1B in funding as Jev model gains traction",
+      "text": "TypeSafe AI is in talks to raise over $1B at a $10B valuation, weeks after launching the Jev model with a $40M seed round led by DCVC.",
+      "pushed": "Sat, 26 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.heise.de%2Fen%2Fnews%2FAI-model-Jev-to-make-machines-decide-faster-11457071.html&c=17767439043993678205&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fwww.heise.de%2fen%2fnews%2fAI-model-Jev-to-make-machines-decide-faster-11457071.html&c=17767439043993678205&mkt=de-de",
+      "title": "AI model “Jev” to make machines decide faster",
+      "text": "Jev is an AI model that primarily communicates with machines rather than humans. The startup behind it aims to make automated processes more efficient.",
+      "pushed": "Thu, 17 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fecosistemastartup.com%2Ftypesafe-ai-creadores-de-jev-negocian-ronda-de-us1-000m%2F&c=62762155807099757&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fecosistemastartup.com%2ftypesafe-ai-creadores-de-jev-negocian-ronda-de-us1-000m%2f&c=62762155807099757&mkt=de-de",
+      "title": "TypeSafe AI, creadores de Jev, negocian ronda de US$1.000M",
+      "text": "El «antes y después» que Silicon Valley está mirando Nueve días. Ese es el tiempo que separa el anuncio del primer millón de TypeSafe AI, un seed de ...",
+      "pushed": "Fri, 25 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.redhotcyber.com%2Fpost%2Fjev-di-typesafe-ai-lai-che-smette-di-parlare-e-comincia-a-decidere%2F&c=12634682728349263649&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fwww.redhotcyber.com%2fpost%2fjev-di-typesafe-ai-lai-che-smette-di-parlare-e-comincia-a-decidere%2f&c=12634682728349263649&mkt=de-de",
+      "title": "Arriva Jev di TypeSafe AI! L’AI smette di parlare e comincia a decidere",
+      "text": "TypeSafe AI ha lanciato una nuova categoria di modelli pensata non per conversare con gli esseri umani, ma per prendere decisioni all’interno del software. Il primo si chiama Jev. E, a pochi giorni da ...",
+      "pushed": "Thu, 24 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fch.marketscreener.com%2Fboerse-nachrichten%2Fgptbots-ai-von-aurora-mobile-limited-integriert-jev-fuer-eine-zweistufige-ki-architektur-ce785ad9dc8dff27&c=8235430863591335673&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fch.marketscreener.com%2fboerse-nachrichten%2fgptbots-ai-von-aurora-mobile-limited-integriert-jev-fuer-eine-zweistufige-ki-architektur-ce785ad9dc8dff27&c=8235430863591335673&mkt=de-de",
+      "title": "GPTBots.ai von Aurora Mobile Limited integriert Jev für eine zweistufige KI-Architektur",
+      "text": "Aurora Mobile Limited teilte mit, dass seine KI-Agentenplattform für Unternehmen, GPTBots.ai, Jev integriert hat - das Entscheidungsmodell 'System One' von TypeSafe AI. Damit entsteht nach ...",
+      "pushed": "Tue, 22 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fgrenade.tw%2Fblog%2Fjev-typesafe-ai-tutorial%2F&c=1826757173650995583&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fgrenade.tw%2fblog%2fjev-typesafe-ai-tutorial%2f&c=1826757173650995583&mkt=de-de",
+      "title": "【教學】Jev 是什麼？TypeSafe AI 新模型註冊、功能、價格比較",
+      "text": "Jev 是 TypeSafe AI 推出的決策模型，不寫文章，只回答選擇、評分與是非題。本文整理三種題型、價格與 5 美元免費額度、API Key 申請、Claude Code 與 Codex 串接步驟，以及中文表現、提示注入等限制。",
+      "pushed": "Thu, 24 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.myzaker.com%2Farticle%2F6ab74c038e9f0931643dc8f2&c=6236727035652302276&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fwww.myzaker.com%2farticle%2f6ab74c038e9f0931643dc8f2&c=6236727035652302276&mkt=de-de",
+      "title": "初创公司 TypeSafe AI 推出低幻觉“ Jev ”模型",
+      "text": "TypeSafe AI 由前 OpenAI 研究员 迪奥 戈 · 阿尔梅达（Diogo Almeida）创立。该公司上周刚刚发布了名为 \"Jev\" 的 AI 模型，并将其定位为一种更便宜的替代方案，用于执行某些任务，而不是依赖 ChatGPT 和 Claude 等传统大型语言模型（LLM）。",
+      "pushed": "Fri, 25 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.01net.it%2Ftypesafe-ai-jev-modello-decisioni-finanziamenti%2F&c=17463991775196192324&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fwww.01net.it%2ftypesafe-ai-jev-modello-decisioni-finanziamenti%2f&c=17463991775196192324&mkt=de-de",
+      "title": "TypeSafe AI, Jev automatizza le decisioni nel software: un miliardo di finanziamenti in arrivo, valutazione da 10 miliardi?",
+      "text": "TypeSafe AI ha raccolto 40 milioni di dollari per Jev, un modello che aiuta i programmi a prendere decisioni. Ora si parla di un possibile round da un miliardo.",
+      "pushed": "Fri, 25 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fwww.heise.de%2Fnews%2FKI-Modell-Jev-soll-Maschinen-schneller-entscheiden-lassen-11456995.html&c=15606020474437614598&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fwww.heise.de%2fnews%2fKI-Modell-Jev-soll-Maschinen-schneller-entscheiden-lassen-11456995.html&c=15606020474437614598&mkt=de-de",
+      "title": "Das KI-Modell „Jev“ liefert Entscheidungen statt Texte",
+      "text": "Jev ist ein KI-Modell, das vor allem mit Maschinen statt Menschen kommuniziert. Das Start-up dahinter will damit automatisierte Abläufe effizienter machen.",
+      "pushed": "Thu, 17 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fecosistemastartup.com%2Fjev-de-typesafe-ai-decisiones-tipadas-a-us0042-m-tokens%2F&c=11541884264913818045&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fecosistemastartup.com%2fjev-de-typesafe-ai-decisiones-tipadas-a-us0042-m-tokens%2f&c=11541884264913818045&mkt=de-de",
+      "title": "Jev de TypeSafe AI: decisiones tipadas a US$0,042/M tokens",
+      "text": "Jev: el modelo de IA que devuelve decisiones, no párrafos TypeSafe AI, fundada por Diogo Almeida —ex-OpenAI y coinventor del RLHF que ...",
+      "pushed": "Mon, 21 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    },
+    {
+      "src": "bing:de-DE",
+      "key": "bing:http://bing.com/news/apiclick.aspx?aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3A%2F%2Fnote.com%2Flush_rat3266%2Fn%2Fn1b6fccfa9b38%3Fhl%3Dko&c=3147699528043134445&mkt=de-de",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ab8229ef5dd4daaa386e6a1a9c4fe12&url=https%3a%2f%2fnote.com%2flush_rat3266%2fn%2fn1b6fccfa9b38%3fhl%3dko&c=3147699528043134445&mkt=de-de",
+      "title": "Jev(TypeSafe AI)란? 사용법·요금·ChatGPT와의 차이점을 초보자용으로 정리",
+      "text": "「Jev가 뭐야?」라며 뒤처진 기분이 든 분들을 위해2026년 9월, X나 AI 관련 뉴스에서 「Jev」라는 이름을 갑자기 자주 보게 되었습니다.「새로운 AI가 나왔다더라」「ChatGPT보다 수십 배 빠르다더라」. 그런 단편적인 이야기만 흘러나와서, 결국 무엇이 대단한지 모르는 채로 계신 분들도 많을 것입니다.게다가 검색하면 같은 철자의 다른 것(해외 유튜 ...",
+      "pushed": "Wed, 23 Sep 2026",
+      "first_seen": "2026-09-26T19:53:03+00:00"
+    }
+  ],
+  "last_run": "2026-09-26T19:53:03+00:00",
+  "last_github_run": "2026-09-26T19:53:03+00:00"
+}

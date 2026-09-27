@@ -5,7 +5,7 @@
       "title": "Нейросети | AI-агентура | Claude Code",
       "vk_name": "Claude | AI-агенты для бизнеса. Обучение",
       "fits": "work",
-      "note": "Аналитика ИИ для профессионалов: медицина, право, SEO"
+      "note": "Разборы ошибок ИИ для профессионалов, советы"
     },
     {
       "screen": "club237337068",
@@ -18,8 +18,8 @@
       "screen": "ai21century",
       "title": "Data Science | Machinelearning [ru]",
       "vk_name": "AI/Data science/Deep learning/Machine learning..",
-      "fits": "?",
-      "note": "проверка не удалась"
+      "fits": "news",
+      "note": "Новости робототехники: Nicobo, завод UBTech"
     },
     {
       "screen": "neurospherepro",
@@ -48,6 +48,41 @@
       "vk_name": "Нейросети для бизнеса и жизни",
       "fits": "mixed",
       "note": "совпадение имени"
+    },
+    {
+      "screen": "aiprompty",
+      "title": "Нейросети для жизни|Кристина Озерова",
+      "vk_name": "Кристина | Обучение ИИ и заработок на нейросетях",
+      "fits": "secrets",
+      "note": "нейрофото-лайфхаки, но канал в основном про материнство"
+    },
+    {
+      "screen": "aiphotostudioedit",
+      "title": "AI промпты | Нейросети | Генерация фото",
+      "vk_name": "Нейросети | Нейро-Фото | AI Видео | Промпты",
+      "fits": "secrets",
+      "note": "нейромультик из фото — лайфхак для семьи"
+    },
+    {
+      "screen": "nexora_ai",
+      "title": "Nexora AI",
+      "vk_name": "NEXORA | AI CREATIVE STUDIO",
+      "fits": "mixed",
+      "note": "совпадение имени"
+    },
+    {
+      "screen": "aicmmnt",
+      "title": "Искусственный Интеллект",
+      "vk_name": "Искусственный интеллект",
+      "fits": "mixed",
+      "note": "совпадение имени"
+    },
+    {
+      "screen": "club238675228",
+      "title": "Новости нейросетей, искусственный интеллект | Полигоша",
+      "vk_name": "Новости нейросетей | ИИ | Полигоша",
+      "fits": "secrets",
+      "note": "Универсальный ИИ-бот и лайфхаки нейроаватара"
     }
   ]
 }

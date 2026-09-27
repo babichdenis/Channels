@@ -20,6 +20,8 @@ from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+from adfilter import clean_post_text  # noqa: E402
+sys.path.insert(0, HERE)
 from conveyor import simhash, hamming, to_signed  # noqa: E402
 
 MSK = ZoneInfo("Europe/Moscow")
@@ -190,8 +192,9 @@ def main():
         when = when.replace(second=0, microsecond=0)
         q2 = load(QUEUE, []) or []
         q2.append({"id": pid, "channel": target, "scheduled_at": when.isoformat(),
-                   "rubric": "Репост", "text": clean, "hashtags": CH_HASHTAGS[target],
-                   "image": image_local or "", "video": video_local or "", "source_image": "",
+                   "rubric": "Репост", "text": clean_post_text(clean), "hashtags": CH_HASHTAGS[target],
+                   "image": image_local or "", "images": ([image_local] if image_local else []),
+                   "video": video_local or "", "source_image": "",
                    "status": "pending", "check": {"repost": True},
                    "origin": "%s (копия)" % source})
         if not dry:

@@ -269,6 +269,150 @@
       "lang": "ru",
       "topic": "prompts",
       "weight": 2
+    },
+    {
+      "name": "aimesh_digital",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "neyroph",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "elbrusz",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "vibeekaiofficial",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "prompty_neyroseti",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
+    },
+    {
+      "name": "ai_instrumenty_dohod",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "novosti_ii",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "Polygosha",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "agregator_ai",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "writementor",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
+    },
+    {
+      "name": "itiger_dev",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "ai_mipt_news",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "chatgptorbita",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "lifehacksGPT",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "chat_gpt_box",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "NerofotoGenius",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
+    },
+    {
+      "name": "chat_gpt_ukr",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "nero_work",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
+    },
+    {
+      "name": "ai_dnative",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "itechnowave",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
+    },
+    {
+      "name": "ecocrm",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
+    },
+    {
+      "name": "prodvizhenievteleg",
+      "lang": "ru",
+      "topic": "work",
+      "weight": 2
+    },
+    {
+      "name": "neurobus_22",
+      "lang": "ru",
+      "topic": "news",
+      "weight": 2
+    },
+    {
+      "name": "vborisov_tg",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
     }
   ],
   "channels": {

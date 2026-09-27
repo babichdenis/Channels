@@ -136,6 +136,46 @@
       "name": "ai_agentura",
       "lang": "ru",
       "weight": 2
+    },
+    {
+      "name": "neyroph",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "novosti_ii",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "agregator_ai",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "itiger_dev",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "ai_mipt_news",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "chatgptorbita",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "chat_gpt_box",
+      "lang": "ru",
+      "weight": 2
+    },
+    {
+      "name": "neurobus_22",
+      "lang": "ru",
+      "weight": 2
     }
   ],
   "providers": [

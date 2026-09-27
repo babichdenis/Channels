@@ -42,6 +42,13 @@ def content_db():
         conn.execute("ALTER TABLE items ADD COLUMN video_local TEXT DEFAULT ''")
     except sqlite3.OperationalError:
         pass
+    for col, decl in (("media_group_id", "TEXT DEFAULT ''"),
+                      ("media_seq", "INTEGER DEFAULT 0"),
+                      ("is_media", "INTEGER DEFAULT 0")):
+        try:
+            conn.execute("ALTER TABLE items ADD COLUMN %s %s" % (col, decl))
+        except sqlite3.OperationalError:
+            pass
     conn.commit()
     return conn
 
@@ -82,6 +89,43 @@ async def resolve(client, ref):
 SELF_REF = re.compile(r"aimarketcap", re.I)
 
 
+_TAG_RE = re.compile(r"<[^>]+>")
+
+
+def strip_html(text):
+    """Выкидывает HTML-разметку, которую возвращает tl_html.unparse.
+
+    Без этого текст одного и того же материала из Telegram и из VK/VK-клипа
+    даёт разный md5 (теги есть только в телеграмной версии) — и копия
+    проходит дедуп как новая.
+    """
+    if not text:
+        return ""
+    t = _TAG_RE.sub(" ", text)
+    for a, b in (("&nbsp;", " "), ("&quot;", '"'), ("&#39;", "'"),
+                 ("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">")):
+        t = t.replace(a, b)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    return re.sub(r"\n{3,}", "\n\n", t).strip()
+
+
+async def grab_media(client, msg, name, post_id, is_video):
+    """Скачивает фото/видео в media/, возвращает относительный путь или ''."""
+    ext = ".mp4" if is_video else ".jpg"
+    floor = 10000 if is_video else 3000
+    fname = re.sub(r"[^\w.-]", "_", "%s-%s" % (name, post_id))[:90] + ext
+    dest = os.path.join(MEDIA, fname)
+    try:
+        if not (os.path.exists(dest) and os.path.getsize(dest) > floor):
+            os.makedirs(MEDIA, exist_ok=True)
+            await client.download_media(msg, file=dest)
+        if os.path.exists(dest) and os.path.getsize(dest) > floor:
+            return "media/" + fname
+    except Exception:
+        pass
+    return ""
+
+
 def scrub_selfref(text, is_title=False):
     """Убирает самоссылки источника (AIMarketCap): строки-рекламы и упоминания."""
     if is_title:
@@ -109,54 +153,73 @@ async def fetch_into(client, entity, count=150, do_news=True):
                 text = raw_text.strip()
         else:
             text = raw_text.strip()
-        text = scrub_selfref(text)
-        if not text or len(text) < 40:
+        text = strip_html(scrub_selfref(text))
+        album_id = str(getattr(msg, "media_group_id", None) or "")
+        has_photo = bool(msg.photo)
+        is_video = bool(getattr(msg, "video", None)) or bool(
+            getattr(msg, "document", None) and (msg.document.mime_type or "").startswith("video"))
+        # Пост может быть чистой картинкой без подписи — тогда text пустой, и старый
+        # guard выбрасывал его ДО загрузки медиа. Такие посты теряли изображение.
+        # То же касается продолжений альбома: подпись несёт только первый элемент.
+        # Пропускаем любое сообщение, у которого есть медиа, даже без текста.
+        if (not text or len(text) < 40) and not (has_photo or is_video):
             continue
         post_id = "%s/%s" % (entity.id, msg.id)
-        existing = cconn.execute("SELECT id, text FROM items WHERE source = ? AND post_id = ?",
-                                 (name, post_id)).fetchone()
+        # 图片 без текста: сохраняем ради медиа, но в публикацию как текстовый пост не пускаем
+        is_media = 1 if ((has_photo or is_video) and len(text) < 40) else 0
+        existing = cconn.execute(
+            "SELECT id, text, image_local FROM items WHERE source = ? AND post_id = ?",
+            (name, post_id)).fetchone()
         if existing:
             if "<a " in text and "<a " not in (existing[1] or ""):
-                cconn.execute("UPDATE items SET text = ? WHERE id = ?", (scrub_selfref(text)[:4000], existing[0]))
+                cconn.execute("UPDATE items SET text = ? WHERE id = ?", (text[:4000], existing[0]))
                 updated += 1
+            # Пост уже есть, а картинка не загрузилась в прошлый заход — докачиваем.
+            if not existing[2] and has_photo:
+                rel = await grab_media(client, msg, name, post_id, False)
+                if rel:
+                    cconn.execute("UPDATE items SET image_local = ? WHERE id = ?", (rel, existing[0]))
+                    photos += 1
             skipped += 1
             continue
-        h = hashlib.md5(text[:400].encode("utf-8")).hexdigest()
-        if cconn.execute("SELECT 1 FROM items WHERE hash = ?", (h,)).fetchone():
+        # У продолжений альбома текста нет: у всех был бы одинаковый md5("") и они
+        # отбрасывались бы как дубли друг друга. Ключ делаем уникальным на сообщение.
+        h = hashlib.md5(text[:400].encode("utf-8")).hexdigest() if text else "mg%d" % msg.id
+        dup = cconn.execute("SELECT id, image_local FROM items WHERE hash = ?", (h,)).fetchone()
+        if dup:
+            # Копия: запись не создаём, но если у оригинала нет картинки — навешиваем
+            # картинку из копии. Раньше continue стоял до загрузки медиа, и копии
+            # оставались без изображений.
+            if not dup[1] and has_photo:
+                rel = await grab_media(client, msg, name, post_id, False)
+                if rel:
+                    cconn.execute("UPDATE items SET image_local = ? WHERE id = ?", (rel, dup[0]))
+                    photos += 1
             skipped += 1
             continue
         ts = msg.date.astimezone(MSK).isoformat()
         image_local = ""
-        if msg.photo:
-            fname = re.sub(r"[^\w.-]", "_", "%s-%s" % (name, post_id))[:90] + ".jpg"
-            dest = os.path.join(MEDIA, fname)
-            try:
-                await client.download_media(msg, file=dest)
-                if os.path.exists(dest) and os.path.getsize(dest) > 3000:
-                    image_local = "media/" + fname
-                    photos += 1
-            except Exception:
-                pass
+        if has_photo:
+            rel = await grab_media(client, msg, name, post_id, False)
+            if rel:
+                image_local = rel
+                photos += 1
         video_local = ""
-        is_video = bool(getattr(msg, "video", None)) or bool(
-            getattr(msg, "document", None) and (msg.document.mime_type or "").startswith("video"))
         if is_video:
             size = (getattr(msg, "file", None) and msg.file.size) or 0
             if 0 < size <= 47 * 1024 * 1024:
-                fname = re.sub(r"[^\w.-]", "_", "%s-%s" % (name, post_id))[:90] + ".mp4"
-                dest = os.path.join(MEDIA, fname)
-                try:
-                    await client.download_media(msg, file=dest)
-                    if os.path.exists(dest) and os.path.getsize(dest) > 10000:
-                        video_local = "media/" + fname
-                        videos += 1
-                except Exception:
-                    pass
+                rel = await grab_media(client, msg, name, post_id, True)
+                if rel:
+                    video_local = rel
+                    videos += 1
         cconn.execute(
-            "INSERT OR IGNORE INTO items (source, post_id, text, ts, views, image_url, image_local, video_local, hash, simhash, dupe) "
-            "VALUES (?,?,?,?,?,?,?,?,?,?,0)",
-            (name, post_id, text[:4000], ts, msg.views or 0, "", image_local, video_local, h, to_signed(simhash(text))))
-        if nconn is not None:
+            "INSERT OR IGNORE INTO items (source, post_id, text, ts, views, image_url, image_local, video_local, "
+            "hash, simhash, dupe, media_group_id, media_seq, is_media) "
+            "VALUES (?,?,?,?,?,?,?,?,?,?,0,?,?,?)",
+            (name, post_id, text[:4000], ts, msg.views or 0, "", image_local, video_local, h,
+             to_signed(simhash(text)), album_id, msg.id % 1000, is_media))
+        # Продолжения альбома в news не идут: текста нет, публиковать нечего.
+        if nconn is not None and text:
             nconn.execute(
                 "INSERT OR IGNORE INTO news (source, lang, title, text, url, ts, image_url, hash, simhash) "
                 "VALUES (?,?,?,?,?,?,?,?,?)",
