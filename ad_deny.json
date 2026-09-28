@@ -1,0 +1,228 @@
+{
+ "rp-2026-09-26-013345-2032": {
+  "ts": "2026-09-27 10:13:57",
+  "channel": "wizard_prompts",
+  "reason": "score=115 ad_only=None llm=None",
+  "score": 115,
+  "ad_links": [
+   "https://syntx.ai/welcome/RSs8M6C6"
+  ],
+  "phrases": [
+   "работает без впн"
+  ]
+ },
+ "h:27a2a336d25abffe": {
+  "ts": "2026-09-27 10:13:57",
+  "channel": "wizard_prompts",
+  "reason": "score=115 ad_only=None llm=None",
+  "score": 115,
+  "ad_links": [
+   "https://syntx.ai/welcome/RSs8M6C6"
+  ],
+  "phrases": [
+   "работает без впн"
+  ]
+ },
+ "rp-2026-09-26-024132-2035": {
+  "ts": "2026-09-27 10:14:12",
+  "channel": "neuro_secrets",
+  "reason": "score=100 ad_only=None llm=None",
+  "score": 100,
+  "ad_links": [
+   "https://syntx.ai/welcome/RSs8M6C6"
+  ],
+  "phrases": []
+ },
+ "h:fa8dbfc198b4564d": {
+  "ts": "2026-09-27 10:14:12",
+  "channel": "neuro_secrets",
+  "reason": "score=100 ad_only=None llm=None",
+  "score": 100,
+  "ad_links": [
+   "https://syntx.ai/welcome/RSs8M6C6"
+  ],
+  "phrases": []
+ },
+ "rp-2026-09-26-081958-1131": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "ai_news",
+  "reason": "score=120 ad_only=None llm=None",
+  "score": 120,
+  "ad_links": [
+   "router.bynara.id"
+  ],
+  "phrases": [
+   "promo pricing",
+   "GRATIS",
+   "now available on",
+   "Promo pricing"
+  ]
+ },
+ "h:ddad49f675bc465f": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "ai_news",
+  "reason": "score=120 ad_only=None llm=None",
+  "score": 120,
+  "ad_links": [
+   "router.bynara.id"
+  ],
+  "phrases": [
+   "promo pricing",
+   "GRATIS",
+   "now available on",
+   "Promo pricing"
+  ]
+ },
+ "rp-2026-09-26-132902-2255": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "wizard_prompts",
+  "reason": "score=150 ad_only=None llm=None",
+  "score": 150,
+  "ad_links": [
+   "https://study24.ai/chat?utm_source=telegram&amp;utm_medium=home&amp;utm_campaign=250926",
+   "https://study24.ai/chat?utm_source=telegram&amp;utm_medium=home&amp;utm_campaign=260926"
+  ],
+  "phrases": []
+ },
+ "h:d7e1e1b69ca3345d": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "wizard_prompts",
+  "reason": "score=150 ad_only=None llm=None",
+  "score": 150,
+  "ad_links": [
+   "https://study24.ai/chat?utm_source=telegram&amp;utm_medium=home&amp;utm_campaign=250926",
+   "https://study24.ai/chat?utm_source=telegram&amp;utm_medium=home&amp;utm_campaign=260926"
+  ],
+  "phrases": []
+ },
+ "rp-2026-09-27-001840-2649": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "ai_news",
+  "reason": "score=30 ad_only=True llm=None",
+  "score": 30,
+  "ad_links": [],
+  "phrases": [
+   "халявы",
+   "сюда"
+  ]
+ },
+ "h:43723c1af3557895": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "ai_news",
+  "reason": "score=30 ad_only=True llm=None",
+  "score": 30,
+  "ad_links": [],
+  "phrases": [
+   "халявы",
+   "сюда"
+  ]
+ },
+ "rp-2026-09-27-032034-3083": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "wizard_prompts",
+  "reason": "score=120 ad_only=None llm=None",
+  "score": 120,
+  "ad_links": [
+   "https://app.lava.top/kontent_buh"
+  ],
+  "phrases": [
+   "AI-набора",
+   "собрала всё в одном месте",
+   "AI BOX",
+   "AI BOX"
+  ]
+ },
+ "h:61010e1b2b3f4ee0": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "wizard_prompts",
+  "reason": "score=120 ad_only=None llm=None",
+  "score": 120,
+  "ad_links": [
+   "https://app.lava.top/kontent_buh"
+  ],
+  "phrases": [
+   "AI-набора",
+   "собрала всё в одном месте",
+   "AI BOX",
+   "AI BOX"
+  ]
+ },
+ "rp-2026-09-27-042216-3088": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "neuro_work",
+  "reason": "score=150 ad_only=None llm=None",
+  "score": 150,
+  "ad_links": [
+   "https://app.lava.top/kontent_buh"
+  ],
+  "phrases": [
+   "AI-набора",
+   "какой нужен именно вам",
+   "AI BOX",
+   "Этот набор",
+   "AI BOX",
+   "AI-набор"
+  ]
+ },
+ "h:ac7a9dbef1c35ce5": {
+  "ts": "2026-09-27 10:14:26",
+  "channel": "neuro_work",
+  "reason": "score=150 ad_only=None llm=None",
+  "score": 150,
+  "ad_links": [
+   "https://app.lava.top/kontent_buh"
+  ],
+  "phrases": [
+   "AI-набора",
+   "какой нужен именно вам",
+   "AI BOX",
+   "Этот набор",
+   "AI BOX",
+   "AI-набор"
+  ]
+ },
+ "rp-TEST-ads-0001": {
+  "ts": "2026-09-27 10:16:34",
+  "channel": "test_probe",
+  "reason": "score=115 ad_only=None llm=None",
+  "score": 115,
+  "ad_links": [
+   "https://study24.ai/chat?utm_source=telegram&utm_campaign=probe"
+  ],
+  "phrases": [
+   "Получите доступ"
+  ]
+ },
+ "h:3641c1e72e4df203": {
+  "ts": "2026-09-27 10:16:34",
+  "channel": "test_probe",
+  "reason": "score=115 ad_only=None llm=None",
+  "score": 115,
+  "ad_links": [
+   "https://study24.ai/chat?utm_source=telegram&utm_campaign=probe"
+  ],
+  "phrases": [
+   "Получите доступ"
+  ]
+ },
+ "rp-TEST-news-0002": {
+  "ts": "2026-09-27 10:18:22",
+  "channel": "test_probe",
+  "reason": "score=15 ad_only=True llm=None",
+  "score": 15,
+  "ad_links": [],
+  "phrases": [
+   "в нашем"
+  ]
+ },
+ "h:20d13a7491a02f23": {
+  "ts": "2026-09-27 10:18:22",
+  "channel": "test_probe",
+  "reason": "score=15 ad_only=True llm=None",
+  "score": 15,
+  "ad_links": [],
+  "phrases": [
+   "в нашем"
+  ]
+ }
+}

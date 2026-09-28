@@ -32,6 +32,7 @@ import urllib.request
 HERE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE_DIR)
 from adfilter import clean_post_text  # noqa: E402
+import adgate  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 QUEUE = os.path.join(HERE, "queue.json")
@@ -73,6 +74,93 @@ def load_json(path, default):
         return json.load(open(path, encoding="utf-8"))
     except FileNotFoundError:
         return default
+
+
+# ── рекламный гейт ───────────────────────────────────────────────────────
+# Пост проверяется ДО отправки карточки: сначала ссылки (включая реальные
+# редиректы), потом рекламные фразы, потом остаток. Если после чистки не
+# осталось содержания — пост уходит в dropped и наружу не уходит вовсе.
+AD_GATE_DEEP = os.environ.get("AD_GATE_DEEP", "1") == "1"
+# LLM-этап выключен по умолчанию: chat.z.ai режет IP по объёму запросов
+# (503 waf_block), а статика+deep и без него ловят все известные случаи.
+# Включать осознанно: AD_GATE_LLM=1, когда бридж стабильно отвечает.
+AD_GATE_LLM = os.environ.get("AD_GATE_LLM", "0") == "1"
+# Сколько секунд готовы ждать сеть на один пост. Цикл держит long polling,
+# поэтому дольше держать getUpdates нельзя — лучше разобрать пост позже.
+AD_GATE_BUDGET = float(os.environ.get("AD_GATE_BUDGET", "20"))
+# Другие процессы постоянно возвращают status в pending, поэтому один и тот
+# же отвергнутый пост бот будет видеть снова. Логируем его ровно один раз.
+_adgate_seen_deny = set()
+
+
+def ad_gate_post(post):
+    """Вердикт по рекламе для поста из очереди.
+
+    Возвращает (action, rep), где action:
+      'drop'  — пометить статусом dropped, ничего не отправлять;
+      'defer' — не успели дообходить ссылки, разберём в следующем цикле;
+      'send'  — можно отправлять, post['text'] при необходимости уже чистый.
+    """
+    try:
+        # Реклама могла быть отвергнута ранее: queue.json переписывают другие
+        # процессы, поэтому сверяемся с deny-листом, а не только с status.
+        prior = adgate.is_denied(post)
+        if prior and post.get("status") == "pending":
+            post["status"] = "dropped"
+            post["_sent"] = True
+            if post.get("id") not in _adgate_seen_deny:
+                _adgate_seen_deny.add(post.get("id"))
+                log("adgate DROP (deny) %s | %s" % (post.get("id"), prior.get("reason")))
+            return "drop", None
+        cache = adgate.load_cache()
+        adgate.set_deadline(AD_GATE_BUDGET)
+        try:
+            verdict, rep, cleaned = adgate.gate(
+                post, cache, deep=AD_GATE_DEEP,
+                llm=(adgate.llm_verdict if AD_GATE_LLM else None))
+        finally:
+            adgate.set_deadline(None)
+    except Exception as exc:
+        # гейт не должен ронять отправку: при ошибке пропускаем как есть
+        log("adgate сбой (%s): %s" % (type(exc).__name__, str(exc)[:150]))
+        return "send", None
+
+    if rep.get("partial"):
+        log("adgate DEFER %s | бюджет %s с исчерпан, вернёмся позже" % (
+            post.get("id"), AD_GATE_BUDGET))
+        return "defer", rep
+
+    info = {
+        "verdict": verdict,
+        "score": rep.get("score"),
+        "ad_only": rep.get("ad_only"),
+        "ad_links": rep.get("ad_links"),
+        "phrases": [p.get("phrase") for p in rep.get("phrases") or []],
+        "removed_lines": rep.get("removed_lines"),
+        "kept_chars": rep.get("kept_chars"),
+        "llm": rep.get("llm"),
+    }
+    post["ad_gate"] = info
+
+    if verdict == "drop":
+        adgate.deny_post(post, reason="score=%s ad_only=%s llm=%s" % (
+            rep.get("score"), rep.get("ad_only"), rep.get("llm")),
+            score=rep.get("score"), ad_links=rep.get("ad_links"),
+            phrases=info["phrases"])
+        post["status"] = "dropped"
+        post["_sent"] = True
+        log("adgate DROP %s | score=%s | ссылки=%s | фразы=%s%s | осталось=%s симв" % (
+            post.get("id"), rep.get("score"),
+            rep.get("ad_links"), info["phrases"],
+            (" | LLM:" + rep["llm"]) if rep.get("llm") else "",
+            rep.get("kept_chars")))
+        return "drop", rep
+
+    if verdict == "trim" and cleaned:
+        post["text"] = cleaned
+        log("adgate TRIM %s | score=%s | убрано строк=%s" % (
+            post.get("id"), rep.get("score"), rep.get("removed_lines")))
+    return "send", rep
 
 
 def save_json(path, data):
@@ -545,7 +633,14 @@ def resend_channel_cards(channel):
     else:
         pend = [p for p in queue if p.get("status") == "pending" and p.get("channel") == channel]
     sent = 0
+    dropped = 0
     for post in pend[:30]:
+        action, _rep = ad_gate_post(post)
+        if action == "drop":
+            dropped += 1
+            continue
+        if action == "defer":
+            continue
         res, kind = send_for_approval(post, admin, titles)
         if res.get("ok"):
             post["_sent"] = True
@@ -553,8 +648,10 @@ def resend_channel_cards(channel):
             post["_approval_message_id"] = (res.get("result") or {}).get("message_id")
             sent += 1
         time.sleep(0.5)
-    if sent:
+    if sent or dropped:
         save_json(QUEUE, queue)
+    if dropped:
+        log("resend: отсеяно рекламы %d" % dropped)
     return sent
 
 
@@ -1044,6 +1141,12 @@ def main():
             changed = False
             for post in queue:
                 if post.get("status") != "pending" or post.get("_sent"):
+                    continue
+                action, _rep = ad_gate_post(post)
+                if action == "drop":
+                    changed = True
+                    continue
+                if action == "defer":
                     continue
                 res2, kind = send_for_approval(post, admin, titles)
                 if res2.get("ok"):

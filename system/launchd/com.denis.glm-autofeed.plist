@@ -2,20 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>Label</key>
-  <string>com.denis.glm-autofeed</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>/bin/bash</string>
-    <string>/Users/Denis/self-glm-bridge/autofeed.sh</string>
-  </array>
-  <key>StartInterval</key>
-  <integer>600</integer>
-  <key>RunAtLoad</key>
-  <true/>
-  <key>StandardOutPath</key>
-  <string>/tmp/glm_autofeed.out</string>
-  <key>StandardErrorPath</key>
-  <string>/tmp/glm_autofeed.err</string>
+    <key>Label</key>
+    <string>com.denis.glm-autofeed</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/Denis/self-glm-bridge/autofeed.sh</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Было 600с (каждые 10 минут). Скрипт сам решает по порогу, чаще
+         проверять незачем: сбор токенов гоняет Playwright и капчу, а это
+         самый заметный для WAF трафик. -->
+    <key>StartInterval</key>
+    <integer>3600</integer>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/glm_autofeed.err</string>
+    <key>StandardOutPath</key>
+    <string>/tmp/glm_autofeed.out</string>
 </dict>
 </plist>

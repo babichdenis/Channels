@@ -413,6 +413,12 @@
       "lang": "ru",
       "topic": "secrets",
       "weight": 2
+    },
+    {
+      "name": "neiro_secret",
+      "lang": "ru",
+      "topic": "prompts",
+      "weight": 2
     }
   ],
   "channels": {
