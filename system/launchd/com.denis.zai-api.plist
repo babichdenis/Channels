@@ -2,29 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Label</key>
-    <string>com.denis.zai-api</string>
-
-    <key>ProgramArguments</key>
-    <array>
-        <string>/bin/bash</string>
-        <string>-lc</string>
-        <string>cd /Users/Denis/self-glm-bridge &amp;&amp; set -a &amp;&amp; . ./.env &amp;&amp; set +a &amp;&amp; exec ./zai-api &gt;&gt; /tmp/glm5.log 2&gt;&amp;1</string>
-    </array>
-
-    <key>RunAtLoad</key>
-    <true/>
-
-    <!-- Держим бридж живым: раньше он жил только на nohup и не переживал
-         перезагрузку. ThrottleInterval защищает от горячего цикла падений. -->
-    <key>KeepAlive</key>
-    <true/>
-    <key>ThrottleInterval</key>
-    <integer>30</integer>
-
-    <key>StandardOutPath</key>
-    <string>/tmp/glm5.log</string>
-    <key>StandardErrorPath</key>
-    <string>/tmp/glm5.log</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>GLM_TOKEN_MIN_KEEP</key>
+		<string>150</string>
+		<key>GLM_TOKEN_TTL</key>
+		<string>24h</string>
+	</dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.denis.zai-api</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>-lc</string>
+		<string>cd /Users/Denis/self-glm-bridge &amp;&amp; set -a &amp;&amp; . ./.env &amp;&amp; set +a &amp;&amp; exec ./zai-api &gt;&gt; /tmp/glm5.log 2&gt;&amp;1</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/glm5.log</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/glm5.log</string>
+	<key>ThrottleInterval</key>
+	<integer>30</integer>
 </dict>
 </plist>
