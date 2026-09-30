@@ -537,5 +537,39 @@
   "score": 0,
   "flags": [],
   "error": null
+ },
+ "gptunnel.ru": {
+  "url": "gptunnel.ru",
+  "final_url": "https://gptunnel.ru",
+  "domain": "gptunnel.ru",
+  "host": "gptunnel",
+  "chain": [],
+  "status": 200,
+  "title": "GPTunneL® - Нейро-офис и агрегатор нейросетей",
+  "og_site": "",
+  "desc": "Генерация текста, видео, изображения и аудио контента в одном нейро-офисе GPTunneL для бизнеса и не только",
+  "score": 35,
+  "flags": [
+   "ad_title:нейросет"
+  ],
+  "error": null
+ },
+ "gogpt.ru": {
+  "url": "gogpt.ru",
+  "final_url": "https://gogpt.ru",
+  "domain": "gogpt.ru",
+  "host": "gogpt",
+  "chain": [],
+  "status": 200,
+  "title": "GoGPT | Агрегатор нейросетей. Начать бесплатно!",
+  "og_site": "",
+  "desc": "ChatGPT, Claude, MidJourney, Flux, DeepSeek и другие нейросети. Удобный сайт + Чат-бот Telegram. До 10 запросов в день бесплатно! Онлайн-сервис в браузере. Работает без VPN.",
+  "score": 85,
+  "flags": [
+   "ad_title:нейросет",
+   "ad_body:от 299 ₽",
+   "body_telegram_invite"
+  ],
+  "error": null
  }
 }

@@ -224,5 +224,47 @@
   "phrases": [
    "в нашем"
   ]
+ },
+ "rp-2026-09-29-112429-3310": {
+  "ts": "2026-09-29 10:23:43",
+  "channel": "ai_news",
+  "reason": "score=30 ad_only=True llm=None",
+  "score": 30,
+  "ad_links": [],
+  "phrases": [
+   "now available on",
+   "Promo pricing"
+  ]
+ },
+ "h:18f082ea0c8343c1": {
+  "ts": "2026-09-29 10:23:43",
+  "channel": "ai_news",
+  "reason": "score=30 ad_only=True llm=None",
+  "score": 30,
+  "ad_links": [],
+  "phrases": [
+   "now available on",
+   "Promo pricing"
+  ]
+ },
+ "rp-2026-09-29-205959-3364": {
+  "ts": "2026-09-29 19:59:59",
+  "channel": "neuro_secrets",
+  "reason": "score=119 ad_only=None llm=None",
+  "score": 119,
+  "ad_links": [
+   "study24.ai"
+  ],
+  "phrases": []
+ },
+ "h:2d39dcb61b8e9a6b": {
+  "ts": "2026-09-29 19:59:59",
+  "channel": "neuro_secrets",
+  "reason": "score=119 ad_only=None llm=None",
+  "score": 119,
+  "ad_links": [
+   "study24.ai"
+  ],
+  "phrases": []
  }
 }

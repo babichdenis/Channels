@@ -419,6 +419,12 @@
       "lang": "ru",
       "topic": "prompts",
       "weight": 2
+    },
+    {
+      "name": "rusaeva_ya",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
     }
   ],
   "channels": {
