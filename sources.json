@@ -425,6 +425,12 @@
       "lang": "ru",
       "topic": "secrets",
       "weight": 2
+    },
+    {
+      "name": "neiro_laif",
+      "lang": "ru",
+      "topic": "secrets",
+      "weight": 2
     }
   ],
   "channels": {

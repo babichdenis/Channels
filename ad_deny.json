@@ -266,5 +266,27 @@
    "study24.ai"
   ],
   "phrases": []
+ },
+ "rp-2026-09-30-103153-3440": {
+  "ts": "2026-09-30 09:31:32",
+  "channel": "ai_news",
+  "reason": "score=30 ad_only=True llm=None",
+  "score": 30,
+  "ad_links": [],
+  "phrases": [
+   "now available on",
+   "Promo pricing"
+  ]
+ },
+ "h:ce95f6f7939527e9": {
+  "ts": "2026-09-30 09:31:32",
+  "channel": "ai_news",
+  "reason": "score=30 ad_only=True llm=None",
+  "score": 30,
+  "ad_links": [],
+  "phrases": [
+   "now available on",
+   "Promo pricing"
+  ]
  }
 }
