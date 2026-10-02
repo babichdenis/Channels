@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key><string>com.denis.candle-watch</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/sh</string>
+        <string>/Users/Denis/Dev/Deeptrading/backend/scripts/candle_watch.sh</string>
+    </array>
+    <key>WorkingDirectory</key><string>/Users/Denis/Dev/Deeptrading/backend</string>
+    <key>StartInterval</key><integer>900</integer>
+    <key>RunAtLoad</key><false/>
+    <key>StandardOutPath</key><string>/tmp/candle-watch.out.log</string>
+    <key>StandardErrorPath</key><string>/tmp/candle-watch.err.log</string>
+</dict>
+</plist>
