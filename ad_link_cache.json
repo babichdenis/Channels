@@ -571,5 +571,35 @@
    "body_telegram_invite"
   ],
   "error": null
+ },
+ "https://kling.ai/": {
+  "url": "https://kling.ai/",
+  "final_url": "https://kling.ai/",
+  "domain": "kling.ai",
+  "host": "kling",
+  "chain": [],
+  "status": 200,
+  "title": "Kling AI: Next-Gen AI Video &amp; Image Generator",
+  "og_site": "",
+  "desc": "Create high-quality AI videos and images with Kling AI. Turn text, images, and references into multimodal creative content in one studio.",
+  "score": 0,
+  "flags": [],
+  "error": null
+ },
+ "https://www.capcut.com/": {
+  "url": "https://www.capcut.com/",
+  "final_url": "https://www.capcut.com/ru-by/",
+  "domain": "capcut.com",
+  "host": "capcut",
+  "chain": [
+   "https://www.capcut.com/ru-by/"
+  ],
+  "status": 200,
+  "title": "Видеоредатор CapCut на основе ИИ: умное онлайн-редактирование видео с помощью передовых инструментов ИИ",
+  "og_site": "CapCut",
+  "desc": "Редактируйте видео для YouTube и Instagram с помощью видеоредактора CapCut на базе ИИ, умных шаблонов и креативных эффектов. Скачайте CapCut на компьютер, мобильное устройство или редактируйте онлайн.",
+  "score": 0,
+  "flags": [],
+  "error": null
  }
 }
