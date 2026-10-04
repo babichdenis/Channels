@@ -1315,5 +1315,25 @@
     "points": 14,
     "status": "raw",
     "query": "ChatGPT for emails"
+  },
+  {
+    "hash": "16396060359571752332",
+    "title": "Startup founders: how do you write your privacy policy?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=43184376",
+    "points": 7,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "9451972068138387385",
+    "title": "Teaching ChatGPT how to write robust code (it is just another lazy developer)",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34713164",
+    "points": 6,
+    "status": "raw",
+    "query": "I use ChatGPT to write"
   }
 ]
