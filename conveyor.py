@@ -30,6 +30,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from adfilter import clean_post_text  # noqa: E402
+from content_guard import sanitize_repost, promo_artifacts  # noqa: E402
 
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
@@ -202,10 +203,10 @@ def quality_check(cfg, text, history):
     try:
         reply = bridge_chat(cfg, QC_SYSTEM, "Материал:\n\n%s\n\nПохожие из истории:\n%s" % (text, context or "-"))
     except Exception as exc:
-        return {"status": "PASS", "reason": "QC недоступен: %s" % str(exc)[:60]}
+        return {"status": "MANUAL_REVIEW", "reason": "QC недоступен: %s" % str(exc)[:60]}
     data = parse_json_reply(reply)
     if not data:
-        return {"status": "PASS", "reason": "QC не распарсился"}
+        return {"status": "MANUAL_REVIEW", "reason": "QC не распарсился"}
     return data
 
 
@@ -370,7 +371,9 @@ def db():
         image_url TEXT, image_local TEXT DEFAULT '', used INTEGER DEFAULT 0,
         hash TEXT UNIQUE, simhash INTEGER DEFAULT 0, dupe INTEGER DEFAULT 0)""")
     for column in ("simhash INTEGER DEFAULT 0", "dupe INTEGER DEFAULT 0",
-                   "image_local TEXT DEFAULT ''", "is_media INTEGER DEFAULT 0"):
+                   "image_local TEXT DEFAULT ''", "is_media INTEGER DEFAULT 0",
+                   "wm_flag TEXT DEFAULT ''", "wm_text TEXT DEFAULT ''",
+                   "video_local TEXT DEFAULT ''"):
         try:
             conn.execute("ALTER TABLE items ADD COLUMN %s" % column)
         except sqlite3.OperationalError:
@@ -504,6 +507,21 @@ def download_media(conn, source, post_id, image_url, proxy, item_id=None):
     if item_id:
         conn.execute("UPDATE items SET image_local = ?, image_url = ? WHERE id = ?", (rel, image_url, item_id))
     return rel
+
+
+def wm_flag_item(conn, item_id, rel_path, source=""):
+    """Проверяет картинку (кэш/OCR) и пишет wm_flag в items. Возвращает verdict dict."""
+    try:
+        from watermark import check_cached as _wm_check
+        wm = _wm_check(rel_path, source)
+        conn.execute("UPDATE items SET wm_flag = ?, wm_text = ? WHERE id = ?",
+                     ("dirty:" + ",".join(wm.get("reasons", ["?"]))
+                      if wm.get("dirty") else "clean",
+                      wm.get("sample", "")[:80], item_id))
+        conn.commit()
+        return wm
+    except Exception:
+        return {"dirty": False, "reasons": [], "overlay_chars": 0}
 
 
 def cmd_ingest(cfg):
@@ -650,6 +668,17 @@ def parse_json_reply(text):
 
 
 
+def guard_post(post):
+    """Финальная гигиена текста (content_guard). False — пост не пускать."""
+    text, _removed = sanitize_repost(post.get("text", ""), post.get("origin", ""))
+    if len(text) < 50 or promo_artifacts(text):
+        return False
+    post["text"] = text
+    chk = post.setdefault("check", {})
+    chk["content_guard"] = "passed"
+    return True
+
+
 def add_to_queue(new_posts):
     """Добавляет посты в очередь, не трогая существующие (защита от гонки)."""
     if not new_posts:
@@ -658,6 +687,9 @@ def add_to_queue(new_posts):
     by_id = {p.get("id"): p for p in current}
     for post in new_posts:
         if post.get("id") not in by_id:
+            if not guard_post(post):
+                print("✗ гард: %s не прошёл чистку — пропуск" % post.get("id"))
+                continue
             current.append(post)
     save_json(QUEUE, current)
 
@@ -693,10 +725,11 @@ def cmd_adapt(cfg, count, channel, auto=False):
     system = build_system_prompt()
     history = load_history()
     rows = conn.execute(
-        "SELECT id, source, text, views, image_url, image_local FROM items "
+        "SELECT id, source, text, views, image_url, image_local, video_local FROM items "
         "WHERE used = 0 AND dupe = 0 AND LENGTH(text) > 200 ORDER BY views DESC, id DESC LIMIT 250").fetchall()
-    scored = [(candidate_score(text, views), item_id, source, text, views, image_url, image_local)
-              for item_id, source, text, views, image_url, image_local in rows]
+    scored = [(candidate_score(text, views), item_id, source, text, views,
+               image_url, image_local, video_local or "")
+              for item_id, source, text, views, image_url, image_local, video_local in rows]
     scored = [row for row in scored if row[0] > 0]
     scored.sort(reverse=True)
     # микс: чередуем источники
@@ -721,7 +754,7 @@ def cmd_adapt(cfg, count, channel, auto=False):
         return next_slots(queue, ch, planned[ch])[-1]
 
     made = 0
-    for score, item_id, source, text, views, image_url, image_local in ordered:
+    for score, item_id, source, text, views, image_url, image_local, video_local in ordered:
         if made >= count:
             break
         similar = top_similar(text, history, 6)
@@ -789,6 +822,18 @@ def cmd_adapt(cfg, count, channel, auto=False):
             image_path = image_local or ""
             if not image_path and image_url:
                 image_path = download_media(conn, source, "", image_url, cfg.get("proxy"))
+        if image_path:
+            # вотермарки: мелочь — блюр-копия, крупная реклама — без картинки
+            try:
+                from watermark import clean_for_post as _wm_clean
+                _wm = wm_flag_item(conn, item_id, image_path, source)
+                if _wm.get("dirty"):
+                    image_path = _wm_clean(image_path, source)
+                    if not image_path:
+                        print("· без фото (%s): вшитая реклама (%s)" % (
+                            source, ",".join(_wm.get("reasons", ["?"]))))
+            except Exception:
+                pass
         new_posts.append({
             "id": post_id,
             "channel": target,
@@ -798,6 +843,7 @@ def cmd_adapt(cfg, count, channel, auto=False):
             "hashtags": draft.get("hashtags") or [],
             "image": image_path,
             "images": ([image_path] if image_path else []) + [g for g in gallery if g != image_path],
+            "video": video_local or "",
             "source_image": image_url or "",
             "status": post_status(target),
             "check": {"evergreen": True, "editor": "conveyor"},

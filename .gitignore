@@ -5,11 +5,27 @@ code.json
 
 # рантайм-данные и кэш
 *.db
+*.db-shm
+*.db-wal
 *.db-journal
 approval_state.json
+repost_state.json
+candidates.json
+content_memory.json
+ad_deny.json
+ad_link_cache.json
+ad_llm_cache.json
 queue.json.tmp
 queue.json.lock
+queue_archive_*.json
+queue.json.bak*
 scan_bad.log
+*.tmp
+*.lock
+*.bak*
+*.bak-*
+
+# тяжёлое / генерированное
 *.log
 reports/
 media/
@@ -18,3 +34,4 @@ __pycache__/
 *.pyc
 .DS_Store
 nul
+system/

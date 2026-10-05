@@ -11,6 +11,7 @@ import os
 import re
 import subprocess
 import sys
+import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -96,6 +97,29 @@ def main():
         desc = re.sub(r"<[^>]+>", " ", desc_m.group(1))
         desc = re.sub(r"\s+", " ", desc).strip()
     posts = conveyor.parse_tme(page, name)
+
+    # Вотермарки: если у канала ВСЕ картинки с вшитой рекламой/метками — не берём.
+    try:
+        from watermark import check_image as _wm_check
+        _sample = [p.get("image_url") for p in posts if p.get("image_url")][:8]
+        _dirty = _total = 0
+        for _u in _sample:
+            try:
+                _tmp = "/tmp/wm_add_%s.jpg" % abs(hash(_u)) % 100000
+                urllib.request.urlretrieve(_u, _tmp)
+                _total += 1
+                if _wm_check(_tmp, name).get("dirty"):
+                    _dirty += 1
+                os.remove(_tmp)
+            except Exception:
+                continue
+        if _total:
+            print("🖼 вотермарки: грязных %d/%d" % (_dirty, _total))
+            if _dirty / _total >= 0.5:
+                print("⛔ Канал @%s не добавлен: почти все картинки с вшитой рекламой/метками." % name)
+                return 1
+    except ImportError:
+        print("🖼 вотермарки: OCR недоступен — проверка пропущена.")
 
     if in_content and in_news:
         print("ℹ️ Канал «%s» (@%s) уже подключён (контент + новости)." % (title, name))

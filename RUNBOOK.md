@@ -1,16 +1,20 @@
-# RUNBOOK — GLM-мост и Telegram-оркестр каналов (машина .2)
+# RUNBOOK — GLM-мост и Telegram-оркестр каналов (машина .7)
 
-> **Машина:** MacBook-ProDen **192.168.1.2** (пользователь `Denis`, пароль `0987`).
+> **Риг:** MacBook-ProDen **192.168.1.7** (пользователь `Denis`).
 > Здесь живёт всё: GLM-мост, конвейер каналов, бот, юзербот, VK-сбор.
-> Доступ с Mac .7: `sshpass -p '0987' ssh Denis@192.168.1.2`
-> Токен GitHub (для git-бэкапа): `~/.git-credentials` на .2. Репозиторий: https://github.com/babichdenis/Channels (приватный).
+> Доступ — пароль только локально: `~/.local/share/opencode/mind/ensemble-tg/INFRA.md` (в git не коммитить).
+> Токен GitHub (для git-бэкапа): `~/.git-credentials` на .6. Репозиторий: https://github.com/babichdenis/Channels (приватный).
+>
+> **Сервер server-yrmt (НЕ .7, основа):** `root@46.8.228.71`, команда `ssh root@46.8.228.71`.
+> На нём — туннели/WARP/tinyproxy (`8888`), SOCKS для Telegram (`1080`). Пароль — только локально: `~/.local/share/opencode/mind/ensemble-tg/INFRA.md` (в git не коммитить).
+> Проверка с рига: `ssh root@46.8.228.71 'docker ps --format "{{.Names}}: {{.Status}}"'`.
 
 ---
 
 ## 0. Смоук-проверка (30 секунд)
 
 ```bash
-sshpass -p '0987' ssh Denis@192.168.1.2 '
+ssh Denis@192.168.1.7 '
   tail -2 /tmp/health.log;
   echo "агентов: $(launchctl list | grep -c com.denis.)";
   curl -s -m 5 http://127.0.0.1:3001/health'
@@ -47,6 +51,12 @@ sshpass -p '0987' ssh Denis@192.168.1.2 '
 ---
 
 ## 2. GLM — симптомы и лечение
+
+> **Инцидент 2026-10-04:** все три выхода в бане одновременно — дом (`95.221.30.127`) и VPS (`46.8.228.71`) дают липкий Aliyun WAF-блок (не снимается даже 12 мин полной тишины), WARP-выход даёт `000` на лендинг + reject капчи. `health.mode` всегда `"direct"` (захардкожен в `middleware.go`, ни о чём не говорит — смотри `.env HTTPS_PROXY`). Проверено: `feVersion` живьём `prod-fe-1.1.98` = дефолт бриджа, дело не в нём. Выход: свежий IP (ребут роутера), затем держать объём низким. `bootout` выгружает джобу из домена — поднимать обратно только через `bootstrap <plist>`, `kickstart -k` после `bootout` виснет.
+>
+> **Решение 2026-10-04 (работает):** бридж идёт через astro-выход (мобильный IP, ротируется): цепочка `бридж :3001 → .env HTTPS_PROXY=127.0.0.1:18888 → launchd-туннель com.denis.astro-tunnel → VPS systemd astro-fwd :18888 → astroproxy`. Креды astro — только в `/opt/aeroflot-bot/.env` (AFL_PROXIES) и `/root/.astro_fwd.env` (chmod 600), в git их нет. Сторож `glm_watchdog.py` пропатчен (бэкап `glm_watchdog.py.bak-astro`): astro — первый приоритет в `ensure_route()`. Проверено: `glm-5.3`/`glm-4.7` отвечают; `glm-4.6` мёртв апстримом (500) — не использовать. `pkill -f "имя_файла"` убивает собственную ssh-сессию — только по порту/PID.
+>
+> **Обновление 22:45:** astro крутит IP каждые ~30-60с — длинные SSE-стримы рвутся (`unexpected EOF`), нестрим стабилен. Весь наш код ходит `stream:false`. Стример — opencode-клиенты с .6 (провайдер `zai` в `~/.config/opencode/opencode.jsonc`). WARP отбани​лся: мост возвращён на `:3128`, стрим 1770 строк/77с — чисто. Текущий маршрут: WARP; astro-цепочка остаётся запасной.
 
 ### 2.1 `tokenCount` падает/0, стримы рвутся, «captcha generation returned empty payload»
 Пуст пул device-токенов.
@@ -177,8 +187,8 @@ done
 
 ## 4. Красные линии
 
-- **Не трогать чужие процессы на .2:** uvicorn (торговый бот) и screens `aigate` / `aiwatch` / `aitrader` / `deeprouter` / `ocserve`.
+- **Не трогать чужие процессы на .6:** uvicorn (торговый бот) и screens `aigate` / `aiwatch` / `aitrader` / `deeprouter` / `ocserve`.
 - Логи только truncate (`: > file`), не `rm`.
 - Секреты — только в `~/secrets`; в git не коммитить.
-- Правки кода: сначала рабочая копия на Mac .7 (`~/Documents/Default Project/channels`), затем `scp` на .2 и `py_compile`; после правки бота — `kickstart`.
+- Правки кода: сначала рабочая копия на Mac .6 (`~/Documents/Default Project/channels`), затем `scp` на .7 и `py_compile`; после правки бота — `kickstart`.
 - Ночью в 03:30 всё уходит в `github.com/babichdenis/Channels` — проверка свежих правок там.

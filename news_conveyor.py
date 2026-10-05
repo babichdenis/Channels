@@ -35,6 +35,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from conveyor import (fetch, fetch_bytes, parse_tme, simhash, hamming, to_signed, from_signed,
                       bridge_chat, parse_json_reply, looks_garbage)
+from content_guard import sanitize_repost, promo_artifacts  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DB = os.path.join(HERE, "news.db")
@@ -429,12 +430,23 @@ def news_image(cfg, item_url, image_prompt_en, post_id, proxy):
                 from PIL import Image
                 import io
                 image = Image.open(io.BytesIO(blob)).convert("RGB")
-                image = image.crop((0, 0, image.width, int(image.height * 0.92)))
+                # NEVER crop (см. MEDIA_POLICY.md): сохраняем кадр целиком.
                 image.save(full, "JPEG", quality=92)
                 return path
         except Exception:
             pass
     return ""
+
+
+def guard_post(post):
+    """Финальная гигиена текста (content_guard). False — пост не пускать."""
+    text, _removed = sanitize_repost(post.get("text", ""), post.get("origin", ""))
+    if len(text) < 50 or promo_artifacts(text):
+        return False
+    post["text"] = text
+    chk = post.setdefault("check", {})
+    chk["content_guard"] = "passed"
+    return True
 
 
 def add_to_queue(new_posts):
@@ -445,6 +457,9 @@ def add_to_queue(new_posts):
     by_id = {p.get("id"): p for p in current}
     for post in new_posts:
         if post.get("id") not in by_id:
+            if not guard_post(post):
+                print("✗ гард: %s не прошёл чистку — пропуск" % post.get("id"))
+                continue
             current.append(post)
     save_json(QUEUE, current)
 

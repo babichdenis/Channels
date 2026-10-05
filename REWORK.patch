@@ -1,0 +1,201 @@
+diff --git a/repost.py b/repost.py
+--- a/repost.py
++++ b/repost.py
+@@
+ from conveyor import simhash, hamming, to_signed
++from content_guard import sanitize_repost, promo_artifacts
+@@
+-CLEAN_LINE = re.compile(...)
+-TG_LINK = re.compile(...)
+-TG_MENTION = re.compile(...)
++# REMOVE: legacy local cleaner. Use content_guard.py as the single source of truth.
+@@
+ def clean_source_text(text, source):
+-    ...
++    clean, removed = sanitize_repost(text, source)
++    if len(clean) < 50:
++        return ""
++    if promo_artifacts(clean):
++        return ""
++    return clean
+@@
+-        q2.append({...})
++        q2.append({
++            ...,
++            "check": {"repost": True, "content_guard": "required"},
++            "media_policy": "source_preserve"
++        })
+
+diff --git a/gen_images.py b/gen_images.py
+--- a/gen_images.py
++++ b/gen_images.py
+@@
+-    # обрезаем водяной знак pollinations в правом нижнем углу + выравниваем в квадрат
+-    image = image.crop((0, 0, image.width, int(image.height * 0.92)))
+-    side = min(image.width, image.height)
+-    left = (image.width - side) // 2
+-    image = image.crop((left, 0, left + side, side))
++    # NEVER crop generated images. Preserve the complete composition.
+     image.save(path, "JPEG", quality=92)
+
+diff --git a/news_conveyor.py b/news_conveyor.py
+--- a/news_conveyor.py
++++ b/news_conveyor.py
+@@
+-                image = image.crop((0, 0, image.width, int(image.height * 0.92)))
+                 image.save(full, "JPEG", quality=92)
+@@
+-        if len(blob) > 5000:
++        if len(blob) > 5000:
+             ...
+-            image = image.crop((0, 0, image.width, int(image.height * 0.92)))
+             image.save(full, "JPEG", quality=92)
+@@
+-        "check": {"news": True, "sources": len(items)},
++        "check": {
++            "news": True,
++            "sources": len({it[1] for it in items}),
++            "verification": event.get("verification", "manual_review"),
++        },
++        "media_policy": "source_preserve_or_generated_no_crop",
+
+diff --git a/scheduler.py b/scheduler.py
+--- a/scheduler.py
++++ b/scheduler.py
+@@
+ from zoneinfo import ZoneInfo
++from content_guard import sanitize_repost, promo_artifacts
++from PIL import Image
+@@
+ def publish(post, channels, dry=False):
+@@
+-    text = post.get("text", "")
++    text = post.get("text", "")
++
++    # FINAL GATE. No agent or approval rewrite can bypass this.
++    if post.get("check", {}).get("repost"):
++        text, removed = sanitize_repost(
++            text,
++            post.get("origin", ""),
++        )
++        if len(text) < 50 or promo_artifacts(text):
++            return {
++                "ok": False,
++                "reject": True,
++                "error": "repost content guard failed",
++            }
++
++    # Never crop media here. If the file violates Telegram limits, publish text only.
++    image = post.get("image")
++    if image and os.path.exists(os.path.join(HERE, image)):
++        try:
++            with Image.open(os.path.join(HERE, image)) as im:
++                w, h = im.size
++                if os.path.getsize(os.path.join(HERE, image)) > 10 * 1024 * 1024:
++                    image = None
++                elif w + h > 10000 or max(w / h, h / w) > 20:
++                    image = None
++        except Exception:
++            image = None
+@@
+-    if image and len(text) > 1024:
++    if image and len(text) > 1024:
+         image = None
+@@
+-        else:
++        else:
+             post["status"] = "approved"
++            if res.get("reject"):
++                post["status"] = "rejected"
+
+diff --git a/conveyor.py b/conveyor.py
+--- a/conveyor.py
++++ b/conveyor.py
+@@
+ def quality_check(cfg, text, history):
+@@
+     except Exception as exc:
+-        return {"status": "PASS", "reason": "QC недоступен: %s" % str(exc)[:60]}
++        return {"status": "MANUAL_REVIEW", "reason": "QC недоступен: %s" % str(exc)[:60]}
+@@
+     if not data:
+-        return {"status": "PASS", "reason": "QC не распарсился"}
++        return {"status": "MANUAL_REVIEW", "reason": "QC не распарсился"}
+     return data
+
+diff --git a/prompts/00_GLOBAL_RULES.md b/prompts/00_GLOBAL_RULES.md
+--- a/prompts/00_GLOBAL_RULES.md
++++ b/prompts/00_GLOBAL_RULES.md
+@@
+ ## Запрещено всегда
++
++### SOURCE / REPOST HYGIENE
++
++- Никогда не переносить подпись исходного Telegram-канала.
++- Никогда не переносить `t.me/...` исходника.
++- Никогда не переносить `@channel` исходника.
++- Никогда не переносить «подписывайтесь», «наш канал», «больше новостей», рекламные CTA.
++- Внешняя ссылка на первичный материал допустима, если она относится к событию.
++- После любого rewrite материал обязан пройти финальный Content Guard.
++
++### FINAL GATE
++
++Если после очистки остаётся Telegram-реклама — `REJECT`.
++Если QC недоступен — `MANUAL_REVIEW`, не `PASS`.
+
+diff --git a/prompts/NEWS_GENERATOR.md b/prompts/NEWS_GENERATOR.md
+--- a/prompts/NEWS_GENERATOR.md
++++ b/prompts/NEWS_GENERATOR.md
+@@
+ ## 4. NEWS TEST
++
++## 4A. EVIDENCE TEST
++
++Для каждого события отделяй:
++
++- `primary_source`
++- `secondary_source`
++- `community_claim`
++
++Официальный первичный источник может быть достаточным доказательством.
++Два Google News результата не считаются автоматически двумя независимыми источниками.
++
++Верни:
++
++```json
++{
++  "verification": "verified|partial|manual_review|reject",
++  "evidence": [
++    {
++      "source": "...",
++      "url": "...",
++      "type": "primary|secondary",
++      "supports": ["..."]
++    }
++  ]
++}
++```
++
++Никогда не превращай мнение источника в факт события.
+
+diff --git a/prompts/NEWS_WRITER_STYLE.md b/prompts/NEWS_WRITER_STYLE.md
+--- a/prompts/NEWS_WRITER_STYLE.md
++++ b/prompts/NEWS_WRITER_STYLE.md
+@@
+ # 00. НАЗНАЧЕНИЕ
++
++Writer получает только VERIFIED EVENT. Он не является verifier.
++
++Запрещено:
++
++- добавлять факты из памяти;
++- добавлять рекламные ссылки;
++- добавлять ссылки на Telegram-каналы;
++- добавлять подпись исходного канала;
++- добавлять «подписывайтесь»;
++- добавлять CTA исходного источника;
++- писать вывод вместо события.
++
++Любой `t.me/...` в тексте новости должен быть либо подтверждённой частью события,
++либо удалён. Для обычного новостного текста предпочтительно держать source_url
++в отдельном поле JSON, а не внутри `text`.

@@ -28,6 +28,9 @@ import urllib.parse
 import urllib.request
 from zoneinfo import ZoneInfo
 
+from content_guard import sanitize_repost, promo_artifacts
+from PIL import Image
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 QUEUE = os.path.join(HERE, "queue.json")
 CONFIG = os.path.join(HERE, "config.json")
@@ -109,18 +112,36 @@ def publish(post, channels, dry=False):
     text = re.sub(r"\n{3,}", "\n\n", text).strip()
     if post.get("hashtags"):
         text = text + "\n\n" + " ".join(post["hashtags"])
+    # FINAL GATE: ни один путь публикации не обходит content guard (см. PUBLISH_GATE.md).
+    # Гард стоит на ВСЕХ постах, не только репостах: модель тоже может выдумать t.me/@handle.
+    text, _removed = sanitize_repost(text, post.get("origin", ""))
+    if len(text) < 50 or promo_artifacts(text):
+        return {"ok": False, "reject": True, "error": "content guard failed"}
+    # Never crop media here: картинку не выкидываем; длинный текст идёт вторым сообщением.
     image = post.get("image")
+    if image:
+        _ipath = os.path.join(HERE, image)
+        try:
+            if not os.path.exists(_ipath) or os.path.getsize(_ipath) > 10 * 1024 * 1024:
+                image = None
+            else:
+                with Image.open(_ipath) as _im:
+                    _w, _h = _im.size
+                    if _w + _h > 10000 or max(_w / _h, _h / _w) > 20:
+                        image = None
+        except Exception:
+            image = None
     video = post.get("video")
-    if image and len(text) > 1024:
-        image = None  # длинный текст не влезает в подпись — публикуем без картинки
-    if video and len(text) > 1024:
-        video = None
+    # Картинку НЕ выкидываем: длинный текст не влезает в подпись (1024) —
+    # шлём медиа отдельным сообщением, полный текст — следующим.
+    long_text = len(text) > 1024
     if video and os.path.exists(os.path.join(HERE, video)):
         with open(os.path.join(HERE, video), "rb") as fh:
             vblob = fh.read()
         boundary = "----schedv%d" % int(time.time())
         parts = []
-        for key, val in (("chat_id", chat_id), ("caption", text[:1024]), ("parse_mode", "HTML")):
+        vcap = text if not long_text else ""
+        for key, val in (("chat_id", chat_id), ("caption", vcap), ("parse_mode", "HTML")):
             parts.append("--%s\r\nContent-Disposition: form-data; name=\"%s\"\r\n\r\n%s\r\n" % (boundary, key, val))
         parts.append("--%s\r\nContent-Disposition: form-data; name=\"video\"; filename=\"video.mp4\"\r\n"
                      "Content-Type: video/mp4\r\n\r\n" % boundary)
@@ -131,6 +152,8 @@ def publish(post, channels, dry=False):
         try:
             with urllib.request.urlopen(req, timeout=300) as resp:
                 res = json.loads(resp.read().decode("utf-8", "ignore"))
+            if res.get("ok"):
+                res["_media"] = "video"
         except Exception as exc:
             res = {"ok": False, "error": "%s: %s" % (type(exc).__name__, str(exc)[:200])}
     elif image and os.path.exists(os.path.join(HERE, image)):
@@ -139,7 +162,8 @@ def publish(post, channels, dry=False):
         # multipart для sendPhoto
         boundary = "----sched%d" % int(time.time())
         parts = []
-        for key, val in (("chat_id", chat_id), ("caption", text[:1024]), ("parse_mode", "HTML")):
+        pcap = text if not long_text else ""
+        for key, val in (("chat_id", chat_id), ("caption", pcap), ("parse_mode", "HTML")):
             parts.append("--%s\r\nContent-Disposition: form-data; name=\"%s\"\r\n\r\n%s\r\n" % (boundary, key, val))
         parts.append("--%s\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"photo.jpg\"\r\n"
                      "Content-Type: image/jpeg\r\n\r\n" % boundary)
@@ -150,10 +174,20 @@ def publish(post, channels, dry=False):
         try:
             with urllib.request.urlopen(req, timeout=90) as resp:
                 res = json.loads(resp.read().decode("utf-8", "ignore"))
+            if res.get("ok"):
+                res["_media"] = "photo"
         except Exception as exc:
             res = {"ok": False, "error": "%s: %s" % (type(exc).__name__, str(exc)[:200])}
     else:
         res = tg_call(token, "sendMessage", {"chat_id": chat_id, "text": text[:4096], "parse_mode": "HTML"})
+    sent_media = bool(res.get("ok")) and long_text and res.get("_media")
+    if sent_media:
+        # длинный текст шёл отдельным сообщением — досылаем его полностью
+        res2 = tg_call(token, "sendMessage", {"chat_id": chat_id, "text": text[:4096], "parse_mode": "HTML"})
+        if not res2.get("ok"):
+            res = res2
+        else:
+            res["_text_msg"] = ((res2.get("result") or {}).get("message_id"))
     if res.get("ok"):
         react(token, chat_id, ((res.get("result") or {}).get("message_id")),
               REACTIONS.get(post.get("channel"), "👍"))
@@ -195,6 +229,8 @@ def run_once(queue, channels, dry=False):
             print("опубликован: %s → «%s»" % (post["id"], title))
         else:
             post["status"] = "approved"
+            if res.get("reject"):
+                post["status"] = "rejected"
             err = res.get("error") or res.get("description")
             if res.get("skip"):
                 log("skip", post_id=post["id"], channel=post.get("channel"), error=err)

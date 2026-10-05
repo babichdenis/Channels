@@ -23,6 +23,7 @@ sys.path.insert(0, HERE)
 from adfilter import clean_post_text  # noqa: E402
 sys.path.insert(0, HERE)
 from conveyor import simhash, hamming, to_signed  # noqa: E402
+from content_guard import sanitize_repost, promo_artifacts  # noqa: E402
 
 MSK = ZoneInfo("Europe/Moscow")
 QUEUE = os.path.join(HERE, "queue.json")
@@ -91,31 +92,17 @@ def classify(text):
 
 
 def clean_source_text(text, source):
-    """Убираем подписи, рекламу и ссылки/упоминания чужих TG-каналов; внешние ссылки остаются."""
-    src = (source or "").lower()
-    if src.startswith("ub_"):
-        src = src[3:]
-    src_word = re.compile(r"(?<![\wа-яё])%s(?![\wа-яё])" % re.escape(src)) if src else None
-    out = []
-    for ln in (text or "").split("\n"):
-        s = ln.strip()
-        if not s:
-            out.append("")
-            continue
-        if CLEAN_LINE.search(s) and len(s) < 220:
-            continue
-        low = s.lower()
-        if src_word and (src_word.search(low) or ("@%s" % src) in low):
-            continue  # строка с именем канала-источника (самореклама)
-        s = TG_LINK.sub("", s)
-        s = TG_MENTION.sub("", s).strip()
-        s = s.strip(" ·—–-|🔗\t").strip()
-        if len(s) < 5 or (s.endswith(":") and len(s) < 14):
-            continue  # строка состояла только из ссылки/упоминания («Бот:» и т.п.)
-        out.append(s)
-    t = "\n".join(out)
-    t = re.sub(r"\n{3,}", "\n\n", t).strip()
-    return t
+    """Единая чистка через content_guard (single source of truth).
+
+    Legacy-регулярки CLEAN_LINE/TG_LINK/TG_MENTION оставлены выше для истории,
+    но не используются: вся гигиена репоста — sanitize_repost + promo_artifacts.
+    """
+    clean, _removed = sanitize_repost(text, source)
+    if len(clean) < 50:
+        return ""
+    if promo_artifacts(clean):
+        return ""
+    return clean
 
 
 def watched_keys():
@@ -154,10 +141,12 @@ def main():
     seen += [int(r.get("sh") or 0) for r in recent]
 
     conn = sqlite3.connect(os.path.join(HERE, "content.db"), timeout=30)
-    try:
-        conn.execute("ALTER TABLE items ADD COLUMN video_local TEXT DEFAULT ''")
-    except sqlite3.OperationalError:
-        pass
+    for _col in ("video_local TEXT DEFAULT ''", "wm_flag TEXT DEFAULT ''",
+                 "wm_text TEXT DEFAULT ''"):
+        try:
+            conn.execute("ALTER TABLE items ADD COLUMN %s" % _col)
+        except sqlite3.OperationalError:
+            pass
     rows = conn.execute("SELECT id, source, text, ts, image_local, video_local FROM items "
                         "WHERE used = 0 ORDER BY ts DESC LIMIT 300").fetchall()
     made = 0
@@ -187,6 +176,25 @@ def main():
             conn.commit()
             print("· пропуск (%s): %s" % (source, clean[:60].replace("\n", " ")))
             continue
+        if image_local:
+            # вотермарки: мелочь — блюр-копия, крупная реклама — пост без фото
+            try:
+                from watermark import clean_for_post as _wm_clean, check_cached as _wm_check
+                _wm = _wm_check(image_local, source)
+                try:
+                    conn.execute("UPDATE items SET wm_flag = ?, wm_text = ? WHERE id = ?",
+                                 ("dirty:" + ",".join(_wm.get("reasons", ["?"]))
+                                  if _wm.get("dirty") else "clean",
+                                  _wm.get("sample", "")[:80], iid))
+                    conn.commit()
+                except sqlite3.OperationalError:
+                    pass
+                if _wm.get("dirty"):
+                    image_local = _wm_clean(image_local, source)
+                    if not image_local:
+                        print("· без фото (%s): вшитая реклама" % source)
+            except Exception:
+                pass
         when = datetime.now(MSK) + timedelta(minutes=2)
         pid = "rp-%s-%s-%s" % (when.strftime("%Y-%m-%d"), when.strftime("%H%M%S"), iid)
         when = when.replace(second=0, microsecond=0)
@@ -195,7 +203,8 @@ def main():
                    "rubric": "Репост", "text": clean_post_text(clean), "hashtags": CH_HASHTAGS[target],
                    "image": image_local or "", "images": ([image_local] if image_local else []),
                    "video": video_local or "", "source_image": "",
-                   "status": "pending", "check": {"repost": True},
+                   "status": "pending", "check": {"repost": True, "content_guard": "required"},
+                   "media_policy": "source_preserve",
                    "origin": "%s (копия)" % source})
         if not dry:
             save(QUEUE, q2)

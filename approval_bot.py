@@ -33,6 +33,7 @@ HERE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE_DIR)
 from adfilter import clean_post_text  # noqa: E402
 import adgate  # noqa: E402
+from content_guard import sanitize_repost, promo_artifacts  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 QUEUE = os.path.join(HERE, "queue.json")
@@ -406,14 +407,97 @@ def download_tg_photo(file_id, dest_rel):
     return dest_rel
 
 
-def keyboard(post_id):
-    return json.dumps({"inline_keyboard": [
+def post_source(post):
+    """Ключ источника репоста из origin («ub_xxx (копия)» → «ub_xxx»). Пусто — не репост."""
+    origin = (post.get("origin") or "")
+    if "(копия)" not in origin:
+        return ""
+    src = origin.split("(копия)")[0].strip()
+    if not src or src == "переслано вручную":
+        return ""
+    return src
+
+
+def keyboard(post_id, source=""):
+    rows = [
         [{"text": "✅ Опубликовать сейчас", "callback_data": "approve_now:%s" % post_id},
          {"text": "🗓 В расписание", "callback_data": "approve_sched:%s" % post_id}],
         [{"text": "✏️ Редактировать", "callback_data": "edit:%s" % post_id}],
         [{"text": "❌ Отклонить", "callback_data": "reject:%s" % post_id},
          {"text": "♻️ Перегенерировать", "callback_data": "regen:%s" % post_id}],
-    ]}, ensure_ascii=False)
+    ]
+    if source:
+        rows.append([{"text": "🚫 Источник — исключить", "callback_data": "bansrc:%s" % post_id}])
+    return json.dumps({"inline_keyboard": rows}, ensure_ascii=False)
+
+
+WATCH_PATH = os.path.expanduser("~/tguserbot/watch.json")
+BLOCKED_PATH = os.path.expanduser("~/tguserbot/blocked.json")
+
+
+def ban_source(source):
+    """Исключает канал-источник: убирает из watch.json, кладёт в blocked.json,
+    вычищает из sources.json/news_sources.json. Возвращает (src, removed_watch, blocked)."""
+    src = (source or "").strip()
+    low = src.lower().lstrip("@")
+    variants = {low}
+    if low.startswith("ub_"):
+        variants.add(low[3:])
+    else:
+        variants.add("ub_" + low)
+    removed = 0
+    try:
+        watch = json.load(open(WATCH_PATH, encoding="utf-8"))
+    except Exception:
+        watch = []
+    kept = []
+    for w in watch:
+        k = str(w.get("key") or "").strip().lower().lstrip("@")
+        if k and k in variants:
+            removed += 1
+        else:
+            kept.append(w)
+    try:
+        with open(WATCH_PATH + ".tmp", "w", encoding="utf-8") as fh:
+            json.dump(kept, fh, ensure_ascii=False, indent=2)
+        os.replace(WATCH_PATH + ".tmp", WATCH_PATH)
+    except Exception as exc:
+        log("ban: watch.json не записан: %s" % str(exc)[:120])
+    blocked = False
+    try:
+        bl = json.load(open(BLOCKED_PATH, encoding="utf-8"))
+        if not isinstance(bl, list):
+            bl = []
+    except Exception:
+        bl = []
+    if not any(str(e.get("key") or "").lower() == low for e in bl if isinstance(e, dict)):
+        bl.append({"key": low, "ts": time.strftime("%Y-%m-%d %H:%M:%S"), "reason": "ban из бота"})
+        try:
+            with open(BLOCKED_PATH + ".tmp", "w", encoding="utf-8") as fh:
+                json.dump(bl, fh, ensure_ascii=False, indent=2)
+            os.replace(BLOCKED_PATH + ".tmp", BLOCKED_PATH)
+            blocked = True
+        except Exception as exc:
+            log("ban: blocked.json не записан: %s" % str(exc)[:120])
+    else:
+        blocked = True
+    # конвейерные списки (content + news) — только для username-источников
+    name = low[3:] if low.startswith("ub_") else low
+    if re.match(r"^[a-z0-9_]{4,32}$", name) and not name.isdigit() and not low.startswith("vk_"):
+        for path, sect in ((os.path.join(HERE, "sources.json"), "sources"),
+                           (os.path.join(HERE, "news_sources.json"), "tg")):
+            try:
+                cfg = json.load(open(path, encoding="utf-8"))
+                items = cfg.get(sect) or []
+                n0 = len(items)
+                cfg[sect] = [s for s in items if str(s.get("name") or "").lower() != name]
+                if len(cfg[sect]) != n0:
+                    with open(path + ".tmp", "w", encoding="utf-8") as fh:
+                        json.dump(cfg, fh, ensure_ascii=False, indent=2)
+                    os.replace(path + ".tmp", path)
+            except Exception as exc:
+                log("ban: %s не обновлён: %s" % (os.path.basename(path), str(exc)[:80]))
+    return src, removed, blocked
 
 
 def menu_kb():
@@ -450,6 +534,19 @@ def post_caption(post, titles):
                                  " ".join(post.get("hashtags") or []))
 
 
+def wm_hint(paths):
+    """Подсказка для карточки: есть ли вшитый текст на фото (только кэш, без OCR)."""
+    try:
+        from watermark import check_cached as _wc
+        for p in paths or []:
+            rel = p if not os.path.isabs(p) else os.path.relpath(p, HERE)
+            if _wc(rel, "", live=False).get("overlay_chars", 0) > 40:
+                return " 🖼 на фото есть текст"
+    except Exception:
+        pass
+    return ""
+
+
 def post_images(post):
     """Все существующие файлы-картинки поста: сначала главная, потом остальные."""
     paths = [p for p in (post.get("images") or []) if p]
@@ -467,6 +564,7 @@ def send_for_approval(post, admin, titles):
     full = post_caption(post, titles)
     video = post.get("video")
     gallery = post_images(post)
+    full = full + wm_hint(gallery)
     # Карусель: показываем ВСЕ фото. Раньше уходила только первая, и по
     # карточке было невозможно понять, что вообще сделал промпт.
     if not video and len(gallery) > 1:
@@ -486,10 +584,11 @@ def send_for_approval(post, admin, titles):
             log("альбом не отправился (%s): %s" % (post.get("id"), str(res.get("error"))[:120]))
             return api("sendMessage", {"chat_id": admin, "text": safe_trunc(full, 4000),
                                        "parse_mode": "HTML",
-                                       "reply_markup": keyboard(post["id"])}), "text"
+                                       "reply_markup": keyboard(post["id"], post_source(post))}), "text"
         head = "🖼 %s%s — %d фото" % (post.get("rubric") or "", " ⏱ %s" % (post.get("scheduled_at") or "")[11:16] or "", len(gallery[:10]))
+        head = head + "\n\n" + safe_trunc(full, 3900)
         return api("sendMessage", {"chat_id": admin, "text": head,
-                                   "reply_markup": keyboard(post["id"])}), "album"
+                                   "reply_markup": keyboard(post["id"], post_source(post))}), "album"
     vpath = os.path.join(HERE, video) if video else ""
     # крупное видео через прокси не отправить адекватно по времени —
     # уходим на фото/текст, чтобы карточка не потерялась
@@ -498,20 +597,36 @@ def send_for_approval(post, admin, titles):
     if vbig:
         log("видео пропущено, %.1f МБ > лимита: %s"
             % (os.path.getsize(vpath) / 1048576.0, post.get("id")))
-    if not vbig and video and os.path.exists(vpath) and len(full) <= 1024:
+    if not vbig and video and os.path.exists(vpath):
         with open(vpath, "rb") as fh:
             blob = fh.read()
-        return api("sendVideo", {"chat_id": admin, "caption": safe_trunc(full, 1024),
-                                 "parse_mode": "HTML", "reply_markup": keyboard(post["id"])},
-                   files={"video": ("video.mp4", blob)}, timeout=240), "video"
-    if gallery and len(gallery) == 1 and len(full) <= 1024:
+        if len(full) <= 1024:
+            return api("sendVideo", {"chat_id": admin, "caption": safe_trunc(full, 1024),
+                                     "parse_mode": "HTML", "reply_markup": keyboard(post["id"], post_source(post))},
+                       files={"video": ("video.mp4", blob)}, timeout=240), "video"
+        res_v = api("sendVideo", {"chat_id": admin, "caption": "",
+                                 "parse_mode": "HTML"},
+                    files={"video": ("video.mp4", blob)}, timeout=240)
+        if not res_v.get("ok"):
+            return res_v, "video"
+        return api("sendMessage", {"chat_id": admin, "text": safe_trunc(full, 4000),
+                                   "parse_mode": "HTML", "reply_markup": keyboard(post["id"], post_source(post))}), "video+text"
+    if gallery and len(gallery) == 1:
         with open(gallery[0], "rb") as fh:
             blob = fh.read()
-        return api("sendPhoto", {"chat_id": admin, "caption": safe_trunc(full, 1024),
-                                 "parse_mode": "HTML", "reply_markup": keyboard(post["id"])},
-                   files={"photo": ("photo.jpg", blob)}), "photo"
+        if len(full) <= 1024:
+            return api("sendPhoto", {"chat_id": admin, "caption": safe_trunc(full, 1024),
+                                     "parse_mode": "HTML", "reply_markup": keyboard(post["id"], post_source(post))},
+                       files={"photo": ("photo.jpg", blob)}), "photo"
+        res_p = api("sendPhoto", {"chat_id": admin, "caption": "",
+                                  "parse_mode": "HTML"},
+                    files={"photo": ("photo.jpg", blob)}, timeout=240)
+        if not res_p.get("ok"):
+            return res_p, "photo"
+        return api("sendMessage", {"chat_id": admin, "text": safe_trunc(full, 4000),
+                                   "parse_mode": "HTML", "reply_markup": keyboard(post["id"], post_source(post))}), "photo+text"
     return api("sendMessage", {"chat_id": admin, "text": safe_trunc(full, 4000),
-                               "parse_mode": "HTML", "reply_markup": keyboard(post["id"])}), "text"
+                               "parse_mode": "HTML", "reply_markup": keyboard(post["id"], post_source(post))}), "text"
 
 
 def mark_message(post, admin, status_text):
@@ -614,12 +729,68 @@ def send_channel_queue(chat_id, channel, edit_mid=None):
         lines.append("… и ещё %d" % (len(pend) - 40))
     rows = [[{"text": "📨 Прислать карточки (%d)" % len(pend), "callback_data": "qcards:%s" % channel},
              {"text": "◀️ К каналам", "callback_data": "cmd:queue"}]]
+    if channel != "__all__" and pend:
+        rows.append([{"text": "✅ Неделю в расписание (%d)" % min(len(pend), BULK_LIMIT),
+                      "callback_data": "bulk:%s" % channel}])
     payload = {"chat_id": chat_id, "text": "\n".join(lines)[:4000], "parse_mode": "HTML",
                "reply_markup": json.dumps({"inline_keyboard": rows}, ensure_ascii=False)}
     if edit_mid:
         payload["message_id"] = edit_mid
         return api("editMessageText", payload)
     return api("sendMessage", payload)
+
+
+BULK_LIMIT = 21
+
+
+def channel_day_slots(channel):
+    """Слоты публикаций канала (из config/channels.json), фолбэк — 3/день."""
+    try:
+        cfg = json.load(open(os.path.join(HERE, "config", "channels.json"), encoding="utf-8"))
+        for c in cfg.get("channels", []):
+            if c.get("id") == channel:
+                slots = [s for s in (c.get("schedule") or []) if re.match(r"^\d\d:\d\d$", s or "")]
+                if slots:
+                    return slots
+    except Exception:
+        pass
+    return ["09:00", "14:00", "19:00"]
+
+
+def bulk_plan(channel, limit=BULK_LIMIT):
+    """Пары (пост, новый scheduled_at): старейшие pending → ближайшие слоты сетки."""
+    queue = load_json(QUEUE, [])
+    pend = sorted(
+        [p for p in queue if p.get("status") == "pending" and p.get("channel") == channel],
+        key=lambda p: p.get("scheduled_at") or "")
+    pend = pend[:limit]
+    slots = channel_day_slots(channel)
+    now = datetime.now(MSK_TZ)
+    cands = []
+    for s in slots:
+        hh, mm = map(int, s.split(":"))
+        cand = datetime(now.year, now.month, now.day, hh, mm, tzinfo=MSK_TZ)
+        if cand > now + timedelta(hours=2):
+            cands.append(cand)
+    day = now.date() + timedelta(days=1)
+    while len(cands) < len(pend):
+        for s in slots:
+            hh, mm = map(int, s.split(":"))
+            cands.append(datetime(day.year, day.month, day.day, hh, mm, tzinfo=MSK_TZ))
+        day += timedelta(days=1)
+    return queue, list(zip(pend, cands))
+
+
+def bulk_apply(channel, limit=BULK_LIMIT):
+    """Апрувит пачку и раскладывает по сетке. Возвращает список (id, iso)."""
+    queue, plan = bulk_plan(channel, limit)
+    for post, when in plan:
+        post["status"] = "approved"
+        post["scheduled_at"] = when.isoformat()
+        post["_sent"] = True
+    if plan:
+        save_json(QUEUE, queue)
+    return [(p["id"], w.isoformat()) for p, w in plan]
 
 
 def resend_channel_cards(channel):
@@ -826,6 +997,42 @@ def main():
                             n = resend_channel_cards(post_id)
                             api("sendMessage", {"chat_id": admin, "text": "📨 Отправил карточек: %d" % n})
                         continue
+                    if action in ("bulk", "bulkgo"):
+                        queue, plan = bulk_plan(post_id)
+                        if not plan:
+                            api("answerCallbackQuery", {"callback_query_id": cq["id"],
+                                                        "text": "нечего забирать"})
+                            continue
+                        oldest = (plan[0][0].get("scheduled_at") or "")[:10]
+                        newest = (plan[-1][0].get("scheduled_at") or "")[:10]
+                        first = plan[0][1].strftime("%d.%m %H:%M")
+                        last = plan[-1][1].strftime("%d.%m %H:%M")
+                        if action == "bulk":
+                            api("answerCallbackQuery", {"callback_query_id": cq["id"]})
+                            api("sendMessage", {
+                                "chat_id": admin,
+                                "text": ("✅ Забрать <b>%d</b> постов (%s…%s) в расписание %s → %s?\n"
+                                         "Старые карточки останутся — любой пост можно отклонить точечно.") % (
+                                             len(plan), oldest, newest, first, last),
+                                "parse_mode": "HTML",
+                                "reply_markup": json.dumps({"inline_keyboard": [
+                                    [{"text": "✅ Да, в расписание",
+                                      "callback_data": "bulkgo:%s" % post_id},
+                                     {"text": "◀️ Отмена", "callback_data": "cmd:queue"}],
+                                ]}, ensure_ascii=False)})
+                            log("массовый апрув запрошен: %s (%d)" % (post_id, len(plan)))
+                            continue
+                        done = bulk_apply(post_id)
+                        api("answerCallbackQuery", {"callback_query_id": cq["id"],
+                                                    "text": "✅ в расписании: %d" % len(done)})
+                        api("sendMessage", {
+                            "chat_id": admin,
+                            "text": "✅ <b>%s</b>: в расписание ушло %d постов (%s → %s)." % (
+                                post_id, len(done), done[0][1][:16].replace("T", " "),
+                                done[-1][1][:16].replace("T", " ")),
+                            "parse_mode": "HTML"})
+                        log("массовый апрув выполнен: %s (%d)" % (post_id, len(done)))
+                        continue
                     if action == "addsrc":
                         api("answerCallbackQuery", {"callback_query_id": cq["id"], "text": "⏳ добавляю канал…"})
                         try:
@@ -903,6 +1110,27 @@ def main():
                         api("answerCallbackQuery", {"callback_query_id": cq["id"], "text": "❌ отклонено"})
                         mark_message(post, admin, "❌ Отклонено")
                         log("отклонён: %s" % post_id)
+                    elif action == "bansrc":
+                        src = post_source(post)
+                        if not src:
+                            api("answerCallbackQuery", {"callback_query_id": cq["id"], "text": "не репост — банить нечего"})
+                            continue
+                        src, removed, blocked = ban_source(src)
+                        n = 0
+                        for p in queue:
+                            if p.get("status") == "pending" and post_source(p).lower() == src.lower():
+                                p["status"] = "rejected"
+                                p["_sent"] = True
+                                n += 1
+                        save_json(QUEUE, queue)
+                        api("answerCallbackQuery", {"callback_query_id": cq["id"],
+                                                    "text": "🚫 источник исключён"})
+                        mark_message(post, admin, "🚫 Источник исключён: %s" % src)
+                        api("sendMessage", {"chat_id": admin,
+                                            "text": "🚫 Источник <b>%s</b> исключён (watch: %d, блоклист: %s). "
+                                                    "Отклонено карточек из него: %d." % (
+                                                        src, removed, "да" if blocked else "нет", n)})
+                        log("источник исключён: %s (watch=%d, отклонено=%d)" % (src, removed, n))
                     elif action == "regen":
                         api("answerCallbackQuery", {"callback_query_id": cq["id"], "text": "♻️ переписываю…"})
                         try:
@@ -911,11 +1139,17 @@ def main():
                             new_text = ""
                             log("regen ошибка: %s" % str(exc)[:120])
                         if new_text:
-                            post["text"] = new_text
-                            post["_sent"] = False
-                            save_json(QUEUE, queue)
-                            mark_message(post, admin, "♻️ Перегенерирован — смотри новую версию ниже")
-                            log("перегенерирован: %s" % post_id)
+                            clean, _rem = sanitize_repost(new_text, post.get("origin", ""))
+                            if len(clean) < 50 or promo_artifacts(clean):
+                                api("sendMessage", {"chat_id": admin,
+                                                    "text": "⚠️ Перегенерация %s не прошла гард — оставил старый текст." % post_id})
+                                log("regen %s: гард не пройден, текст не заменён" % post_id)
+                            else:
+                                post["text"] = clean
+                                post["_sent"] = False
+                                save_json(QUEUE, queue)
+                                mark_message(post, admin, "♻️ Перегенерирован — смотри новую версию ниже")
+                                log("перегенерирован: %s" % post_id)
                         else:
                             api("sendMessage", {"chat_id": admin, "text": "⚠️ Не смог перегенерировать %s" % post_id})
                     continue
@@ -937,11 +1171,17 @@ def main():
                     queue = load_json(QUEUE, [])
                     post = find_post(queue, awaiting_edit)
                     if post:
-                        post["text"] = text
-                        post["_sent"] = False
-                        save_json(QUEUE, queue)
-                        api("sendMessage", {"chat_id": chat_id, "text": "✏️ Текст обновлён: %s" % awaiting_edit})
-                        log("отредактирован: %s" % awaiting_edit)
+                        clean, _rem = sanitize_repost(text, post.get("origin", ""))
+                        if len(clean) < 50 or promo_artifacts(clean):
+                            api("sendMessage", {"chat_id": chat_id,
+                                                "text": "⚠️ Правка не прошла гард (ссылки/реклама) — текст не сохранён."})
+                            log("правка %s: гард не пройден" % awaiting_edit)
+                        else:
+                            post["text"] = clean
+                            post["_sent"] = False
+                            save_json(QUEUE, queue)
+                            api("sendMessage", {"chat_id": chat_id, "text": "✏️ Текст обновлён: %s" % awaiting_edit})
+                            log("отредактирован: %s" % awaiting_edit)
                     awaiting_edit = ""
                     continue
                 m_tok = re.search(r"access_token=([A-Za-z0-9._\-]+)", text)

@@ -176,6 +176,11 @@ async def main():
             watch = json.load(open(watch_path, encoding="utf-8"))
         except Exception:
             watch = []
+        try:
+            _bl = json.load(open(os.path.expanduser("~/tguserbot/blocked.json"), encoding="utf-8"))
+            blocked = {str(e.get("key") or "").lower().lstrip("@") for e in _bl if isinstance(e, dict)}
+        except Exception:
+            blocked = set()
         for a in added[:MAX_JOIN]:
             try:
                 await client(JoinChannelRequest(a["uname"]))
@@ -186,6 +191,9 @@ async def main():
                 break
             except Exception as exc:
                 print("join @%s: %s" % (a["uname"], type(exc).__name__))
+                continue
+            if a["uname"].lower() in blocked:
+                print("skip @%s: в блоклисте (ban из бота)" % a["uname"])
                 continue
             if not any(w.get("key") == a["uname"] for w in watch):
                 watch.append({"key": a["uname"], "ref": "@" + a["uname"], "title": a["title"]})

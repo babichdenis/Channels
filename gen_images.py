@@ -37,11 +37,7 @@ def generate(prompt, path, width=1024, height=1024, seed=0, timeout=180):
     if len(data) < 5000:
         raise RuntimeError("слишком маленький ответ: %d байт" % len(data))
     image = Image.open(io.BytesIO(data)).convert("RGB")
-    # обрезаем водяной знак pollinations в правом нижнем углу + выравниваем в квадрат
-    image = image.crop((0, 0, image.width, int(image.height * 0.92)))
-    side = min(image.width, image.height)
-    left = (image.width - side) // 2
-    image = image.crop((left, 0, left + side, side))
+    # NEVER crop generated images. Preserve the complete composition (см. MEDIA_POLICY.md).
     image.save(path, "JPEG", quality=92)
     return os.path.getsize(path)
 
