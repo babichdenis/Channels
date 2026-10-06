@@ -439,7 +439,8 @@ def ban_source(source):
     """Исключает канал-источник: убирает из watch.json, кладёт в blocked.json,
     вычищает из sources.json/news_sources.json. Возвращает (src, removed_watch, blocked)."""
     src = (source or "").strip()
-    low = src.lower().lstrip("@")
+    low = re.sub(r"\s*\(копия\)\s*$", "", src.lower().lstrip("@"))
+    src = low
     variants = {low}
     if low.startswith("ub_"):
         variants.add(low[3:])

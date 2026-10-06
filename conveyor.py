@@ -253,6 +253,11 @@ def strip_html(text):
     и копия проходит дедуп как новая."""
     if not text:
         return ""
+    try:
+        from adfilter import preserve_external_anchors as _pea
+        text = _pea(text)
+    except Exception:
+        pass
     t = _TAG_RE.sub(" ", text)
     for a, b in (("&nbsp;", " "), ("&quot;", '"'), ("&#39;", "'"),
                  ("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">")):

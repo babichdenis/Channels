@@ -34,14 +34,15 @@
     "image": "",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "ai_machinelearning_big_data (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3299
+    "_approval_message_id": 3299,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-25-215404-587",
@@ -340,14 +341,15 @@
     "image": "",
     "video": "media/neyrolabs-1901741543_2390.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3423
+    "_approval_message_id": 3423,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-010133-2031",
@@ -361,14 +363,15 @@
     "image": "",
     "video": "media/neyrolabs-1901741543_2389.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3453
+    "_approval_message_id": 3453,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-010146-2023",
@@ -405,14 +408,15 @@
     "image": "",
     "video": "media/neyrolabs-1901741543_2388.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3311
+    "_approval_message_id": 3311,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-013402-2025",
@@ -427,14 +431,15 @@
     "image": "media/promtychatgpt-2343842463_3503.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3312
+    "_approval_message_id": 3312,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-020620-2026",
@@ -449,14 +454,15 @@
     "image": "",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3315
+    "_approval_message_id": 3315,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-020626-2033",
@@ -470,14 +476,15 @@
     "image": "",
     "video": "media/neyrolabs-1901741543_2385.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3425
+    "_approval_message_id": 3425,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-020629-2034",
@@ -513,14 +520,15 @@
     "image": "media/neyrolabs-1901741543_2379.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3317
+    "_approval_message_id": 3317,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-024139-976",
@@ -689,14 +697,15 @@
     "image": "media/devsp-1121902388_5949.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "devsp (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3325
+    "_approval_message_id": 3325,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-041309-1756",
@@ -710,14 +719,15 @@
     "image": "media/forward_neural-2347768910_827.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "forward_neural (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3326
+    "_approval_message_id": 3326,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-041312-1296",
@@ -731,14 +741,15 @@
     "image": "media/vibecoding_tg-1555418015_3921.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "vibecoding_tg (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3327
+    "_approval_message_id": 3327,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-051409-2073",
@@ -774,14 +785,15 @@
     "image": "media/neyrolabs-1901741543_2378.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3419
+    "_approval_message_id": 3419,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-054437-1247",
@@ -970,14 +982,15 @@
     "image": "media/bynara_ai-3483330286_152.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "bynara_ai (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3338
+    "_approval_message_id": 3338,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-071812-1250",
@@ -1014,14 +1027,15 @@
     "image": "media/vibecoding_tg-1555418015_3913.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "vibecoding_tg (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3341
+    "_approval_message_id": 3341,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-074839-2037",
@@ -1035,14 +1049,15 @@
     "image": "media/neyrolabs-1901741543_2377.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3420
+    "_approval_message_id": 3420,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-074843-1301",
@@ -1125,14 +1140,15 @@
     "image": "media/bynara_ai-3483330286_150.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "bynara_ai (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3346
+    "_approval_message_id": 3346,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-093558-1303",
@@ -1146,14 +1162,15 @@
     "image": "",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "vibecoding_tg (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3350
+    "_approval_message_id": 3350,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-093602-592",
@@ -1210,14 +1227,15 @@
     "image": "media/ub_3171990466-3171990466_800.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "ub_3171990466 (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3357
+    "_approval_message_id": 3357,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-105606-1304",
@@ -1368,14 +1386,15 @@
     "image": "media/ub_3171990466-3171990466_817.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "ub_3171990466 (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3367
+    "_approval_message_id": 3367,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-115726-2232",
@@ -1502,14 +1521,15 @@
     "image": "media/devsp-1121902388_5962.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "devsp (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3373
+    "_approval_message_id": 3373,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-125856-2210",
@@ -1545,14 +1565,15 @@
     "image": "media/study24ai-1220784339_2976.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "study24ai (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3421
+    "_approval_message_id": 3421,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-132906-2211",
@@ -1700,14 +1721,15 @@
     "image": "media/aimesh_digital-2609216757_950.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "aimesh_digital (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3382
+    "_approval_message_id": 3382,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-150353-1757",
@@ -1882,14 +1904,15 @@
     "image": "",
     "video": "media/neyrolabs-1901741543_2376.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3454
+    "_approval_message_id": 3454,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-163702-1132",
@@ -1947,14 +1970,15 @@
     "image": "",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "vibecoding_tg (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3393
+    "_approval_message_id": 3393,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-170840-1349",
@@ -1991,14 +2015,15 @@
     "image": "",
     "video": "media/neyrolabs-1901741543_2374.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3422
+    "_approval_message_id": 3422,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-174704-1252",
@@ -2035,14 +2060,15 @@
     "image": "",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "vibecoding_tg (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3396
+    "_approval_message_id": 3396,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-185036-2337",
@@ -2056,14 +2082,15 @@
     "image": "media/vibecoding_tg-1555418015_3959.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "vibecoding_tg (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3397
+    "_approval_message_id": 3397,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-185044-2338",
@@ -2078,14 +2105,15 @@
     "image": "media/promtychatgpt-2343842463_3530.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3398
+    "_approval_message_id": 3398,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-192116-2340",
@@ -2100,14 +2128,15 @@
     "image": "media/promtychatgpt-2343842463_3528.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3402
+    "_approval_message_id": 3402,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-192140-2341",
@@ -2122,14 +2151,15 @@
     "image": "media/promtychatgpt-2343842463_3527.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3400
+    "_approval_message_id": 3400,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-192145-2342",
@@ -2144,14 +2174,15 @@
     "image": "media/promtychatgpt-2343842463_3525.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3401
+    "_approval_message_id": 3401,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-195157-2911",
@@ -2165,14 +2196,15 @@
     "image": "media/ai_agentura-1550121216_251.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "ai_agentura (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3488
+    "_approval_message_id": 3488,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-195223-2344",
@@ -2187,14 +2219,15 @@
     "image": "media/promtychatgpt-2343842463_3513.jpg",
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3404
+    "_approval_message_id": 3404,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-202304-2345",
@@ -2212,14 +2245,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3408
+    "_approval_message_id": 3408,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-202337-2603",
@@ -2234,14 +2268,15 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "aiefn (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3409
+    "_approval_message_id": 3409,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-202351-2346",
@@ -2259,14 +2294,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3410
+    "_approval_message_id": 3410,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-205411-2349",
@@ -2284,14 +2320,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3412
+    "_approval_message_id": 3412,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-205419-2350",
@@ -2309,14 +2346,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3413
+    "_approval_message_id": 3413,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-205429-2351",
@@ -2334,14 +2372,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3414
+    "_approval_message_id": 3414,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-213418-2352",
@@ -2359,14 +2398,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "promtychatgpt (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3446
+    "_approval_message_id": 3446,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-224740-2978",
@@ -2453,14 +2493,15 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_3960.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "vibecoding_tg (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3461
+    "_approval_message_id": 3461,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-231809-2572",
@@ -2477,14 +2518,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "ai_agentura (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3462
+    "_approval_message_id": 3462,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-234819-3017",
@@ -2500,14 +2542,15 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "nero_work (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3463
+    "_approval_message_id": 3463,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-26-234828-2650",
@@ -2522,14 +2565,15 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3464
+    "_approval_message_id": 3464,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-001840-2649",
@@ -2546,14 +2590,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neyrolabs (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3465
+    "_approval_message_id": 3465,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-001847-3018",
@@ -2569,14 +2614,15 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "nero_work (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3466
+    "_approval_message_id": 3466,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-024906-3081",
@@ -2592,14 +2638,15 @@
     "images": [],
     "video": "media/prodvizhenievteleg-2022690628_208.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "prodvizhenievteleg (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3467
+    "_approval_message_id": 3467,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-031956-3082",
@@ -2665,14 +2712,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "prodvizhenievteleg (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3471
+    "_approval_message_id": 3471,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-035050-3084",
@@ -2711,14 +2759,15 @@
     "images": [],
     "video": "media/prodvizhenievteleg-2022690628_201.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "prodvizhenievteleg (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3473
+    "_approval_message_id": 3473,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-035138-3086",
@@ -2812,14 +2861,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "prodvizhenievteleg (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3477
+    "_approval_message_id": 3477,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-072227-3194",
@@ -2837,14 +2887,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neiro_secret (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3480
+    "_approval_message_id": 3480,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-072235-3196",
@@ -2862,14 +2913,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neiro_secret (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3481
+    "_approval_message_id": 3481,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-072242-3197",
@@ -2910,14 +2962,15 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neiro_secret (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3483
+    "_approval_message_id": 3483,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-075908-3200",
@@ -2935,14 +2988,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neiro_secret (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3485
+    "_approval_message_id": 3485,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-083052-3201",
@@ -2960,14 +3014,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neiro_secret (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3489
+    "_approval_message_id": 3489,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-083058-3202",
@@ -2983,14 +3038,15 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neiro_secret (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3490
+    "_approval_message_id": 3490,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-083103-3203",
@@ -3008,14 +3064,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "neiro_secret (копия)",
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3491
+    "_approval_message_id": 3491,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-090712-3211",
@@ -3033,14 +3090,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "itiger_dev (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3492
+    "_approval_message_id": 3492,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-090719-3204",
@@ -3081,14 +3139,15 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
     "origin": "prodvizhenievteleg (копия)",
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3495
+    "_approval_message_id": 3495,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-123826-3220",
@@ -3105,7 +3164,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3122,7 +3181,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3501
+    "_approval_message_id": 3501,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-123834-3219",
@@ -3210,7 +3270,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3229,7 +3289,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3506
+    "_approval_message_id": 3506,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-143932-3224",
@@ -3247,7 +3308,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3266,7 +3327,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3510
+    "_approval_message_id": 3510,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-150944-3225",
@@ -3284,7 +3346,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3303,7 +3365,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3511
+    "_approval_message_id": 3511,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-153950-3227",
@@ -3321,7 +3384,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3340,7 +3403,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3512
+    "_approval_message_id": 3512,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-163957-3228",
@@ -3357,7 +3421,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3374,7 +3438,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3513
+    "_approval_message_id": 3513,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-164006-3229",
@@ -3392,7 +3457,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3411,7 +3476,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3514
+    "_approval_message_id": 3514,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-174026-3231",
@@ -3429,7 +3495,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3448,7 +3514,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3515
+    "_approval_message_id": 3515,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-181102-3232",
@@ -3466,7 +3533,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3485,7 +3552,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3516
+    "_approval_message_id": 3516,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-204114-3234",
@@ -3503,7 +3571,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3520,7 +3588,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3519
+    "_approval_message_id": 3519,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-204126-3235",
@@ -3538,7 +3607,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3557,7 +3626,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3520
+    "_approval_message_id": 3520,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-27-214137-3236",
@@ -3572,7 +3642,7 @@
     "images": [],
     "video": "media/ai_machinelearning_big_data-1114591086_11024.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3589,7 +3659,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3524
+    "_approval_message_id": 3524,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-091209-3238",
@@ -3607,7 +3678,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3624,7 +3695,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3528
+    "_approval_message_id": 3528,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-121405-3256",
@@ -3642,7 +3714,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3659,7 +3731,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3534
+    "_approval_message_id": 3534,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-121438-3257",
@@ -3713,7 +3786,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3730,7 +3803,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3537
+    "_approval_message_id": 3537,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-131505-3260",
@@ -3747,7 +3821,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3764,7 +3838,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3538
+    "_approval_message_id": 3538,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-144515-3261",
@@ -3779,7 +3854,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_3972.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3796,7 +3871,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3543
+    "_approval_message_id": 3543,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-144527-3262",
@@ -3814,7 +3890,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3833,7 +3909,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3544
+    "_approval_message_id": 3544,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-154540-3274",
@@ -3851,7 +3928,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3868,7 +3945,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3547
+    "_approval_message_id": 3547,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-184601-3283",
@@ -3885,7 +3963,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3902,7 +3980,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3553
+    "_approval_message_id": 3553,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-204810-3292",
@@ -3919,7 +3998,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3936,7 +4015,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3555
+    "_approval_message_id": 3555,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-204824-3293",
@@ -3953,7 +4033,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -3970,7 +4050,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3556
+    "_approval_message_id": 3556,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-215030-3295",
@@ -3987,7 +4068,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4004,7 +4085,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3558
+    "_approval_message_id": 3558,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-28-225041-3296",
@@ -4022,7 +4104,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4041,7 +4123,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3561
+    "_approval_message_id": 3561,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-062056-3300",
@@ -4058,7 +4141,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4075,7 +4158,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3566
+    "_approval_message_id": 3566,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-092150-3303",
@@ -4092,7 +4176,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4109,7 +4193,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3567
+    "_approval_message_id": 3567,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-095206-3305",
@@ -4126,7 +4211,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4143,7 +4228,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3568
+    "_approval_message_id": 3568,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-102210-3306",
@@ -4160,7 +4246,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4177,7 +4263,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3569
+    "_approval_message_id": 3569,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-102215-3307",
@@ -4195,7 +4282,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4214,7 +4301,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3570
+    "_approval_message_id": 3570,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-112429-3310",
@@ -4266,7 +4354,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4283,7 +4371,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3573
+    "_approval_message_id": 3573,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-122446-3326",
@@ -4516,7 +4605,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4533,7 +4622,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3588
+    "_approval_message_id": 3588,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-162704-3349",
@@ -4549,7 +4639,7 @@
     "images": [],
     "video": "media/neyroph-2244808471_683.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4568,7 +4658,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3589
+    "_approval_message_id": 3589,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-165716-3350",
@@ -4586,7 +4677,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4605,7 +4696,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3590
+    "_approval_message_id": 3590,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-172727-3351",
@@ -4659,7 +4751,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4678,7 +4770,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3592
+    "_approval_message_id": 3592,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-175802-3354",
@@ -4696,7 +4789,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4715,7 +4808,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3593
+    "_approval_message_id": 3593,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-192812-3355",
@@ -4732,7 +4826,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4749,7 +4843,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3594
+    "_approval_message_id": 3594,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-192819-3356",
@@ -4766,7 +4861,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4783,7 +4878,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3595
+    "_approval_message_id": 3595,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-192827-3357",
@@ -4801,7 +4897,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4820,7 +4916,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3596
+    "_approval_message_id": 3596,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-195904-3360",
@@ -4838,7 +4935,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4857,7 +4954,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3597
+    "_approval_message_id": 3597,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-202912-3363",
@@ -4908,7 +5006,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4925,7 +5023,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3599
+    "_approval_message_id": 3599,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-202924-3362",
@@ -4943,7 +5042,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4960,7 +5059,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3600
+    "_approval_message_id": 3600,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-205942-3373",
@@ -4977,7 +5077,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -4994,7 +5094,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3602
+    "_approval_message_id": 3602,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-29-205959-3364",
@@ -5046,7 +5147,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5063,7 +5164,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3606
+    "_approval_message_id": 3606,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-070100-3432",
@@ -5080,7 +5182,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5097,7 +5199,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3608
+    "_approval_message_id": 3608,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-093114-3434",
@@ -5112,7 +5215,7 @@
     "images": [],
     "video": "media/neyrolabs-1901741543_2399.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5129,7 +5232,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3609
+    "_approval_message_id": 3609,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-103146-3442",
@@ -5147,7 +5251,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5164,7 +5268,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3610
+    "_approval_message_id": 3610,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-103153-3440",
@@ -5216,7 +5321,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5233,7 +5338,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3611
+    "_approval_message_id": 3611,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-110209-3443",
@@ -5250,7 +5356,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5267,7 +5373,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3612
+    "_approval_message_id": 3612,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-110214-3445",
@@ -5285,7 +5392,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5304,7 +5411,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3613
+    "_approval_message_id": 3613,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-113223-3449",
@@ -5322,7 +5430,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5341,7 +5449,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3615
+    "_approval_message_id": 3615,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-123248-3452",
@@ -5356,7 +5465,7 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5373,7 +5482,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3618
+    "_approval_message_id": 3618,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-130306-3454",
@@ -5389,7 +5499,7 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5406,7 +5516,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3619
+    "_approval_message_id": 3619,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-140317-3456",
@@ -5424,7 +5535,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5443,7 +5554,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3620
+    "_approval_message_id": 3620,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-140320-3455",
@@ -5460,7 +5572,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5477,7 +5589,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3621
+    "_approval_message_id": 3621,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-143341-3457",
@@ -5495,7 +5608,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5514,7 +5627,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3622
+    "_approval_message_id": 3622,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-150352-3458",
@@ -5531,7 +5645,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5548,7 +5662,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3623
+    "_approval_message_id": 3623,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-150355-3459",
@@ -5565,7 +5680,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5582,7 +5697,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3624
+    "_approval_message_id": 3624,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-153418-3460",
@@ -5599,7 +5715,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5616,7 +5732,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3625
+    "_approval_message_id": 3625,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-163440-3461",
@@ -5633,7 +5750,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5650,7 +5767,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3626
+    "_approval_message_id": 3626,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-170455-3462",
@@ -5665,7 +5783,7 @@
     "images": [],
     "video": "media/ai_machinelearning_big_data-1114591086_11050.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5682,7 +5800,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3627
+    "_approval_message_id": 3627,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-173508-3465",
@@ -5699,7 +5818,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5716,7 +5835,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3628
+    "_approval_message_id": 3628,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-183517-3469",
@@ -5733,7 +5853,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5750,7 +5870,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3630
+    "_approval_message_id": 3630,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-183527-3468",
@@ -5767,7 +5888,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5784,7 +5905,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3631
+    "_approval_message_id": 3631,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-190539-3473",
@@ -5800,7 +5922,7 @@
     "images": [],
     "video": "media/ub_3171990466-3171990466_840.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5817,7 +5939,8 @@
     },
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3632
+    "_approval_message_id": 3632,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-193550-3476",
@@ -5834,7 +5957,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5851,7 +5974,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3635
+    "_approval_message_id": 3635,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-203556-3478",
@@ -5868,7 +5992,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5885,7 +6009,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3636
+    "_approval_message_id": 3636,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-213602-3479",
@@ -5902,7 +6027,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5919,7 +6044,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3637
+    "_approval_message_id": 3637,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-09-30-223616-3481",
@@ -5934,7 +6060,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_3987.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5951,7 +6077,8 @@
     },
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3638
+    "_approval_message_id": 3638,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-000626-3541",
@@ -5968,7 +6095,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -5985,7 +6112,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3640
+    "_approval_message_id": 3640,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-000629-3542",
@@ -6002,7 +6130,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6019,7 +6147,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3641
+    "_approval_message_id": 3641,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-000634-3540",
@@ -6036,7 +6165,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6053,7 +6182,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3642
+    "_approval_message_id": 3642,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-063652-3546",
@@ -6070,7 +6200,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6087,7 +6217,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3644
+    "_approval_message_id": 3644,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-080701-3547",
@@ -6102,7 +6233,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_3991.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6119,7 +6250,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3646
+    "_approval_message_id": 3646,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-090727-3548",
@@ -6137,7 +6269,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6154,7 +6286,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3647
+    "_approval_message_id": 3647,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-093731-3549",
@@ -6171,7 +6304,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6188,7 +6321,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3648
+    "_approval_message_id": 3648,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-093735-3550",
@@ -6205,7 +6339,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6222,7 +6356,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3649
+    "_approval_message_id": 3649,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-100739-3551",
@@ -6240,7 +6375,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6257,7 +6392,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3650
+    "_approval_message_id": 3650,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-103748-3552",
@@ -6274,7 +6410,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6291,7 +6427,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3651
+    "_approval_message_id": 3651,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-103753-3553",
@@ -6308,7 +6445,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6325,7 +6462,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3652
+    "_approval_message_id": 3652,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-113820-3555",
@@ -6343,7 +6481,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6360,7 +6498,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3653
+    "_approval_message_id": 3653,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-140852-3556",
@@ -6376,7 +6515,7 @@
     "images": [],
     "video": "media/itiger_dev-1760501053_5274.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6393,7 +6532,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3655
+    "_approval_message_id": 3655,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-143902-3557",
@@ -6408,7 +6548,7 @@
     "images": [],
     "video": "media/ai_machinelearning_big_data-1114591086_11057.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6425,7 +6565,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3656
+    "_approval_message_id": 3656,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-183925-3561",
@@ -6442,7 +6583,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6459,7 +6600,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3657
+    "_approval_message_id": 3657,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-183933-3560",
@@ -6477,7 +6619,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6494,7 +6636,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3658
+    "_approval_message_id": 3658,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-193947-3575",
@@ -6511,7 +6654,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6528,7 +6671,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3659
+    "_approval_message_id": 3659,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-203952-3576",
@@ -6543,7 +6687,7 @@
     "images": [],
     "video": "media/ub_3171990466-3171990466_846.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6560,7 +6704,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3661
+    "_approval_message_id": 3661,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-01-214009-3579",
@@ -6577,7 +6722,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6594,7 +6739,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3662
+    "_approval_message_id": 3662,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-074045-3581",
@@ -6611,7 +6757,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6628,7 +6774,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3673
+    "_approval_message_id": 3673,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-081100-3582",
@@ -6644,7 +6791,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_3997.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6661,7 +6808,8 @@
     },
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3674
+    "_approval_message_id": 3674,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-084113-3583",
@@ -6678,7 +6826,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6695,7 +6843,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3677
+    "_approval_message_id": 3677,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-094125-3586",
@@ -6712,7 +6861,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6729,7 +6878,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3678
+    "_approval_message_id": 3678,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-094129-3585",
@@ -6746,7 +6896,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6763,7 +6913,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3679
+    "_approval_message_id": 3679,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-101143-3587",
@@ -6781,7 +6932,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6800,7 +6951,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3680
+    "_approval_message_id": 3680,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-104156-3591",
@@ -6818,7 +6970,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6837,7 +6989,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3681
+    "_approval_message_id": 3681,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-104200-3589",
@@ -6854,7 +7007,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6871,7 +7024,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3682
+    "_approval_message_id": 3682,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-111232-3593",
@@ -6889,7 +7043,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6908,7 +7062,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3683
+    "_approval_message_id": 3683,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-111243-3592",
@@ -6925,7 +7080,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6942,7 +7097,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3684
+    "_approval_message_id": 3684,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-114250-3595",
@@ -6957,7 +7113,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_3999.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -6974,7 +7130,8 @@
     },
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3685
+    "_approval_message_id": 3685,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-114255-3596",
@@ -6992,7 +7149,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7011,7 +7168,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3686
+    "_approval_message_id": 3686,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-121302-3597",
@@ -7026,7 +7184,7 @@
     "images": [],
     "video": "media/neyrolabs-1901741543_2401.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7043,7 +7201,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3687
+    "_approval_message_id": 3687,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-124306-3598",
@@ -7060,7 +7219,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7077,7 +7236,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3688
+    "_approval_message_id": 3688,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-134327-3602",
@@ -7094,7 +7254,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7111,7 +7271,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3689
+    "_approval_message_id": 3689,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-134334-3603",
@@ -7129,7 +7290,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7148,7 +7309,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3690
+    "_approval_message_id": 3690,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-154347-3609",
@@ -7163,7 +7325,7 @@
     "images": [],
     "video": "media/ai_machinelearning_big_data-1114591086_11066.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7180,7 +7342,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3692
+    "_approval_message_id": 3692,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-161440-3613",
@@ -7198,7 +7361,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7217,7 +7380,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3693
+    "_approval_message_id": 3693,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-161448-3610",
@@ -7232,7 +7396,7 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7249,7 +7413,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3694
+    "_approval_message_id": 3694,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-161454-3611",
@@ -7264,7 +7429,7 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7281,7 +7446,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3695
+    "_approval_message_id": 3695,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-164511-3614",
@@ -7299,7 +7465,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7316,7 +7482,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3696
+    "_approval_message_id": 3696,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-164520-3616",
@@ -7334,7 +7501,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7351,7 +7518,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3697
+    "_approval_message_id": 3697,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-164523-3615",
@@ -7366,7 +7534,7 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7383,7 +7551,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3698
+    "_approval_message_id": 3698,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-171531-3621",
@@ -7400,7 +7569,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7417,7 +7586,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3699
+    "_approval_message_id": 3699,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-171539-3620",
@@ -7433,7 +7603,7 @@
     "images": [],
     "video": "media/prodvizhenievteleg-2022690628_214.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7450,7 +7620,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3700
+    "_approval_message_id": 3700,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-181556-3626",
@@ -7468,7 +7639,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7485,7 +7656,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3701
+    "_approval_message_id": 3701,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-184802-3627",
@@ -7502,7 +7674,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7519,7 +7691,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3702
+    "_approval_message_id": 3702,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-184805-3628",
@@ -7536,7 +7709,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7553,7 +7726,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3703
+    "_approval_message_id": 3703,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-02-184811-3629",
@@ -7571,7 +7745,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7590,7 +7764,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3704
+    "_approval_message_id": 3704,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-095345-3640",
@@ -7605,7 +7780,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_4006.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7622,7 +7797,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3725
+    "_approval_message_id": 3725,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-105358-3642",
@@ -7639,7 +7815,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7656,7 +7832,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3727
+    "_approval_message_id": 3727,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-105403-3643",
@@ -7673,7 +7850,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7690,7 +7867,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3728
+    "_approval_message_id": 3728,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-125758-3646",
@@ -7706,7 +7884,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_4008.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7723,7 +7901,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3733
+    "_approval_message_id": 3733,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-140109-3647",
@@ -7738,7 +7917,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_4009.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7755,7 +7934,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3736
+    "_approval_message_id": 3736,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-153219-3648",
@@ -7770,7 +7950,7 @@
     "images": [],
     "video": "media/ai_machinelearning_big_data-1114591086_11069.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7787,7 +7967,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3739
+    "_approval_message_id": 3739,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-160225-3650",
@@ -7804,7 +7985,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7821,7 +8002,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3740
+    "_approval_message_id": 3740,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-173254-3651",
@@ -7836,7 +8018,7 @@
     "images": [],
     "video": "media/study24ai-1220784339_2998.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7855,7 +8037,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3741
+    "_approval_message_id": 3741,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-03-213230-3653",
@@ -7872,7 +8055,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7889,7 +8072,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3743
+    "_approval_message_id": 3743,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-04-030306-3656",
@@ -7904,7 +8088,7 @@
     "images": [],
     "video": "media/itiger_dev-1760501053_5278.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7921,7 +8105,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3746
+    "_approval_message_id": 3746,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-04-073334-3657",
@@ -7937,7 +8122,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_4012.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7954,7 +8139,8 @@
     },
     "_sent": true,
     "_approval_kind": "video",
-    "_approval_message_id": 3748
+    "_approval_message_id": 3748,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-04-100541-3659",
@@ -7972,7 +8158,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -7989,7 +8175,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3751
+    "_approval_message_id": 3751,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-04-130924-3666",
@@ -8007,7 +8194,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -8024,7 +8211,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3754
+    "_approval_message_id": 3754,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-04-133929-3667",
@@ -8039,7 +8227,7 @@
     "images": [],
     "video": "media/ai_machinelearning_big_data-1114591086_11070.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -8056,7 +8244,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3755
+    "_approval_message_id": 3755,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-04-163945-3673",
@@ -8074,7 +8263,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true
     },
@@ -8091,7 +8280,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3758
+    "_approval_message_id": 3758,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-04-171005-3675",
@@ -8106,7 +8296,7 @@
     "images": [],
     "video": "media/neyrolabs-1901741543_2406.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -8125,7 +8315,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3759
+    "_approval_message_id": 3759,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "rp-2026-10-04-224741-3681",
@@ -8141,7 +8332,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_4018.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -8160,7 +8351,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3769
+    "_approval_message_id": 3769,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "ns-2026-10-05-0900",
@@ -8178,7 +8370,7 @@
       "media/newsneurosphere-2567689242_302.jpg"
     ],
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "evergreen": true,
       "editor": "conveyor"
@@ -8214,7 +8406,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo+text",
-    "_approval_message_id": 3777
+    "_approval_message_id": 3777,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
   },
   {
     "id": "ns-2026-10-05-1400",
@@ -8232,7 +8425,7 @@
       "media/jadve_ai-2078592133_22.jpg"
     ],
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "evergreen": true,
       "editor": "conveyor"
@@ -8268,6 +8461,411 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3773
+    "_approval_message_id": 3773,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
+  },
+  {
+    "id": "rp-2026-10-05-064842-3682",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-05T06:48:00+03:00",
+    "rubric": "Репост",
+    "text": "📢 Space Bunny Alpha Models Disabled\n\nWe’ve officially disabled the Space Bunny Alpha models.\n\nFinal usage stats:\nTotal Requests: 692,551\nTotal Tokens: 39.6B\n\nThanks for participating and being part of the experiment! 🚀",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/bynara_ai-3483330286_169.jpg",
+    "images": [
+      "media/bynara_ai-3483330286_169.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "bynara_ai (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 218,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3782,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
+  },
+  {
+    "id": "rp-2026-10-05-084907-3685",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-05T08:49:00+03:00",
+    "rubric": "Репост",
+    "text": "Германия впервые выпустила модель. С результатом почти 97% в математике.\n\nВсего 78 млрд параметров, из которых на каждый токен активируются только 3,46 млрд. Открытые веса под лицензией Apache 2.0. Модель обучена для немецкого и английского языков.\n\nПо собственным оценкам Aleph Alpha, она набирает 96,9% на AIME 2025 и 84,3% на GPQA Diamond. По общей оценке на немецком немного опережает Qwen3.5 35B-A3B и GPT-OSS 120B. С программированием результаты неоднозначнее: 66,4% на SWE-Bench Verified против 73,8% у Qwen3.6.\n\nДля дообучения использовали ответы китайских моделей: GLM от Zhipu и Qwen от Alibaba.\n\nХорошие небольшие модели могут создавать не только в США и Китае. 😋",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4019.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4019.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 674,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3784,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
+  },
+  {
+    "id": "rp-2026-10-05-094932-3687",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-05T09:49:00+03:00",
+    "rubric": "Репост",
+    "text": "🧠 Нейросеть GPT-6 Astra расшифровала послание Наполеона Бонапарта спустя 217 лет\n\nПослание насчитывало 1,3 тыс. знаков (буквы и устаревшие слова). Ключ к шифру пропал, и более двух веков никто не мог его прочитать. Ученым-криптографам удалось расшифровать только 33 знака из этого письма.\n\n💡 Нейросети понадобилось всего 6 часов. Она распознала символы, перебрала варианты расшифровки и сопоставила их с особенностями языка того времени.\nВ письме Наполеон обсуждал передвижения войск и военные планы накануне войны с Австрией.\n\nИспытать модель GPT 6 Astra на Нейросфере можно в разделе ➡️ Чат",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/newsneurosphere-2567689242_392.jpg",
+    "images": [
+      "media/newsneurosphere-2567689242_392.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "newsneurosphere (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 592,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3786,
+    "reject_reason": "reset 2026-10-05: начинаем с нуля"
+  },
+  {
+    "id": "rp-2026-10-05-112006-3692",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-10-05T12:50:00+03:00",
+    "rubric": "Репост",
+    "text": "🍎 С Днём учителя!\n\nСегодня - день тех, кто объясняет сложное простыми словами, верит в учеников и оставляет след на годы вперёд.\n\nУчителям - терпения, вдохновения и учеников, которые искренне слушают.\n\nА если хотите быстро сделать открытку или тёплое поздравление - мы собрали готовые промпты специально к этому дню на сайте.\n\nПоздравляем всех, кто учит! 🎓",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "media/ub_3171990466-3171990466_857.jpg",
+    "images": [
+      "media/ub_3171990466-3171990466_857.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ub_3171990466 (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 356,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3794,
+    "published_at": "2026-10-05T12:50:21+03:00",
+    "message_id": 49
+  },
+  {
+    "id": "rp-2026-10-05-112018-3691",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-05T12:51:00+03:00",
+    "rubric": "Репост",
+    "text": "Команда OpenAI встала на путь искупления. Теперь каждый день — либо действительно полезная функция, либо полный сброс лимитов. 🚬",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4023.clean.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4023.clean.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 128,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3795,
+    "published_at": "2026-10-05T12:51:23+03:00",
+    "message_id": 89
+  },
+  {
+    "id": "rp-2026-10-05-125100-3700",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-10-05T12:51:00+03:00",
+    "rubric": "Репост",
+    "text": "🩵 Генератор: Nano Banana 2 🍌\n\nНе меняй черты лица. Создай фотореалистичное изображение. Формат: 3:4. Тип съёмки и ракурс: вертикальный кадр, средний план по бёдра, ракурс чуть сбоку, на уровне глаз. Поза и взгляд: девушка стоит, корпус слегка повёрнут, голова повёрнута в сторону, взгляд направлен мимо камеры, выражение лица спокойное, с лёгкой улыбкой, губы сомкнуты. Макияж: ровный тон кожи с лёгким сиянием, румянец, уложенные брови, пушистые ресницы, мягкие тени, на губах нюдово-розовый оттенок с глянцевым блеском. Маникюр: не виден. Волосы: густые, прямые, свободно спадают, обрамляя лицо и плечи. Одежда: чёрная куртка или жилет, под ним чёрный топ с открытыми плечами. Аксессуары и украшения: ремень сумки через плечо, тонкая цепочка на шее. Фон: закат над водой, оранжево-красное небо с облаками, отражение в воде, тёмные деревья по бокам, берег. Освещение: естественное закатное, контровое, тёплые блики на коже и одежде, глубокие тени. Цветокор и атмосфера: насыщенная тёплая палитра, высокий контраст, реалистичная текстура кожи и тканей, лёгкая цифровая зернистость, эффект живого кадра. Фотореализм, высокая детализация.",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "media/promtychatgpt-2343842463_3590.jpg",
+    "images": [
+      "media/promtychatgpt-2343842463_3590.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "promtychatgpt (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 1136,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3802
+  },
+  {
+    "id": "rp-2026-10-05-135121-3702",
+    "channel": "neuro_work",
+    "scheduled_at": "2026-10-05T13:51:00+03:00",
+    "rubric": "Репост",
+    "text": "Как превратить обычное фото товара в кадр премиального бренда 📸\n\nЕсть простое фото товара, а для карточки или рекламы нужен красивый кадр, при этом сам товар должен остаться таким же\n\nНовая съёмка для этого не нужна. Можно оставить изделие как на оригинале и поменять всё вокруг: обувь, причёску, позу модели и фон\n\nИнструменты, которые помогут это сделать в Image Studio\n\n🤩 До 14 референсов. Каждый элемент можно взять с отдельной картинки\n🤩 Ссылка через «@». Указываете, что брать с каждого референса: «@референс 2 — обувь», «@референс 3 — причёска»\n🤩 Доработка результата. Если на фоне осталось лишнее, достаточно попросить это убрать\n\nПодходит для карточек на маркетплейсах, рекламы и соцсетей бренда\n\nПопробовать Image Studio 🔥",
+    "hashtags": [
+      "#нейросети",
+      "#работа"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/study24ai-1220784339_3002.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "study24ai (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 732,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3803
+  },
+  {
+    "id": "rp-2026-10-05-142135-3704",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-10-05T14:21:00+03:00",
+    "rubric": "Репост",
+    "text": "Для блогеров, которым лень, уже изобрели ВСЕ 😁😂 (а вы все ими не становитесь)\n\nПомните видео, где нейросеть перенесла меня из дома в стильный кабинет, переодела и сняла как оператор? Теперь тот же приём, только для тех, кому лень собираться перед съёмкой 😁\n\nСнимаешь видео дома как есть: без макияжа, с распущенными волосами, в домашней футболке. А нейросеть добавляет тебе макияж со стразами, причёску, образ и бьюти-студию 🔥\n\nКому это нужно\n🌟 блогерам: снимаешь в пижаме, а в кадре ты при параде\n🌟 экспертам: не тратишь полдня на сборы ради одного рилса\n🌟 магазинам одежды и украшений: одно видео, и ты в любом образе\n🌟 для охватов: «разоблачение» досматривают до конца\n🌟 как услуга: такие ролики можно делать клиентам за деньги\n\nКороче, отговорка «мне сегодня лень краситься» больше не работает 🙃\n\nПошаговый гайд с готовыми промптами — в первом комментарии.\nТам всего 3 шага, справится даже новичок🥰🫶\n\nХочешь не просто повторять тренды, а по-настоящему разобраться в ИИ — приходи к нам в клуб , там клад материалов😛",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/neyroph-2244808471_685.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "neyroph (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 1018,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3804
+  },
+  {
+    "id": "rp-2026-10-05-162232-3706",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-05T16:22:00+03:00",
+    "rubric": "Репост",
+    "text": "AI Overviews на русском: половина источников в ответе — вообще не из топа\n\nПринято считать, что ИИ-обзоры в Google — чисто западная движуха, которая до российских сайтов не дотягивается. Автор прогнал больше тысячи русских вопросов из полусотни ниш и поснимал по ним выдачу Google с регионом Россия в настройках запроса.\n\nИИ-обзор вылез над выдачей в 93% случаев. И половина его источников — не с первой страницы обычного поиска. То есть залезть в обзор можно и без места в топе.\n\n👉 Telegram | Max",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/devsp-1121902388_6000.jpg",
+    "images": [
+      "media/devsp-1121902388_6000.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "devsp (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 497,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3810
+  },
+  {
+    "id": "rp-2026-10-05-205507-3709",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T03:08:00+03:00",
+    "rubric": "Репост",
+    "text": "Вот и первый день обещанных релизов от OpenAI:\n\nВ ChatGPT и Codex начинают внедрять водяные знаки в тексте.\n\nВ отличие от Anthropic и Google, OpenAI пока запускает свою технологию textGrain только в странах Евросоюза.\n\n😏 😏 😏",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4026.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4026.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 224,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3814,
+    "published_at": "2026-10-06T03:08:18+03:00",
+    "message_id": 90
+  },
+  {
+    "id": "rp-2026-10-06-030719-3712",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-10-06T03:07:00+03:00",
+    "rubric": "Репост",
+    "text": "Музыка на вашем устройстве, даже если это картошка! 🎵\n\nТеперь Spotify доступен даже на самых слабых устройствах, благодаря созданию опенсорсного клиента Spotifast . Его удивительно быстрое время запуска и использование всего 100–250 МБ оперативной памяти приятно удивляют.\n\nВозможности впечатляют: доступны плейлисты, поиск, подкасты, и есть опция управлять музыкой на других устройствах через Spotify Connect. Скрасит ваш день функция редактирования подборок и возможность слушать музыку в фоне после закрытия окна. Узнаете старого доброго Winamp? Spotifast позволяет вернуть старые скины, эквалайзер и визуализации. Предусмотрено более 10 тысяч пресетов !\n\nСкорее испытайте сами — скачивайте здесь . 😊",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/itiger_dev-1760501053_5281.mp4",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "itiger_dev (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 703,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3818
   }
 ]

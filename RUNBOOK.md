@@ -57,6 +57,8 @@ ssh Denis@192.168.1.7 '
 > **Решение 2026-10-04 (работает):** бридж идёт через astro-выход (мобильный IP, ротируется): цепочка `бридж :3001 → .env HTTPS_PROXY=127.0.0.1:18888 → launchd-туннель com.denis.astro-tunnel → VPS systemd astro-fwd :18888 → astroproxy`. Креды astro — только в `/opt/aeroflot-bot/.env` (AFL_PROXIES) и `/root/.astro_fwd.env` (chmod 600), в git их нет. Сторож `glm_watchdog.py` пропатчен (бэкап `glm_watchdog.py.bak-astro`): astro — первый приоритет в `ensure_route()`. Проверено: `glm-5.3`/`glm-4.7` отвечают; `glm-4.6` мёртв апстримом (500) — не использовать. `pkill -f "имя_файла"` убивает собственную ssh-сессию — только по порту/PID.
 >
 > **Обновление 22:45:** astro крутит IP каждые ~30-60с — длинные SSE-стримы рвутся (`unexpected EOF`), нестрим стабилен. Весь наш код ходит `stream:false`. Стример — opencode-клиенты с .6 (провайдер `zai` в `~/.config/opencode/opencode.jsonc`). WARP отбани​лся: мост возвращён на `:3128`, стрим 1770 строк/77с — чисто. Текущий маршрут: WARP; astro-цепочка остаётся запасной.
+>
+> **Политика 2026-10-05:** приоритет обычным выходам (`:3128` → direct), astro — только запасной (платный трафик + рвёт стримы). Сторож так и настроен; `set_proxy(True)` всегда ставит `:3128`.
 
 ### 2.1 `tokenCount` падает/0, стримы рвутся, «captcha generation returned empty payload»
 Пуст пул device-токенов.

@@ -24,6 +24,34 @@ AD_LINE_RE = re.compile(
     r"|https?://t\.me/joinchat/[A-Za-z0-9_-]{8,})", re.I)
 
 
+# Якоря ссылок: внешние (не TG) сохраняем как «якорь — URL» — новость,
+# ведущая на сторонний сайт, ссылку НЕ теряет. TG-ссылки/хендлы выкидываем
+# целиком вместе с якорем (стрелку-указатель чистит content_guard).
+ANCHOR_RE = re.compile(
+    r"""<a\s[^>]*href=["']([^"']+)["'][^>]*>(.*?)</a>""", re.I | re.S)
+_INNER_TAG_RE = re.compile(r"<[^>]+>")
+
+
+def _anchor_sub(m):
+    url = (m.group(1) or "").strip()
+    anchor = _INNER_TAG_RE.sub("", m.group(2) or "").strip()
+    low = url.lower()
+    if "t.me/" in low or "telegram.me/" in low or low.startswith("@"):
+        return ""
+    if not re.match(r"https?://", url):
+        return anchor
+    if not anchor or len(anchor) < 2:
+        return url
+    return "%s — %s" % (anchor, url)
+
+
+def preserve_external_anchors(text):
+    """<a href> → текст: внешняя ссылка сохраняется, TG — удаляется с якорем."""
+    if not text or "<a" not in text.lower():
+        return text
+    return ANCHOR_RE.sub(_anchor_sub, text)
+
+
 # Короткая соц-подпись в подвале: «Мы в VK», «Мы в MAX», «Мы в Telegram».
 # Требуем короткую строку, иначе срезали бы обычный текст вида
 # «Мы видим, что в VK мало кто пишет…».
@@ -62,7 +90,8 @@ def strip_html(text):
     """HTML → читаемый текст. Telegram-эмодзи превращаем в обычные символы."""
     if not text:
         return ""
-    t = EMOJI_RE.sub(r"\1", text)
+    t = preserve_external_anchors(text)
+    t = EMOJI_RE.sub(r"\1", t)
     t = BLOCKQUOTE_RE.sub("<blockquote>", t)
     t = TAG_RE.sub(" ", t)
     t = ENTITY_RE.sub(lambda m: ENT.get(m.group(1), " "), t)
