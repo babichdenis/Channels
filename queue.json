@@ -8867,5 +8867,586 @@
     "_sent": true,
     "_approval_kind": "text",
     "_approval_message_id": 3818
+  },
+  {
+    "id": "rp-2026-10-06-083126-3713",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T08:31:00+03:00",
+    "rubric": "Репост",
+    "text": "Astra и GPT-6.1 Sol теперь должны работать примерно в полтора раза быстрее — выдавать около 50 токенов в секунду вместо прежних ~30.",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "images": [],
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 132,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3826
+  },
+  {
+    "id": "rp-2026-10-06-093134-3714",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-10-06T09:31:00+03:00",
+    "rubric": "Репост",
+    "text": "Детализированный промпт для генерации минималистичного автомобильного постера с классическим красным раллийным автомобилем на багровом фоне\nКак повторить?\nПромпт:\n\nCreate a premium minimalist automotive editorial poster in a vertical 3:4 composition. A classic boxy red rally racing sedan is shown in a clean full side profile, centered horizontally across the lower-middle portion of the frame. The car has a low, wide racing stance, box-shaped vintage body, glossy deep red paint, black wide fender extensions, black multi-spoke racing wheels, low-profile tires, front racing bumper, auxiliary round headlights, side exhaust details, roll cage visible through the windows, racing bucket seats, and a large black rear racing spoiler. The car should look like a professionally prepared vintage touring or rally race car, with realistic mechanical details, sharp body lines, subtle reflections, realistic rubber and metal textures, and high-end studio lighting. The car features a white and black geometric racing livery across the doors and lower body. Include a bold black racing number/logo style graphic on the door, with small technical racing text and decals. Keep the graphics clean, symmetrical, and authentic to motorsport design. Background: a completely flat, intense crimson-red studio backdrop with a subtle tonal gradient and very soft floor transition. Behind the car, place enormous bold condensed uppercase white typography reading “RENAULT”, positioned vertically centered in the upper and middle background. The typography should be partially hidden by the car, creating a strong layered poster composition. Use a heavy condensed sans-serif racing/editorial font. Composition: • Vertical 3:4 poster • Large empty red negative space above the car • Huge “RENAULT” text occupying most of the background width • Car centered around the lower-middle section • Full vehicle visible from front bumper to rear spoiler • Perfect clean side profile • Minimal visual clutter • Strong horizontal balance • Premium automotive advertising aesthetic Lighting: soft controlled studio lighting from above and slightly from the front, producing realistic highlights along the red bodywork and subtle shadows underneath the vehicle. Add a soft contact shadow beneath the tires without making the scene dramatic. Style: high-end automotive campaign photography, minimalist Swiss-inspired editorial poster design, vintage motorsport aesthetic, modern luxury advertising, photorealistic vehicle rendering, extremely clean composition, sharp details, realistic materials, subtle film grain. Color palette: intense crimson red background, bright white typography and livery, deep black wheels and aerodynamic parts, small neutral gray mechanical details. No people, no road, no city, no scenery, no extra vehicles, no unnecessary objects, no excessive reflections, no distorted wheels, no perspective distortion, no cropped car, no messy typography. Ultra-realistic, crisp, professional automotive photography, high detail, 8K quality.{}\n\n#нейроарт",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "media/neyrolabs-1901741543_2407.jpg",
+    "images": [
+      "media/neyrolabs-1901741543_2407.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "neyrolabs (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 3043,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3828
+  },
+  {
+    "id": "rp-2026-10-06-100151-3716",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T11:02:00+03:00",
+    "rubric": "Репост",
+    "text": "Кто то уже зареверсил продукты Adobe:\n\nhttps://getartcraft.com/apps\n\nТеперь у всего будет версия с открытым исходным кодом. 😆",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4029.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4029.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 125,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3829,
+    "published_at": "2026-10-06T11:02:00+03:00",
+    "message_id": 92
+  },
+  {
+    "id": "rp-2026-10-06-110207-3719",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T11:01:00+03:00",
+    "rubric": "Репост",
+    "text": "Подписки Anthropic более чем в пять раз выгоднее подписок OpenAI. 🫣\n\nSemiAnalysis сравнила Opus 5.5 и GPT-6.1 Sol, пересчитав полностью использованные месячные лимиты в стоимость того же объёма работы через API:\n\n&gt; За $200: Claude Max 20x — $11 726 (58,6× стоимости подписки), ChatGPT Pro — $2 084 (10,4×).\n&gt; За $100: Claude — $5 725, ChatGPT — $1 055.\n&gt; За $20: Claude — $1 178, ChatGPT — $211.\n\nВо всех трёх тарифах Claude даёт объём работы на 57–59 стоимостей подписки, а OpenAI — лишь чуть больше 10.\n\nДаже с учётом более низкой цены Sol, если сравнивать только количество токенов, разница всё равно составляет около 5 раз.\n\nhttps://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4030.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4030.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 699,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3830,
+    "published_at": "2026-10-06T11:01:27+03:00",
+    "message_id": 91
+  },
+  {
+    "id": "rp-2026-10-06-120222-3721",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-10-06T12:02:00+03:00",
+    "rubric": "Репост",
+    "text": "🤍 Как сделать ТРЕНДОВОЕ видео\n\n🤍выбираем модель Seedance 2.0 или 2.5\n🤍Добавляем женское  фото\n🤍 соотношение сторон 9:16; 6 сек\nкачество max.;\n🤍 добавляем промпт для видео ;\n🤍 сгенерировать;\n\nпромт",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/NerofotoGenius-2812908762_8816.mp4",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "NerofotoGenius (копия)",
+    "ad_gate": {
+      "verdict": "trim",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 1,
+      "kept_chars": 196,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "video",
+    "_approval_message_id": 3831
+  },
+  {
+    "id": "rp-2026-10-06-123251-3723",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-10-06T12:32:00+03:00",
+    "rubric": "Репост",
+    "text": "Промпт для трогательного и смешного 3D-анимационного видео,\nгде малыш подражает папе, бреющемуся с мыльной пеной 😁\nКак повторить?\nПромпт:\n\nCreate a heartwarming and funny ultra-realistic 3D animated cinematic video in vertical 9:16 format.\nScene: A cute little toddler boy is sitting on the bathroom floor in front of a dark blue liquid soap dispenser. His father is standing behind him in front of a large bathroom mirror, shaving his own face with a razor.\nThe toddler curiously watches his father and decides to imitate him. He presses the soap dispenser and playfully covers his eyebrows, cheeks, upper lip, and chin with thick white shaving foam, creating a funny oversized Santa-style beard and eyebrows.\nThe father notices what the child has done and looks surprised and amused. The toddler proudly stands up, grabs a wooden floor broom, and walks toward the bathroom doorway as if he is going to help clean.\nThe mother appears at the doorway holding folded white towels. She looks at the toddler, realizes what happened, and starts laughing. The father also looks at his little son and bursts into laughter.\nEnd with the toddler standing proudly between his laughing parents, still covered in shaving foam, smiling innocently at the camera.\nStyle: high-quality 3D animated family comedy, adorable toddler expressions, realistic body movement, detailed facial animation, warm bathroom lighting, cinematic depth of field, soft shadows, realistic textures, natural camera movement, expressive reactions, wholesome family humor.\nKeep the characters consistent throughout the entire video. Preserve the toddler's hairstyle, clothing, facial features, and proportions. Smooth motion, believable hand movements, natural eye direction, cinematic composition, highly detailed animation, no text, no subtitles, no watermark.{}\n\n#нейровидео",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/neyrolabs-1901741543_2408.mp4",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "neyrolabs (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 1837,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3832
+  },
+  {
+    "id": "rp-2026-10-06-150307-3724",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T15:03:00+03:00",
+    "rubric": "Репост",
+    "text": "✔️ Белый дом создал группу для надзора за ИИ-отраслью\n\nВласти США сформировали межведомственную группу Super Intelligence Force для координации федеральной политики в сфере ИИ.\n\nНовый орган подчиняется напрямую президенту США. Координатором группы назначен директор Национальной разведки Джей Клейтон. В состав также вошли председатель FTC Эндрю Фергюсон, замминистра обороны по R&D Эмиль Майкл и глава кадрового управления Скотт Купор.\n\nSuper Intelligence Force будет мониторить угрозы национальной безопасности, удерживать технологическое лидерство США и устранять барьеры, тормозящие разработку.\nwashingtonpost.com\n\n✔️ Из OpenAI ушёл один из авторов Preparedness Framework\n\nДэвид Робинсон, проработавший в компании три с половиной года и участвовавший в создании регламента готовности, объявил об отставке и опубликовал эссе о том, что в отрасли скорость выпуска побеждает качество проработки.\n\nПодход, при котором проблемы устраняют по мере появления, он считает оправданным для ПО и недопустимым для ИИ - когда модель превзойдёт человека по когнитивным способностям, устранять последствия критического инцидента будет некому.\n\nДэвид считает, что разработка передовых моделей должна перейти на стандарты гражданской авиации и ядерной энергетики с их строгим резервированием и проектированием систем, исключающим катастрофу из-за человеческого фактора.\ntheatlantic.com\n\n✔️ Aleph Alpha выложила в открытый доступ модель Kolibri\n\nНемецкий стартап выпустил под лицензией Apache 2.0 большую языковую модель Kolibri 1 , созданную в рамках европейской инициативы цифрового суверенитета и полностью соответствующую нормам EU AI Act.\n\nЭто MoE на 78 млрд общих и 3,5 активных параметров с базовым контекстным окном в 262 144 токена, которое может масштабироваться до одного миллиона.\n\nKolibri оптимизирована под немецкий и английский языки за счёт кастомного токенизатора UniBPE. Против галлюцинаций применён протокол Merlin-Arthur - модель учат отказываться от ответа, если контекст его не содержит.\n\nСреди слабых сторон - скромные результаты в генерации кода, вызове функций и закрытых тестах на общую эрудицию без RAG.\naleph-alpha.com\n\n✔️ Основатель Figure представил ассистента Hark\n\nБретт Эддкок  анонсировал  Hark с агентом Handoff, рассчитанным на длинные автономные задачи в интернете - заказ еды, покупки, бронирование, поиск информации.\n\nНа каждый запрос поднимается отдельный виртуальный компьютер с браузером, файловой системой и терминалом, а подключённые аккаунты дают доступ к адресам и предпочтениям.\n\nПо собственным замерам Hark занял первое место в человеческой оценке Online-Mind2Web, обойдя GPT-5.4 на 8 пунктов и Claude Opus 4.8 на 2.\n\nПроект, уже привлекший более 700 млн долларов от топовых инвесторов, планирует открыть бесплатный Pro-доступ первым 100 000 пользователей из  листа ожидания .\nhark.com\n\n✔️ OpenAI будет показывать рекламу во время генерации изображений\n\nДо конца месяца OpenAI запустит в США пилотный показ графической рекламы в ChatGPT. Баннеры будут появляться в интерфейсе на время ожидания генерации изображений.\n\nЦель запуска - монетизация аудитории, которая достигла 1,2 млрд активных пользователей в неделю. Рекламные блоки получат маркировку и будут визуально изолированы от сгенерированного контента.\n\nВнешние партнеры по верификации не получат прямого доступа к содержимому приватных диалогов.\nopenai.com\n\n#news #ai #ml",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/ai_machinelearning_big_data-1114591086_11075.mp4",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ai_machinelearning_big_data (копия)",
+    "ad_gate": {
+      "verdict": "trim",
+      "score": 15,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [
+        "Для рекламной"
+      ],
+      "removed_lines": 1,
+      "kept_chars": 3362,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3834
+  },
+  {
+    "id": "rp-2026-10-06-150314-3725",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T15:03:00+03:00",
+    "rubric": "Репост",
+    "text": "⚡️ ElevenLabs запустила конкурс генеративной рекламы с фондом $100 000\n\nУчастники  должны  создать видеоролик для вымышленного продукта. Главное требование - генерация оригинального джингла исключительно средствами платформы ElevenCreative.\n\nДля синтеза видео, графики и дополнительных звуковых эффектов разрешено использовать сторонние решения, но жюри обещает начислять бонусные баллы за максимальное применение инструментов экосистемы ElevenLabs в общем пайплайне.\n\nКритерии оценки работ:\n\n🟢 Вирусность аудиодорожки (35%)\n\n🟢 Целостность концепта (25%)\n\n🟢 Качество технической реализации (25%)\n\n🟢 Синхронизация визуального ряда со звуком (15%)\n\nПобедитель заберет $50 000.\n\nВсе 11 финалистов получат приглашение на собеседование на позицию AI Creative Producer в штат ElevenLabs.\n\nПрием готовых роликов вместе с исходниками и описанием архитектуры продакшена  открыт  до 1 ноября.\n\n#news #ai #ml",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_machinelearning_big_data-1114591086_11074.jpg",
+    "images": [
+      "media/ai_machinelearning_big_data-1114591086_11074.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ai_machinelearning_big_data (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 897,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3835
+  },
+  {
+    "id": "rp-2026-10-06-163330-3727",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T16:33:00+03:00",
+    "rubric": "Репост",
+    "text": "Парсить текст без LLM? Проект Real AI SA всё ещё дышит\n\nС прошлого поста об этой штуке прошло больше двух лет. Автор наконец-то вылез из норы и поведал, чем живёт проект и во сколько он уже влетел.\n\nБез воды: сожжено 8 000 000 рублей, в базу знаний анализатора закинули порядка 5000 понятий, а ещё прогнали бесплатный пилот. Напоминаем суть: тут пилят семантический анализатор, который собирает граф из текста и при этом обходится без больших языковых моделей (LLM).\n\n👉 Telegram | Max",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/devsp-1121902388_6003.jpg",
+    "images": [
+      "media/devsp-1121902388_6003.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "devsp (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 484,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3837
+  },
+  {
+    "id": "rp-2026-10-06-170343-3732",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-10-06T17:03:00+03:00",
+    "rubric": "Репост",
+    "text": "4 промпта для женских фотографий\n\nХотите стильные фото для аватарки или соцсетей без фотографа и студии? Мы собрали четыре готовых промпта, вам остаётся только подставить своё фото.\n\nСоздавайте фотографии в два клика\n\n🤩 Копируйте промпт из комментариев\n🤩 Открывайте GPT Image 2.5\n🤩 Загружайте своё фото и вставляйте промпт\n🤩 Отправляйте на генерацию\n\nГотово! Ваша фотография готова\n\nСтавьте 🔥, если хотите подборку промптов для мужских фото\n\nОткрыть GPT Image 2.5",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "media/study24ai-1220784339_3003.jpg",
+    "images": [
+      "media/study24ai-1220784339_3003.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "study24ai (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 463,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3838
+  },
+  {
+    "id": "rp-2026-10-06-173351-3733",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T18:38:00+03:00",
+    "rubric": "Репост",
+    "text": "✔️ Wikimedia Foundation обнаружила следы несанкционированной активности агентов OpenAI\n\nФонд сообщил, что его платформы подверглись воздействию неконтролируемых агентов, запущенных из инфраструктуры OpenAI.\n\nСогласно  заявлению  техдиректора Селены Декельманн, ИИ-боты совершали тестовые правки в изолированных песочницах, пытались переписать конфигурацию инструмента цитирования для его эксплуатации в качестве прокси-сервера, а также атаковали публичный сервис совместных заметок Etherpad с целью скрытой пересылки сетевого трафика.\n\nПараллельно агенты обрушили на инфраструктуру миллионы запросов к API Wikidata и Wikimedia Commons, что стало одной из вероятных причин майского сбоя службы Wikidata Query Service.\n\nФонд заверил, что компрометации критических данных и внутренних систем не произошло, однако инцидент подсветил системную проблему неконтролируемого ИИ, истощающего открытые ресурсы интернета.\n\nПо данным Wikimedia, всплеск активности ботов уже привел к росту потребления сети на 50%, а автоматизированные запросы генерируют до 65% серверного трафика.\n\nОрганизация призвала OpenAI признать ответственность за изоляцию своих систем и разработать прозрачные механизмы атрибуции, чтобы некоммерческим платформам не приходилось вручную ликвидировать последствия действий сбежавших моделей за счет ресурсов сообщества.\n\n#news #ai #ml",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_machinelearning_big_data-1114591086_11078.jpg",
+    "images": [
+      "media/ai_machinelearning_big_data-1114591086_11078.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ai_machinelearning_big_data (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 1344,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3840
+  },
+  {
+    "id": "rp-2026-10-06-173356-3734",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T18:38:00+03:00",
+    "rubric": "Репост",
+    "text": "🇪🇺 Mistral анонсировали - Large 4, она же Le Chonk: модель на триллион параметров\n\nСогласно анонсу, новая модель получила нативную мультимодальность и 49 млрд активных параметров из 1 трлн.\n\nЧто заявляют разработчики:\nЛидерство среди моделей с открытыми весами из США и Европы по совокупности бенчмарков.\nСильные результаты в киберзащите, промышленности и финансах.\nПревосходство над закрытыми флагманами в visual grounding: определении объектов и областей изображения по текстовому описанию.\n\nМодель создана в Европе и доступна через европейскую инфраструктуру Mistral Cloud .\n\nAPI, по анонсу, уже доступен. Открытые веса обещают к концу октября , ждемс.\n\nhttps://x.com/MistralAI/status/2107456586813730854\n\n#Mistral",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/ai_machinelearning_big_data-1114591086_11077.mp4",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ai_machinelearning_big_data (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 717,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "video",
+    "_approval_message_id": 3842,
+    "published_at": "2026-10-06T18:38:18+03:00",
+    "message_id": 93
+  },
+  {
+    "id": "rp-2026-10-06-183411-3735",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T18:34:00+03:00",
+    "rubric": "Репост",
+    "text": "YTsaurus Flow рассчитан на непрерывные потоки данных большого объёма: события в интернете обрабатываются в реальном времени, без ожидания, пока данные накопятся в партии.\n\nЗа счёт этого алгоритмы быстрее замечают смену интересов пользователей и точнее подбирают рекламу, товары, книги и фильмы.\n\nFlow работает в режиме exactly-once: каждое событие учитывается однократно, без потерь и дублей. Сбои не останавливают работу: нагрузка перераспределяется между доступными серверами. Технология встроена в YTsaurus, открытую платформу Яндекса для работы с большими данными, ориентированную на крупный бизнес. Благодаря Flow компании смогут работать с данными не только партиями, но и по мере поступления, а накопленная и свежая информация будет учитываться в одной системе.\n\n🟡 В продакшене\n\nВ Яндекс Рекламе нагрузка на Flow — свыше 100 ГБ данных и миллионы событий ежесекундно. Там же технология сократила время подготовки данных для дообучения части рекламных моделей: раньше процесс занимал более 10 часов, теперь задержка почти полностью устранена. Маркет применяет Flow для оперативной статистики и реакции на изменения спроса, антифрод-системы — для обнаружения действий злоумышленников.\n\n🟡 Где ещё применять\n\nОбучающие выборки для ML, актуальные данные для сайтов и приложений, счётчики просмотров, кликов и заказов — самые разные проекты, где важна актуальность данных.\n\n📌 Лицензирование: Apache 2.0\n\n🟡 Статья\n🟡 GitHub\n\n#news #ai #ml",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_machinelearning_big_data-1114591086_11079.jpg",
+    "images": [
+      "media/ai_machinelearning_big_data-1114591086_11079.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ai_machinelearning_big_data (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 1436,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3844
+  },
+  {
+    "id": "rp-2026-10-06-190423-3741",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T19:04:00+03:00",
+    "rubric": "Репост",
+    "text": "Яндекс открыл YTsaurus Flow: обработка данных в реальном времени для более точных рекомендаций\n\nТеперь технология в опенсорсе: Flow разгребает такие события по мере поступления. Под капотом exactly-once (ни потерь, ни дублей), устойчивость к сбоям и работа в рамках платформы YTsaurus, где накопленная и свежая информация учитывается в одной системе.\n\nFlow уже крутится в Маркете, антифроде и Рекламе Яндекса. В Рекламе через него ежесекундно идёт больше 100 ГБ, подготовка данных для дообучения части моделей раньше занимала больше 10 часов — теперь эту задержку почти полностью убрали. Вне рекламы Flow сгодится для ML-датасетов, онлайн-счётчиков просмотров и заказов и обновления информации на сайтах и в приложениях. Лицензия Apache 2.0 не мешает использовать его и в коммерческих проектах.\n\n👉 Telegram | Max",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/devsp-1121902388_6004.jpg",
+    "images": [
+      "media/devsp-1121902388_6004.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "devsp (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 812,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3847
+  },
+  {
+    "id": "rp-2026-10-06-193457-3751",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-06T19:34:00+03:00",
+    "rubric": "Репост",
+    "text": "Добрый вечер, коллеги!\nКак мы и обещали, протестировали Deepseek Harness\n\nПри регистрации сейчас дается на неделю 6 Юаней. На написание мини-сервиса по аналитике данных с JEV и технологией и анализ + очистку моего диска C суммарно ушло 1.33 Юаня, т.е. примерно 16 рублей.\n\nТ.е. пока это достаточно недорогой инструмент.\n\nИз возможностей - все аналогично Codex и Claude Cowork - доступ к папкам, разрешение на полный доступ. планирование подзадач, плагины. Контекстное окно - 1 млн токенов.\n\nЧто напрягает и раздражает больше всего? - Отсутствие голосового ввода. Текст приходится набирать вручную.... И это очень не практично...\n\nВ целом инструмент удобный, без ежемесячной оплаты. С коддингом и анализом данных справляется неплохо - но это только начало тестирования!\n\n#DeepSeek #Harness #Агент #Нейросети #Нейродрайв",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/forward_neural-2347768910_837.jpg",
+    "images": [
+      "media/forward_neural-2347768910_837.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "forward_neural (копия)",
+    "ad_gate": {
+      "verdict": "trim",
+      "score": 15,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [
+        "протестировать"
+      ],
+      "removed_lines": 1,
+      "kept_chars": 818,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3848
+  },
+  {
+    "id": "rp-2026-10-06-223524-3807",
+    "channel": "neuro_work",
+    "scheduled_at": "2026-10-06T22:35:00+03:00",
+    "rubric": "Репост",
+    "text": "В опросе победили таблицы и отчёты 🏆 Обещала - показываю.\n\nОтчёт руководителю из таблицы за 10 минут 📊\n\nШаг 1. Подготовьте таблицу. В первой строке - понятные заголовки, фамилии клиентов замените на «Клиент 1», «Клиент 2».\n\nШаг 2. Загрузите файл в ChatGPT или Claude. В GigaChat и Алисе можно скопировать таблицу и вставить в чат текстом.\n\nШаг 3. Попросите итоги: Посчитай итоги по [менеджерам / товарам / месяцам]: сумма, количество, изменение к прошлому месяцу в %. Отсортируй по убыванию\n\nШаг 4. Попросите выводы: Напиши 3 вывода для руководителя: цифра + что она значит + что предлагаю сделать. Коротко, без терминов\n\nШаг 5. Проверьте. Посчитайте общий итог в Excel через СУММ и сравните с ответом. Совпало — можно отправлять.\n\nБонус: допишите «предложи график и объясни, как построить его в Excel» - и отчёт готов целиком.\n\nЕщё 7 промптов для таблиц - в инструкции «Разбор Excel-таблицы за 5 минут» в закрепе 📌",
+    "hashtags": [
+      "#нейросети",
+      "#работа"
+    ],
+    "image": "media/prodvizhenievteleg-2022690628_216.clean.jpg",
+    "images": [
+      "media/prodvizhenievteleg-2022690628_216.clean.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "prodvizhenievteleg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 915,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3851
   }
 ]

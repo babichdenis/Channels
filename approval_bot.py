@@ -605,8 +605,10 @@ def send_for_approval(post, admin, titles):
             return api("sendVideo", {"chat_id": admin, "caption": safe_trunc(full, 1024),
                                      "parse_mode": "HTML", "reply_markup": keyboard(post["id"], post_source(post))},
                        files={"video": ("video.mp4", blob)}, timeout=240), "video"
-        res_v = api("sendVideo", {"chat_id": admin, "caption": "",
-                                 "parse_mode": "HTML"},
+        cap_v = "🎬 %s | %s" % (post["id"], post.get("rubric", ""))
+        res_v = api("sendVideo", {"chat_id": admin, "caption": cap_v,
+                                 "parse_mode": "HTML",
+                                 "reply_markup": keyboard(post["id"], post_source(post))},
                     files={"video": ("video.mp4", blob)}, timeout=240)
         if not res_v.get("ok"):
             return res_v, "video"
@@ -619,8 +621,10 @@ def send_for_approval(post, admin, titles):
             return api("sendPhoto", {"chat_id": admin, "caption": safe_trunc(full, 1024),
                                      "parse_mode": "HTML", "reply_markup": keyboard(post["id"], post_source(post))},
                        files={"photo": ("photo.jpg", blob)}), "photo"
-        res_p = api("sendPhoto", {"chat_id": admin, "caption": "",
-                                  "parse_mode": "HTML"},
+        cap_p = "🖼 %s | %s" % (post["id"], post.get("rubric", ""))
+        res_p = api("sendPhoto", {"chat_id": admin, "caption": cap_p,
+                                  "parse_mode": "HTML",
+                                  "reply_markup": keyboard(post["id"], post_source(post))},
                     files={"photo": ("photo.jpg", blob)}, timeout=240)
         if not res_p.get("ok"):
             return res_p, "photo"
