@@ -9448,5 +9448,627 @@
     "_sent": true,
     "_approval_kind": "photo+text",
     "_approval_message_id": 3851
+  },
+  {
+    "id": "rp-2026-10-07-083552-3808",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T10:38:00+03:00",
+    "rubric": "Репост",
+    "text": "Google выпустила EmbeddingGemma 2.\n\nЭто первая открытая мультимодальная модель для эмбеддингов, изначально работающая с текстом, кодом, изображениями, видео и аудио.\n\n740 млн параметров. Модульная архитектура. Модель создана для запуска прямо на устройстве, а не в дата-центре.\n\nПри этом она обходит некоторые специализированные модели, которые более чем вдвое крупнее.\n\nВ паре с Gemma 4 можно собрать полностью локальный RAG с упором на приватность.\n\nhttps://huggingface.co/google/embeddinggemma-2\n\nhttps://huggingface.co/unsloth/embeddinggemma-2-GGUF",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4038.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4038.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 552,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3853,
+    "published_at": "2026-10-07T10:38:12+03:00",
+    "message_id": 94
+  },
+  {
+    "id": "rp-2026-10-07-093603-3809",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T09:36:00+03:00",
+    "rubric": "Репост",
+    "text": "Anthropic интегрировала Claude в Google Docs, Sheets и Slides.\n\nАссистент работает в боковой панели рядом с открытым файлом, читает его содержимое и вносит изменения. Пользователь может подтвердить каждую правку до её применения.\n\nДокументы Google также можно открывать непосредственно в Claude. Достаточно вставить ссылку на файл или попросить создать документ, таблицу либо презентацию — они появятся рядом с чатом для совместного редактирования. Доступ определяется настройками общего доступа в Google.\n\nИнтеграция доступна в бета-версии на всех платных тарифах Claude. 🔍",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/vibecoding_tg-1555418015_4039.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 574,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3854
+  },
+  {
+    "id": "rp-2026-10-07-100620-3813",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-10-07T10:06:00+03:00",
+    "rubric": "Репост",
+    "text": "Вот так сейчас собирают fake UGC, который не палится.\n\n1️⃣ Находишь вирусный ролик в нише.\nНе красивый лукбук, а тот, который досматривают.\n\nАнализируешь, что здесь держит внимание: не одежда, а ритм, смена образов, движение.\n\n2️⃣ Разбираешь хук.\nПервые 3 секунды. Что останавливает скрол?\n\nРезкая смена образов, лицо, которое вдруг смеётся, неожиданное движение.\n\nПродукта в кадре нет — и это нормально.\n\n3️⃣ Своя версия, не копия.\nДругая квартира, другое лицо, другая одежда, другой свет.\n\nКрючок один.\n\n4️⃣ Ролик кидаешь в Claude.\nЗадача конкретная: написать промпт для Seedance.\n\nЛокация, сколько образов, какой кадр использовать как референс.\n\nНе «сделай стильное видео».\n\n5️⃣ Сначала кадры.\nGPT Image или Nano Banana.\n\nПо одному образу на кадр: та же дверь, та же комната, тот же человек.\n\n6️⃣ Кадры + промпт → в Seedance.\n\n⬇️ Правило одно\n\nЕсли стартовый кадр слоп — Seedance его не спасёт.\nДорисует пластик и рекламную улыбку.\n\nЕсли кадр сильный — модель его усилит.\n\nПорядок не меняется:\nролик → хук → своя версия → Claude → исходные кадры → Seedance.",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/aimesh_digital-2609216757_971.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "aimesh_digital (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 1060,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3855
+  },
+  {
+    "id": "rp-2026-10-07-100629-3811",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T10:06:00+03:00",
+    "rubric": "Репост",
+    "text": "Математики: передовые ИИ-лаборатории должны публиковать настоящие доказательства, чтобы мы могли их проверить, а не посты в блогах.\n\nOpenAI: ладно. Вот 722 статьи, объединённые в 372 результата - https://github.com/openai/math\n\nИх подготовила новая внутренняя модель, которую пока не выпустили. Обычные математические тесты оказались для неё слишком простыми, поэтому ей дали около 4 000 нерешённых исследовательских задач. Некоторые не поддавались математикам десятилетиями.\n\nНа один результат уходило в среднем около трёх часов вычислений. Ответы модель оформляла как научные статьи. Некоторые претендуют на решение очень известных задач. 😆",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4040.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4040.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 642,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3856
+  },
+  {
+    "id": "rp-2026-10-07-100636-3812",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T10:06:00+03:00",
+    "rubric": "Репост",
+    "text": "⚡️Яндекс открыл код YTsaurus Flow: задержка данных упала до двух часов\n\nЯндекс выложил на GitHub исходный код YTsaurus Flow — инструмента для потоковой обработки данных в реальном времени. Лицензия та же, что и у основной платформы YTsaurus, открытой в марте 2023 года: Apache 2.0.\n\nFlow — совместная разработка команд инфраструктуры и Яндекс Рекламы. По заявлению разработчиков, инструмент гарантирует отсутствие потерь и дублей данных по умолчанию (принцип «ровно один раз»), а ядро написано на языке C++ для экономии ресурсов на больших объёмах.\n\nНа примере одного из сервисов переход на Flow сократил задержку поставки данных для дообучения моделей с десятка-другого часов до двух часов .\n\nFlow встроен в экосистему YTsaurus и использует её хранилище, очереди сообщений и механизм транзакций — отдельно разворачивать не нужно.\n\nhttps://habr.com/ru/companies/yandex/articles/1087470/\n\n💬 Telegram | 💬 MAX\n\n#новости #selfhosted #автоматизация",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_agentura-1550121216_264.jpg",
+    "images": [
+      "media/ai_agentura-1550121216_264.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ai_agentura (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 943,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3858
+  },
+  {
+    "id": "rp-2026-10-07-103642-3814",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T15:13:00+03:00",
+    "rubric": "Репост",
+    "text": "🧠 Mistral Large 4: 1 трлн параметров и контекст на миллион токенов\n\nФранцузская компания Mistral готовит новую флагманскую модель - Large 4 .\n\n➡️ Что известно\n🟣 Мультимодальная MoE-модель\n🟣 Общий объём ≈ 1,05 трлн параметров\n🟣 Активно работает ≈ 49 млрд\n🟣 Контекст - до 1 млн токенов\n\n➡️ На что делают ставку\n🔘 кодирование\n🔘 агентные сценарии\n🔘 финансы и геоанализ\n🔘 проектирование чипов\n🔘 кибербезопасность\n\nМодель будет open-weight : веса планируют открыть для локального запуска и дообучения.\n\n➡️ Когда\nПубличный релиз - 27 октября 2026 .\nСейчас идёт закрытое тестирование.\n\nЕсли Mistral реально выдержит качество на таком sparse-режиме, это будет один из самых интересных open-weight релизов осени.\n\nКто уже ждёт Large 4 сильнее, чем очередной GPT?",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ub_3171990466-3171990466_861.jpg",
+    "images": [
+      "media/ub_3171990466-3171990466_861.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ub_3171990466 (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 752,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3859,
+    "published_at": "2026-10-07T15:15:05+03:00",
+    "message_id": 97
+  },
+  {
+    "id": "rp-2026-10-07-110652-3815",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T15:13:00+03:00",
+    "rubric": "Репост",
+    "text": "Google добавляет встроенную поддержку Markdown-файлов в Google Drive и Google Docs.\n\nMarkdown уже стал стандартным форматом для передачи контекста и инструкций ИИ-агентам. 🥳",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4041.clean.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4041.clean.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 173,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3860,
+    "published_at": "2026-10-07T15:13:00+03:00",
+    "message_id": 96
+  },
+  {
+    "id": "rp-2026-10-07-123712-3819",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T12:37:00+03:00",
+    "rubric": "Репост",
+    "text": "Claude умеет создавать анимации, но эту анимацию / видео нельзя открыть в Premiere и редактировать как проект.\n\nРебята создали Tesseract, который решает эту проблему: теперь агент может создавать и редактировать проекты Premiere (.prproj) и After Effects (.aep). Их можно доработать в Adobe или отрендерить без подписки.\n\nВсё это без управления компьютером. Исходный код конвертеров открыт.\n\nhttps://mirage.app/tesseract/converters",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/vibecoding_tg-1555418015_4042.mp4",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 431,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3862
+  },
+  {
+    "id": "rp-2026-10-07-133733-3820",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-10-07T13:37:00+03:00",
+    "rubric": "Репост",
+    "text": "Промпт дня от Matt Pocock :\n\n/writing-for-agents мой AGENTS.md — полный бардак. Предложи серию изменений структуры, которые:\n\nУберут инструкции, которые ни на что не влияют.\nБудут раскрывать подробности по мере необходимости.\nПеренесут инструкции в CODING_STANDARDS.md.\n\nВыполни эту работу с помощью трёх субагентов, каждый из которых будет действовать радикальнее предыдущего. Создай один PR.{}\n\nAGENTS.md - самый частый источник неэффективного расхода токенов. Этот промпт устраняет проблему на корню.\n\np.s. /writing-for-agents — навык из набора Matt Pocock для работы с инструкциями агентов, включая AGENTS.md и CLAUDE.md . Перед использованием промпта его нужно установить.\n\nhttps://github.com/mattpocock/skills",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "",
+    "images": [],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 715,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3863
+  },
+  {
+    "id": "rp-2026-10-07-140748-3821",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T14:07:00+03:00",
+    "rubric": "Репост",
+    "text": "🍌Google обновил главную нейросеть для картинок\n\nРассказываем, что изменилось :\n\n⭐️ В слепых тестах обходит и Nano Banana 2, и даже Pro: 1050 очков против 990 и 935\n⭐️ Постеры, обложки и баннеры выглядят собраннее, чем у NB2\n⭐️ Инфографику делает почти в 3 раза точнее Pro: цифры и подписи без ошибок\n⭐️ Меняет только нужную деталь на фото, остальное не трогает\n⭐️ Персонаж не превращается в другого человека от кадра к кадру\n⭐️ До 14 референсов в одну сцену и качество до 4K\n\nPro оставляем для максимального фотореализма, для всего остального теперь берем 2.1.\n\nПопробовать на Нейросфере:\nИзображения ➡️ Нейросети ➡️ Nano Banana 2.1",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/newsneurosphere-2567689242_393.jpg",
+    "images": [
+      "media/newsneurosphere-2567689242_393.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "newsneurosphere (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 632,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3864
+  },
+  {
+    "id": "rp-2026-10-07-143758-3826",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T15:10:00+03:00",
+    "rubric": "Репост",
+    "text": "❗️ Google выпустила Nano Banana 2.1\n\nУлучшили визуальный дизайн, редактирование отдельных областей через маски,\nсохранение внешности персонажей и общую естественность изображений\nЕсть вывод в 4K\n\nОтдельный акцент сделали на многошаговом редактировании\nМодель должна лучше сохранять детали и согласованность изображения,\nдаже если пользователь несколько раз подряд вносит изменения\n\n❗️ Так же в Claude завезли русский язык\nНе прошло и года\nРазработчики из Anthropic перевели интерфейс на русский язык\n\n#инструментыИИ",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/neyrolabs-1901741543_2409.jpg",
+    "images": [
+      "media/neyrolabs-1901741543_2409.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "neyrolabs (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 515,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3865,
+    "published_at": "2026-10-07T15:10:26+03:00",
+    "message_id": 95
+  },
+  {
+    "id": "rp-2026-10-07-150826-3827",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-10-07T15:08:00+03:00",
+    "rubric": "Репост",
+    "text": "Здесь только то, что реально работает с нейросетями - без воды и хайпа.\n\n➡️ Что внутри канала\n\n🎬 Связки\nГотовые цепочки инструментов под задачи: видео, посты, заметки, презентации, дизайн.\n\n🛠 Инструмент дня\nКороткий и честный разбор одного сервиса: плюсы, минусы, когда брать.\n\n🧠 Лайфхаки\nБыстрые приёмы: как проверять промпты, давать контекст, тестировать модели.\n\n⚡️ Промпты\nГотовые шаблоны под текст, картинки, видео, поздравления и рабочие задачи.\n\n⚔️ Сравнения\nClaude vs GPT vs Grok и другие разборы на реальных задачах.\n\n📋 Гайды и чек-листы\nПошаговые инструкции и списки, которые можно сразу применять.\n\n🎁 Розыгрыши\nРегулярные раздачи Telegram Premium и полезных подборок.\n\n🗳 Опросы\nРешаем вместе, какие темы и форматы разбирать дальше.\n\n😂 Лёгкий контент\nМемы, тесты и генерации - чтобы не выгорать.\n\n➡️ Как читать канал\nНужна практика → ищите Связки / Лайфхаки / Промпты\nВыбираете сервис → Инструмент дня / Сравнения\nХотите участвовать → Розыгрыши и опросы",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "media/ub_3171990466-3171990466_862.jpg",
+    "images": [
+      "media/ub_3171990466-3171990466_862.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ub_3171990466 (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 963,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3866
+  },
+  {
+    "id": "rp-2026-10-07-203900-3834",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T21:45:00+03:00",
+    "rubric": "Репост",
+    "text": "🍌 Nano Banana обновилась до версии 2.1\n\nGoogle выпустил новую версию модели, и она уже работает на сайте и в боте. Ничего переключать не нужно: выбирай Nano Banana как обычно.\n\nЧто стало лучше:\n🔹картинки детальнее, модель точнее следует промпту;\n🔹персонаж остаётся узнаваемым, даже когда меняешь ему одежду, позу или фон;\n🔹текст на картинках, постерах и инфографике выходит заметно аккуратнее;\n🔹лучше собирает кадр из нескольких референсов сразу: людей, товаров, предметов;\n🔹точнее правит отдельный участок фото и не трогает остальное.\n\nЦены не изменились.\n\nПопробуй на своих фото",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/neyroph-2244808471_686.jpg",
+    "images": [
+      "media/neyroph-2244808471_686.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "neyroph (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 580,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3872,
+    "published_at": "2026-10-07T21:45:15+03:00",
+    "message_id": 99
+  },
+  {
+    "id": "rp-2026-10-07-203907-3832",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T20:39:00+03:00",
+    "rubric": "Репост",
+    "text": "Google выкатила EmbeddingGemma 2\n\nОткрытых мультимодальных моделей под эмбеддинги до неё не существовало. Жуёт текст, код, картинки, видосы и звук — всё из коробки. 740 млн параметров, архитектура модульная.\n\nИ это не про дата-центры: её затачивали под запуск на самом устройстве. Причём часть узкоспециализированных моделей, которые тяжелее её больше чем вдвое, она обходит. А в паре с Gemma 4 выходит полностью локальный RAG с уклоном в приватность.\n\nБлог Google | Модель на Hugging Face | GGUF-версия\n\n👉 Telegram | Max",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/devsp-1121902388_6007.jpg",
+    "images": [
+      "media/devsp-1121902388_6007.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "devsp (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 521,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3873
+  },
+  {
+    "id": "rp-2026-10-07-203913-3833",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-10-07T20:39:00+03:00",
+    "rubric": "Репост",
+    "text": "🎬 #Лёгкий контент. Создаём видео, где вы - маленький рыцарь\n\nБерём своё фото и превращаем себя в миниатюрного рыцаря рядом с обычной версией. Смотрится очень эффектно.\n\nСделать такое можно в Aigrator на модели Seedance 2.5 .\n\n👉 Попробовать в Aigrator\n\n➡️ Что понадобится:\n🟣 2 фото персонажей (вы и ещё один человек / вторая версия себя)\n🟣 Карта глубины (depth map)\n\n➡️ Как сделать:\n1️⃣ Готовим референсы\n🟣 Генерируем изображение маленького рыцаря из своего фото (через image-модели в Aigrator)\n🟣 Генерируем второе изображение - обычного человека в серой одежде\n\n2️⃣ Переходим в генерацию видео\n🟣 Выбираем Seedance 2.5\n🟣 Режим: Omni Reference\n🟣 Нажимаем «+» и выставляем параметры:\nКачество: 720p (или 1080p)\nСоотношение сторон: 4:3\nДлительность: 10 сек\n\n3️⃣ Загружаем файлы\n🟣 Фото маленького рыцаря\n🟣 Фото большого персонажа\n🟣 Карту глубины\n\n4️⃣ Вставляем промпт и генерируем\nХотите полный разбор с готовыми промптами для персонажей и финального видео?\n\nКто уже пробовал делать себя маленьким персонажем в видео?\nКак результат?",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/ub_3171990466-3171990466_864.mp4",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ub_3171990466 (копия)",
+    "ad_gate": {
+      "verdict": "trim",
+      "score": 75,
+      "ad_only": false,
+      "ad_links": [
+        "aigrator.ai"
+      ],
+      "phrases": [
+        "протестировать"
+      ],
+      "removed_lines": 2,
+      "kept_chars": 1027,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3874
+  },
+  {
+    "id": "rp-2026-10-07-214006-3836",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T21:40:00+03:00",
+    "rubric": "Репост",
+    "text": "Ещё один полезный MCP для ИИ-агентов — для реверс-инжиниринга игр:\n\nhttps://github.com/bethington/ghidra-mcp",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4045.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4045.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 108,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3875
+  },
+  {
+    "id": "rp-2026-10-07-214011-3838",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-07T21:41:00+03:00",
+    "rubric": "Репост",
+    "text": "Встречайте новинку: Claude Haiku 5.5 🌟\n\nClaude Haiku 5.5 — это наиболее быстрая и доступная из всех моделей в линейке Claude 5.5.\n\nЭта модель специально создана для задач, где приоритет отдается быстроте, экономичности и масштабируемости : массовая обработка запросов, классификация, автоматизация, простые агенты и нагрузки API.\n\nТеперь линейка Claude 5.5 выглядит так:\n\nOpus 5.5 — максимум возможностей\nSonnet 5.5 — баланс качества и стоимости\nHaiku 5.5 — скорость и минимальная цена\n\nУдивительно, насколько Haiku 5.5 приблизилась к более крупным моделям прошлых поколений по качеству работы.\n\nПодробнее: Anthropic Claude Haiku 5.5",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/itiger_dev-1760501053_5284.jpg",
+    "images": [
+      "media/itiger_dev-1760501053_5284.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "itiger_dev (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 633,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3876,
+    "published_at": "2026-10-07T21:43:08+03:00",
+    "message_id": 98
   }
 ]
