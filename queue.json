@@ -11055,5 +11055,227 @@
     "_sent": true,
     "_approval_kind": "photo+text",
     "_approval_message_id": 3940
+  },
+  {
+    "id": "rp-2026-10-10-072600-3911",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-10T15:21:00+03:00",
+    "rubric": "Репост",
+    "text": "Anthropic открыли доступ к Claude Code Projects всем пользователям Pro и Max из списка ожидания\n\nProjects позволяет Claude выступать координатором в рамках одного длинного диалога, распределяя связанные задачи между параллельными облачными сессиями — отдельными ветками, в которых выполняется работа.\n\nТакже можно подключать локальные сессии. Репозитории, инструкции и память общие для всех веток.\n\nДокументация: https://code.claude.com/docs/en/claude-projects",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/vibecoding_tg-1555418015_4065.mp4",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 460,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3945,
+    "published_at": "2026-10-10T15:21:04+03:00",
+    "message_id": 106
+  },
+  {
+    "id": "rp-2026-10-10-114251-3913",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-10T15:21:00+03:00",
+    "rubric": "Репост",
+    "text": "На OpenCode щас можно затестить бесплатно китайскую модель уровня Kimi и GLM — Step 5 Preview\n\nНа OpenRouter она щас вышла на первое место.\n\nПарень попросил её сделать гоночную игру в неоновом стиле с помощью метода Мэтта Шумера - Gauntlet Loop , при котором агент многократно проверяет и дорабатывает результат.\n\nПримерно через час модель выдала:\n\nПолностью рабочую игру.\nДрифт с хорошими звуковыми эффектами.\nВсё это обошлось примерно в $4.",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/vibecoding_tg-1555418015_4067.mp4",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 442,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3951,
+    "published_at": "2026-10-10T15:21:04+03:00",
+    "message_id": 107
+  },
+  {
+    "id": "rp-2026-10-10-114304-3918",
+    "channel": "neuro_secrets",
+    "scheduled_at": "2026-10-10T15:20:00+03:00",
+    "rubric": "Репост",
+    "text": "🎨 Ваше фото - маленькая история на бумаге | промпт\n\nПроверил симпатичную идею: превращаем обычные фотографии в постеры, где сверху остаётся снимок, а снизу появляется его рисованная версия.\n\nМне нравится, что здесь много свободного пространства, мягкие цвета и фактура бумаги\n\nПолучается что-то в духе иллюстрации из доброй книжки ❤\n\nПотестировал на разных сюжетах: люди, цветы, десерты. Особенно мило смотрятся фотографии с близкими и питомцами.\n\nКак попробовать:\nЗагружаем фото в ChatGPT, включаем создание изображений и отправляем промпт из комментариев\nА потом можно попросить оставить только рисунок, добавить красивую надпись и подготовить композицию под постер. Получится идея для открытки или подарка.\nТолько проверяйте лица и мелкие детали: нейросеть иногда меняет их даже при просьбе сохранить оригинал.\n\nКакой вариант вам понравился больше?",
+    "hashtags": [
+      "#нейросети",
+      "#лайфхаки"
+    ],
+    "image": "media/ub_3171990466-3171990466_871.jpg",
+    "images": [
+      "media/ub_3171990466-3171990466_871.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ub_3171990466 (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 851,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3952,
+    "published_at": "2026-10-10T15:20:02+03:00",
+    "message_id": 51
+  },
+  {
+    "id": "rp-2026-10-10-134330-3923",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-10T13:43:00+03:00",
+    "rubric": "Репост",
+    "text": "Anthropic ЗАБАНЯТ тебя за абьюз ИИ — и это не шутка.\n\nКомпания обновила правила использования нейросети и ПРЯМО запретила «систематическое и ненужное жестокое или бесчеловечное поведение» по отношению к моделям.",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/End_Soft-1326020659_8157.jpg",
+    "images": [
+      "media/End_Soft-1326020659_8157.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "End_Soft (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 211,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3953
+  },
+  {
+    "id": "rp-2026-10-10-151401-3928",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-10-10T15:14:00+03:00",
+    "rubric": "Репост",
+    "text": "Готовые промпты для мужских фотографий\n\nВы поставили реакции, и мы, как обещали, делимся подборкой 🔥\n\nЕсли нет времени на фотосессию или просто хочется примерить новый образ, используйте готовые промпты\n\nКак сделать\n\n🤩 Открывайте GPT Image 2.5\n🤩 Загружайте своё селфи\n🤩 Вставляйте промпт из комментариев\n🤩 Получайте готовый кадр\n\nПрисылайте результаты в комментарии, интересно посмотреть, что у вас получится\n\nСтавьте 🔥, если хотите ещё больше готовых промптов\n\nОткрыть GPT Image 2.5",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "media/study24ai-1220784339_3015.jpg",
+    "images": [
+      "media/study24ai-1220784339_3015.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "study24ai (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 483,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3954
+  },
+  {
+    "id": "rp-2026-10-10-164419-3932",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-10T16:44:00+03:00",
+    "rubric": "Репост",
+    "text": "Вайбкодер открыл новую планету с помощью Claude Code — нет, это не шутка. NASA даже приняли его данные для проверки.\n\nПавел изучал снимки телескопа TESS и заметил странный сигнал у звезды в 116 световых годах от Земли. Claude Code скачал и разобрал архив, написал код и построил графики.\n\nСначала парня заподозрили в ИИ-психозе. Но к треду подключились исследователи экзопланет и подтвердили, что сигнал действительно может принадлежать новой планете.\n\nПока у находки Павла статус кандидата. В конце октября через TESS начнут наблюдения по его заявке.",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/End_Soft-1326020659_8161.jpg",
+    "images": [
+      "media/End_Soft-1326020659_8161.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "published",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "End_Soft (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 551,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3956,
+    "published_at": "2026-10-10T16:44:01+03:00",
+    "message_id": 108
   }
 ]
