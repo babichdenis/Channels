@@ -1335,5 +1335,25 @@
     "points": 6,
     "status": "raw",
     "query": "I use ChatGPT to write"
+  },
+  {
+    "hash": "16124296004072723956",
+    "title": "Ask HN: What's your tips and tricks for the job seeker entering 2025?",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=42108108",
+    "points": 11,
+    "status": "raw",
+    "query": "ChatGPT for resume"
+  },
+  {
+    "hash": "3092787172351183562",
+    "title": "I created 3 months' worth of SEO-friendly blog posts in 2 days using GPT-3",
+    "url": "",
+    "source_type": "hacker_news",
+    "source_url": "https://news.ycombinator.com/item?id=34064273",
+    "points": 6,
+    "status": "raw",
+    "query": "ChatGPT for resume"
   }
 ]

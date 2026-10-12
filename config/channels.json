@@ -165,7 +165,7 @@
         "15:00",
         "20:00"
       ],
-      "publish": false,
+      "publish": true,
       "library_target": 120
     },
     {
