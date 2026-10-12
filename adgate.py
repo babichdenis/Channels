@@ -114,6 +114,69 @@ def is_denied(post):
 # При блокировке молча уходим на статику+deep и пишем в лог один раз.
 GLM_TIMEOUT = float(os.environ.get("AD_GATE_LLM_TIMEOUT", "25"))
 GLM_COOLDOWN = float(os.environ.get("AD_GATE_LLM_COOLDOWN", "900"))
+
+# --- Fallback: локальный Grok-мост (OpenAI-совместимый) ---------------------
+# chat.z.ai режет IP через Aliyun WAF, Cloudflare для гейта запрещён (нормы не
+# хватает). Если GLM_BASE не задан явно — берём рабочий локальный мост grok
+# прямо из ~/.config/opencode/opencode.jsonc (provider.grok).
+def _load_zai_env():
+    """Ключ Z.AI (Zhipu) — официальный API, постоянно free glm-*-flash."""
+    p = os.path.expanduser("~/.config/opencode/.zai.env")
+    if not os.path.isfile(p):
+        return
+    try:
+        with open(p, "r", encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if line.startswith("export "):
+                    line = line[7:]
+                if "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                k = k.strip()
+                v = v.strip().strip('"').strip("'")
+                if k and k not in os.environ:
+                    os.environ[k] = v
+    except Exception:
+        pass
+
+_load_zai_env()
+if os.environ.get("ZAI_API_KEY") and not os.environ.get("GLM_URL") \
+        and not os.environ.get("GLM_BASE"):
+    # Путь Zhipu НЕ содержит /v1 — потому даём готовый URL целиком.
+    os.environ["GLM_URL"] = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
+    os.environ["GLM_BASE"] = "https://open.bigmodel.cn/api/paas/v4"
+    os.environ.setdefault("GLM_API_KEY", os.environ["ZAI_API_KEY"].strip())
+    os.environ.setdefault("GLM_MODEL", os.environ.get("ZAI_MODEL", "glm-4.7-flash"))
+
+def _load_grok_provider():
+    import json as _json
+    p = os.path.expanduser("~/.config/opencode/opencode.jsonc")
+    if not os.path.isfile(p):
+        return
+    try:
+        with open(p, "r", encoding="utf-8") as fh:
+            src = fh.read()
+        src = re.sub(r"^\s*//.*$", "", src, flags=re.M)
+        cfg = _json.loads(src)
+        grok = (cfg.get("provider") or {}).get("grok") or {}
+        opts = grok.get("options") or {}
+        base = (opts.get("baseURL") or "").rstrip("/")
+        if base.endswith("/v1"):
+            base = base[:-3]
+        key = opts.get("apiKey")
+        models = list((grok.get("models") or {}).keys())
+        if base and key and not os.environ.get("GLM_BASE") and not os.environ.get("GLM_URL"):
+            os.environ["GLM_BASE"] = base
+            os.environ.setdefault("GLM_API_KEY", str(key))
+            os.environ.setdefault("GLM_MODEL", models[0] if models else "grok-chat-fast")
+    except Exception:
+        pass
+
+_load_grok_provider()
+# --- конец fallback ---------------------------------------------------------------------------------------------------------------
 _glm = {"fails": 0, "down_until": 0.0, "reason": ""}
 
 
@@ -504,6 +567,17 @@ EXTRA_PHRASE += (
     r"|\bin\s+stock\b"
 )
 
+# Python 3.11+ запрещает глобальные inline-флаги не в начале выражения,
+# а в части подставляются исходники регэкспов из adfilter (там есть (?i)).
+# Вырезаем inline-флаги из кусков и оставляем один глобальный в начале.
+def _strip_inline_flags(src):
+    return re.sub(r"\(\?[a-z]+\)", "", src or "")
+
+_BASE_PROMO_SRC = _strip_inline_flags(_BASE_PROMO_SRC)
+_BASE_CTA_SRC = _strip_inline_flags(_BASE_CTA_SRC)
+_BASE_FOOTER_SRC = _strip_inline_flags(_BASE_FOOTER_SRC)
+EXTRA_PHRASE = _strip_inline_flags(EXTRA_PHRASE)
+
 PHRASE_RE = re.compile("(?is)(?:%s)|(?:%s)" % (_BASE_PROMO_SRC, EXTRA_PHRASE))
 CTA_LINE_RE = re.compile("(?im)(?:%s)|(?:%s)" % (_BASE_CTA_SRC, (
     r"(?:^|[\W_])(?:заходите|зайди|заходим|заходи|загляните|загляни)\b"
@@ -699,10 +773,14 @@ def llm_verdict(plain, rep):
             llm_cache = json.load(f)
         if not isinstance(llm_cache, dict):
             llm_cache = {}
+        # Раньше в кэш писались и неудачи (None) — они засели там навечно.
+        # Выкидываем: неудачу нельзя считать вердиктом.
+        for _k in [k for k, v in llm_cache.items() if not v]:
+            llm_cache.pop(_k, None)
     except Exception:
         llm_cache = {}
-    if key_id in llm_cache:
-        return llm_cache[key_id] or None
+    if key_id in llm_cache and llm_cache[key_id]:
+        return llm_cache[key_id]
 
     base = os.environ.get("GLM_BASE", "http://127.0.0.1:3001")
     key = os.environ.get("GLM_API_KEY", "glm-local")
@@ -724,55 +802,104 @@ def llm_verdict(plain, rep):
         "в начале поста, если дальше идёт полезное содержимое.\n\n"
         "ПОСТ:\n" + body
     )
-    data = {
-        "model": os.environ.get("GLM_MODEL", "glm-5.3"),
-        "messages": [{"role": "user", "content": prompt}],
-        # bridge по умолчанию отдаёт SSE-стрим; нам нужен обычный JSON
-        "stream": False,
-        # GLM сначала пишет reasoning_content, поэтому ответ не в 8 токенов
-        "max_tokens": 600, "temperature": 0,
-    }
-    req = urllib.request.Request(
-        base.rstrip("/") + "/v1/chat/completions",
-        data=json.dumps(data).encode("utf-8"),
-        headers={"Content-Type": "application/json",
-                 "Authorization": "Bearer " + key},
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=GLM_TIMEOUT) as r:
-            raw = r.read().decode("utf-8", "replace")
-        if not raw.lstrip().startswith("{"):
-            return None
-        out = json.loads(raw)
-        txt = (out["choices"][0]["message"].get("content") or "").strip().upper()
-    except Exception as exc:
-        body = ""
-        try:
-            body = exc.read().decode("utf-8", "replace")
-        except Exception:
-            pass
-        _glm_failed(body or type(exc).__name__)
-        return None
+    # Модели по очереди: основная, затем запасные. glm-4.7-flash под нагрузкой
+    # отдаёт 1305 «модель перегружена» — откатываемся на glm-4.5-flash.
+    primary = os.environ.get("GLM_MODEL", "glm-5.3")
+    candidates = [primary]
+    for alt in ("glm-4.5-flash", "glm-4.7-flash"):
+        if alt not in candidates:
+            candidates.append(alt)
 
+    url = os.environ.get("GLM_URL") or (base.rstrip("/") + "/v1/chat/completions")
+
+    def _open_llm(rq):
+        import urllib.error as _uerr
+        last = None
+        # Сеть до Z.AI нестабильна (SSL handshake timeout), поэтому ретраим:
+        # три попытки напрямую, затем через системные прокси.
+        for proxies in ({}, {}, {}, None):
+            try:
+                op = urllib.request.build_opener(urllib.request.ProxyHandler(proxies))
+                return op.open(rq, timeout=GLM_TIMEOUT)
+            except _uerr.HTTPError:
+                raise
+            except Exception as exc:
+                last = exc
+                time.sleep(1.5)
+        raise last
+
+    raw = ""
+    txt = ""
+    last_err = ""
+    for model in candidates:
+        data = {
+            "model": model,
+            "messages": [{"role": "user", "content": prompt}],
+            # bridge по умолчанию отдаёт SSE-стрим; нам нужен обычный JSON
+            "stream": False,
+            # GLM сначала пишет reasoning_content, поэтому ответ не в 8 токенов
+            "max_tokens": 600, "temperature": 0,
+        }
+        # GLM по умолчанию пишет reasoning_content и съедает бюджет ответа —
+        # глушим рассуждения, чтобы в content приходил сам вердикт.
+        if str(model).startswith("glm-"):
+            data["thinking"] = {"type": "disabled"}
+        req = urllib.request.Request(
+            url,
+            data=json.dumps(data).encode("utf-8"),
+            headers={"Content-Type": "application/json",
+                     "Authorization": "Bearer " + key},
+        )
+        try:
+            with _open_llm(req) as r:
+                raw = r.read().decode("utf-8", "replace")
+            if not raw.lstrip().startswith("{"):
+                raw, last_err = "", "не JSON"
+                continue
+            out = json.loads(raw)
+            txt = (out["choices"][0]["message"].get("content") or "").strip().upper()
+            if txt:
+                break
+            last_err = "пустой content"
+        except Exception as exc:
+            body = ""
+            try:
+                body = exc.read().decode("utf-8", "replace")
+            except Exception:
+                pass
+            last_err = body or type(exc).__name__
+            # 1305/429 — модель перегружена или лимит, пробуем следующую
+            if ("1305" in last_err) or ("429" in last_err) or ("1305" in str(exc)):
+                continue
+            _glm_failed(last_err)
+            return None
+    if not txt:
+        _glm_failed(last_err or "нет ответа")
+        return None
     _glm_ok()
 
-    if txt.startswith("DROP"):
-        verdict_out = "drop"
-    elif txt.startswith("TRIM"):
-        verdict_out = "trim"
-    elif txt.startswith("OK"):
-        verdict_out = "ok"
-    else:
-        verdict_out = None
+    # Модель иногда отвечает не одним словом («Это реклама — DROP»),
+    # поэтому ищем токен в ответе, а не только в начале.
+    verdict_out = None
+    up = txt.upper()
+    for tok in ("DROP", "TRIM", "OK"):
+        if up.startswith(tok):
+            verdict_out = tok.lower()
+            break
+    if verdict_out is None:
+        m = re.search(r"\b(DROP|TRIM|OK)\b", up)
+        if m:
+            verdict_out = m.group(1).lower()
 
-    try:
-        llm_cache[key_id] = verdict_out
-        tmp = cache_path + ".tmp"
-        with open(tmp, "w", encoding="utf-8") as f:
-            json.dump(llm_cache, f)
-        os.replace(tmp, cache_path)
-    except Exception:
-        pass
+    if verdict_out:
+        try:
+            llm_cache[key_id] = verdict_out
+            tmp = cache_path + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(llm_cache, f)
+            os.replace(tmp, cache_path)
+        except Exception:
+            pass
     return verdict_out
 
 

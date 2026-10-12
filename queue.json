@@ -8738,7 +8738,7 @@
     "images": [],
     "video": "media/neyroph-2244808471_685.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -8757,7 +8757,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3804
+    "_approval_message_id": 3804,
+    "reject_reason": "cleanup 2026-10-12: хайп/шок — вне темы сети (хайп про блогеров)"
   },
   {
     "id": "rp-2026-10-05-162232-3706",
@@ -8881,7 +8882,7 @@
     "images": [],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -8900,7 +8901,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3826
+    "_approval_message_id": 3826,
+    "reject_reason": "cleanup 2026-10-12: новость с датой/ценой — сеть evergreen без дат (Astra/GPT-6.1 Sol скорость)"
   },
   {
     "id": "rp-2026-10-06-093134-3714",
@@ -9500,7 +9502,7 @@
     "images": [],
     "video": "media/vibecoding_tg-1555418015_4039.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -9519,7 +9521,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3854
+    "_approval_message_id": 3854,
+    "reject_reason": "cleanup 2026-10-12: новость с датой/ценой — сеть evergreen без дат (Claude в Google Docs)"
   },
   {
     "id": "rp-2026-10-07-100620-3813",
@@ -9535,7 +9538,7 @@
     "images": [],
     "video": "media/aimesh_digital-2609216757_971.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -9554,7 +9557,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3855
+    "_approval_message_id": 3855,
+    "reject_reason": "cleanup 2026-10-12: хайп/шок — вне темы сети (fake UGC)"
   },
   {
     "id": "rp-2026-10-07-100629-3811",
@@ -9788,7 +9792,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -9807,7 +9811,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3864
+    "_approval_message_id": 3864,
+    "reject_reason": "cleanup 2026-10-12: новость с датой/ценой — сеть evergreen без дат (Google обновил картинки)"
   },
   {
     "id": "rp-2026-10-07-143758-3826",
@@ -10086,7 +10091,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -10105,7 +10110,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3880
+    "_approval_message_id": 3880,
+    "reject_reason": "cleanup 2026-10-12: новость с датой/ценой — сеть evergreen без дат (Haiku 5.5 цены)"
   },
   {
     "id": "rp-2026-10-08-081143-3842",
@@ -10347,7 +10353,7 @@
     "images": [],
     "video": "media/study24ai-1220784339_3009.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -10366,7 +10372,8 @@
     },
     "_sent": true,
     "_approval_kind": "text",
-    "_approval_message_id": 3891
+    "_approval_message_id": 3891,
+    "reject_reason": "cleanup 2026-10-12: хайп/шок — вне темы сети (три тренда на миллионы)"
   },
   {
     "id": "rp-2026-10-08-171559-3862",
@@ -10561,7 +10568,7 @@
     "images": [],
     "video": "media/ub_3171990466-3171990466_866.mp4",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -10580,7 +10587,8 @@
     },
     "_sent": true,
     "_approval_kind": "video+text",
-    "_approval_message_id": 3901
+    "_approval_message_id": 3901,
+    "reject_reason": "cleanup 2026-10-12: хайп/шок — вне темы сети (шок-контент (шампанское/пистолет))"
   },
   {
     "id": "rp-2026-10-09-125220-3880",
@@ -10633,7 +10641,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -10652,7 +10660,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo+text",
-    "_approval_message_id": 3911
+    "_approval_message_id": 3911,
+    "reject_reason": "cleanup 2026-10-12: хайп/шок — вне темы сети (бизнес-кейс с цифрами)"
   },
   {
     "id": "rp-2026-10-09-142251-3883",
@@ -10669,7 +10678,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -10688,7 +10697,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3912
+    "_approval_message_id": 3912,
+    "reject_reason": "cleanup 2026-10-12: новость с датой/ценой — сеть evergreen без дат (Google обновил модели)"
   },
   {
     "id": "rp-2026-10-09-145305-3886",
@@ -10705,7 +10715,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -10724,7 +10734,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo",
-    "_approval_message_id": 3913
+    "_approval_message_id": 3913,
+    "reject_reason": "cleanup 2026-10-12: новость с датой/ценой — сеть evergreen без дат (Anthropic политика)"
   },
   {
     "id": "rp-2026-10-09-155317-3889",
@@ -10741,7 +10752,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -10760,7 +10771,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo+text",
-    "_approval_message_id": 3916
+    "_approval_message_id": 3916,
+    "reject_reason": "cleanup 2026-10-12: хайп/шок — вне темы сети (инъекция «Claude, найди инопланетян»)"
   },
   {
     "id": "rp-2026-10-09-155323-3888",
@@ -10855,7 +10867,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -10874,7 +10886,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo+text",
-    "_approval_message_id": 3921
+    "_approval_message_id": 3921,
+    "reject_reason": "cleanup 2026-10-12: хайп/шок — вне темы сети (хайп-про-всё сразу)"
   },
   {
     "id": "rp-2026-10-09-175418-3896",
@@ -11035,7 +11048,7 @@
     ],
     "video": "",
     "source_image": "",
-    "status": "pending",
+    "status": "rejected",
     "check": {
       "repost": true,
       "content_guard": "required"
@@ -11054,7 +11067,8 @@
     },
     "_sent": true,
     "_approval_kind": "photo+text",
-    "_approval_message_id": 3940
+    "_approval_message_id": 3940,
+    "reject_reason": "cleanup 2026-10-12: новость с датой/ценой — сеть evergreen без дат (Microsoft революция)"
   },
   {
     "id": "rp-2026-10-10-072600-3911",
@@ -11277,5 +11291,152 @@
     "_approval_message_id": 3956,
     "published_at": "2026-10-10T16:44:01+03:00",
     "message_id": 108
+  },
+  {
+    "id": "rp-2026-10-12-075348-3982",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-12T07:53:00+03:00",
+    "rubric": "Репост",
+    "text": "OpenAI увеличила контекстное окно GPT-6.1 Sol в Codex и ChatGPT Work до 500 тысяч токенов по умолчанию.\n\nРанее стандартный размер контекстного окна составлял 272 тысячи токенов.\n\nВ дальнейшем его увеличат ещё больше. 😆",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/vibecoding_tg-1555418015_4075.clean.jpg",
+    "images": [
+      "media/vibecoding_tg-1555418015_4075.clean.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "rejected",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "vibecoding_tg (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 218,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo",
+    "_approval_message_id": 3983,
+    "reject_reason": "cleanup 2026-10-12: новость с датой/ценой — сеть evergreen без дат (OpenAI контекст 500K)"
+  },
+  {
+    "id": "rp-2026-10-12-092441-3983",
+    "channel": "ai_news",
+    "scheduled_at": "2026-10-12T09:24:00+03:00",
+    "rubric": "Новости",
+    "text": "🧩 Google выпустила EmbeddingGemma 2 — поиск по смыслу теперь работает прямо на телефоне\n\nМодель переводит текст, картинки, видео и аудио в единые числовые коды — так ищут похожие смыслы. Веса открытые: можно скачать и поставить на свой сервер.\n\nМодель собрана из отдельных блоков под текст, изображения и звук — ненужные форматы можно не загружать. На смартфоне текстовая часть занимает около 191 МБ памяти, полная версия со всеми форматами — около 567 МБ. То есть поиск по смыслу запускается на самом телефоне, без отправки данных на сервер.\n\nЗа раз модель обрабатывает 8192 токена — в 4 раза больше первой версии. На задачах с кодом она обогнала предшественницу на 14%.\n\nВсе цифры — собственные замеры Google, независимых проверок пока нет. Для русского языка точность стоит проверить отдельно: Google сама указывает на разброс качества между языками.\n\n#новости #нейросети #локальныеМодели",
+    "hashtags": [
+      "#новости_ии"
+    ],
+    "image": "media/ai_agentura-1550121216_267.jpg",
+    "images": [
+      "media/ai_agentura-1550121216_267.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ai_agentura (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 1336,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3985
+  },
+  {
+    "id": "rp-2026-10-12-092446-3984",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-10-12T09:24:00+03:00",
+    "rubric": "Промпт дня",
+    "text": "🎬 Задача: описать моушн-сцену так, чтобы ролик получился с первого раза\n\nКонтекст: когда просишь нейросеть сделать ролик или ставишь задачу моушн-дизайнеру, фраза «сделай красиво» не работает. Нужно расписать композицию, движение, переходы и типографику.\n\nПромпт:\n«Опиши моушн-сцену: [что на экране]. Движение: [как объекты входят и выходят, с какой скоростью]. Переходы: [как сменяются кадры]. Типографика: [как ведёт себя текст]. Настроение: [эмоция и темп]. Формат: [вертикальный или горизонтальный, длительность]».\n\nПример:\n«Опиши моушн-сцену: заголовок на градиентном фоне и три карточки с функциями. Движение: заголовок проявляется снизу вверх за полсекунды, карточки выезжают по очереди справа. Переходы: плавный фейд между блоками. Типографика: текст появляется по словам. Настроение: спокойное деловое, темп средний. Формат: вертикальный 9:16, 15 секунд».\n\nРезультат: точное техзадание вместо «сделай красиво» — и монтаж или генерация дают то, что нужно.\n\n#промптдня #моушндизайн #видео",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "",
+    "images": [],
+    "video": "media/neyrolabs-1901741543_2422.mp4",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "neyrolabs (копия)",
+    "ad_gate": {
+      "verdict": "keep",
+      "score": 0,
+      "ad_only": false,
+      "ad_links": [],
+      "phrases": [],
+      "removed_lines": 0,
+      "kept_chars": 465,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "text",
+    "_approval_message_id": 3986
+  },
+  {
+    "id": "rp-2026-10-12-112649-3987",
+    "channel": "wizard_prompts",
+    "scheduled_at": "2026-10-12T11:26:00+03:00",
+    "rubric": "Репост",
+    "text": "🎨 # Промпт : удаление объектов с фото\n\nОдин шаблон - под Flux, Midjourney и Kandinsky.\n\nНе нужно отдельно под каждый сервис подстраиваться.\nОдин чёткий запрос - и лишний объект уходит, а фон остаётся целым.\n\n➡️ Готовый шаблон\ntext\n\nRemove [object] from the photo.\nKeep the original composition, lighting, shadows and background.\nFill the empty area naturally so it looks like the object was never there.\nNo blur, no artifacts, no extra elements.\nPhotorealistic result.{}\n\n➡️ Пример:\ntext\n\nRemove the person in the background from the photo.\nKeep the original composition, lighting, shadows and background.\nFill the empty area naturally so it looks like the person was never there.\nNo blur, no artifacts, no extra elements.\nPhotorealistic result.{}\n\n➡️ Как использовать\n🟣 Загрузите фото\n🟣 Укажите, что именно убрать\n🟣 Вставьте шаблон\n🟣 При необходимости уточните: «сохрани отражения / текстуру стены / перспективу»\n\n➡️ Где запускать\nFlux — https://bfl.ai/\nMidjourney — https://www.midjourney.com/\n\nРаботает и в редакторах с inpainting (когда можно выделить область вручную) - там результат обычно ещё чище.\n\nСохраняйте шаблон: один промпт - меньше возни с правками.\n\nЧто чаще всего приходится вычищать с фото: людей, логотипы или мусор в кадре?",
+    "hashtags": [
+      "#промпты",
+      "#нейросети"
+    ],
+    "image": "media/ub_3171990466-3171990466_877.jpg",
+    "images": [
+      "media/ub_3171990466-3171990466_877.jpg"
+    ],
+    "video": "",
+    "source_image": "",
+    "status": "pending",
+    "check": {
+      "repost": true,
+      "content_guard": "required"
+    },
+    "media_policy": "source_preserve",
+    "origin": "ub_3171990466 (копия)",
+    "ad_gate": {
+      "verdict": "trim",
+      "score": 60,
+      "ad_only": false,
+      "ad_links": [
+        "https://www.sberbank.com/promo/kandinsky/"
+      ],
+      "phrases": [],
+      "removed_lines": 1,
+      "kept_chars": 1243,
+      "llm": null
+    },
+    "_sent": true,
+    "_approval_kind": "photo+text",
+    "_approval_message_id": 3991
   }
 ]

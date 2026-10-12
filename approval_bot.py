@@ -298,7 +298,11 @@ def api(method, payload, timeout=70, files=None):
             tmo = max(timeout, 240)
             attempts = 3
         else:
-            tmo = min(timeout, 25)
+            # Клиентский таймаут обязан быть СТРОГО больше long-poll timeout
+            # Telegram (25 с в getUpdates). Раньше tmo = min(timeout, 25) давал
+            # ровно 25 с — соединение обрывалось на лимите, и бот ловил
+            # «URLError: timed out» на каждом пустом цикле.
+            tmo = min(max(timeout, 40), 120)
             attempts = 2
         for attempt in range(attempts):
             # сначала прокси (он нужен для скорости/лимитов), затем прямой
